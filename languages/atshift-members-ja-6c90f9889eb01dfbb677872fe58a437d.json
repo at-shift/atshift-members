@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-11 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "ja",
+        "plural-forms": "nplurals=1; plural=0;"
+      },
+      "Attachment Visibility": [
+        "添付ファイルの公開範囲"
+      ],
+      "Change Visibility": [
+        "公開範囲を選び直す"
+      ],
+      "Choose How to Add Media": [
+        "メディアの選択方法"
+      ],
+      "Choose a format supported by this block.": [
+        "このブロックで使える形式を選択してください。"
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "保存済みの画像・動画・資料から選びます。"
+      ],
+      "Could not complete the action. Please try again.": [
+        "操作を完了できませんでした。もう一度お試しください。"
+      ],
+      "Drop Files to Upload": [
+        "ファイルをドロップしてアップロード"
+      ],
+      "Insert Selected Files": [
+        "選択したファイルを挿入"
+      ],
+      "Media Library": [
+        "メディアライブラリ"
+      ],
+      "Members Only": [
+        "会員のみ"
+      ],
+      "Members-Only Media": [
+        "会員専用のメディア"
+      ],
+      "Next Page": [
+        "次のページ"
+      ],
+      "No files are available to select.": [
+        "選択できるファイルはありません。"
+      ],
+      "Open File": [
+        "ファイルを開く"
+      ],
+      "Previous Page": [
+        "前のページ"
+      ],
+      "Processing…": [
+        "処理しています…"
+      ],
+      "Public": [
+        "一般公開"
+      ],
+      "Public Media": [
+        "一般公開のメディア"
+      ],
+      "Search": [
+        "検索"
+      ],
+      "Search by Filename": [
+        "ファイル名で検索"
+      ],
+      "Select Files": [
+        "ファイルを選択"
+      ],
+      "Server upload limit: ": [
+        "サーバーのアップロード上限: "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "自分が使える会員専用ファイルを表示しています。別の記事で使う場合は、その記事用にコピーします。"
+      ],
+      "Showing public files you can use.": [
+        "自分が使える一般公開ファイルを表示しています。"
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "ファイルがサーバーのアップロード上限（%s）を超えています。"
+      ],
+      "These files are visible only to authorized members. ": [
+        "閲覧を許可された会員だけが見られるファイルです。"
+      ],
+      "These files are visible to everyone. ": [
+        "誰でも見られるファイルです。"
+      ],
+      "Upload": [
+        "アップロード"
+      ],
+      "Upload cancelled.": [
+        "アップロードを取り消しました。"
+      ],
+      "Upload images, videos, and documents.": [
+        "画像・動画・資料をアップロードします。"
+      ]
+    }
+  }
+}

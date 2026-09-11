@@ -1,0 +1,29 @@
+.asm-account { max-width: 42rem; overflow-wrap: anywhere; }
+.asm-account form { margin-block: 1.5rem 2rem; }
+.asm-account label { display: block; }
+.asm-account input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+.asm-account textarea, .asm-account select {
+    box-sizing: border-box; width: 100%; max-width: 36rem; min-height: 2.75rem;
+    padding: .65rem .8rem; margin-top: .4rem; font: inherit;
+    color: inherit; background: #fff; border: 1px solid #777; border-radius: .25rem;
+}
+.asm-account textarea { min-height: 8rem; }
+.asm-account button {
+    min-height: 2.75rem; padding: .7rem 1.1rem; font: inherit; line-height: 1.4;
+    color: #fff; background: #202020; border: 1px solid #202020; border-radius: .25rem; cursor: pointer;
+}
+.asm-account button:hover { background: #444; }
+.asm-account :is(input,select,textarea,button,a):focus-visible { outline: 3px solid #2271b1; outline-offset: 3px; }
+.asm-account [role="status"] { padding: 1rem; border-left: .25rem solid #2271b1; background: #f0f6fc; color: #172330; }
+.asm-account dl { display: grid; gap: .4rem; }
+.asm-account dt { font-weight: 600; }
+.asm-account dd { margin: 0 0 1rem; }
+.asm-account-passkeys { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #dcdcde; scroll-margin-top: 3rem; }
+.asm-account .asm-auth-integration { display: inline-block; margin: 0 0 1rem; padding: .3rem .7rem; border: 1px solid #b7d5ef; border-radius: 1rem; background: #e7f2fc; color: #135e96; font-size: .85rem; }
+
+.asm-account fieldset { border: 0; margin: 0; padding: 0; }
+.asm-account fieldset label { margin-block: .75rem; }
+.asm-account .asm-transfer-options { margin-block: 1.5rem; padding: 1rem; border: 1px solid #aaa; }
+@supports selector(:has(*)) {
+    .asm-account form:not(:has(input[name="withdraw_mode"][value="transfer"]:checked)) .asm-transfer-options { display: none; }
+}

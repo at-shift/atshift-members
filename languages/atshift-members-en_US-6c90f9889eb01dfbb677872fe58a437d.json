@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-11 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "en_US",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Attachment Visibility": [
+        "Attachment Visibility"
+      ],
+      "Change Visibility": [
+        "Change Visibility"
+      ],
+      "Choose How to Add Media": [
+        "Choose How to Add Media"
+      ],
+      "Choose a format supported by this block.": [
+        "Choose a format supported by this block."
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "Choose from saved images, videos, and documents."
+      ],
+      "Could not complete the action. Please try again.": [
+        "Could not complete the action. Please try again."
+      ],
+      "Drop Files to Upload": [
+        "Drop Files to Upload"
+      ],
+      "Insert Selected Files": [
+        "Insert Selected Files"
+      ],
+      "Media Library": [
+        "Media Library"
+      ],
+      "Members Only": [
+        "Members Only"
+      ],
+      "Members-Only Media": [
+        "Members-Only Media"
+      ],
+      "Next Page": [
+        "Next Page"
+      ],
+      "No files are available to select.": [
+        "No files are available to select."
+      ],
+      "Open File": [
+        "Open File"
+      ],
+      "Previous Page": [
+        "Previous Page"
+      ],
+      "Processing…": [
+        "Processing…"
+      ],
+      "Public": [
+        "Public"
+      ],
+      "Public Media": [
+        "Public Media"
+      ],
+      "Search": [
+        "Search"
+      ],
+      "Search by Filename": [
+        "Search by Filename"
+      ],
+      "Select Files": [
+        "Select Files"
+      ],
+      "Server upload limit: ": [
+        "Server upload limit: "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "Showing members-only files you can use. Files used in another post will be copied for that post."
+      ],
+      "Showing public files you can use.": [
+        "Showing public files you can use."
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "The file exceeds the server upload limit of %s."
+      ],
+      "These files are visible only to authorized members. ": [
+        "These files are visible only to authorized members. "
+      ],
+      "These files are visible to everyone. ": [
+        "These files are visible to everyone. "
+      ],
+      "Upload": [
+        "Upload"
+      ],
+      "Upload cancelled.": [
+        "Upload cancelled."
+      ],
+      "Upload images, videos, and documents.": [
+        "Upload images, videos, and documents."
+      ]
+    }
+  }
+}

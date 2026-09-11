@@ -1,0 +1,19 @@
+# Publish the plugin runtime and reusable development tools only.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/LICENSE
+!/atshift-members.php
+!/readme.txt
+!/includes/
+!/assets/
+!/languages/
+!/tools/
+!/docs/
+/docs/*
+!/docs/I18N.md
+/tools/__pycache__/
+**/.DS_Store
+
+/tools/check-http-guards.py
