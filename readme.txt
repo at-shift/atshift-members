@@ -3,7 +3,7 @@ Contributors: atshift
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.1β
+Stable tag: 0.1.10
 License: GPLv2 or later
 
 Email-verified membership, protected content, private attachments and optional profile integration. Development beta.
@@ -49,3 +49,11 @@ Pwned Passwords is queried when a password is validated. Only the first five hex
 Service: https://haveibeenpwned.com/Passwords
 Terms: https://haveibeenpwned.com/TermsOfUse
 Privacy: https://haveibeenpwned.com/Privacy
+
+
+== Changelog ==
+= 0.1.10 =
+* Add registration usernames, standalone name ordering and a separate email-change screen.
+* Improve member status controls, administrator-only bans and staff handoff safeguards.
+* Improve profile integration, member classification wording and Japanese translations.
+* Add media preparation and attachment access integration hooks for optional add-ons.

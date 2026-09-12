@@ -14,6 +14,11 @@ final class Admin {
     }
     public function hooks() {
         add_action('admin_menu',[self::class,'filter_posting_menus'],PHP_INT_MAX);
+        add_action('admin_enqueue_scripts',function($hook){
+            if(!in_array($hook,['users.php','user-new.php','user-edit.php','profile.php'],true))return;
+            wp_enqueue_script('asm-role-groups',plugins_url('assets/role-groups.js',dirname(__DIR__).'/atshift-members.php'),[],'0.1.6',true);
+            wp_localize_script('asm-role-groups','asmRoleGroups',['names'=>['administrator'=>__('Site Administrator', 'atshift-members'),'asm_operator'=>__('Site Operator', 'atshift-members'),'asm_member'=>__('User (Posting Permissions)', 'atshift-members')],'members'=>__('Membership Site Roles', 'atshift-members'),'standard'=>__('WordPress Standard Roles', 'atshift-members'),'other'=>__('Other Plugin Roles', 'atshift-members'),'help'=>__('Choose Site Operator for membership administration. Assign duties and management scope in Staff and Permissions.', 'atshift-members')]);
+        });
         add_action('wp_dashboard_setup',function(){
             if(Members::managed(wp_get_current_user())&&!current_user_can('manage_options'))remove_meta_box('dashboard_activity','dashboard','normal');
         },PHP_INT_MAX);
@@ -88,7 +93,7 @@ final class Admin {
                 $api=Registration::profile_api();$available=call_user_func($api['fields'],$selected);
                 if(array_diff($selected,array_keys($available)))$result=new \WP_Error('profile_fields',__('Some field identifiers are unavailable. Custom fields also need an integration that renders and saves them in the forms.', 'atshift-members'));
             }
-            if(!is_wp_error($result))update_option('asm_settings',['enabled'=>!empty($_POST['enabled']),'approval'=>!empty($_POST['approval']),'fields'=>(defined('ASM_PUBLIC_FIELDS')||Registration::api())?(array)Registration::option('fields',[]):$selected],false);
+            if(!is_wp_error($result))update_option('asm_settings',['enabled'=>!empty($_POST['enabled']),'approval'=>!empty($_POST['approval']),'name_order'=>Registration::uses_profile_plugin()?Registration::option('name_order','given_first'):(($_POST['name_order']??'')==='family_first'?'family_first':'given_first'),'fields'=>(defined('ASM_PUBLIC_FIELDS')||Registration::api())?(array)Registration::option('fields',[]):$selected],false);
         } elseif ($op==='mail') {
             $templates=(array)get_option('asm_mail_templates',[]);
             foreach (Mail::defaults() as $type=>$def) {
@@ -348,11 +353,13 @@ final class Admin {
         echo '<input type="hidden" name="user_id" value="'.(int)$id.'">';
         echo '<section class="asm-settings-card asm-member-summary"><header class="asm-member-identity"><h2 class="asm-member-name">'.esc_html($user->display_name).'</h2><p class="asm-member-email">'.esc_html($user->user_email).'</p></header>';
         $state=get_user_meta($id,'_asm_state',true);
+        if(current_user_can('manage_options'))echo '<p>'.esc_html__('Banned accounts cannot log in. Accounts, content, and records are retained. Only a site administrator can restore access.', 'atshift-members').'</p>';
+        $handoff=Members::handoff_error($id);if(is_wp_error($handoff))echo '<p class="asm-warning">'.esc_html($handoff->get_error_message()).'</p>';
         $state_badge=['active'=>[__('Currently Active', 'atshift-members'),'active'],'suspended'=>[__('Currently Suspended', 'atshift-members'),'suspended'],'pending'=>[__('Pending Approval', 'atshift-members'),'pending']][$state]??[Members::state_label($state),'other'];
         echo ('<div class="asm-member-status">' . '<h3>' . esc_html__('Member Status', 'atshift-members') . '</h3>' . '<span class="asm-status-badge asm-status-badge-').esc_attr($state_badge[1]).'">'.esc_html($state_badge[0]).'</span></div>';
         if(!is_wp_error(Members::state_error($id))){
             echo '<input type="hidden" name="state_before" value="'.esc_attr($state).('">' . '<div class="asm-member-state-controls">' . '<label for="asm-member-state-select">' . esc_html__('Change status:', 'atshift-members') . '</label>' . '<select id="asm-member-state-select" name="state" required>');
-            foreach(['active','suspended','pending'] as $value)echo '<option value="'.esc_attr($value).'" '.selected($state,$value,false).'>'.esc_html(Members::state_label($value)).'</option>';
+            foreach(array_merge(['active','suspended','pending'],current_user_can('manage_options')?['banned']:[]) as $value)echo '<option value="'.esc_attr($value).'" '.selected($state,$value,false).'>'.esc_html(Members::state_label($value)).'</option>';
             echo ('</select>' . '</div>' . '<div class="asm-pro-tip asm-warning asm-posting-guidance">' . '<p>' . esc_html__('Saving a status change sends the member a notification email and ends any active login sessions.', 'atshift-members') . '</p>' . '</div>');
             self::save_action('asm-member-state',__('Member Information', 'atshift-members'),__('Save Changes', 'atshift-members'),__('Save this member\'s status.', 'atshift-members'));
         }
@@ -416,7 +423,7 @@ final class Admin {
         echo ('<section class="asm-settings-card" id="asm-profile-form-settings">' . '<h2>' . esc_html__('Registration and Editing Forms', 'atshift-members') . '</h2>');
         echo ('<p>' . esc_html__('Profile information collected during registration. Members can view it on Your Account Information and update it on Edit Account Information.', 'atshift-members') . '</p>');
         $api=Registration::profile_api();$fields=call_user_func($api['fields'],Registration::fields());
-        echo ('<h3>' . esc_html__('Required Account Registration and Editing Fields', 'atshift-members') . '</h3>' . '<ul class="ul-disc">' . '<li>' . esc_html__('Email address (required; verified by confirmation email)', 'atshift-members') . '</li>' . '<li>' . esc_html__('Password (required; set during registration)', 'atshift-members') . '</li>' . '</ul>');
+        echo ('<h3>' . esc_html__('Required Account Registration and Editing Fields', 'atshift-members') . '</h3>' . '<ul class="ul-disc">' . '<li>' . esc_html__('Username (required; cannot be changed after registration)', 'atshift-members') . '</li>' . '<li>' . esc_html__('Email address (required; verified by confirmation email)', 'atshift-members') . '</li>' . '<li>' . esc_html__('Password (required; set during registration)', 'atshift-members') . '</li>' . '</ul>');
         $profile_api=Registration::api();
         $configured_fields=$profile_api&&is_callable($profile_api['settings_fields']??null)?call_user_func($profile_api['settings_fields']):[];
         if(Registration::uses_profile_plugin()){
@@ -434,6 +441,7 @@ final class Admin {
                 echo ('</ul>' . '<p class="description">' . esc_html__('Excluded fields are omitted from member forms. Integration Not Implemented means the field does not yet have an atshift Members integration. Email addresses, passwords, and saving are handled by atshift Members account procedures.', 'atshift-members') . '</p>');
             }else echo ('<p>' . esc_html__('Create profile fields in atshift User Profile Fields.', 'atshift-members') . '</p>');
         }else{
+            echo '<p><label>'.esc_html__('Name Order', 'atshift-members').' <select name="name_order"><option value="given_first" '.selected(Registration::option('name_order','given_first'),'given_first',false).'>'.esc_html__('First name, then last name', 'atshift-members').'</option><option value="family_first" '.selected(Registration::option('name_order','given_first'),'family_first',false).'>'.esc_html__('Last name, then first name', 'atshift-members').'</option></select></label></p>';
             echo ('<h3>' . esc_html__('Profile Fields for Registration and Editing', 'atshift-members') . '</h3>');
             if($fields){
                 echo '<ul class="ul-disc">';
@@ -444,7 +452,7 @@ final class Admin {
                 }
                 echo '</ul>';
             }
-            echo ('<p>' . esc_html__('Without a profile plugin integration, registration requires only an email address and password by default. Add any additional profile fields using the settings below.', 'atshift-members') . '</p>');
+            echo ('<p>' . esc_html__('Without a profile plugin integration, the form includes a username, first and last names, email address, and password. Add any additional profile fields using the settings below.', 'atshift-members') . '</p>');
         }
         if(Registration::passkey_integration_available()&&!Registration::uses_profile_passkeys())echo ('<h3>' . esc_html__('Authentication Features Available After Registration', 'atshift-members') . '</h3>' . '<p>' . esc_html__('Members can register and manage passkeys. After signing up, add a passkey on Edit Account Information to use it for future logins.', 'atshift-members') . '</p>');
         echo '<details class="asm-disclosure"'.(Registration::uses_profile_plugin()?' open':'').('>' . '<summary>' . esc_html__('Add or Change Fields', 'atshift-members') . '</summary>');

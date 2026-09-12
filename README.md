@@ -1,6 +1,6 @@
 # atshift Members
 
-**0.1β — public beta**
+**0.1.10 — public beta**
 
 A WordPress membership plugin with email-verified registration, account management, protected content, and private attachments.
 

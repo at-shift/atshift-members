@@ -1,45 +1,45 @@
 # Translation catalog for atshift Members.
 # Licensed under GPL-2.0-or-later.
 msgid ""
-msgstr "Project-Id-Version: atshift Members 0.1β\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-11 00:00+0000\nPO-Revision-Date: 2026-09-11 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Domain: atshift-members\n"
+msgstr "Project-Id-Version: atshift Members 0.1.10\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-11 00:00+0000\nPO-Revision-Date: 2026-09-11 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Domain: atshift-members\n"
 
-#: includes/class-profile.php:101
+#: includes/class-profile.php:102
 msgid " (Optional)"
 msgstr " (任意)"
 
-#: includes/class-profile.php:101
+#: includes/class-profile.php:102
 msgid " (Required)"
 msgstr " (必須)"
 
-#: includes/class-admin.php:371
+#: includes/class-admin.php:378
 msgid " (default)"
 msgstr " (デフォルト)"
 
-#: includes/class-admin.php:442
+#: includes/class-admin.php:450
 msgid " (required)"
 msgstr "（必須）"
 
-#: includes/class-admin.php:428
+#: includes/class-admin.php:435
 msgid " (user classification) "
 msgstr "（ユーザー分類） "
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid " Email Notifications"
 msgstr " 利用時のメール通知"
 
-#: includes/class-admin.php:139 includes/class-admin.php:179
+#: includes/class-admin.php:144 includes/class-admin.php:184
 msgid " and "
 msgstr "と"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:540
+#: includes/class-admin.php:548
 msgid "%1$s specifies the public directory containing WordPress, and %2$s specifies members-only storage. WordPress must be able to read and write in the private directory."
 msgstr "%1$s は WordPress を含む公開用フォルダー、%2$s は会員専用ファイルの保存先です。会員専用フォルダーは、WordPress から読み書きできるようにしてください。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:181
+#: includes/class-admin.php:186
 msgid "%1$s: %2$s"
 msgstr "%1$s：%2$s"
 
@@ -75,7 +75,7 @@ msgstr "%s一覧のページ送り"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:188
+#: includes/class-admin.php:193
 msgid "%s makes it easy to configure profile fields and extend registration, account display, and editing forms."
 msgstr "%sを連携すると、簡単にプロフィール項目を設定し、会員登録・アカウント情報の表示と編集フォームを拡張できます。"
 
@@ -109,59 +109,59 @@ msgstr "%sの公開を予約しました。"
 msgid "%s updated."
 msgstr "%sを更新しました。"
 
-#: includes/class-screens.php:182
+#: includes/class-screens.php:209
 msgid "(Unnamed Attachment)"
 msgstr "（名称なしの添付ファイル）"
 
-#: includes/class-screens.php:179 includes/class-screens.php:194
+#: includes/class-screens.php:206 includes/class-screens.php:221
 msgid "(Untitled)"
 msgstr "（無題）"
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid ". Create an account if you do not have one."
 msgstr "。アカウントがなければ作成してください。"
 
-#: includes/class-admin.php:237
+#: includes/class-admin.php:242
 msgid "1. Set Up Member Pages"
 msgstr "1. 会員用ページの準備"
 
-#: includes/class-admin.php:238
+#: includes/class-admin.php:243
 msgid "2. Registration and Administration"
 msgstr "2. 会員登録・運営"
 
-#: includes/class-admin.php:239
+#: includes/class-admin.php:244
 msgid "3. Pro Add-on Features"
 msgstr "3. Proアドオンの機能"
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid ": Access is temporarily suspended. The member cannot log in, but their information and content are retained. Change the status back to Active to restore access."
 msgstr ": 利用を一時停止している状態です。ログインできませんが、登録情報や投稿は削除されません。「有効」に戻すと、利用を再開できます。"
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid ": Can log in and use member features."
 msgstr ": ログインして、会員向けの機能を利用できます。"
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid ": Classification name; "
 msgstr "：分類名、"
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid ": Registration is awaiting review. The member cannot log in yet. Change the status to Active after reviewing their information."
 msgstr ": 登録内容の確認を待っている状態です。まだログインできません。確認が済んだら「有効」に変更すると、利用を始められます。"
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid ": Rejection reason"
 msgstr "：却下理由"
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid ": Requested classification; "
 msgstr "：申請した分類、"
 
-#: includes/class-members.php:74
+#: includes/class-members.php:87
 msgid "A closed account cannot be restored by removing its suspension."
 msgstr "退会済みアカウントは停止解除では復帰できません。"
 
-#: includes/class-admin.php:292
+#: includes/class-admin.php:297
 msgid "A free plugin for adding fields such as phone numbers and arranging profile forms. It is optional: atshift Members can also provide basic name and biography fields on its own."
 msgstr "電話番号など、会員に入力してもらう項目を増やしたり、入力欄を整えたりする無料のプラグインです。会員登録を始めるために必須のものではありません。このプラグインだけでも、お名前 (表示名) と自己紹介を登録・編集できます。"
 
@@ -171,37 +171,41 @@ msgstr "電話番号など、会員に入力してもらう項目を増やした
 msgid "A link to a %s."
 msgstr "%sへのリンクです。"
 
-#: includes/class-admin.php:394
+#: includes/class-admin.php:401
 msgid "A page for member account procedures."
 msgstr "会員がアカウントの手続きを行うページです。"
 
-#: includes/class-mail.php:22
+#: includes/class-mail.php:25
 msgid "A password reset was requested for your account. Follow this link to reset it.\n{link}\n\nIf you did not request this, please ignore this email."
 msgstr "パスワードの再設定が申請されました。次のリンクから手続きを行ってください。\n{link}\n\n心当たりがない場合は、このメールを破棄してください。"
 
-#: includes/class-admin.php:482
+#: includes/class-admin.php:490
 msgid "A private key used to verify responses with Cloudflare. Saved values are never displayed. Leave this blank to keep the current key. If you change the site key, enter its matching secret key as well."
 msgstr "確認結果を Cloudflare に問い合わせるための非公開のキーです。保存済みの値は表示しません。変更しない場合は空欄のまま保存できます。サイトキーを変えるときは、対応するシークレットキーも入力してください。"
 
-#: includes/class-admin.php:527
+#: includes/class-admin.php:535
 msgid "A small marker file is also placed in shared storage to verify the connection."
 msgstr "共有フォルダーには、接続先を確認する小さなファイルも置きます。"
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid "About Member Status and Changes"
 msgstr "利用状態と変更方法について"
 
-#: includes/class-admin.php:526
+#: includes/class-admin.php:534
 msgid "Absolute Path to the Members-Only Storage Directory"
 msgstr "会員専用の保存フォルダーの絶対パス"
 
-#: includes/class-admin.php:525
+#: includes/class-admin.php:533
 msgid "Absolute Path to the Public Directory Containing WordPress"
 msgstr "WordPressを含む公開領域の絶対パス"
 
-#: includes/class-admin.php:411
+#: includes/class-admin.php:418
 msgid "Accepting Member Registrations"
 msgstr "会員登録の受付方法"
+
+#: includes/class-mail.php:23
+msgid "Account Banned"
+msgstr "アカウントの利用禁止"
 
 #: includes/class-mail.php:20
 msgid "Account Closed"
@@ -215,7 +219,7 @@ msgstr "退会処理中"
 msgid "Account Removed"
 msgstr "退会済み"
 
-#: includes/class-mail.php:21
+#: includes/class-mail.php:24
 msgid "Account Suspended"
 msgstr "会員停止"
 
@@ -227,7 +231,7 @@ msgstr "退会手続き中です。少し待ってください。"
 msgid "Activate"
 msgstr "有効にする"
 
-#: includes/class-admin.php:336 includes/class-member-list-table.php:34 includes/class-members.php:5
+#: includes/class-admin.php:341 includes/class-member-list-table.php:34 includes/class-members.php:5
 msgid "Active"
 msgstr "有効"
 
@@ -241,33 +245,33 @@ msgstr "新規追加"
 msgid "Add New %s"
 msgstr "%sを追加"
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "Add a Turnstile widget for this site and register the domains where it will be used."
 msgstr "Turnstile でこのサイト用の設定を追加し、利用するドメインを登録します。"
 
-#: includes/class-admin.php:450
+#: includes/class-admin.php:458
 msgid "Add or Change Fields"
 msgstr "項目を追加・変更するには"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:540
+#: includes/class-admin.php:548
 msgid "Add these settings to %s before the comment that says to stop editing. If they already exist, edit them instead of adding duplicates."
 msgstr "%s の「編集が必要なのはここまでです」というコメントより前に追加します。同じ設定がすでにある場合は、追加せずに既存の内容を変更してください。"
 
-#: includes/class-admin.php:285
+#: includes/class-admin.php:290
 msgid "Add tools for reviewing posts, sending announcements, and sharing responsibilities among staff."
 msgstr "会員サイトの投稿確認や、お知らせの配信、スタッフ間の分担に必要な機能を追加します。"
 
-#: includes/class-admin.php:251
+#: includes/class-admin.php:256
 msgid "Additional Settings"
 msgstr "追加の設定"
 
-#: includes/class-admin.php:298
+#: includes/class-admin.php:303
 msgid "Adds more design controls to the free atshift Freeform Login plugin. Use a custom logo and adjust the form's position, opacity, border, corner radius, and shadow. Button borders and shadows can also be customized."
 msgstr "無料版の atshift Freeform Login に、ログイン画面の見た目をより細かく調整する機能を追加します。独自のロゴ画像を表示したり、フォームの位置・透明度・枠線・角の丸み・影を調整したりできます。ボタンの枠線や影も設定でき、サイトのデザインに合わせたログイン画面を作れます。"
 
-#: includes/class-members.php:72
+#: includes/class-members.php:85
 msgid "Administrator permissions are required to change operators."
 msgstr "運営者の変更には管理者権限が必要です。"
 
@@ -281,13 +285,13 @@ msgstr "すべて"
 msgid "All %s"
 msgstr "%s一覧"
 
-#: includes/class-admin.php:307
+#: includes/class-admin.php:312
 msgid "All Members"
 msgstr "全会員"
 
-#: includes/class-admin.php:312
+#: includes/class-admin.php:317
 msgid "Allowed User Categories"
-msgstr "許可するユーザーカテゴリー"
+msgstr "許可する会員の分類"
 
 #: includes/class-withdrawal.php:105
 msgid "An administrator needs to verify the recipient account for transferred content."
@@ -297,11 +301,11 @@ msgstr "移譲先の運営名義を管理者が確認する必要があります
 msgid "An operation is in progress. Please try again."
 msgstr "処理中です。もう一度お試しください。"
 
-#: includes/class-admin.php:296
+#: includes/class-admin.php:301
 msgid "An optional plugin for styling your login page to match your site and enabling passkey login. It is not required for member registration."
 msgstr "ログイン画面をサイトの雰囲気に合わせて整えたいときに使う、任意のプラグインです。「パスキー」ログインを会員制サイトに導入したい場合はこのプラグインを利用すると可能です。会員登録を始めるために必須のものではありません。"
 
-#: includes/class-admin.php:287
+#: includes/class-admin.php:292
 msgid "Announcement Emails and Scheduling"
 msgstr "お知らせメールの配信・日時予約"
 
@@ -313,19 +317,19 @@ msgstr "適用"
 msgid "Approval or Access Restored"
 msgstr "承認・停止解除"
 
-#: includes/class-admin.php:376
+#: includes/class-admin.php:383
 msgid "Ask a site administrator to change the allowed post types."
 msgstr "投稿先の変更は、サイト管理者に依頼してください。"
 
-#: includes/class-admin.php:288
+#: includes/class-admin.php:293
 msgid "Assign post approvals, announcement delivery, and CSV member invitations to individual staff members."
 msgstr "投稿の承認、お知らせの配信、CSV による会員招待を、担当者ごとに任せられます。"
 
-#: includes/class-admin.php:170
+#: includes/class-admin.php:175
 msgid "Assigns member management responsibilities by category"
 msgstr "カテゴリーごとに会員管理の担当範囲を設定"
 
-#: includes/class-files.php:286
+#: includes/class-files.php:287
 msgid "Attach File"
 msgstr "添付する"
 
@@ -333,23 +337,31 @@ msgstr "添付する"
 msgid "Attach Files"
 msgstr "ファイルの添付"
 
-#: assets/media.js:99
+#: assets/media.js:100
 msgid "Attachment Visibility"
 msgstr "添付ファイルの公開範囲"
 
-#: includes/class-admin.php:449
+#: includes/class-admin.php:457
 msgid "Authentication Features Available After Registration"
 msgstr "登録後に利用できる認証機能"
 
-#: includes/class-admin.php:366 includes/class-member-list-table.php:9
+#: includes/class-admin.php:373 includes/class-member-list-table.php:9
 msgid "Available Post Types"
 msgstr "作成できる投稿"
 
-#: includes/class-admin.php:469
+#: includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Banned"
+msgstr "利用禁止（BAN）"
+
+#: includes/class-admin.php:356
+msgid "Banned accounts cannot log in. Accounts, content, and records are retained. Only a site administrator can restore access."
+msgstr "利用禁止（BAN）にするとログインできなくなります。アカウント・投稿・記録は保持します。利用再開はサイト管理者のみが設定できます。"
+
+#: includes/class-admin.php:477
 msgid "Before launching a membership site, check any page caching plugins and server caches to prevent one member's information from being shown to someone else. "
 msgstr "会員制サイトを運営する際は、会員ページに他の人の情報が表示されないよう、ページの内容を保存して再利用するキャッシュの設定を確認してください。キャッシュ系プラグインやサーバーなどで、"
 
-#: includes/class-admin.php:527
+#: includes/class-admin.php:535
 msgid "Before saving, the plugin checks that it can create, read, and delete a test file in the specified directory."
 msgstr "指定したフォルダーで、テスト用ファイルの作成・読み取り・削除を確認してから保存します。"
 
@@ -357,7 +369,7 @@ msgstr "指定したフォルダーで、テスト用ファイルの作成・読
 msgid "Biography"
 msgstr "自己紹介"
 
-#: includes/class-admin.php:516
+#: includes/class-admin.php:524
 msgid "Body"
 msgstr "本文"
 
@@ -383,7 +395,7 @@ msgstr "PRO アドオンを購入"
 msgid "By %s"
 msgstr "作者: %s"
 
-#: includes/class-files.php:228
+#: includes/class-files.php:229
 msgid "Cannot access the storage location."
 msgstr "保存先を利用できません。"
 
@@ -391,11 +403,11 @@ msgstr "保存先を利用できません。"
 msgid "Cannot attach this file."
 msgstr "添付できません。"
 
-#: includes/class-registration.php:196
+#: includes/class-registration.php:210
 msgid "Cannot change the email address."
 msgstr "メールアドレスを変更できません。"
 
-#: includes/class-registration.php:133
+#: includes/class-registration.php:148
 msgid "Cannot complete registration. Please try logging in or resetting your password."
 msgstr "登録を完了できません。ログインまたはパスワード再設定をご利用ください。"
 
@@ -427,7 +439,11 @@ msgstr "元のファイルを読み込めません。"
 msgid "Cannot save."
 msgstr "保存できません。"
 
-#: includes/class-screens.php:186
+#: includes/class-screens.php:157 includes/class-screens.php:186
+msgid "Change Email Address"
+msgstr "メールアドレスの変更"
+
+#: includes/class-screens.php:213
 msgid "Change Selection"
 msgstr "選択し直す"
 
@@ -435,35 +451,35 @@ msgstr "選択し直す"
 msgid "Change Visibility"
 msgstr "公開範囲を選び直す"
 
-#: includes/class-admin.php:67
+#: includes/class-admin.php:72
 msgid "Change posting permissions in Posting Settings."
 msgstr "投稿の許可は「投稿設定」で変更してください。"
 
-#: includes/class-admin.php:361
+#: includes/class-admin.php:368
 msgid "Change role:"
 msgstr "権限の変更："
 
-#: includes/class-admin.php:354
+#: includes/class-admin.php:361
 msgid "Change status:"
 msgstr "利用状態の変更："
 
-#: includes/class-admin.php:376
+#: includes/class-admin.php:383
 msgid "Change the allowed post types in Posting Settings."
 msgstr "投稿先を変更するには、投稿設定で行います。"
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid "Changing a member's status sends them a notification email and ends any active login sessions."
 msgstr "状態を変更すると、対象の会員へ案内メールを送信します。ログイン中の場合は、一度ログアウトされます。"
 
-#: includes/class-admin.php:468
+#: includes/class-admin.php:476
 msgid "Check Cache Settings Before Launch"
 msgstr "注意: サイト運用前にキャッシュの設定を確認してください"
 
-#: includes/class-admin.php:527
+#: includes/class-admin.php:535
 msgid "Check and Save Storage Location"
 msgstr "保存先を確認して保存"
 
-#: includes/class-registration.php:187
+#: includes/class-registration.php:201
 msgid "Check the address or try again later."
 msgstr "アドレスを確認するか時間をおいて再試行してください。"
 
@@ -471,11 +487,11 @@ msgstr "アドレスを確認するか時間をおいて再試行してくださ
 msgid "Check the file extension and contents. This file cannot be attached in the selected format."
 msgstr "ファイルの拡張子と内容を確認してください。この形式として添付できません。"
 
-#: includes/class-profile.php:119
+#: includes/class-profile.php:120
 msgid "Check the format and length of your entries."
 msgstr "入力内容の形式や文字数を確認してください。"
 
-#: includes/class-members.php:80
+#: includes/class-members.php:93
 msgid "Check the selected members."
 msgstr "選択した会員を確認してください。"
 
@@ -483,7 +499,7 @@ msgstr "選択した会員を確認してください。"
 msgid "Check the shared directory connection. The storage location could not be verified."
 msgstr "共有フォルダーの接続を確認してください。保存先を確認できません。"
 
-#: includes/class-admin.php:99
+#: includes/class-admin.php:104
 msgid "Check the subject, body, and required {link} placeholder."
 msgstr "件名・本文・必須の {link} を確認してください。"
 
@@ -495,13 +511,17 @@ msgstr "対応形式とサーバーのアップロード上限を確認してく
 msgid "Choose How to Add Media"
 msgstr "メディアの選択方法"
 
-#: includes/class-members.php:142
+#: includes/class-members.php:156
 msgid "Choose Member or Site Operator."
 msgstr "会員またはサイト運営者を選択してください。"
 
-#: includes/class-files.php:285
+#: includes/class-files.php:286
 msgid "Choose Members Only when using Add Media or a block's Upload control."
 msgstr "「メディアを追加」やブロックの「アップロード」から、「会員のみ」を選んで添付できます。"
+
+#: includes/class-admin.php:20
+msgid "Choose Site Operator for membership administration. Assign duties and management scope in Staff and Permissions."
+msgstr "会員サイトの運営を任せる場合は「サイト運営者」を選びます。担当業務と管理範囲は「担当者・権限」で設定します。"
 
 #: includes/class-files.php:184 includes/class-media.php:90
 msgid "Choose a file within the server's upload size limit."
@@ -527,15 +547,15 @@ msgstr "保存済みの画像・動画・資料から選びます。"
 msgid "Choose how to close your account."
 msgstr "退会方法を選択してください。"
 
-#: includes/class-members.php:78
+#: includes/class-members.php:91
 msgid "Choose the new member status."
 msgstr "変更先の利用状態を選択してください。"
 
-#: includes/class-members.php:135
+#: includes/class-members.php:149
 msgid "Choose the new status."
 msgstr "変更後の状態を選択してください。"
 
-#: includes/class-admin.php:223
+#: includes/class-admin.php:228
 msgid "Choose whether to accept new registrations and whether they need approval. You can also review the name, biography, and other fields members will fill in."
 msgstr "「だれでも登録できるようにするか」「登録後に担当者が確認するか」を決めます。会員に入力してもらう名前や自己紹介の項目もここで確認できます。"
 
@@ -543,87 +563,87 @@ msgstr "「だれでも登録できるようにするか」「登録後に担当
 msgid "Choose which members are allowed to post."
 msgstr "投稿を許可する会員を選択してください。"
 
-#: includes/class-admin.php:304
+#: includes/class-admin.php:309
 msgid "Choose which members can create content for each post type registered on this site. All Members means members whose status is Active. By default, only standard WordPress posts are available to all members."
 msgstr "このサイトに登録されている投稿タイプごとに、投稿を許可する会員を選びます。「全会員」は利用状態が「有効」の会員です。初期状態では「投稿」だけを全会員に許可します。"
 
-#: includes/class-admin.php:224
+#: includes/class-admin.php:229
 msgid "Choose which post types members can use and which members can create content."
 msgstr "会員が投稿できる投稿タイプと、投稿を許可する会員を設定するための画面です。"
 
-#: includes/class-admin.php:458
+#: includes/class-admin.php:466
 msgid "Click Save Registration Settings on the right to apply your changes."
 msgstr "入力した内容を反映するには、右側の「登録設定を保存」を押してください。"
 
-#: includes/class-screens.php:13 includes/class-screens.php:159
+#: includes/class-screens.php:13 includes/class-screens.php:188
 msgid "Close Account"
 msgstr "退会手続き"
 
-#: includes/class-screens.php:188
+#: includes/class-screens.php:215
 msgid "Closing your account deletes your account and personal data and prevents further login. If you want to preserve contributions, you can transfer selected posts to the site operator. Review the deletion and transfer details on the next screen."
 msgstr "退会するとアカウントと本人のデータを削除し、ログインできなくなります。残したい投稿がある場合だけ、運営への移譲を選べます。次の画面で削除・移譲する内容を確認します。"
 
-#: includes/class-admin.php:544
+#: includes/class-admin.php:552
 msgid "Configure IP addresses and NAS credentials on the server. atshift Members uses the mounted directory. It does not set up VPN or cloud API connections, import existing documents, or migrate files when storage locations change."
 msgstr "IPアドレスやNASのユーザー名・パスワードはサーバー側で設定します。Membersは接続済みフォルダーを利用します。VPN接続、クラウドAPI接続、既存資料の取り込み、保存先変更時のファイル移行は自動では行いません。"
 
-#: includes/class-admin.php:474
+#: includes/class-admin.php:482
 msgid "Configured"
 msgstr "設定済み"
 
-#: includes/class-admin.php:552
+#: includes/class-admin.php:560
 msgid "Configured in wp-config.php"
 msgstr "wp-config.php で設定済み"
 
-#: includes/class-admin.php:486
+#: includes/class-admin.php:494
 msgid "Configured means the keys have been saved. Test an actual request form afterward to verify connectivity and domain settings."
 msgstr "「設定済み」はキーが保存されている状態です。接続やドメインの設定が正しいかは、保存後に実際の申請フォームで確認してください。"
 
-#: includes/class-admin.php:163
+#: includes/class-admin.php:168
 msgid "Configures and manages user categories"
-msgstr "ユーザーカテゴリーを設定・管理"
+msgstr "会員の分類を設定・管理"
 
-#: includes/class-admin.php:158
+#: includes/class-admin.php:163
 msgid "Configures the profile layout"
 msgstr "プロフィールの構成を設定"
 
-#: includes/class-admin.php:158
+#: includes/class-admin.php:163
 msgid "Configures the profile layout and user classifications"
 msgstr "プロフィールの構成・ユーザー分類を設定"
 
-#: includes/class-screens.php:185
+#: includes/class-screens.php:212
 msgid "Confirm Account Closure"
 msgstr "退会を確定する"
 
-#: includes/class-screens.php:205
+#: includes/class-screens.php:232
 msgid "Confirm Email Address"
 msgstr "メールアドレスを確認"
 
-#: includes/class-screens.php:165
+#: includes/class-screens.php:164
 msgid "Confirm Email Address Change"
 msgstr "メールアドレスの変更を確定"
 
-#: includes/class-screens.php:205
+#: includes/class-screens.php:232
 msgid "Confirm your email address to continue registration."
 msgstr "メールアドレスを確認し、登録を続けます。"
 
-#: includes/class-admin.php:508
+#: includes/class-admin.php:516
 msgid "Confirms that the password has changed. The password itself is never included."
 msgstr "パスワードが変更されたとき、本人へ変更の事実を知らせます。パスワード自体は含めません。"
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "Copy the issued Site Key and Secret Key into the fields below, then save them."
 msgstr "発行された「サイトキー」と「シークレットキー」を、下の欄にコピーして保存します。"
 
-#: includes/class-registration.php:143
+#: includes/class-registration.php:157
 msgid "Could not complete registration. Please contact the administrator."
 msgstr "登録を完了できませんでした。管理者へお問い合わせください。"
 
-#: includes/class-registration.php:137
+#: includes/class-registration.php:151
 msgid "Could not complete registration. Request a new confirmation email."
 msgstr "登録を完了できませんでした。新しい確認メールを申請してください。"
 
-#: includes/class-screens.php:127
+#: includes/class-screens.php:130
 msgid "Could not complete the action."
 msgstr "操作を完了できませんでした。"
 
@@ -631,15 +651,15 @@ msgstr "操作を完了できませんでした。"
 msgid "Could not complete the action. Please try again."
 msgstr "操作を完了できませんでした。もう一度お試しください。"
 
-#: includes/class-files.php:276
+#: includes/class-files.php:277
 msgid "Could not delete the file from storage."
 msgstr "保存先で削除できませんでした。"
 
-#: includes/class-members.php:160
+#: includes/class-members.php:176
 msgid "Could not remove the management scope."
 msgstr "担当範囲を解除できませんでした。"
 
-#: includes/class-members.php:163
+#: includes/class-members.php:179
 msgid "Could not restore the management scope."
 msgstr "担当範囲を復元できませんでした。"
 
@@ -663,23 +683,23 @@ msgstr "添付情報を保存できませんでした。"
 msgid "Could not save the confirmation details."
 msgstr "確認内容を保存できませんでした。"
 
-#: includes/class-registration.php:156
+#: includes/class-registration.php:170
 msgid "Could not save the invitation."
 msgstr "招待を保存できませんでした。"
 
-#: includes/class-members.php:159
+#: includes/class-members.php:175
 msgid "Could not save the management scope."
 msgstr "担当範囲を保存できませんでした。"
 
-#: includes/class-members.php:168
+#: includes/class-members.php:184
 msgid "Could not save the member information."
 msgstr "会員情報を保存できませんでした。"
 
-#: includes/class-members.php:165
+#: includes/class-members.php:181
 msgid "Could not save the member role."
 msgstr "会員の権限を保存できませんでした。"
 
-#: includes/class-members.php:150
+#: includes/class-members.php:166
 msgid "Could not save the member status."
 msgstr "利用状態を保存できませんでした。"
 
@@ -687,11 +707,7 @@ msgstr "利用状態を保存できませんでした。"
 msgid "Could not save the storage settings."
 msgstr "保存先設定を保存できませんでした。"
 
-#: includes/class-members.php:200
-msgid "Could not save."
-msgstr "保存できませんでした。"
-
-#: includes/class-members.php:126
+#: includes/class-members.php:140
 msgid "Could not start saving."
 msgstr "保存を開始できませんでした。"
 
@@ -699,7 +715,7 @@ msgstr "保存を開始できませんでした。"
 msgid "Could not verify the account closure request."
 msgstr "退会処理を確認できません。"
 
-#: includes/class-members.php:128
+#: includes/class-members.php:142
 msgid "Could not verify the member information."
 msgstr "会員情報を確認できませんでした。"
 
@@ -711,73 +727,73 @@ msgstr "保存先の書き込み・読み取り・削除を確認できません
 msgid "Could not verify. Please wait before requesting a new confirmation email."
 msgstr "確認できません。時間をおいて新しい確認メールを申請してください。"
 
-#: includes/class-registration.php:117 includes/class-registration.php:122
+#: includes/class-registration.php:117 includes/class-registration.php:132
 msgid "Could not verify. Request a new confirmation email."
 msgstr "確認できません。新しい確認メールを申請してください。"
 
-#: includes/class-admin.php:407
+#: includes/class-admin.php:414
 msgid "Create Member Pages"
 msgstr "専用ページを作成"
 
-#: includes/class-admin.php:407
+#: includes/class-admin.php:414
 msgid "Create all missing member pages. Existing pages are left unchanged."
 msgstr "未作成の固定ページをまとめて追加します。作成済みのページの内容は変更しません。"
 
-#: includes/class-admin.php:294
+#: includes/class-admin.php:299
 msgid "Create hierarchical user classifications, such as branches, departments, or membership types. This paid add-on requires the free atshift User Profile Fields plugin."
 msgstr "支部・部署・会員種別など、用途に合わせた任意の階層ユーザー分類を作成し、会員を分類できます。無料版の atshift User Profile Fields と一緒に使う有料アドオンです。"
 
-#: includes/class-admin.php:435
+#: includes/class-admin.php:442
 msgid "Create profile fields in atshift User Profile Fields."
 msgstr "プロフィール項目は atshift User Profile Fields で作成できます。"
 
-#: includes/class-admin.php:390
+#: includes/class-admin.php:397
 msgid "Create the five pages used for registration and account management. Click Create Member Pages to add all five. Pages that already exist are left unchanged; only missing pages are created."
 msgstr "会員登録やアカウント情報の確認などに使う、5種類の固定ページをまとめて作成します。初めて設定する場合は、5ページすべてを作成するために「専用ページを作成」ボタンを押してください。「専用ページを作成」ボタンを押しても作成済みのページがある場合、そのページを変更せずに未作成のページだけを追加できます。"
 
-#: includes/class-admin.php:535
+#: includes/class-admin.php:543
 msgid "Create the members-only directory outside the server's public directory first. Set the path here or in wp-config.php. The plugin does not create the directory automatically."
 msgstr "会員専用フォルダーは、サーバーの公開領域の外に事前に用意してください。画面で指定するほか、WordPress の設定ファイル (wp-config.php) で指定することもできます。フォルダーは自動では作成されません。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:316
+#: includes/class-admin.php:321
 msgid "Create user categories in %s."
-msgstr "%sでユーザーカテゴリーを作成してください。"
+msgstr "%sで会員の分類を作成してください。"
 
-#: includes/class-admin.php:551
+#: includes/class-admin.php:559
 msgid "Current storage: "
 msgstr "現在の保存先："
 
-#: includes/class-admin.php:351
+#: includes/class-admin.php:358
 msgid "Currently Active"
 msgstr "有効中"
 
-#: includes/class-admin.php:351
+#: includes/class-admin.php:358
 msgid "Currently Suspended"
 msgstr "停止中"
 
-#: includes/class-admin.php:226
+#: includes/class-admin.php:231
 msgid "Customize the automatic emails sent for registration, password changes, and other account events. Default text is provided. Messages are sent through the standard WordPress mail function."
 msgstr "会員登録やパスワードの変更時に、自動で届くメールの内容を任意の文章に変更できます。最低限の文章は初期状態でも入力されています。この機能は WordPress 標準のメール送信機能を利用します。"
 
-#: includes/class-admin.php:412
+#: includes/class-admin.php:419
 msgid "Decide whether new members can start using the site immediately. Approval is unnecessary if the site is open to everyone."
 msgstr "まずは、登録した人がすぐに利用を始めてよいかを決めましょう。誰でも参加できるサイトなら承認は不要です。"
 
-#: includes/class-files.php:283
+#: includes/class-files.php:284
 msgid "Delete Attachment"
 msgstr "添付を削除"
 
-#: includes/class-admin.php:483
+#: includes/class-admin.php:491
 msgid "Delete Saved Keys"
 msgstr "保存したキーを削除する"
 
-#: includes/class-admin.php:483
+#: includes/class-admin.php:491
 msgid "Delete both keys"
 msgstr "2つのキーを削除する"
 
-#: includes/class-screens.php:190
+#: includes/class-screens.php:217
 msgid "Delete everything and close my account"
 msgstr "すべて削除して退会する"
 
@@ -789,23 +805,23 @@ msgstr "全削除の場合、移譲する投稿の選択を外してください
 msgid "Display Name"
 msgstr "表示名"
 
-#: includes/class-admin.php:160
+#: includes/class-admin.php:165
 msgid "Displays integrated fields in registration, account, and editing forms"
 msgstr "連携対象の項目を会員登録・アカウント情報・編集フォームに表示"
 
-#: includes/class-admin.php:164
+#: includes/class-admin.php:169
 msgid "Displays members within the assigned scope and saves category selections together with member information"
-msgstr "担当範囲の会員を表示し、ユーザーカテゴリーの選択を会員情報とまとめて保存"
+msgstr "担当範囲の会員を表示し、会員の分類の選択を会員情報とまとめて保存"
 
-#: includes/class-admin.php:160
+#: includes/class-admin.php:165
 msgid "Displays passkey registration and management on the account editing page"
 msgstr "アカウント情報の編集画面にパスキーの登録・管理を表示"
 
-#: includes/class-admin.php:531
+#: includes/class-admin.php:539
 msgid "Documents, reports, images, and videos intended only for members need a storage location that is not publicly accessible. This includes PDF, Word, Excel, and PowerPoint files."
 msgstr "会員だけに配る資料・報告書 (PDF、Word、Excel、PowerPoint など) や、投稿内に表示する会員向けの画像や動画がある場合は、一般公開されない場所に会員専用の保存先を用意する必要があります。"
 
-#: includes/class-admin.php:292 includes/class-admin.php:296
+#: includes/class-admin.php:297 includes/class-admin.php:301
 msgid "Download from WordPress.org"
 msgstr "WordPress.orgからダウンロードする"
 
@@ -819,43 +835,43 @@ msgstr "ファイルをドロップしてアップロード"
 msgid "Edit %s"
 msgstr "%sを編集"
 
-#: includes/class-screens.php:13 includes/class-screens.php:157
+#: includes/class-screens.php:13 includes/class-screens.php:186
 msgid "Edit Account Information"
 msgstr "アカウント情報の編集"
 
-#: includes/class-admin.php:395
+#: includes/class-admin.php:402
 msgid "Edit Page"
 msgstr "固定ページを編集"
 
-#: includes/class-admin.php:452
+#: includes/class-admin.php:460
 msgid "Edit Profile Fields in atshift User Profile Fields"
 msgstr "atshift User Profile Fieldsでプロフィール項目を編集"
 
-#: includes/class-member-list-table.php:9 includes/class-screens.php:154
+#: includes/class-member-list-table.php:9 includes/class-screens.php:182
 msgid "Email Address"
 msgstr "メールアドレス"
 
-#: includes/class-screens.php:200 includes/class-screens.php:209
+#: includes/class-screens.php:227 includes/class-screens.php:236
 msgid "Email Address "
 msgstr "メールアドレス "
 
-#: includes/class-mail.php:29
+#: includes/class-mail.php:32
 msgid "Email Change Notification (Old and New Addresses)"
 msgstr "メールアドレス変更通知（新旧宛先）"
 
-#: includes/class-admin.php:226 includes/class-admin.php:517
+#: includes/class-admin.php:231 includes/class-admin.php:525
 msgid "Email Settings"
 msgstr "メール設定"
 
-#: includes/class-admin.php:419
+#: includes/class-admin.php:426
 msgid "Email address (required; verified by confirmation email)"
 msgstr "メールアドレス（必須・確認メールで本人確認）"
 
-#: includes/class-admin.php:287
+#: includes/class-admin.php:292
 msgid "Email announcement titles and links to members who have opted in. Combine multiple announcements into one email or schedule delivery."
 msgstr "受信を希望する会員へ、お知らせのタイトルとリンクをメールで送れます。複数のお知らせを一通にまとめたり、送る日時を予約したりできます。"
 
-#: includes/class-admin.php:415
+#: includes/class-admin.php:422
 msgid "Enable approval below if your organization needs to check membership eligibility."
 msgstr "会員資格などを確認したい団体では、下の承認を有効にします。"
 
@@ -863,25 +879,29 @@ msgstr "会員資格などを確認したい団体では、下の承認を有効
 msgid "Enable the fileinfo extension on the server."
 msgstr "サーバーの fileinfo 拡張を有効にしてください。"
 
-#: includes/class-profile.php:126
+#: includes/class-profile.php:127
 msgid "Enter a nickname."
 msgstr "ニックネームを入力してください。"
 
-#: includes/class-profile.php:123
+#: includes/class-registration.php:122
+msgid "Enter a username of 1–60 characters using letters, numbers, periods, hyphens, or underscores."
+msgstr "ログインIDは半角英数字・ピリオド・ハイフン・アンダースコアを使い、1〜60文字で入力してください。"
+
+#: includes/class-profile.php:124
 msgid "Enter a website URL starting with http:// or https://, up to 100 characters long."
 msgstr "サイト URL には100文字以内の、http:// または https:// で始まる URL を入力してください。"
 
-#: includes/class-registration.php:154
+#: includes/class-registration.php:168
 msgid "Enter an email address that is not already registered."
 msgstr "未登録のメールアドレスを指定してください。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:458
+#: includes/class-admin.php:466
 msgid "Enter field identifiers used in code, not labels such as Biography. For example, use %1$s for the nickname and %2$s for the biography. To use just these two fields, enter %3$s."
 msgstr "使用する項目の識別名を入力します。画面に表示される「自己紹介」などの見出しとは別の名前です。ニックネームは %1$s、自己紹介は %2$s です。この2つだけを使う場合は、%3$s と入力します。"
 
-#: includes/class-admin.php:106
+#: includes/class-admin.php:111
 msgid "Enter the signature as text."
 msgstr "署名を文章で入力してください。"
 
@@ -891,39 +911,39 @@ msgstr "Cloudflareで発行した2つのキーを入力してください。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:497
+#: includes/class-admin.php:505
 msgid "Enter your organization name and contact details. For example, %1$s uses %2$s as a placeholder for the site name. The signature is appended to all emails sent by this plugin, including atshift Members Pro announcements. You do not need to repeat it in each template. Leave this field empty to omit the signature."
 msgstr "団体名やお問い合わせ先などを入力してください。%1$s と入力すると、%2$s の部分がサイト名に置き換わります。このプラグインから届く各種メールの本文の最後に追加します。atshift Members Pro のお知らせ配信にも使います。各メールの本文に同じ署名を書く必要はありません。空欄にして保存すると、署名を付けなくなります。"
 
-#: includes/class-admin.php:537
+#: includes/class-admin.php:545
 msgid "Example Configuration for wp-config.php"
 msgstr "wp-config.php に書く設定の例"
 
-#: includes/class-admin.php:469
+#: includes/class-admin.php:477
 msgid "Exclude member pages from caching."
 msgstr "会員用ページをキャッシュの対象から除外してください。"
 
-#: includes/class-admin.php:434
+#: includes/class-admin.php:441
 msgid "Excluded fields are omitted from member forms. Integration Not Implemented means the field does not yet have an atshift Members integration. Email addresses, passwords, and saving are handled by atshift Members account procedures."
 msgstr "「除外」は会員向けフォームに含めない項目、「連携未実装」はMembersとの連携処理がまだ実装されていない項目です。メールアドレス・パスワード・保存操作は、Members側の手続きで扱います。"
 
-#: includes/class-admin.php:516
+#: includes/class-admin.php:524
 msgid "Explain what happened and what the recipient should do next."
 msgstr "手続きの内容と次に行う操作が伝わる文章にしてください。"
 
-#: includes/class-admin.php:399 includes/class-admin.php:460
+#: includes/class-admin.php:406 includes/class-admin.php:468
 msgid "Extend Your Site Further"
 msgstr "より機能を拡張するには"
 
-#: includes/class-admin.php:290
+#: includes/class-admin.php:295
 msgid "Features Available with User Categories"
-msgstr "ユーザーカテゴリーと組み合わせてできること"
+msgstr "会員の分類と組み合わせてできること"
 
-#: includes/class-admin.php:458
+#: includes/class-admin.php:466
 msgid "Field Identifiers to Use"
 msgstr "使用する項目の識別名"
 
-#: includes/class-admin.php:551
+#: includes/class-admin.php:559
 msgid "File Server / NAS (Mounted Share)"
 msgstr "ファイルサーバー／NAS（接続済み共有フォルダー）"
 
@@ -931,7 +951,7 @@ msgstr "ファイルサーバー／NAS（接続済み共有フォルダー）"
 msgid "File not found."
 msgstr "ファイルがありません。"
 
-#: includes/class-admin.php:548
+#: includes/class-admin.php:556
 msgid "Files marked Public are saved to the standard WordPress media directory. Anyone who knows the file URL can open them directly, even if the post is restricted to members. Storage does not change automatically when a post's visibility changes."
 msgstr "「一般公開」を選んだファイルは WordPress 標準のメディア保存先に保存され、記事を会員限定にしても、ファイルの URL を知っている人は直接開けます。保存先は記事の公開状態に応じて自動で切り替わりません。"
 
@@ -941,7 +961,7 @@ msgstr "「一般公開」を選んだファイルは WordPress 標準のメデ�
 msgid "Filter %s"
 msgstr "%sを絞り込む"
 
-#: includes/class-screens.php:176
+#: includes/class-screens.php:203
 msgid "Final Account Closure Review"
 msgstr "退会内容の最終確認"
 
@@ -949,57 +969,61 @@ msgstr "退会内容の最終確認"
 msgid "First Name"
 msgstr "名"
 
-#: includes/class-admin.php:458
+#: includes/class-admin.php:444
+msgid "First name, then last name"
+msgstr "名 → 姓"
+
+#: includes/class-admin.php:466
 msgid "For custom fields added in code, use the identifiers assigned when they were created. Code to render the fields in registration and editing forms and save their values is also required."
 msgstr "コードで独自に追加した項目を使う場合は、作成時に決めた識別名を指定します。その項目を会員登録・編集フォームに表示し、入力内容を保存するためのプログラムも必要です。"
 
-#: includes/class-screens.php:184
+#: includes/class-screens.php:211
 msgid "For files that share storage with another owner's files, only your record is removed. Data held by other services, unsupported plugins, and backups cannot be deleted by this action. Temporary rate-limit records remain until they expire."
 msgstr "他の人の所有ファイルと同じ実体を共有するファイルは、自分の登録情報だけを削除します。他サービス、未対応プラグイン、バックアップのデータはこの操作では削除できません。短期の回数制限情報は有効期限まで残ります。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:141
+#: includes/class-admin.php:146
 msgid "Functionality extended by %s"
 msgstr "%sで機能拡張中"
 
-#: includes/class-admin.php:544
+#: includes/class-admin.php:552
 msgid "Grant a dedicated account read, write, and delete permissions, then mount the shared directory on the server."
 msgstr "専用アカウントに読み取り・書き込み・削除の権限を付与し、共有フォルダーをサーバー上のフォルダーとして接続します。"
 
-#: includes/class-admin.php:473
+#: includes/class-admin.php:481
 msgid "Helps prevent automated registration and password reset requests. Add the two keys issued by Cloudflare to enable checks on this plugin's request forms."
 msgstr "自動プログラムによる大量の会員登録やパスワード再設定の申請を防ぐための設定です。Cloudflare で発行した2つのキーを登録すると、このプラグインの申請フォームで確認が行われます。"
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "How to Get Your Keys"
 msgstr "キーの取得方法"
 
-#: includes/class-screens.php:195
+#: includes/class-screens.php:222
 msgid "I have reviewed the selected posts and my associated attachments, and I agree to their retention, editing, and republication under the site operator's ownership."
 msgstr "選んだ投稿と関連する自分の添付ファイルの内容を確認し、運営名義での保管・編集・再公開に同意します。"
 
-#: includes/class-screens.php:185
+#: includes/class-screens.php:212
 msgid "I have reviewed what will be deleted and transferred. This action cannot be undone."
 msgstr "削除と移譲の対象を確認しました。この操作は取り消せません。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:537
+#: includes/class-admin.php:545
 msgid "If the public directory is %1$s, create a members-only directory outside it, such as %2$s. Replace these examples with the actual paths on your server."
 msgstr "公開用フォルダーが %1$s の場合、その外側に %2$s という会員専用フォルダーを作成する例です。パスは、ご利用のサーバーの実際の場所に置き換えてください。"
 
-#: includes/class-admin.php:312
+#: includes/class-admin.php:317
 msgid "If you select multiple categories, membership in any one of them is sufficient."
 msgstr "複数選んだ場合は、いずれかに所属する会員に許可します。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:499
+#: includes/class-admin.php:507
 msgid "In email subjects and bodies, %1$s is replaced with the site name and %2$s with a link to the relevant account procedure. Keep %2$s in emails that provide a link."
 msgstr "各メールの件名・本文では、%1$s はサイト名に、%2$s は登録やパスワード変更のページへのリンクに置き換わります。リンクを案内するメールでは、%2$s を残してください。"
 
-#: includes/class-admin.php:318
+#: includes/class-admin.php:323
 msgid "Include child categories"
 msgstr "配下のカテゴリーも含める"
 
@@ -1019,7 +1043,7 @@ msgstr "%sに挿入"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:202
+#: includes/class-admin.php:207
 msgid "Install and activate %s to enable passkeys on supported environments without additional site setup. After signing up, members can register and manage passkeys on the Edit Account Information page."
 msgstr "%sをインストールして有効化すると、対応環境ではサイト側の初期設定なしでパスキー機能を利用できます。会員は登録後に「アカウント情報の編集」画面で自分のパスキーを登録・管理できます。"
 
@@ -1031,11 +1055,11 @@ msgstr "ファイル識別子が不正です。"
 msgid "Invalid post selection."
 msgstr "投稿の指定が不正です。"
 
-#: includes/class-admin.php:309
+#: includes/class-admin.php:314
 msgid "Keep the current category settings"
 msgstr "現在のカテゴリー設定を維持"
 
-#: includes/class-admin.php:474
+#: includes/class-admin.php:482
 msgid "Key status: "
 msgstr "キーの保存状態: "
 
@@ -1043,27 +1067,31 @@ msgstr "キーの保存状態: "
 msgid "Last Name"
 msgstr "姓"
 
+#: includes/class-admin.php:444
+msgid "Last name, then first name"
+msgstr "姓 → 名"
+
 #: includes/class-services.php:53
 msgid "Leading or trailing spaces and control characters are not allowed."
 msgstr "先頭・末尾の空白や制御文字は使用できません。"
 
-#: includes/class-admin.php:491
+#: includes/class-admin.php:499
 msgid "Leave blank to use the WordPress sender name."
 msgstr "空欄の場合は、WordPress の送信者名を使います。"
 
-#: includes/class-admin.php:458
+#: includes/class-admin.php:466
 msgid "Leave empty to add no profile fields. If needed, specify identifiers for names, nickname, display name, website URL, biography, or other supported fields."
 msgstr "空欄の場合はプロフィール項目を追加しません。必要に応じて、名前・ニックネーム・表示名・サイト URL・自己紹介などの識別名を指定してください。"
 
-#: includes/class-screens.php:149
+#: includes/class-screens.php:176
 msgid "Log In"
 msgstr "ログイン"
 
-#: includes/class-screens.php:173
+#: includes/class-screens.php:200
 msgid "Log In Again"
 msgstr "再ログイン"
 
-#: includes/class-screens.php:160
+#: includes/class-screens.php:189
 msgid "Log Out"
 msgstr "ログアウト"
 
@@ -1075,39 +1103,39 @@ msgstr "再ログインして10分以内に手続きしてください。"
 msgid "Log in again and review the final confirmation."
 msgstr "再ログインと最終確認が必要です。"
 
-#: includes/class-screens.php:204
+#: includes/class-screens.php:231
 msgid "Log out before registering."
 msgstr "登録手続きはログアウトして行ってください。"
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Logged-in members can view their information here and proceed to edit it or close their account."
 msgstr "ログインした会員が、自分の登録内容を確認するページです。情報の変更や退会にもここから進めます。"
 
-#: includes/class-admin.php:540
+#: includes/class-admin.php:548
 msgid "Make sure no other server configuration exposes the members-only directory to the public."
 msgstr "会員専用フォルダーが、サーバーの別の設定でも外部に公開されていないことを確認してください。"
 
-#: includes/class-admin.php:544
+#: includes/class-admin.php:552
 msgid "Make the shared directory accessible from the WordPress server. If connecting from outside your organization, arrange a connection such as a VPN on the server first."
 msgstr "WordPressサーバーから共有フォルダーに接続できるようにします。社外のサーバーから接続する場合は、VPNなどの接続経路をサーバー側で準備してください。"
 
-#: includes/class-admin.php:235
+#: includes/class-admin.php:240
 msgid "Manage Members"
 msgstr "会員の管理"
 
-#: includes/class-admin.php:167
+#: includes/class-admin.php:172
 msgid "Manages user categories"
-msgstr "ユーザーカテゴリーを管理"
+msgstr "会員の分類を管理"
 
 #: assets/media.js:72
 msgid "Media Library"
 msgstr "メディアライブラリ"
 
-#: includes/class-member-list-table.php:60 includes/class-registration.php:136
+#: includes/class-member-list-table.php:60
 msgid "Member"
 msgstr "会員"
 
-#: includes/class-admin.php:362
+#: includes/class-admin.php:369
 msgid "Member (Posting Permissions)"
 msgstr "会員 (投稿権限)"
 
@@ -1119,23 +1147,23 @@ msgstr "会員向けお知らせ"
 msgid "Member Announcements"
 msgstr "会員向けお知らせ"
 
-#: includes/class-admin.php:357 includes/class-admin.php:364
+#: includes/class-admin.php:364 includes/class-admin.php:371
 msgid "Member Information"
 msgstr "会員情報"
 
-#: includes/class-admin.php:289
+#: includes/class-admin.php:294
 msgid "Member Invitations via CSV"
 msgstr "CSV による会員招待"
 
-#: includes/class-admin.php:222
+#: includes/class-admin.php:227
 msgid "Member Management"
 msgstr "会員管理"
 
-#: includes/class-admin.php:225 includes/class-admin.php:407
+#: includes/class-admin.php:230 includes/class-admin.php:414
 msgid "Member Page Setup"
 msgstr "会員専用ページの作成"
 
-#: includes/class-admin.php:389
+#: includes/class-admin.php:396
 msgid "Member Pages"
 msgstr "会員用の固定ページ"
 
@@ -1151,19 +1179,19 @@ msgstr "会員向け投稿"
 msgid "Member Registration"
 msgstr "会員登録"
 
-#: includes/class-admin.php:361
+#: includes/class-admin.php:368
 msgid "Member Role"
 msgstr "会員の権限"
 
-#: includes/class-admin.php:352 includes/class-member-list-table.php:9
+#: includes/class-admin.php:359 includes/class-member-list-table.php:9
 msgid "Member Status"
 msgstr "利用状態"
 
-#: includes/class-screens.php:208
+#: includes/class-screens.php:235
 msgid "Member registration is currently closed."
 msgstr "会員登録は現在受け付けていません。"
 
-#: includes/class-admin.php:307
+#: includes/class-admin.php:312
 msgid "Members Allowed to Post"
 msgstr "投稿を許可する会員"
 
@@ -1171,37 +1199,37 @@ msgstr "投稿を許可する会員"
 msgid "Members Only"
 msgstr "会員のみ"
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Members can close their account here. Their content is deleted by default, but they can choose contributions to transfer to the site operator."
 msgstr "会員が退会するページです。原則として本人の投稿などを削除します。残したい投稿は、本人が選んで運営に譲ることもできます。"
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Members can edit their name, biography, and other information here. Changing an email address requires confirmation of the new address."
 msgstr "会員が自分の名前や自己紹介などを書き直すページです。メールアドレスを変更するときは、新しいアドレスの確認も行います。"
 
-#: includes/class-admin.php:449
+#: includes/class-admin.php:457
 msgid "Members can register and manage passkeys. After signing up, add a passkey on Edit Account Information to use it for future logins."
 msgstr "パスキーの登録・管理を利用できます。会員登録後に「アカウント情報の編集」画面でパスキーを追加すると、次回からパスキーでログインできます。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:334
+#: includes/class-admin.php:339
 msgid "Members updated: %1$d / Unchanged: %2$d / Could not update: %3$d"
 msgstr "変更した会員: %1$d人 / 変更不要: %2$d人 / 変更できなかった会員: %3$d人"
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Members who have forgotten their password can request a password reset email here."
 msgstr "パスワードを忘れた会員が、新しいパスワードを設定するためのメールを申し込むページです。"
 
-#: includes/class-admin.php:304
+#: includes/class-admin.php:309
 msgid "Members with permission can create, edit, publish, and delete their own content. They gain no permission to edit other people's content. These settings do not change who can read content. Published standard WordPress posts remain visible to the public."
 msgstr "許可した会員は、自分の投稿を作成・編集・公開・削除できます。他の人の投稿を編集する権限は追加しません。読むことができる人の範囲は、この設定では変更しません。標準の「投稿」は、公開すると一般の訪問者も読めます。"
 
-#: includes/class-files.php:286
+#: includes/class-files.php:287
 msgid "Members-Only Attachment "
 msgstr "会員限定添付 "
 
-#: includes/class-files.php:218
+#: includes/class-files.php:219
 msgid "Members-Only Attachments"
 msgstr "会員限定添付"
 
@@ -1213,7 +1241,11 @@ msgstr "会員専用のメディア"
 msgid "Members-only files already exist. Changing storage locations requires migrating them first."
 msgstr "既存の会員専用ファイルがあります。保存先の変更にはファイルの移行が必要です。"
 
-#: includes/class-screens.php:154
+#: includes/class-admin.php:20
+msgid "Membership Site Roles"
+msgstr "会員サイトで使う役割"
+
+#: includes/class-screens.php:182
 msgid "Membership Status"
 msgstr "会員状態"
 
@@ -1221,25 +1253,29 @@ msgstr "会員状態"
 msgid "Name"
 msgstr "名前"
 
+#: includes/class-admin.php:444
+msgid "Name Order"
+msgstr "姓名の表示順"
+
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
 #: includes/class-content.php:38
 msgid "New %s"
 msgstr "新しい%s"
 
-#: includes/class-screens.php:166
-msgid "New Email Address "
-msgstr "新しいメールアドレス "
+#: includes/class-screens.php:163 includes/class-screens.php:167
+msgid "New Email Address"
+msgstr "変更先のメールアドレス"
 
-#: includes/class-mail.php:27
+#: includes/class-mail.php:30
 msgid "New Email Address Verification"
 msgstr "新メールアドレス確認"
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:421
 msgid "New Member Registrations"
 msgstr "新規会員登録の受付"
 
-#: includes/class-admin.php:483
+#: includes/class-admin.php:491
 msgid "New registration and password reset requests will be unavailable until you save new keys."
 msgstr "削除すると、新しいキーを保存するまで会員登録とパスワード再設定の申請を受け付けられなくなります。"
 
@@ -1263,7 +1299,7 @@ msgstr "ごみ箱に%sはありません。"
 msgid "No %s found."
 msgstr "%sはありません。"
 
-#: includes/class-admin.php:307
+#: includes/class-admin.php:312
 msgid "No Members"
 msgstr "許可しない"
 
@@ -1275,15 +1311,15 @@ msgstr "選択できるファイルはありません。"
 msgid "No members match your criteria."
 msgstr "条件に一致する会員はいません。"
 
-#: includes/class-admin.php:375
+#: includes/class-admin.php:382
 msgid "No posting permissions."
 msgstr "投稿の許可はありません。"
 
-#: includes/class-screens.php:193
+#: includes/class-screens.php:220
 msgid "No posts are available for transfer."
 msgstr "移譲できる投稿はありません。"
 
-#: includes/class-screens.php:183
+#: includes/class-screens.php:210
 msgid "No posts will be retained by the site operator."
 msgstr "運営に残す投稿はありません。"
 
@@ -1291,7 +1327,7 @@ msgstr "運営に残す投稿はありません。"
 msgid "None Allowed"
 msgstr "許可なし"
 
-#: includes/class-admin.php:474
+#: includes/class-admin.php:482
 msgid "Not Configured"
 msgstr "未設定"
 
@@ -1299,37 +1335,41 @@ msgstr "未設定"
 msgid "Not found."
 msgstr "見つかりません。"
 
-#: includes/class-admin.php:510
+#: includes/class-admin.php:518
 msgid "Notifies both the old and new addresses when an email change is complete."
 msgstr "メールアドレスの変更が完了したとき、新旧のアドレスに変更を知らせます。"
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid "Notifies the member only when a user category change is finally approved or rejected. No email is sent on submission, intermediate approval, or cancellation."
-msgstr "ユーザーカテゴリー変更の最終承認・却下時だけ、対象の会員へ通知します。申請受付・途中の承認・取り消しではメールを送りません。"
+msgstr "会員の分類の変更の最終承認・却下時だけ、対象の会員へ通知します。申請受付・途中の承認・取り消しではメールを送りません。"
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:421
 msgid "Off (do not accept new registration requests)"
 msgstr "オフ (新しい登録申請を受け付けない)"
 
-#: includes/class-admin.php:292 includes/class-admin.php:294 includes/class-admin.php:296 includes/class-admin.php:298
+#: includes/class-admin.php:297 includes/class-admin.php:299 includes/class-admin.php:301 includes/class-admin.php:303
 msgid "Official Website"
 msgstr "オフィシャルWebページ"
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:421
 msgid "On (accept new registration requests)"
 msgstr "オン (新しい登録申請を受け付ける)"
 
-#: includes/class-admin.php:547
+#: includes/class-admin.php:555
 msgid "Once storage is configured, media controls in posts and the Media screen offer Public and Members Only options. Members-only images, galleries, and videos appear within posts; documents use download links. Only authorized members can access them."
 msgstr "保存先を設定すると、投稿のメディア操作や管理画面の「メディア」で、「一般公開」「会員のみ」を選べるようになります。「会員のみ」を選ぶと、画像・ギャラリー・動画は投稿内に表示され、資料はダウンロードリンクになります。閲覧を許可された会員だけが利用できます。"
 
-#: includes/class-admin.php:335
+#: includes/class-admin.php:340
 msgid "Only members within your assigned scope are shown."
 msgstr "担当する所属の会員だけを表示しています。"
 
-#: includes/class-members.php:108
+#: includes/class-members.php:121
 msgid "Only site administrators and operators with site-wide access can change member roles."
 msgstr "会員の権限を変更できるのは、サイト管理者またはサイト全体を管理する運営者です。"
+
+#: includes/class-members.php:161
+msgid "Only site administrators can ban or restore a banned account."
+msgstr "利用禁止の設定と解除は、サイト管理者のみが行えます。"
 
 #: includes/class-files.php:30
 msgid "Only site administrators can change the storage location."
@@ -1339,63 +1379,63 @@ msgstr "サイト管理者だけが保存先を変更できます。"
 msgid "Open File"
 msgstr "ファイルを開く"
 
-#: includes/class-screens.php:191
+#: includes/class-screens.php:218
 msgid "Open each post and check its text, images, and attachments for information you do not want to retain."
 msgstr "投稿を開き、本文・画像・添付ファイルに残したくない情報がないか確認してください。"
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "Open the Cloudflare dashboard (new tab)"
 msgstr "Cloudflare の管理画面を開きます (別タブ)"
 
-#: includes/class-mail.php:27
+#: includes/class-mail.php:30
 msgid "Open the following link within 30 minutes to confirm your email address change. You will need to log in.\n{link}"
 msgstr "メールアドレスの変更を確認するには、30分以内に次のリンクを開いてください。ログインが必要です。\n{link}"
 
-#: includes/class-admin.php:69
+#: includes/class-admin.php:74
 msgid "Operator invitations are no longer available. Use Member Management to promote an existing member to site operator."
 msgstr "運営者の招待は終了しました。「会員管理」で登録済みの会員をサイト運営者に変更してください。"
+
+#: includes/class-admin.php:20
+msgid "Other Plugin Roles"
+msgstr "他のプラグインの役割"
 
 #: includes/class-content.php:123 includes/class-content.php:127
 msgid "Page not found."
 msgstr "ページが見つかりません。"
 
-#: includes/class-screens.php:131
+#: includes/class-screens.php:140
 msgid "Password (at least 12 characters)"
 msgstr "パスワード（12文字以上）"
 
-#: includes/class-admin.php:419
+#: includes/class-admin.php:426
 msgid "Password (required; set during registration)"
 msgstr "パスワード（必須・会員登録時に設定）"
 
-#: includes/class-mail.php:26
+#: includes/class-mail.php:29
 msgid "Password Change Notification"
 msgstr "パスワード変更通知"
 
-#: includes/class-screens.php:157
-msgid "Password and Authentication Settings"
-msgstr "パスワード変更・認証設定"
-
-#: includes/class-admin.php:336 includes/class-admin.php:351 includes/class-mail.php:17 includes/class-member-list-table.php:34 includes/class-members.php:5
+#: includes/class-admin.php:341 includes/class-admin.php:358 includes/class-mail.php:17 includes/class-member-list-table.php:34 includes/class-members.php:5
 msgid "Pending Approval"
 msgstr "承認待ち"
 
-#: includes/class-files.php:283
+#: includes/class-files.php:284
 msgid "Permanently delete this attachment"
 msgstr "この添付を完全に削除する"
 
-#: includes/class-admin.php:304
+#: includes/class-admin.php:309
 msgid "Permissions by Post Type"
 msgstr "投稿タイプごとの許可"
 
-#: includes/class-screens.php:149
+#: includes/class-screens.php:176
 msgid "Please log in to continue."
 msgstr "ログインが必要です。"
 
-#: includes/class-registration.php:124 includes/class-registration.php:155 includes/class-registration.php:167
+#: includes/class-registration.php:134 includes/class-registration.php:169 includes/class-registration.php:181
 msgid "Please try again later."
 msgstr "時間をおいて再試行してください。"
 
-#: includes/class-members.php:227
+#: includes/class-members.php:235
 msgid "Please use the email verification page."
 msgstr "メール確認ページをご利用ください。"
 
@@ -1403,19 +1443,19 @@ msgstr "メール確認ページをご利用ください。"
 msgid "Please use the member registration page."
 msgstr "会員登録専用ページをご利用ください。"
 
-#: includes/class-registration.php:171 includes/class-registration.php:194 includes/class-withdrawal.php:101
+#: includes/class-registration.php:185 includes/class-registration.php:208 includes/class-withdrawal.php:101
 msgid "Please wait a moment and try again."
 msgstr "少し待って再試行してください。"
 
-#: includes/class-admin.php:286
+#: includes/class-admin.php:291
 msgid "Post Approval"
 msgstr "投稿の承認"
 
-#: includes/class-admin.php:290
+#: includes/class-admin.php:295
 msgid "Post approval applies to Member Posts, Public Pages, and Member Announcements only. It does not apply to standard WordPress posts or other post types."
 msgstr "投稿の承認は、既存の「会員向け投稿」「一般公開ページ」「会員向けお知らせ」が対象です。標準の「投稿」やほかの投稿タイプには適用されません。"
 
-#: includes/class-admin.php:224 includes/class-admin.php:325
+#: includes/class-admin.php:229 includes/class-admin.php:330
 msgid "Posting Settings"
 msgstr "投稿設定"
 
@@ -1427,11 +1467,11 @@ msgstr "投稿設定を保存中です。少し待ってからやり直してく
 msgid "Posts or attachment information changed after confirmation. Review the details again."
 msgstr "確認後に投稿や添付情報が変更されました。内容を確認し直してください。"
 
-#: includes/class-screens.php:178
+#: includes/class-screens.php:205
 msgid "Posts to Transfer to the Site Operator"
 msgstr "運営名義へ移譲する投稿"
 
-#: includes/class-admin.php:544
+#: includes/class-admin.php:552
 msgid "Prepare a non-public directory exclusively for member files and specify its path on the server."
 msgstr "公開されない会員ファイル専用のフォルダーを用意し、そのサーバー上のパスを指定します。"
 
@@ -1443,31 +1483,31 @@ msgstr "前のページ"
 msgid "Processing…"
 msgstr "処理しています…"
 
-#: includes/class-admin.php:437
+#: includes/class-admin.php:445
 msgid "Profile Fields for Registration and Editing"
 msgstr "登録・編集フォームのプロフィール項目"
 
-#: includes/class-admin.php:423
+#: includes/class-admin.php:430
 msgid "Profile Fields from the Integration"
 msgstr "連携元のプロフィール項目"
 
-#: includes/class-admin.php:417
+#: includes/class-admin.php:424
 msgid "Profile information collected during registration. Members can view it on Your Account Information and update it on Edit Account Information."
 msgstr "会員登録時に入力してもらうプロフィール情報です。登録した内容は、本人が「あなたのアカウント情報」で確認し、「アカウント情報の編集」で変更できます。"
 
-#: includes/class-screens.php:117
+#: includes/class-screens.php:119
 msgid "Profile saved."
 msgstr "プロフィールを保存しました。"
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Prospective members enter their email address here, then follow the confirmation email to continue registration."
 msgstr "新しく会員になる人がメールアドレスを入力するページです。届いた確認メールから登録を続けます。"
 
-#: includes/class-admin.php:174
+#: includes/class-admin.php:179
 msgid "Provides announcements for email delivery"
 msgstr "メールで配信するお知らせを提供"
 
-#: includes/class-admin.php:161
+#: includes/class-admin.php:166
 msgid "Provides passkey registration and management after signup, and passkey login"
 msgstr "登録後のパスキーの登録・管理と、パスキーによるログイン"
 
@@ -1487,27 +1527,27 @@ msgstr "一般公開ページ"
 msgid "Public Pages"
 msgstr "一般公開ページ"
 
-#: includes/class-admin.php:294 includes/class-admin.php:298
+#: includes/class-admin.php:299 includes/class-admin.php:303
 msgid "Purchase and Official Website"
 msgstr "購入・オフィシャルWebページ"
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "Read Cloudflare's official instructions (new tab)"
 msgstr "Cloudflare の公式手順を見る (別タブ)"
 
-#: includes/class-screens.php:206
+#: includes/class-screens.php:233
 msgid "Register"
 msgstr "登録する"
 
-#: includes/class-screens.php:158 includes/class-screens.php:169
+#: includes/class-screens.php:187 includes/class-screens.php:196
 msgid "Register and Manage Passkeys"
 msgstr "パスキーの登録・管理"
 
-#: includes/class-screens.php:169
+#: includes/class-screens.php:196
 msgid "Register and manage passkeys with atshift Freeform Login."
 msgstr "atshift Freeform Login を利用してパスキーを登録・管理できます。"
 
-#: includes/class-admin.php:415
+#: includes/class-admin.php:422
 msgid "Registration Approval"
 msgstr "登録の承認"
 
@@ -1523,19 +1563,19 @@ msgstr "会員登録のメール確認"
 msgid "Registration Needs Review"
 msgstr "登録処理の確認が必要"
 
-#: includes/class-admin.php:223 includes/class-admin.php:466
+#: includes/class-admin.php:228 includes/class-admin.php:474
 msgid "Registration Settings"
 msgstr "登録設定"
 
-#: includes/class-admin.php:416
+#: includes/class-admin.php:423
 msgid "Registration and Editing Forms"
 msgstr "登録・編集フォームの内容"
 
-#: includes/class-screens.php:88
+#: includes/class-screens.php:90
 msgid "Registration is complete. Please go to the login page."
 msgstr "登録は完了しました。ログインページをご利用ください。"
 
-#: includes/class-registration.php:123
+#: includes/class-registration.php:133
 msgid "Registration is currently unavailable."
 msgstr "登録サービスは現在利用できません。"
 
@@ -1543,31 +1583,31 @@ msgstr "登録サービスは現在利用できません。"
 msgid "Registration is currently unavailable. Please try again later."
 msgstr "登録サービスは現在利用できません。時間をおいて再試行してください。"
 
-#: includes/class-registration.php:130
+#: includes/class-registration.php:142 includes/class-registration.php:144
 msgid "Registration is in progress. Please wait a moment and try again."
 msgstr "登録処理中です。少し待ってから再試行してください。"
 
-#: includes/class-admin.php:32
+#: includes/class-admin.php:37
 msgid "Registration is not ready yet. Check your spam protection keys in Registration Settings. If the issue persists, contact the person who set up your site."
 msgstr "会員登録の準備がまだ完了していません。「登録設定」で迷惑登録対策のキーを確認してください。解決しない場合は、サイトを設置した方に相談してください。"
 
-#: includes/class-admin.php:228
+#: includes/class-admin.php:233
 msgid "Related Plugins"
 msgstr "関連プラグイン"
 
-#: includes/class-screens.php:63
+#: includes/class-screens.php:65
 msgid "Reload the form."
 msgstr "フォームを再読み込みしてください。"
 
-#: includes/class-screens.php:209
+#: includes/class-screens.php:236
 msgid "Request Confirmation Email"
 msgstr "確認メールを申請"
 
-#: includes/class-screens.php:200
+#: includes/class-screens.php:227
 msgid "Request Password Reset Email"
 msgstr "再設定メールを申請"
 
-#: includes/class-registration.php:168 includes/class-registration.php:174
+#: includes/class-registration.php:182 includes/class-registration.php:188
 msgid "Request a new password reset link."
 msgstr "新しい再設定リンクを申請してください。"
 
@@ -1575,19 +1615,19 @@ msgstr "新しい再設定リンクを申請してください。"
 msgid "Request received. If we can process it, you will receive an email. If it does not arrive, please wait before trying again."
 msgstr "受付しました。手続き可能な場合はメールが届きます。届かない場合は時間をおいて再試行してください。"
 
-#: includes/class-admin.php:415
+#: includes/class-admin.php:422
 msgid "Require operator approval after registration"
 msgstr "登録後に運営者の承認を必要にする"
 
-#: includes/class-admin.php:419
+#: includes/class-admin.php:426
 msgid "Required Account Registration and Editing Fields"
 msgstr "アカウント登録と編集時に必須な項目"
 
-#: includes/class-mail.php:22 includes/class-screens.php:13 includes/class-screens.php:157
+#: includes/class-mail.php:25 includes/class-screens.php:13 includes/class-screens.php:186
 msgid "Reset Password"
 msgstr "パスワード再設定"
 
-#: includes/class-screens.php:199
+#: includes/class-screens.php:226
 msgid "Reset Your Password"
 msgstr "パスワードを再設定"
 
@@ -1595,19 +1635,19 @@ msgstr "パスワードを再設定"
 msgid "Restart the process from the confirmation screen."
 msgstr "確認画面から手続きをやり直してください。"
 
-#: includes/class-screens.php:196
+#: includes/class-screens.php:223
 msgid "Review Account Closure"
 msgstr "退会内容を確認"
 
-#: includes/class-screens.php:194
+#: includes/class-screens.php:221
 msgid "Review and Edit Content"
 msgstr "内容を確認・編集"
 
-#: includes/class-admin.php:286
+#: includes/class-admin.php:291
 msgid "Review content before publication. Supports sequential reviews, revision requests, resubmission, and approval history."
 msgstr "公開前に担当者が内容を確認できます。複数人による順番の確認、差し戻し、修正後の再申請、承認履歴の確認に対応します。"
 
-#: includes/class-screens.php:103
+#: includes/class-screens.php:105
 msgid "Review the details and confirm account closure."
 msgstr "内容を確認し、退会を確定してください。"
 
@@ -1615,59 +1655,59 @@ msgstr "内容を確認し、退会を確定してください。"
 msgid "Role"
 msgstr "役割"
 
-#: includes/class-screens.php:162
+#: includes/class-screens.php:193
 msgid "Save"
 msgstr "保存"
 
-#: includes/class-admin.php:357 includes/class-admin.php:364
+#: includes/class-admin.php:364 includes/class-admin.php:371
 msgid "Save Changes"
 msgstr "変更を保存"
 
-#: includes/class-admin.php:517
+#: includes/class-admin.php:525
 msgid "Save Email Settings"
 msgstr "メール設定を保存"
 
-#: includes/class-admin.php:325
+#: includes/class-admin.php:330
 msgid "Save Posting Settings"
 msgstr "投稿設定を保存"
 
-#: includes/class-admin.php:466
+#: includes/class-admin.php:474
 msgid "Save Registration Settings"
 msgstr "登録設定を保存"
 
-#: includes/class-admin.php:268
+#: includes/class-admin.php:273
 msgid "Save Settings"
 msgstr "設定の保存"
 
-#: includes/class-admin.php:484
+#: includes/class-admin.php:492
 msgid "Save Turnstile Settings"
 msgstr "Turnstile の設定を保存"
 
-#: includes/class-admin.php:325
+#: includes/class-admin.php:330
 msgid "Save permissions for all post types. Removing permission does not delete existing content."
 msgstr "投稿タイプごとの許可をまとめて保存します。許可を外しても、作成済みの投稿は削除しません。"
 
-#: includes/class-admin.php:466
+#: includes/class-admin.php:474
 msgid "Save registration availability, approval requirements, and profile field settings."
 msgstr "会員登録の受付・承認と、プロフィール項目の設定を保存します。"
 
-#: includes/class-admin.php:364
+#: includes/class-admin.php:371
 msgid "Save the member status and role changes made on this screen."
 msgstr "この画面で変更した利用状態と会員の権限を保存します。"
 
-#: includes/class-admin.php:517
+#: includes/class-admin.php:525
 msgid "Save the sender name, shared signature, and all email subjects and bodies."
 msgstr "送信者名・共通の署名と、各種メールの件名・本文をまとめて保存します。"
 
-#: includes/class-admin.php:357
+#: includes/class-admin.php:364
 msgid "Save this member's status."
 msgstr "この会員の利用状態を保存します。"
 
-#: includes/class-admin.php:484
+#: includes/class-admin.php:492
 msgid "Save your Cloudflare Turnstile keys separately from the registration settings."
 msgstr "Cloudflare Turnstile のキーを保存します。登録設定とは別に保存してください。"
 
-#: includes/class-admin.php:356
+#: includes/class-admin.php:363
 msgid "Saving a status change sends the member a notification email and ends any active login sessions."
 msgstr "状態を変更し保存すると、本人へ案内メールを送信し、ログイン中の場合は一度ログアウトされます。"
 
@@ -1685,7 +1725,7 @@ msgstr "検索"
 msgid "Search %s"
 msgstr "%sを検索"
 
-#: includes/class-admin.php:341
+#: includes/class-admin.php:346
 msgid "Search Members"
 msgstr "会員を検索"
 
@@ -1693,7 +1733,7 @@ msgstr "会員を検索"
 msgid "Search by Filename"
 msgstr "ファイル名で検索"
 
-#: includes/class-admin.php:482
+#: includes/class-admin.php:490
 msgid "Secret Key"
 msgstr "シークレットキー"
 
@@ -1707,11 +1747,11 @@ msgstr "%sを選択"
 msgid "Select Files"
 msgstr "ファイルを選択"
 
-#: includes/class-screens.php:191
+#: includes/class-screens.php:218
 msgid "Select Posts to Retain"
 msgstr "運営に残す投稿を選択"
 
-#: includes/class-members.php:79
+#: includes/class-members.php:92
 msgid "Select between 1 and 50 members to update."
 msgstr "変更する会員を1〜50人選択してください。"
 
@@ -1721,53 +1761,53 @@ msgstr "自分の移譲可能な投稿だけを選択してください。"
 
 #: includes/class-posting.php:87
 msgid "Select the allowed user categories."
-msgstr "許可するユーザーカテゴリーを選択してください。"
+msgstr "許可する会員の分類を選択してください。"
 
 #: includes/class-withdrawal.php:62
 msgid "Select the posts to transfer and confirm that you have reviewed their content and attachments."
 msgstr "移譲する投稿を選び、本文と添付ファイルの確認欄を選択してください。"
 
-#: includes/class-admin.php:308
+#: includes/class-admin.php:313
 msgid "Selected Categories"
 msgstr "指定カテゴリー"
 
-#: includes/class-screens.php:166
-msgid "Send Confirmation Email"
-msgstr "確認メールを送る"
+#: includes/class-screens.php:167
+msgid "Send Confirmation to the New Address"
+msgstr "変更先に確認メールを送る"
 
-#: includes/class-admin.php:289
+#: includes/class-admin.php:294
 msgid "Send registration invitations to a list of prospective members. Each recipient confirms the invitation and completes registration."
 msgstr "名簿から新しい会員へ登録案内をまとめて送れます。案内を受け取った本人が確認して登録を完了します。"
 
-#: includes/class-admin.php:489
+#: includes/class-admin.php:497
 msgid "Sender Information"
 msgstr "送信者の情報"
 
-#: includes/class-admin.php:491
+#: includes/class-admin.php:499
 msgid "Sender Name "
 msgstr "送信者名 "
 
-#: includes/class-admin.php:505
+#: includes/class-admin.php:513
 msgid "Sent to the former member when account closure and deletion have finished."
 msgstr "退会に伴う削除処理が完了したとき、退会した本人へ送ります。"
 
-#: includes/class-admin.php:507
+#: includes/class-admin.php:515
 msgid "Sent to the member with a reset link when a password reset is requested."
 msgstr "パスワード再設定が申請されたとき、本人のアドレスに再設定リンクを送ります。"
 
-#: includes/class-admin.php:501
+#: includes/class-admin.php:509
 msgid "Sent to the submitted email address with a confirmation link when a registration request is accepted."
 msgstr "会員登録の申請を受け付けたとき、申請先のアドレスに確認リンクを送ります。"
 
-#: includes/class-admin.php:506
+#: includes/class-admin.php:514
 msgid "Sent when an operator suspends a member's account."
 msgstr "運営者がアカウントを停止したとき、対象の会員へ送ります。"
 
-#: includes/class-admin.php:504
+#: includes/class-admin.php:512
 msgid "Sent when approval or removal of a suspension activates the account."
 msgstr "承認または停止解除によってアカウントが有効になったときに送ります。"
 
-#: includes/class-admin.php:502
+#: includes/class-admin.php:510
 msgid "Sent when registration is complete and no approval is required."
 msgstr "承認不要の会員登録が完了したとき、登録した本人へ送ります。"
 
@@ -1779,15 +1819,15 @@ msgstr "サーバーのアップロード上限: "
 msgid "Set to Pending Approval"
 msgstr "承認待ちにする"
 
-#: includes/class-admin.php:173
+#: includes/class-admin.php:178
 msgid "Sets announcement recipients and delivery schedules"
 msgstr "お知らせの配信対象と日時を設定"
 
-#: includes/class-admin.php:169
+#: includes/class-admin.php:174
 msgid "Sets approvers and the approval order"
 msgstr "承認担当者・承認順序を設定"
 
-#: includes/class-admin.php:166
+#: includes/class-admin.php:171
 msgid "Sets who can create content for each post type"
 msgstr "誰がどの投稿先に投稿できるかを設定"
 
@@ -1799,11 +1839,11 @@ msgstr "設定"
 msgid "Settings have changed. Reload this screen."
 msgstr "設定が変更されています。画面を再読み込みしてください。"
 
-#: includes/class-admin.php:260
+#: includes/class-admin.php:265
 msgid "Settings saved."
 msgstr "保存しました。"
 
-#: includes/class-admin.php:493
+#: includes/class-admin.php:501
 msgid "Shared Signature"
 msgstr "共通の署名"
 
@@ -1815,15 +1855,15 @@ msgstr "自分が使える会員専用ファイルを表示しています。別
 msgid "Showing public files you can use."
 msgstr "自分が使える一般公開ファイルを表示しています。"
 
-#: includes/class-members.php:5
+#: includes/class-admin.php:20 includes/class-members.php:5
 msgid "Site Administrator"
 msgstr "サイト管理者"
 
-#: includes/class-admin.php:481
+#: includes/class-admin.php:489
 msgid "Site Key"
 msgstr "サイトキー"
 
-#: includes/class-admin.php:362 includes/class-member-list-table.php:60 includes/class-members.php:15
+#: includes/class-admin.php:20 includes/class-admin.php:369 includes/class-member-list-table.php:60 includes/class-members.php:15
 msgid "Site Operator"
 msgstr "サイト運営者"
 
@@ -1839,43 +1879,43 @@ msgstr "運営"
 msgid "Site Operator Invitation"
 msgstr "サイト運営者への招待"
 
-#: includes/class-registration.php:152
+#: includes/class-registration.php:166
 msgid "Site administrator permissions are required to send invitations."
 msgstr "招待にはサイト管理者権限が必要です。"
 
-#: includes/class-admin.php:68 includes/class-posting.php:65 includes/class-services.php:16
+#: includes/class-admin.php:73 includes/class-posting.php:65 includes/class-services.php:16
 msgid "Site administrator permissions are required."
 msgstr "サイト管理者権限が必要です。"
 
-#: includes/class-screens.php:172
+#: includes/class-screens.php:199
 msgid "Site administrators cannot close their account from this screen."
 msgstr "サイト管理者はこの画面から退会できません。"
 
-#: includes/class-admin.php:363
+#: includes/class-admin.php:370
 msgid "Site operators can approve members and change their status. They can also be changed back to members. Changing a role ends the user's active login sessions."
 msgstr "サイト運営者は、会員の承認や利用状態の変更などを行えます。会員に戻すこともできます。権限を変更すると、本人は一度ログアウトされます。"
 
-#: includes/class-admin.php:89
+#: includes/class-admin.php:94
 msgid "Some field identifiers are unavailable. Custom fields also need an integration that renders and saves them in the forms."
 msgstr "使用できない項目の識別名が含まれています。独自に作成した項目は、フォームとの連携処理も用意してください。"
 
-#: includes/class-profile.php:116 includes/class-profile.php:54
+#: includes/class-profile.php:117 includes/class-profile.php:54
 msgid "Some profile fields are not allowed."
 msgstr "許可されていないプロフィール項目が含まれています。"
 
-#: includes/class-registration.php:125
+#: includes/class-registration.php:135
 msgid "Some registration fields are not allowed."
 msgstr "許可されていない登録項目があります。"
 
-#: includes/class-members.php:83
+#: includes/class-members.php:96
 msgid "Some selected members cannot be updated. Select them again. No changes have been made."
 msgstr "変更できない会員が含まれています。選び直してください。変更は行っていません。"
 
-#: includes/class-admin.php:484
+#: includes/class-admin.php:492
 msgid "Spam Protection"
 msgstr "迷惑登録対策"
 
-#: includes/class-admin.php:473
+#: includes/class-admin.php:481
 msgid "Spam Protection (Cloudflare Turnstile)"
 msgstr "迷惑登録対策 (Cloudflare Turnstile)"
 
@@ -1887,11 +1927,11 @@ msgstr "サーバー上の絶対パスを指定してください。"
 msgid "Specify the public directory containing WordPress and a separate readable and writable directory outside it."
 msgstr "WordPressを含む公開領域と、その外にある読み書き可能な専用フォルダーを指定してください。"
 
-#: includes/class-admin.php:288
+#: includes/class-admin.php:293
 msgid "Staff Responsibilities"
 msgstr "スタッフごとの業務分担"
 
-#: includes/class-admin.php:530
+#: includes/class-admin.php:538
 msgid "Storage for Member Documents and Images"
 msgstr "会員のための資料や画像の保存先"
 
@@ -1899,15 +1939,15 @@ msgstr "会員のための資料や画像の保存先"
 msgid "Storage is configured in wp-config.php."
 msgstr "保存先はwp-config.phpで管理されています。"
 
-#: includes/class-admin.php:553
+#: includes/class-admin.php:561
 msgid "Storage path: "
 msgstr "保存先のパス："
 
-#: includes/class-admin.php:516
+#: includes/class-admin.php:524
 msgid "Subject"
 msgstr "件名"
 
-#: includes/class-admin.php:556
+#: includes/class-admin.php:564
 msgid "Supported attachments include JPEG, PNG, GIF, WebP, PDF, Word (doc, docx), Excel (xls, xlsx), PowerPoint (ppt, pptx), text (txt), ZIP, and video (MP4, WebM). Upload size limits follow WordPress and server settings. Attachments added through this feature require member login even when attached to a public page."
 msgstr "画像 (JPEG、PNG、GIF、WebP)、PDF、Word (doc、docx)、Excel (xls、xlsx)、PowerPoint (ppt、pptx)、テキスト (txt)、ZIP、動画 (MP4、WebM) を添付できます。アップロードできるファイルサイズは WordPress とサーバーの設定に従います。この機能の添付は、一般公開ページに付けた場合もログイン会員向けです。"
 
@@ -1915,11 +1955,11 @@ msgstr "画像 (JPEG、PNG、GIF、WebP)、PDF、Word (doc、docx)、Excel (xls�
 msgid "Suspend"
 msgstr "停止にする"
 
-#: includes/class-admin.php:336 includes/class-member-list-table.php:34 includes/class-members.php:5
+#: includes/class-admin.php:341 includes/class-member-list-table.php:34 includes/class-members.php:5
 msgid "Suspended"
 msgstr "停止"
 
-#: includes/class-admin.php:503
+#: includes/class-admin.php:511
 msgid "Tells the member that their account is awaiting approval."
 msgstr "アカウントが承認待ちになったとき、本人に現在の状態を知らせます。"
 
@@ -1927,11 +1967,11 @@ msgstr "アカウントが承認待ちになったとき、本人に現在の状
 msgid "Test keys cannot be used on a production site. Get keys for this site from Cloudflare."
 msgstr "テスト用キーは本番サイトでは使えません。Cloudflareでこのサイト用のキーを発行してください。"
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid "The Available Post Types column shows where each member can create content. Site administrators can change these permissions in Posting Settings."
 msgstr "一覧の「作成できる投稿」には、その会員に許可されている投稿先を表示します。許可する投稿先は、サイト管理者が「投稿設定」で変更できます。"
 
-#: includes/class-members.php:147
+#: includes/class-members.php:163
 msgid "The classification integration could not be verified. Reopen this screen."
 msgstr "所属の連携を確認できません。画面を開き直してください。"
 
@@ -1941,7 +1981,7 @@ msgstr "atshift Members の開発版はシングルサイト専用です。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:456
+#: includes/class-admin.php:464
 msgid "The fields are specified by %s in the WordPress configuration file (wp-config.php)."
 msgstr "使用する項目は WordPress の設定ファイル (wp-config.php) の %s で指定されています。"
 
@@ -1951,7 +1991,7 @@ msgstr "使用する項目は WordPress の設定ファイル (wp-config.php) �
 msgid "The file exceeds the server upload limit of %s."
 msgstr "ファイルがサーバーのアップロード上限（%s）を超えています。"
 
-#: includes/class-admin.php:177
+#: includes/class-admin.php:182
 msgid "The following integrations are in use."
 msgstr "次の連携で利用中です。"
 
@@ -1963,23 +2003,23 @@ msgstr "配下のカテゴリーを含めるには、最新版の atshift User P
 msgid "The list of post types has changed. Reload this screen."
 msgstr "投稿タイプの一覧が変わりました。画面を再読み込みしてください。"
 
-#: includes/class-members.php:143
+#: includes/class-members.php:157
 msgid "The member role has changed. Reopen this screen."
 msgstr "会員の権限が変更されています。画面を開き直してください。"
 
-#: includes/class-members.php:136
+#: includes/class-members.php:150
 msgid "The member status has changed. Reopen this screen."
 msgstr "利用状態が変更されています。画面を開き直してください。"
 
-#: includes/class-profile.php:110
+#: includes/class-profile.php:111
 msgid "The name shown on the site. Leave blank to use your nickname."
 msgstr "サイト上で表示する名前です。空欄の場合はニックネームを使います。"
 
-#: includes/class-admin.php:423
+#: includes/class-admin.php:430
 msgid "The profile configured in atshift User Profile Fields is used for registration and account editing."
 msgstr "atshift User Profile Fields で作成した内容を、会員登録とアカウント情報の編集に使用します。"
 
-#: includes/class-admin.php:452
+#: includes/class-admin.php:460
 msgid "The profile layout, field order, and conditional rules are used automatically. You do not need to select fields again or grant additional front-end display or self-editing permissions here."
 msgstr "プロフィールの構成・順序・条件分岐を反映します。こちらで項目を選び直したり、フロント表示・本人編集の許可を追加したりする必要はありません。"
 
@@ -1999,11 +2039,11 @@ msgstr "共有フォルダーの確認ファイルが不正です。"
 msgid "The storage location is unavailable."
 msgstr "保存先が利用できません。"
 
-#: includes/class-members.php:120
+#: includes/class-members.php:133
 msgid "The user tables must use InnoDB to save member information together. Please check with your site administrator."
 msgstr "会員情報をまとめて保存するには、ユーザー情報のテーブルを InnoDB にする必要があります。サイト管理者に確認してください。"
 
-#: includes/class-registration.php:159
+#: includes/class-registration.php:173
 msgid "The verification service is currently unavailable."
 msgstr "確認サービスは現在利用できません。"
 
@@ -2023,19 +2063,19 @@ msgstr "閲覧を許可された会員だけが見られるファイルです。
 msgid "These files are visible to everyone. "
 msgstr "誰でも見られるファイルです。"
 
-#: includes/class-admin.php:476
+#: includes/class-admin.php:484
 msgid "These keys are configured on the server by the person who set up your site. Ask them to make any changes."
 msgstr "このサイトのキーは、サイトを設置した方がサーバー側で設定しています。変更はその方に依頼してください。"
 
-#: includes/class-admin.php:391
+#: includes/class-admin.php:398
 msgid "These pages are published in WordPress, but that does not make members' personal information public. The plugin checks access and displays account details, editing forms, and withdrawal forms only to the account owner. Leave these pages published."
 msgstr "作成されたページは WordPress 上では「公開」になりますが、会員の個人情報が一般公開されるわけではありません。このプラグインがログイン状態などを確認し、アカウント情報や編集・退会のフォームは利用できる本人にだけ表示します。「非公開」に変更せず、そのままお使いください。"
 
-#: includes/class-members.php:71
+#: includes/class-members.php:84
 msgid "This account cannot be changed."
 msgstr "このアカウントは変更できません。"
 
-#: includes/class-registration.php:176
+#: includes/class-registration.php:190
 msgid "This account is currently unavailable."
 msgstr "アカウントは現在利用できません。"
 
@@ -2043,19 +2083,19 @@ msgstr "アカウントは現在利用できません。"
 msgid "This account is currently unavailable. Please contact the site administrator."
 msgstr "このアカウントは現在利用できません。サイト管理者にお問い合わせください。"
 
-#: includes/class-members.php:110
+#: includes/class-members.php:123
 msgid "This account's role cannot be changed."
 msgstr "このアカウントの権限は変更できません。"
 
-#: includes/class-files.php:275
+#: includes/class-files.php:276
 msgid "This attachment cannot be deleted."
 msgstr "この添付は削除できません。"
 
-#: includes/class-admin.php:101
+#: includes/class-admin.php:106
 msgid "This email contains a placeholder that is not supported for this message type."
 msgstr "このメールで利用できない差し込み文字があります。"
 
-#: includes/class-admin.php:290
+#: includes/class-admin.php:295
 msgid "This is a development version. Purchase and download links are not yet available."
 msgstr "現在は開発版です。販売・ダウンロード先はまだ公開していません。"
 
@@ -2071,15 +2111,15 @@ msgstr "このメディア操作は利用できません。"
 msgid "This media screen is unavailable."
 msgstr "このメディア画面は利用できません。"
 
-#: includes/class-members.php:122
+#: includes/class-members.php:135 includes/class-members.php:136
 msgid "This member's information is being saved. Please wait a moment and try again."
 msgstr "この会員の情報を保存中です。少し待ってからやり直してください。"
 
-#: includes/class-members.php:96
+#: includes/class-members.php:109
 msgid "This member's posting permissions cannot be changed."
 msgstr "この会員の投稿権限は変更できません。"
 
-#: includes/class-admin.php:244 includes/class-admin.php:247
+#: includes/class-admin.php:249 includes/class-admin.php:252
 msgid "This page is unavailable."
 msgstr "このページは利用できません。"
 
@@ -2087,9 +2127,13 @@ msgstr "このページは利用できません。"
 msgid "This password has appeared in a data breach. Choose a different password."
 msgstr "このパスワードは漏えい済みです。別のパスワードを選んでください。"
 
+#: includes/class-members.php:79
+msgid "This person has staff responsibilities. Choose and configure a replacement in Staff and Permissions before restricting access or removing responsibilities."
+msgstr "この会員には担当業務・管理範囲または未処理案件があります。利用禁止・停止・権限解除の前に、「担当者・権限」で後任への引き継ぎを設定してください。"
+
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-screens.php:181
+#: includes/class-screens.php:208
 msgid "This post and its associated attachments (%d) will be transferred to the site operator as drafts. Personal information in text and images is not anonymized automatically."
 msgstr "この投稿と関連するご自身の添付ファイル %d 件は、運営名義の下書きとして引き継ぎます。本文・画像内の個人情報は自動で匿名化されません。"
 
@@ -2097,7 +2141,15 @@ msgstr "この投稿と関連するご自身の添付ファイル %d 件は、�
 msgid "This site's keys are configured on the server."
 msgstr "このサイトのキーはサーバー側で設定されています。"
 
-#: includes/class-registration.php:132 includes/class-registration.php:193
+#: includes/class-registration.php:127 includes/class-registration.php:146
+msgid "This username is already taken. Choose another one."
+msgstr "このログインIDはすでに使用されています。別のログインIDを入力してください。"
+
+#: includes/class-registration.php:125
+msgid "This username is not allowed. Choose another one."
+msgstr "このログインIDは使用できません。別のログインIDを入力してください。"
+
+#: includes/class-registration.php:147 includes/class-registration.php:207 includes/class-screens.php:125 includes/class-screens.php:161
 msgid "This verification information cannot be used."
 msgstr "この確認情報は使用できません。"
 
@@ -2105,31 +2157,31 @@ msgstr "この確認情報は使用できません。"
 msgid "To continue registration, open the following link within 30 minutes and click the confirmation button.\n{link}\n\nIf you did not request this, please ignore this email."
 msgstr "会員登録を続けるには、30分以内に次のリンクを開き、確認ボタンを押してください。\n{link}\n\n心当たりがない場合は、このメールを破棄してください。"
 
-#: includes/class-admin.php:394
+#: includes/class-admin.php:401
 msgid "To create a page yourself, paste this shortcode into its content: "
 msgstr "自分でページを作る場合は、次の文字列を本文に貼り付けます: "
 
-#: includes/class-files.php:283
+#: includes/class-files.php:284
 msgid "To display an image in your post, paste this into a Shortcode block: "
 msgstr "投稿内に画像を表示するには、本文のショートコードブロックに次を貼り付けてください: "
 
-#: includes/class-admin.php:454
+#: includes/class-admin.php:462
 msgid "To use custom fields defined in code, provide the integration that renders and saves them in registration and editing forms, then specify their identifiers. Leave this empty if no additional fields are needed."
 msgstr "コードで独自のプロフィール欄を用意する場合は、登録・編集フォームとの連携処理を用意したうえで、使用する項目の識別名を指定します。プロフィール項目を追加しない場合は、指定する必要はありません。"
 
-#: includes/class-screens.php:173
+#: includes/class-screens.php:200
 msgid "To verify your identity, log in again and complete this within 10 minutes."
 msgstr "本人確認のため、再ログインして10分以内に手続きしてください。"
 
-#: includes/class-admin.php:294
+#: includes/class-admin.php:299
 msgid "Together with atshift Members, it lets you choose posting permissions by user category. Add atshift Members Pro to delegate member management by category and send targeted announcements."
-msgstr "このプラグインとの併用で、ユーザーカテゴリーごとに投稿を許可する投稿タイプを選べます。さらに atshift Members Pro と組み合わせると、カテゴリーごとに会員管理を分担したり、対象を選んでお知らせを配信したりできます。"
+msgstr "このプラグインとの併用で、会員の分類ごとに投稿を許可する投稿タイプを選べます。さらに atshift Members Pro と組み合わせると、カテゴリーごとに会員管理を分担したり、対象を選んでお知らせを配信したりできます。"
 
-#: includes/class-screens.php:190
+#: includes/class-screens.php:217
 msgid "Transfer selected posts to the site operator and close my account"
 msgstr "一部の投稿を運営に譲って退会する"
 
-#: includes/class-admin.php:413
+#: includes/class-admin.php:420
 msgid "Turning this off stops new registration requests. People who have already received a confirmation email can still complete registration before the link expires. Existing members can continue to log in."
 msgstr "オフにすると、新しい登録申請を受け付けなくなります。すでに確認メールを受け取っている人は、リンクの有効期限内であれば登録を完了できます。登録済みの会員は引き続きログインできます。"
 
@@ -2137,7 +2189,7 @@ msgstr "オフにすると、新しい登録申請を受け付けなくなりま
 msgid "Unavailable"
 msgstr "利用できません"
 
-#: includes/class-admin.php:314
+#: includes/class-admin.php:319
 msgid "Unavailable category ("
 msgstr "利用できないカテゴリー ("
 
@@ -2145,7 +2197,7 @@ msgstr "利用できないカテゴリー ("
 msgid "Upload"
 msgstr "アップロード"
 
-#: assets/media.js:149
+#: assets/media.js:150
 msgid "Upload cancelled."
 msgstr "アップロードを取り消しました。"
 
@@ -2161,23 +2213,27 @@ msgstr "この%sへのアップロード"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:192
+#: includes/class-admin.php:197
 msgid "Use %1$s with %2$s to save category selections together with member information and delegate member management by category."
-msgstr "%1$sと%2$sを連携すると、ユーザーカテゴリーの選択を会員情報とまとめて保存したり、カテゴリーごとに会員管理を分担することができます。"
+msgstr "%1$sと%2$sを連携すると、会員の分類の選択を会員情報とまとめて保存したり、カテゴリーごとに会員管理を分担することができます。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:190
+#: includes/class-admin.php:195
 msgid "Use %s to create user categories and choose which post types members in each category can use."
-msgstr "%sを連携すると、ユーザーカテゴリーを設定し、カテゴリーごとに投稿を許可する投稿先を選べます。"
+msgstr "%sを連携すると、会員の分類を設定し、カテゴリーごとに投稿を許可する投稿先を選べます。"
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:194
+#: includes/class-admin.php:199
 msgid "Use %s to send announcement emails to members who have opted in, or schedule them for later."
 msgstr "%sを連携すると、受信を希望する会員へのお知らせメールの配信と日時予約を利用できます。"
 
-#: includes/class-admin.php:543
+#: includes/class-screens.php:138
+msgid "Use 1–60 letters, numbers, periods, hyphens, or underscores. Your username cannot be changed after registration. You can also log in with your email address."
+msgstr "半角英数字・ピリオド・ハイフン・アンダースコアを使い、1〜60文字で入力してください。ログインIDは登録後に変更できません。メールアドレスでもログインできます。"
+
+#: includes/class-admin.php:551
 msgid "Use a File Server or NAS"
 msgstr "ファイルサーバー／NASを利用する場合"
 
@@ -2185,43 +2241,51 @@ msgstr "ファイルサーバー／NASを利用する場合"
 msgid "Use a password of at least 12 characters and no more than 256 bytes."
 msgstr "パスワードは12文字以上、256バイト以内で入力してください。"
 
-#: includes/class-admin.php:533
+#: includes/class-admin.php:541
 msgid "Use a private directory on the web server or a file server/NAS share already mounted on that server."
 msgstr "サーバー内の非公開フォルダー、またはサーバーに接続済みのファイルサーバー／NASの共有フォルダーを利用できます。"
 
-#: includes/class-admin.php:290
+#: includes/class-admin.php:295
 msgid "Use atshift User Profile Fields and its Pro Add-on to create hierarchical classifications such as branches, departments, or membership types. Use these categories to assign member management responsibilities and target announcements."
 msgstr "atshift User Profile Fields と atshift User Profile Fields Pro アドオンを併用すると、支部・部署・会員種別などといった任意の階層ユーザー分類を使って、会員管理の担当範囲を分けたり、対象を選んでお知らせを配信したりできます。"
 
-#: includes/class-admin.php:534
+#: includes/class-admin.php:542
 msgid "Use the Web Server Running WordPress"
 msgstr "WordPress運用中のWebサーバーを利用する場合"
 
-#: includes/class-screens.php:207
+#: includes/class-screens.php:234
 msgid "Use the invitation link sent by the site administrator."
 msgstr "サイト管理者から届いた招待メールのリンクをご利用ください。"
 
-#: includes/class-admin.php:490
+#: includes/class-admin.php:498
 msgid "Use your organization's or site's name so recipients can recognize the sender, for example, Example Association Office."
 msgstr "会員に届くメールを、団体やサイトの名前で案内できます。たとえば「○○協会 事務局」とすると、受け取った人に誰からのメールかが伝わります。"
 
-#: includes/class-admin.php:481
+#: includes/class-admin.php:489
 msgid "Used to display the verification widget on your forms."
 msgstr "フォームに確認画面を表示するためのキーです。"
 
-#: includes/class-members.php:11
+#: includes/class-admin.php:20 includes/class-members.php:11
 msgid "User (Posting Permissions)"
 msgstr "ユーザー（投稿権限）"
 
-#: includes/class-admin.php:383
+#: includes/class-admin.php:390
 msgid "User Categories and Posting Permissions"
-msgstr "ユーザーカテゴリーと投稿範囲"
+msgstr "会員の分類と投稿範囲"
 
-#: includes/class-profile.php:132
+#: includes/class-profile.php:133
 msgid "User not found."
 msgstr "ユーザーが見つかりません。"
 
-#: includes/class-registration.php:162
+#: includes/class-screens.php:137 includes/class-screens.php:181
+msgid "Username"
+msgstr "ログインID（ユーザー名）"
+
+#: includes/class-admin.php:426
+msgid "Username (required; cannot be changed after registration)"
+msgstr "ログインID（必須・登録後は変更できません）"
+
+#: includes/class-registration.php:176
 msgid "Verification failed. Please try again."
 msgstr "確認に失敗しました。再試行してください。"
 
@@ -2229,15 +2293,15 @@ msgstr "確認に失敗しました。再試行してください。"
 msgid "Verification failed. Reload the page and try again."
 msgstr "確認に失敗しました。ページを再読み込みして再試行してください。"
 
-#: includes/class-screens.php:206
+#: includes/class-screens.php:233
 msgid "Verified email address: "
 msgstr "確認済みメールアドレス: "
 
-#: includes/class-admin.php:509
+#: includes/class-admin.php:517
 msgid "Verifies ownership of the new address when a member changes their email."
 msgstr "メールアドレスの変更時、新しいアドレスの所有確認に使用します。"
 
-#: includes/class-members.php:218
+#: includes/class-members.php:226
 msgid "Verify your email address change on the account editing page."
 msgstr "メールアドレスはアカウント編集ページで確認手続きを行ってください。"
 
@@ -2257,7 +2321,7 @@ msgstr "%sを表示"
 msgid "View Details"
 msgstr "詳細を表示"
 
-#: includes/class-admin.php:395
+#: includes/class-admin.php:402
 msgid "View Page"
 msgstr "ページを表示"
 
@@ -2275,15 +2339,19 @@ msgstr "サイト URL"
 msgid "When changing the site key, enter the matching secret key from the same widget settings."
 msgstr "サイトキーを変更するときは、同じ設定で発行されたシークレットキーも入力してください。"
 
-#: includes/class-admin.php:415
+#: includes/class-admin.php:422
 msgid "When enabled, new members must wait for review. Set their status to Active in Member Management to grant access. If unsure, you can start with this unchecked."
 msgstr "チェックを入れると、登録した人は担当者の確認が終わるまで利用を待ちます。「会員管理」でその人を「有効」にすると利用できます。迷う場合は、チェックを外したままで始められます。"
 
-#: includes/class-admin.php:447
-msgid "Without a profile plugin integration, registration requires only an email address and password by default. Add any additional profile fields using the settings below."
-msgstr "プロフィールプラグインを連携していない場合、初期状態ではメールアドレスとパスワードだけで登録できます。必要なプロフィール項目は、下の設定から追加できます。"
+#: includes/class-admin.php:455
+msgid "Without a profile plugin integration, the form includes a username, first and last names, email address, and password. Add any additional profile fields using the settings below."
+msgstr "プロフィール用プラグインと連携していない場合は、ログインID・姓・名・メールアドレス・パスワードの入力欄を表示します。追加のプロフィール項目は、下の設定から追加できます。"
 
-#: includes/class-admin.php:551
+#: includes/class-admin.php:20
+msgid "WordPress Standard Roles"
+msgstr "WordPress標準の役割"
+
+#: includes/class-admin.php:559
 msgid "WordPress Web Server (Private Directory)"
 msgstr "WordPress運用中のWebサーバー（非公開フォルダー）"
 
@@ -2295,7 +2363,7 @@ msgstr "この投稿には添付できません。"
 msgid "You cannot manage this media item."
 msgstr "このメディアは操作できません。"
 
-#: includes/class-admin.php:51 includes/class-members.php:115 includes/class-members.php:130 includes/class-members.php:196 includes/class-members.php:69 includes/class-registration.php:185
+#: includes/class-admin.php:56 includes/class-members.php:128 includes/class-members.php:144 includes/class-members.php:82 includes/class-registration.php:199
 msgid "You cannot perform this action."
 msgstr "操作できません。"
 
@@ -2303,11 +2371,11 @@ msgstr "操作できません。"
 msgid "You cannot select this file."
 msgstr "このファイルは選択できません。"
 
-#: includes/class-content.php:132 includes/class-files.php:226 includes/class-files.php:234
+#: includes/class-content.php:132 includes/class-files.php:227 includes/class-files.php:235
 msgid "You cannot view this content."
 msgstr "表示できません。"
 
-#: includes/class-admin.php:346
+#: includes/class-admin.php:351
 msgid "You cannot view this member's settings."
 msgstr "この会員の設定は表示できません。"
 
@@ -2315,31 +2383,31 @@ msgstr "この会員の設定は表示できません。"
 msgid "You have been invited to become a site operator. Open the link within 30 minutes to complete registration.\n{link}\n\nIf you were not expecting this invitation, do not proceed. Please contact the site administrator."
 msgstr "サイト運営者として招待されています。30分以内にリンクを開き、登録を完了してください。\n{link}\n\n心当たりがない場合は、操作せず管理者へお問い合わせください。"
 
-#: includes/class-screens.php:13
+#: includes/class-screens.php:13 includes/class-screens.php:169
 msgid "Your Account Information"
 msgstr "あなたのアカウント情報"
 
-#: includes/class-screens.php:190
+#: includes/class-screens.php:217
 msgid "Your Posts When Closing Your Account"
 msgstr "退会時の投稿の扱い"
 
-#: includes/class-screens.php:109
+#: includes/class-screens.php:111
 msgid "Your account closure request has been accepted. Login is disabled, and your data is being deleted."
 msgstr "退会手続きを受け付けました。ログインは停止され、データの削除を順次行っています。"
 
-#: includes/class-mail.php:29
+#: includes/class-mail.php:32
 msgid "Your account email address has changed. If you did not make this change, please contact the site administrator."
 msgstr "アカウントのメールアドレスが変更されました。心当たりがない場合は、サイト管理者へお問い合わせください。"
 
-#: includes/class-screens.php:109
+#: includes/class-screens.php:111
 msgid "Your account has been closed, and the account data and content selected for deletion have been removed."
 msgstr "退会手続きが完了しました。アカウントと削除対象のデータを削除しました。"
 
 #: includes/class-mail.php:20
-msgid "Your account has been closed, and your account data and content selected for deletion have been removed. Any posts and attachments you chose to transfer are retained under the site operator's ownership. Please refer to the account closure notice for information about shared files, other services, and backups."
-msgstr "退会手続きが完了しました。アカウントと削除対象のデータを削除しました。ご自身で移譲を指定した投稿・添付ファイルがある場合は、運営名義で保管されます。共有ファイル、他サービスやバックアップの取り扱いは、退会時のご案内をご確認ください。"
+msgid "Your account has been closed, and your account data and content selected for deletion have been removed. Any posts and attachments you chose to transfer are retained under the site operator's ownership.\n\nFor files shared with other users, only your own records have been deleted. Data stored by other services, unsupported plugins, or in backups is not deleted as part of this account closure. Please contact the site operator for details about how that data is handled."
+msgstr "退会手続きが完了しました。アカウントと削除対象のデータを削除しました。ご自身で移譲を指定した投稿・添付ファイルは、運営名義で保管されます。\n\n他の利用者と共有しているファイルは、ご自身の登録情報のみを削除しています。他サービス、未対応のプラグイン、バックアップに保存されたデータは、今回の退会手続きによる削除の対象外です。詳しい取り扱いは、サイト運営者へお問い合わせください。"
 
-#: includes/class-mail.php:21
+#: includes/class-mail.php:24
 msgid "Your account has been suspended. Please contact the site administrator for details."
 msgstr "アカウントの利用が停止されました。詳細はサイト管理者へお問い合わせください。"
 
@@ -2347,27 +2415,35 @@ msgstr "アカウントの利用が停止されました。詳細はサイト管
 msgid "Your account is awaiting administrator review. We will let you know when it is ready to use."
 msgstr "アカウントは管理者の確認待ちです。利用可能になるとお知らせします。"
 
+#: includes/class-mail.php:23
+msgid "Your account is no longer permitted to access this site. Your account and records have been retained. Please contact the site administrator for details."
+msgstr "このサイトでのアカウントの利用を禁止しました。アカウントと記録は保持されています。詳しくはサイト管理者へお問い合わせください。"
+
 #: includes/class-mail.php:18
 msgid "Your account is now ready to use.\n{link}"
 msgstr "アカウントが利用可能になりました。\n{link}"
 
-#: includes/class-screens.php:176
+#: includes/class-screens.php:203
 msgid "Your account, profile, authentication information, comments posted while logged in, and posts and attachments not selected for transfer will be deleted, including items in the trash. Comments on deleted posts will also be removed."
 msgstr "アカウント、プロフィール、認証情報、ログイン中に投稿したコメントと、移譲対象以外の投稿・添付ファイルを削除します。ゴミ箱の内容も対象です。削除した投稿のコメント欄も削除されます。"
 
-#: includes/class-screens.php:124
+#: includes/class-screens.php:166
+msgid "Your current email address will remain unchanged until you complete the confirmation process."
+msgstr "確認メールの手続きが完了するまで、現在のメールアドレスは変更されません。"
+
+#: includes/class-screens.php:127
 msgid "Your email address has changed. Log in with your new address."
 msgstr "メールアドレスを変更しました。新しいアドレスでログインしてください。"
 
-#: includes/class-screens.php:97
+#: includes/class-screens.php:99
 msgid "Your password has been reset. Please log in."
 msgstr "パスワードを再設定しました。ログインしてください。"
 
-#: includes/class-mail.php:26
+#: includes/class-mail.php:29
 msgid "Your password has changed. If you did not make this change, contact the site administrator immediately."
 msgstr "パスワードが変更されました。心当たりがない場合は、直ちにサイト管理者へお問い合わせください。"
 
-#: includes/class-screens.php:89
+#: includes/class-screens.php:91
 msgid "Your registration has been submitted. We will notify you after administrator review."
 msgstr "登録申請を受け付けました。管理者の確認後にお知らせします。"
 
@@ -2379,7 +2455,7 @@ msgstr "会員登録が完了しました。\nアカウント情報: {link}"
 msgid "[{site}] Confirm your email address"
 msgstr "[{site}] メールアドレスの確認"
 
-#: includes/class-mail.php:27
+#: includes/class-mail.php:30
 msgid "[{site}] Confirm your new email address"
 msgstr "[{site}] 新しいメールアドレスの確認"
 
@@ -2387,15 +2463,19 @@ msgstr "[{site}] 新しいメールアドレスの確認"
 msgid "[{site}] Invitation to become a site operator"
 msgstr "[{site}] サイト運営者への招待"
 
-#: includes/class-mail.php:22
+#: includes/class-mail.php:25
 msgid "[{site}] Reset your password"
 msgstr "[{site}] パスワードの再設定"
+
+#: includes/class-mail.php:23
+msgid "[{site}] Your account access has been revoked"
+msgstr "[{site}] アカウントの利用を禁止しました"
 
 #: includes/class-mail.php:20
 msgid "[{site}] Your account has been closed"
 msgstr "[{site}] 退会手続きが完了しました"
 
-#: includes/class-mail.php:21
+#: includes/class-mail.php:24
 msgid "[{site}] Your account has been suspended"
 msgstr "[{site}] アカウントの利用停止"
 
@@ -2407,11 +2487,11 @@ msgstr "[{site}] アカウント確認待ち"
 msgid "[{site}] Your account is ready to use"
 msgstr "[{site}] アカウントが利用可能になりました"
 
-#: includes/class-mail.php:29
+#: includes/class-mail.php:32
 msgid "[{site}] Your email address has changed"
 msgstr "[{site}] メールアドレスが変更されました"
 
-#: includes/class-mail.php:26
+#: includes/class-mail.php:29
 msgid "[{site}] Your password has changed"
 msgstr "[{site}] パスワードが変更されました"
 
@@ -2419,19 +2499,19 @@ msgstr "[{site}] パスワードが変更されました"
 msgid "[{site}] Your registration is complete"
 msgstr "[{site}] 登録が完了しました"
 
-#: includes/class-admin.php:149
+#: includes/class-admin.php:154
 msgid "atshift Freeform Login / Pro Add-on"
 msgstr "atshift Freeform Login / Proアドオン"
 
-#: includes/class-admin.php:149
+#: includes/class-admin.php:154
 msgid "atshift Members Pro Add-on"
 msgstr "atshift Members Proアドオン"
 
-#: includes/class-admin.php:250
+#: includes/class-admin.php:255
 msgid "atshift Members Settings"
 msgstr "Members の設定ページ"
 
-#: includes/class-admin.php:228
+#: includes/class-admin.php:233
 msgid "atshift Members provides the essentials for a membership site. Add the following plugins to suit your site's needs."
 msgstr "atshift Members は会員制サイトを構築するためのシンプルな機能のプラグインです。会員制サイトの求める機能に応じて、以下のプラグインを併用してください。"
 
@@ -2439,18 +2519,18 @@ msgstr "atshift Members は会員制サイトを構築するためのシンプ�
 msgid "atshift Members: Every minute"
 msgstr "atshift Members：1分間隔"
 
-#: includes/class-admin.php:149
+#: includes/class-admin.php:154
 msgid "atshift User Profile Fields / Pro Add-on"
 msgstr "atshift User Profile Fields / Proアドオン"
 
-#: includes/class-admin.php:497
+#: includes/class-admin.php:505
 msgid "{site} Office"
 msgstr "{site} 事務局"
 
-#: includes/class-admin.php:493
+#: includes/class-admin.php:501
 msgid "{site} Office\nContact: info@example.com\nhttps://example.com/"
 msgstr "{site} 事務局\nお問い合わせ: info@example.com\nhttps://example.com/"
 
-#: includes/class-admin.php:264
+#: includes/class-admin.php:269
 msgid "← Back to members"
 msgstr "← 会員一覧に戻る"

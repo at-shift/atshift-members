@@ -81,6 +81,11 @@ final class Store {
     public function claim_mail($id, $token) {
         return 1 === $this->db->query($this->db->prepare("UPDATE {$this->requests} SET state='emailed',token_hash=%s WHERE id=%d AND state='queued' AND expires>%d", self::digest($token), $id, time()));
     }
+    /** Read-only preview: a token never reveals another user's requested address. */
+    public function email_preview($token,$user) {
+        if(!preg_match('/^[a-f0-9]{64}$/D',$token)||$user!==get_current_user_id()||!Members::active($user))return null;
+        return $this->db->get_var($this->db->prepare("SELECT email FROM {$this->requests} WHERE token_hash=%s AND kind='email' AND target_id=%d AND state='emailed' AND expires>%d",self::digest($token),$user,time()));
+    }
     public function verify($token, $session, $browser) {
         if (!preg_match('/^[a-f0-9]{64}$/D', $token)) return false;
         return 1 === $this->db->query($this->db->prepare("UPDATE {$this->requests} SET state='verified',token_hash=NULL,session_hash=%s,browser_hash=%s,expires=%d WHERE token_hash=%s AND state='emailed' AND expires>%d", self::digest($session), self::digest($browser), time()+900, self::digest($token), time()));

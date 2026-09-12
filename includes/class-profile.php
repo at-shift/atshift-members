@@ -92,6 +92,7 @@ final class Profile {
             'user_url'=>['label'=>__('Website URL', 'atshift-members'),'type'=>'url','required'=>false,'maxlength'=>100],
             'bio'=>['label'=>__('Biography', 'atshift-members'),'type'=>'textarea','required'=>false,'maxlength'=>2000],
         ];
+        if(Registration::option('name_order','given_first')==='family_first')$fields=['last_name'=>$fields['last_name'],'first_name'=>$fields['first_name']]+$fields;
         return array_intersect_key($fields,array_flip(array_intersect((array)$allowed,array_keys($fields))));
     }
     public static function render($allowed,$values=[],$labels=[]) {

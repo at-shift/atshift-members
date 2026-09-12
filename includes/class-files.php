@@ -199,7 +199,8 @@ final class Files {
         $p=get_post($id);if(!$p || $p->post_type!=='attachment' || !get_post_meta($id,self::META,true) || !Members::reader() || (Members::blocked($p->post_author) && get_user_meta($p->post_author,'_asm_custodian',true)!=='1'))return false;
         $parent=get_post($p->post_parent);
         if(!$p->post_parent)return (int)$p->post_author===get_current_user_id()||current_user_can('manage_options');
-        return $parent && !Content::denied($parent->ID) && (($parent->post_status==='publish'&&!post_password_required($parent)) || current_user_can('edit_post',$parent->ID));
+        $readable=$parent && !Content::denied($parent->ID) && (($parent->post_status==='publish'&&!post_password_required($parent)) || current_user_can('edit_post',$parent->ID));
+        return (bool)apply_filters('atshift_members_can_read_attachment',$readable,$id,get_current_user_id());
     }
     public static function hooks() {
         add_action('admin_post_asm_file_delete',function(){check_admin_referer('asm_file_delete');$result=self::erase(absint($_POST['file_id']??0));if(is_wp_error($result))wp_die(esc_html($result->get_error_message()),'',['response'=>400]);wp_safe_redirect(wp_get_referer()?:home_url('/'));exit;});

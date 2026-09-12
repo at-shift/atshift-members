@@ -90,7 +90,8 @@
                 el('div', null, el('strong', null, selected[0].filename), el('p', null, el('a', { href: selected[0].link, target: '_blank', rel: 'noopener' }, __('Open File', 'atshift-members')))) :
                 el(Button, { variant: 'primary', disabled: busy, onClick: insert }, __('Insert Selected Files', 'atshift-members'))));
     }
-    function pick(options = {}) {
+    async function pick(options = {}) {
+        if (config.prepare && !(await config.prepare())) return null;
         if (activePicker) return activePicker;
         const mount = document.createElement('div');document.body.appendChild(mount);const root = createRoot(mount);
         const focus = document.activeElement;

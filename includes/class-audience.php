@@ -10,7 +10,7 @@ final class Audience {
         return is_array($api) && ($api['version']??0)===1 && is_callable($api['catalog']??null) && is_callable($api['memberships']??null) ? $api : null;
     }
     public static function catalog() { $api=self::api();return $api?(array)call_user_func($api['catalog']):[]; }
-    public static function keys($user) { $api=self::api();$keys=$api?(array)call_user_func($api['memberships'],(int)$user):[];return array_values(array_unique(array_merge($keys,Scope::limited($user)?Scope::groups($user):[]))); }
+    public static function keys($user) { $api=self::api();$callback=$api['effective_memberships']??($api['memberships']??null);$keys=is_callable($callback)?(array)call_user_func($callback,(int)$user):[];return array_values(array_unique(array_merge($keys,Scope::limited($user)?Scope::groups($user):[]))); }
     public static function restricted($id) { return metadata_exists('post',$id,self::META); }
     public static function allows($id,$user) {
         $post=get_post($id);if(!$post)return false;

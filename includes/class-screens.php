@@ -14,6 +14,8 @@ final class Screens {
         return $pages;
     }
     public static function url($key) {
+        if($key==='email')return add_query_arg('asm_view','email',self::url('edit'));
+
         $id=(int)(get_option('asm_pages',[])[$key]??0);
         return $id && get_post_status($id)==='publish' ? get_permalink($id) : home_url('/');
     }
@@ -47,7 +49,7 @@ final class Screens {
         self::private_headers();
         // Render the public integration before wp_head so its styles and scripts load in time.
         if($screen==='edit')$this->passkey_profile();
-        wp_enqueue_style('atshift-members-account',plugins_url('assets/account.css',dirname(__DIR__).'/atshift-members.php'),[],'0.1β');
+        wp_enqueue_style('atshift-members-account',plugins_url('assets/account.css',dirname(__DIR__).'/atshift-members.php'),[],'0.1.1');
         $this->browser=self::str($_COOKIE,'asm_browser');
         if (!preg_match('/^[a-f0-9]{64}$/D',$this->browser)) {$this->browser=Store::token();self::cookie('asm_browser',$this->browser,3600);}
         // Move native WP reset secrets to HttpOnly cookies, then remove them from address bar.
@@ -71,9 +73,9 @@ final class Screens {
             if (!is_wp_error($result)) {self::cookie('asm_session',$result,900);wp_safe_redirect(self::url($screen));exit;}
         } elseif ($action==='complete' && in_array($screen,['register','staff'],true)) {
             // phpcs:ignore WordPress.Security.NonceVerification.Missing -- POST actions below are gated by the browser/user-bound CSRF HMAC in handle(); GET only stages or displays proofs, which are validated on submission.
-            $extra=array_diff(array_keys($_POST),['asm_action','asm_csrf','password','asm_fields']);
+            $extra=array_diff(array_keys($_POST),['asm_action','asm_csrf','username','password','asm_fields']);
             // phpcs:ignore WordPress.Security.NonceVerification.Missing,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- POST actions below are gated by the browser/user-bound CSRF HMAC in handle(); GET only stages or displays proofs, which are validated on submission. Typed profile fields are unslashed and schema-validated by the profile API; withdrawal IDs are validated by Withdrawal::review. Request method is an exact non-mutating comparison.
-            $data=['password'=>self::str($_POST,'password'),'fields'=>isset($_POST['asm_fields'])?wp_unslash($_POST['asm_fields']):[]];
+            $data=['username'=>self::str($_POST,'username'),'password'=>self::str($_POST,'password'),'fields'=>isset($_POST['asm_fields'])?wp_unslash($_POST['asm_fields']):[]];
             if ($extra) $data['unapproved']=true;
             $result=$this->reg->complete(self::str($_COOKIE,'asm_session'),$this->browser,$data,$this->signals());
             if (!is_wp_error($result)) {
@@ -110,7 +112,7 @@ final class Screens {
             }
         } elseif ($screen==='edit' && Members::active(get_current_user_id())) {
             $id=get_current_user_id();
-            if ($action==='profile') {
+            if ($action==='profile' && !self::email_view()) {
                 $api=Registration::profile_api();
                 // phpcs:ignore WordPress.Security.NonceVerification.Missing,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- POST actions below are gated by the browser/user-bound CSRF HMAC in handle(); GET only stages or displays proofs, which are validated on submission. Typed profile fields are unslashed and schema-validated by the profile API; withdrawal IDs are validated by Withdrawal::review. Request method is an exact non-mutating comparison.
                 $result=call_user_func($api['save'],$id,Registration::fields(),isset($_POST['asm_fields'])?wp_unslash($_POST['asm_fields']):[]);
@@ -119,15 +121,22 @@ final class Screens {
             } elseif ($action==='email_request') $result=$this->reg->request_email($id,self::str($_POST,'email'),$this->signals());
             elseif ($action==='email_confirm') {
                 // phpcs:ignore WordPress.Security.NonceVerification.Missing -- POST actions below are gated by the browser/user-bound CSRF HMAC in handle(); GET only stages or displays proofs, which are validated on submission.
-                $session=$this->reg->verify(self::str($_POST,'token'),$this->browser,$this->signals());
+                $token=self::str($_POST,'token');
+                $session=$this->reg->store->email_preview($token,$id)?$this->reg->verify($token,$this->browser,$this->signals()):new \WP_Error('proof',__('This verification information cannot be used.', 'atshift-members'));
                 $result=is_wp_error($session)?$session:$this->reg->confirm_email($session,$this->browser,$id);
                 if ($result===true) {wp_logout();$result=__('Your email address has changed. Log in with your new address.', 'atshift-members');}
             }
         }
         $this->message=is_wp_error($result)?$result->get_error_message():(is_string($result)?$result:__('Could not complete the action.', 'atshift-members'));
     }
-    private function form($action) {echo '<form method="post" action="'.esc_url(self::url($this->screen())).'"><input type="hidden" name="asm_action" value="'.esc_attr($action).'"><input type="hidden" name="asm_csrf" value="'.esc_attr($this->csrf()).'">';}
+    private function form($action) {echo '<form method="post" action="'.esc_url(self::url(str_starts_with($action,'email_')?'email':$this->screen())).'"><input type="hidden" name="asm_action" value="'.esc_attr($action).'"><input type="hidden" name="asm_csrf" value="'.esc_attr($this->csrf()).'">';}
     private function button($label) {echo '<p><button type="submit">'.esc_html($label).'</button></p></form>';}
+    private function username() {
+        // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Redisplay only; complete() validates the submitted username after CSRF verification.
+        $value=self::str($_POST,'username');
+        echo '<p><label>'.esc_html__('Username', 'atshift-members').'<br><input type="text" name="username" autocomplete="username" maxlength="60" pattern="[A-Za-z0-9_.\\-]+" value="'.esc_attr($value).'" aria-describedby="asm-username-help" required></label></p>';
+        echo '<p id="asm-username-help">'.esc_html__('Use 1–60 letters, numbers, periods, hyphens, or underscores. Your username cannot be changed after registration. You can also log in with your email address.', 'atshift-members').'</p>';
+    }
     private function password() {echo ('<p>' . '<label>' . esc_html__('Password (at least 12 characters)', 'atshift-members') . '<br>' . '<input type="password" name="password" autocomplete="new-password" minlength="12" maxlength="256" required>' . '</label>' . '</p>');}
     private function challenge() {
         // phpcs:ignore PluginCheck.CodeAnalysis.EnqueuedResourceOffloading.OffloadedContent,WordPress.WP.EnqueuedResourceParameters.MissingVersion -- Required Cloudflare Turnstile service endpoint/script, not a hosted plugin asset; external service use and privacy are documented in readme. Cloudflare owns the dynamically updated Turnstile service script and requires its canonical URL without a plugin version query.
@@ -141,29 +150,47 @@ final class Screens {
         if($this->passkey_html===null)$this->passkey_html=do_shortcode('[atshift_passkey_profile heading="false"]');
         return $this->passkey_html;
     }
+    private static function email_view() {
+        return self::str($_GET,'asm_view')==='email'||self::str($_GET,'asm_email_token')!==''||str_starts_with(self::str($_POST,'asm_action'),'email_');
+    }
+    private function email_screen() {
+        echo '<h2>'.esc_html__('Change Email Address', 'atshift-members').'</h2>';
+        $token=self::str($_GET,'asm_email_token')?:self::str($_POST,'token');
+        if($token){
+            $email=$this->reg->store->email_preview($token,get_current_user_id());
+            if(!$email){echo '<p>'.esc_html__('This verification information cannot be used.', 'atshift-members').'</p>';return;}
+            $user=wp_get_current_user();
+            echo '<p>'.esc_html($user->display_name).'</p><dl><dt>'.esc_html__('New Email Address', 'atshift-members').'</dt><dd>'.esc_html($email).'</dd></dl>';
+            $this->form('email_confirm');echo '<input type="hidden" name="token" value="'.esc_attr($token).'">';$this->button(__('Confirm Email Address Change', 'atshift-members'));
+        }else{
+            echo '<p>'.esc_html__('Your current email address will remain unchanged until you complete the confirmation process.', 'atshift-members').'</p>';
+            $this->form('email_request');echo '<p><label>'.esc_html__('New Email Address', 'atshift-members').'<input type="email" name="email" autocomplete="email" required></label></p>';$this->button(__('Send Confirmation to the New Address', 'atshift-members'));
+        }
+        echo '<p><a href="'.esc_url(self::url('account')).'">'.esc_html__('Your Account Information', 'atshift-members').'</a></p>';
+    }
     public function render($screen) {
         ob_start();echo '<div class="asm-account">';
         if ($this->message) echo '<p role="status">'.esc_html($this->message).'</p>';
         if($screen==='withdraw' && $this->withdrawal_done) {if ($screen==='account' && shortcode_exists('asm_notice_preferences')) echo do_shortcode('[asm_notice_preferences]');
         echo '</div>';return ob_get_clean();}
-        if (in_array($screen,['account','edit','withdraw'],true) && !Members::reader()) {echo ('<p>' . esc_html__('Please log in to continue.', 'atshift-members') . '</p>' . '<a href="').esc_url(wp_login_url(self::url($screen))).('">' . esc_html__('Log In', 'atshift-members') . '</a>' . '</div>');return ob_get_clean();}
+        if (in_array($screen,['account','edit','withdraw'],true) && !Members::reader()) {echo ('<p>' . esc_html__('Please log in to continue.', 'atshift-members') . '</p>' . '<a href="').esc_url(wp_login_url($screen==='edit'&&self::email_view()?add_query_arg('asm_email_token',self::str($_GET,'asm_email_token'),self::url('email')):self::url($screen))).('">' . esc_html__('Log In', 'atshift-members') . '</a>' . '</div>');return ob_get_clean();}
         $api=Registration::profile_api();
         if(in_array($screen,['account','edit'],true))do_action('atshift_members_profile_status');
         if ($screen==='account') {
             $user=wp_get_current_user();
+            echo '<dl><dt>'.esc_html__('Username', 'atshift-members').'</dt><dd>'.esc_html($user->user_login).'</dd></dl>';
             echo ('<dl>' . '<dt>' . esc_html__('Email Address', 'atshift-members') . '</dt>' . '<dd>').esc_html($user->user_email).('</dd>' . '<dt>' . esc_html__('Membership Status', 'atshift-members') . '</dt>' . '<dd>').esc_html(Members::state_label(get_user_meta($user->ID,'_asm_state',true))).'</dd></dl>';
             if($api&&is_callable($api['display']??null))call_user_func($api['display'],$user->ID,Registration::fields());
             elseif ($api) foreach (call_user_func($api['fields'],Registration::fields()) as $key=>$field) {$values=call_user_func($api['values'],$user->ID,Registration::fields());echo '<p>'.esc_html($field['label']??$key).': '.esc_html((string)($values[$key]??'')).'</p>';}
-            echo '<p><a href="'.esc_url(self::url('edit')).('">' . esc_html__('Edit Account Information', 'atshift-members') . '</a>' . '</p>' . '<p>' . '<a href="').esc_url(self::url('reset')).('">' . esc_html__('Reset Password', 'atshift-members') . '</a>' . '</p>' . '<p>' . '<a href="').esc_url(admin_url('profile.php')).('">' . esc_html__('Password and Authentication Settings', 'atshift-members') . '</a>' . '</p>');
+            do_action('atshift_members_account_responsibilities',$user->ID);
+            foreach(['edit'=>__('Edit Account Information', 'atshift-members'),'email'=>__('Change Email Address', 'atshift-members'),'reset'=>__('Reset Password', 'atshift-members')] as $key=>$label)echo '<p><a href="'.esc_url(self::url($key)).'">'.esc_html($label).'</a></p>';
             if (self::passkeys_available()) echo '<p><a href="'.esc_url(self::url('edit').'#asm-passkeys').('">' . esc_html__('Register and Manage Passkeys', 'atshift-members') . '</a>' . '</p>');
             if (Members::active($user->ID) && !current_user_can('manage_options')) echo '<p><a href="'.esc_url(self::url('withdraw')).('">' . esc_html__('Close Account', 'atshift-members') . '</a>' . '</p>');
             echo '<p><a href="'.esc_url(wp_logout_url(home_url('/'))).('">' . esc_html__('Log Out', 'atshift-members') . '</a>' . '</p>');
+        } elseif ($screen==='edit' && self::email_view()) {
+            $this->email_screen();
         } elseif ($screen==='edit') {
             if ($api && Registration::fields()) {$this->form('profile');call_user_func($api['render'],Registration::fields(),call_user_func($api['values'],get_current_user_id(),Registration::fields()));$this->button(__('Save', 'atshift-members'));}
-            // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- POST actions below are gated by the browser/user-bound CSRF HMAC in handle(); GET only stages or displays proofs, which are validated on submission.
-            $token=self::str($_GET,'asm_email_token');
-            if ($token) {$this->form('email_confirm');echo '<input type="hidden" name="token" value="'.esc_attr($token).'">';$this->button(__('Confirm Email Address Change', 'atshift-members'));}
-            else {$this->form('email_request');echo ('<p>' . '<label>' . esc_html__('New Email Address ', 'atshift-members') . '<input type="email" name="email" autocomplete="email" required>' . '</label>' . '</p>');$this->button(__('Send Confirmation Email', 'atshift-members'));}
             $passkeys=$this->passkey_profile();
             // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Trusted Freeform Login shortcode HTML; provider escapes fields and supplies its own forms and scripts.
             if($passkeys!==''&&!Registration::uses_profile_passkeys())echo ('<section id="asm-passkeys" class="asm-account-passkeys" aria-labelledby="asm-passkeys-title">' . '<h2 id="asm-passkeys-title">' . esc_html__('Register and Manage Passkeys', 'atshift-members') . '</h2>' . '<p class="asm-auth-integration">' . esc_html__('Register and manage passkeys with atshift Freeform Login.', 'atshift-members') . '</p>').$passkeys.'</section>';
@@ -203,7 +230,7 @@ final class Screens {
             $token=self::str($_GET,'asm_token');$session=$this->reg->store->session(self::str($_COOKIE,'asm_session'),$this->browser);
             if (is_user_logged_in()) echo ('<p>' . esc_html__('Log out before registering.', 'atshift-members') . '</p>');
             elseif ($token) {$this->form('verify');echo '<input type="hidden" name="token" value="'.esc_attr($token).('">' . '<p>' . esc_html__('Confirm your email address to continue registration.', 'atshift-members') . '</p>');$this->button(__('Confirm Email Address', 'atshift-members'));}
-            elseif ($session && in_array($session->kind,['member','operator'],true) && $api) {$this->form('complete');echo ('<p>' . esc_html__('Verified email address: ', 'atshift-members')).esc_html($session->email).'</p>';$this->password();call_user_func($api['render'],Registration::fields(),apply_filters('atshift_members_registration_defaults',[],$session));$this->button(__('Register', 'atshift-members'));}
+            elseif ($session && in_array($session->kind,['member','operator'],true) && $api) {$this->form('complete');echo ('<p>' . esc_html__('Verified email address: ', 'atshift-members')).esc_html($session->email).'</p>';$this->username();$this->password();call_user_func($api['render'],Registration::fields(),apply_filters('atshift_members_registration_defaults',[],$session));$this->button(__('Register', 'atshift-members'));}
             elseif ($screen==='staff') echo ('<p>' . esc_html__('Use the invitation link sent by the site administrator.', 'atshift-members') . '</p>');
             elseif (!$this->reg->ready() || !Registration::option('enabled')) echo ('<p>' . esc_html__('Member registration is currently closed.', 'atshift-members') . '</p>');
             else {$this->form('start');echo ('<p>' . '<label>' . esc_html__('Email Address ', 'atshift-members') . '<input type="email" name="email" autocomplete="email" required>' . '</label>' . '</p>');$this->challenge();$this->button(__('Request Confirmation Email', 'atshift-members'));}

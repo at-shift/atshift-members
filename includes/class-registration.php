@@ -11,7 +11,7 @@ final class Registration {
         if($api=self::owner_profile_api())return array_keys(call_user_func($api['fields'],null));
         if(self::automatic_profile())return array_keys(Profile::linked_fields());
         if(self::api())return [];
-        return self::selected_fields();
+        return array_values(array_unique(array_merge(['last_name','first_name'],self::selected_fields())));
     }
     public static function selected_fields() {return defined('ASM_PUBLIC_FIELDS') ? (array)ASM_PUBLIC_FIELDS : (array)self::option('fields',[]);}
     public static function automatic_schema() {
@@ -102,7 +102,7 @@ final class Registration {
             if ($row->kind==='email') {
                 $user=get_userdata($row->target_id);
                 if (!$user || !Members::active($user->ID) || email_exists($row->email)) {$this->store->revoke($row->id);continue;}
-                $url=add_query_arg('asm_email_token',$token,Screens::url('edit'));
+                $url=add_query_arg('asm_email_token',$token,Screens::url('email'));
                 if (!Mail::send('email_verify',$row->email,$url)) $this->store->revoke($row->id);
                 continue;
             }
@@ -117,23 +117,37 @@ final class Registration {
         if (!$this->store->verify($token,$session,$browser)) return new \WP_Error('proof',__('Could not verify. Request a new confirmation email.', 'atshift-members'));
         return $session;
     }
+    public static function validate_username($login) {
+        if (!is_string($login) || !preg_match('/^[A-Za-z0-9_.-]{1,60}$/D',$login) || !validate_username($login)) {
+            return new \WP_Error('username',__('Enter a username of 1–60 characters using letters, numbers, periods, hyphens, or underscores.', 'atshift-members'));
+        }
+        if (in_array(strtolower($login),array_map('strtolower',(array)apply_filters('illegal_user_logins',[])),true)) {
+            return new \WP_Error('username',__('This username is not allowed. Choose another one.', 'atshift-members'));
+        }
+        if (username_exists($login)) return new \WP_Error('username_exists',__('This username is already taken. Choose another one.', 'atshift-members'));
+        return $login;
+    }
     public function complete($session,$browser,$input,$signals) {
         $row=$this->store->session($session,$browser);
         if (!$row || !in_array($row->kind,['member','operator'],true)) return new \WP_Error('proof',__('Could not verify. Request a new confirmation email.', 'atshift-members'));
         if (!$this->ready()) return new \WP_Error('unavailable',__('Registration is currently unavailable.', 'atshift-members'));
         if (!$this->limits('create',$signals,$row->email)) return new \WP_Error('limited',__('Please try again later.', 'atshift-members'));
-        if (array_diff(array_keys($input),['password','fields'])) return new \WP_Error('input',__('Some registration fields are not allowed.', 'atshift-members'));
+        if (array_diff(array_keys($input),['username','password','fields'])) return new \WP_Error('input',__('Some registration fields are not allowed.', 'atshift-members'));
+        $login=self::validate_username($input['username']??'');
+        if (is_wp_error($login)) return $login;
         $password=$input['password']??'';
         $check=Services::password($password);if (is_wp_error($check)) return $check;
         $api=self::profile_api();$values=call_user_func($api['validate'],self::fields(),$input['fields']??[]);
         if (is_wp_error($values)) return $values;
         if (!$this->store->lock($row->email)) return new \WP_Error('busy',__('Registration is in progress. Please wait a moment and try again.', 'atshift-members'));
+        $login_lock='username:'.strtolower($login);
+        if (!$this->store->lock($login_lock)) {$this->store->unlock($row->email);return new \WP_Error('busy',__('Registration is in progress. Please wait a moment and try again.', 'atshift-members'));}
         try {
+            if (username_exists($login)) return new \WP_Error('username_exists',__('This username is already taken. Choose another one.', 'atshift-members'));
             if (!$this->store->claim_creation($row->id)) return new \WP_Error('proof',__('This verification information cannot be used.', 'atshift-members'));
             if (email_exists($row->email)) {$this->store->revoke($row->id);return new \WP_Error('complete',__('Cannot complete registration. Please try logging in or resetting your password.', 'atshift-members'));}
-            // Deterministic opaque login plus email lock prevents product-owned duplicates after retries.
-            $login='asm_'.substr(Store::key($row->email),0,40);
-            $id=wp_insert_user(['user_login'=>$login,'user_email'=>$row->email,'user_pass'=>$password,'display_name'=>__('Member', 'atshift-members'),'role'=>$row->kind==='operator'?'asm_operator':'asm_member','meta_input'=>['_asm_state'=>'provisioning']]);
+            // Email and case-insensitive username locks serialize Members registrations.
+            $id=wp_insert_user(['user_login'=>$login,'user_email'=>$row->email,'user_pass'=>$password,'display_name'=>$login,'role'=>$row->kind==='operator'?'asm_operator':'asm_member','meta_input'=>['_asm_state'=>'provisioning']]);
             if (is_wp_error($id)) {$this->store->log('creation_failed',$row->email);return new \WP_Error('creation',__('Could not complete registration. Request a new confirmation email.', 'atshift-members'));}
             $saved=call_user_func($api['save'],$id,self::fields(),$values);
             if (is_wp_error($saved)) {$this->store->log('provisioning_failed',(string)$id);return $saved;}
@@ -146,7 +160,7 @@ final class Registration {
             do_action('atshift_members_registered',$id,$row);
             Mail::send($state==='active'?'welcome':'pending',$row->email);
             return ['user_id'=>$id,'state'=>$state];
-        } finally { $this->store->unlock($row->email); }
+        } finally { $this->store->unlock($login_lock);$this->store->unlock($row->email); }
     }
     public function invite($email) {
         if (!current_user_can('manage_options')) return new \WP_Error('forbidden',__('Site administrator permissions are required to send invitations.', 'atshift-members'));

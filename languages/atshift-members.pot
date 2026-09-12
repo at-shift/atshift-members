@@ -1,45 +1,45 @@
 # Translation catalog for atshift Members.
 # Licensed under GPL-2.0-or-later.
 msgid ""
-msgstr "Project-Id-Version: atshift Members 0.1β\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-11 00:00+0000\nPO-Revision-Date: 2026-09-11 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\nX-Domain: atshift-members\n"
+msgstr "Project-Id-Version: atshift Members 0.1.10\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-11 00:00+0000\nPO-Revision-Date: 2026-09-11 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\nX-Domain: atshift-members\n"
 
-#: includes/class-profile.php:101
+#: includes/class-profile.php:102
 msgid " (Optional)"
 msgstr ""
 
-#: includes/class-profile.php:101
+#: includes/class-profile.php:102
 msgid " (Required)"
 msgstr ""
 
-#: includes/class-admin.php:371
+#: includes/class-admin.php:378
 msgid " (default)"
 msgstr ""
 
-#: includes/class-admin.php:442
+#: includes/class-admin.php:450
 msgid " (required)"
 msgstr ""
 
-#: includes/class-admin.php:428
+#: includes/class-admin.php:435
 msgid " (user classification) "
 msgstr ""
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid " Email Notifications"
 msgstr ""
 
-#: includes/class-admin.php:139 includes/class-admin.php:179
+#: includes/class-admin.php:144 includes/class-admin.php:184
 msgid " and "
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:540
+#: includes/class-admin.php:548
 msgid "%1$s specifies the public directory containing WordPress, and %2$s specifies members-only storage. WordPress must be able to read and write in the private directory."
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:181
+#: includes/class-admin.php:186
 msgid "%1$s: %2$s"
 msgstr ""
 
@@ -75,7 +75,7 @@ msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:188
+#: includes/class-admin.php:193
 msgid "%s makes it easy to configure profile fields and extend registration, account display, and editing forms."
 msgstr ""
 
@@ -109,59 +109,59 @@ msgstr ""
 msgid "%s updated."
 msgstr ""
 
-#: includes/class-screens.php:182
+#: includes/class-screens.php:209
 msgid "(Unnamed Attachment)"
 msgstr ""
 
-#: includes/class-screens.php:179 includes/class-screens.php:194
+#: includes/class-screens.php:206 includes/class-screens.php:221
 msgid "(Untitled)"
 msgstr ""
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid ". Create an account if you do not have one."
 msgstr ""
 
-#: includes/class-admin.php:237
+#: includes/class-admin.php:242
 msgid "1. Set Up Member Pages"
 msgstr ""
 
-#: includes/class-admin.php:238
+#: includes/class-admin.php:243
 msgid "2. Registration and Administration"
 msgstr ""
 
-#: includes/class-admin.php:239
+#: includes/class-admin.php:244
 msgid "3. Pro Add-on Features"
 msgstr ""
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid ": Access is temporarily suspended. The member cannot log in, but their information and content are retained. Change the status back to Active to restore access."
 msgstr ""
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid ": Can log in and use member features."
 msgstr ""
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid ": Classification name; "
 msgstr ""
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid ": Registration is awaiting review. The member cannot log in yet. Change the status to Active after reviewing their information."
 msgstr ""
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid ": Rejection reason"
 msgstr ""
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid ": Requested classification; "
 msgstr ""
 
-#: includes/class-members.php:74
+#: includes/class-members.php:87
 msgid "A closed account cannot be restored by removing its suspension."
 msgstr ""
 
-#: includes/class-admin.php:292
+#: includes/class-admin.php:297
 msgid "A free plugin for adding fields such as phone numbers and arranging profile forms. It is optional: atshift Members can also provide basic name and biography fields on its own."
 msgstr ""
 
@@ -171,36 +171,40 @@ msgstr ""
 msgid "A link to a %s."
 msgstr ""
 
-#: includes/class-admin.php:394
+#: includes/class-admin.php:401
 msgid "A page for member account procedures."
 msgstr ""
 
-#: includes/class-mail.php:22
+#: includes/class-mail.php:25
 msgid "A password reset was requested for your account. Follow this link to reset it.\n{link}\n\nIf you did not request this, please ignore this email."
 msgstr ""
 
-#: includes/class-admin.php:482
+#: includes/class-admin.php:490
 msgid "A private key used to verify responses with Cloudflare. Saved values are never displayed. Leave this blank to keep the current key. If you change the site key, enter its matching secret key as well."
 msgstr ""
 
-#: includes/class-admin.php:527
+#: includes/class-admin.php:535
 msgid "A small marker file is also placed in shared storage to verify the connection."
 msgstr ""
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid "About Member Status and Changes"
 msgstr ""
 
-#: includes/class-admin.php:526
+#: includes/class-admin.php:534
 msgid "Absolute Path to the Members-Only Storage Directory"
 msgstr ""
 
-#: includes/class-admin.php:525
+#: includes/class-admin.php:533
 msgid "Absolute Path to the Public Directory Containing WordPress"
 msgstr ""
 
-#: includes/class-admin.php:411
+#: includes/class-admin.php:418
 msgid "Accepting Member Registrations"
+msgstr ""
+
+#: includes/class-mail.php:23
+msgid "Account Banned"
 msgstr ""
 
 #: includes/class-mail.php:20
@@ -215,7 +219,7 @@ msgstr ""
 msgid "Account Removed"
 msgstr ""
 
-#: includes/class-mail.php:21
+#: includes/class-mail.php:24
 msgid "Account Suspended"
 msgstr ""
 
@@ -227,7 +231,7 @@ msgstr ""
 msgid "Activate"
 msgstr ""
 
-#: includes/class-admin.php:336 includes/class-member-list-table.php:34 includes/class-members.php:5
+#: includes/class-admin.php:341 includes/class-member-list-table.php:34 includes/class-members.php:5
 msgid "Active"
 msgstr ""
 
@@ -241,33 +245,33 @@ msgstr ""
 msgid "Add New %s"
 msgstr ""
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "Add a Turnstile widget for this site and register the domains where it will be used."
 msgstr ""
 
-#: includes/class-admin.php:450
+#: includes/class-admin.php:458
 msgid "Add or Change Fields"
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:540
+#: includes/class-admin.php:548
 msgid "Add these settings to %s before the comment that says to stop editing. If they already exist, edit them instead of adding duplicates."
 msgstr ""
 
-#: includes/class-admin.php:285
+#: includes/class-admin.php:290
 msgid "Add tools for reviewing posts, sending announcements, and sharing responsibilities among staff."
 msgstr ""
 
-#: includes/class-admin.php:251
+#: includes/class-admin.php:256
 msgid "Additional Settings"
 msgstr ""
 
-#: includes/class-admin.php:298
+#: includes/class-admin.php:303
 msgid "Adds more design controls to the free atshift Freeform Login plugin. Use a custom logo and adjust the form's position, opacity, border, corner radius, and shadow. Button borders and shadows can also be customized."
 msgstr ""
 
-#: includes/class-members.php:72
+#: includes/class-members.php:85
 msgid "Administrator permissions are required to change operators."
 msgstr ""
 
@@ -281,11 +285,11 @@ msgstr ""
 msgid "All %s"
 msgstr ""
 
-#: includes/class-admin.php:307
+#: includes/class-admin.php:312
 msgid "All Members"
 msgstr ""
 
-#: includes/class-admin.php:312
+#: includes/class-admin.php:317
 msgid "Allowed User Categories"
 msgstr ""
 
@@ -297,11 +301,11 @@ msgstr ""
 msgid "An operation is in progress. Please try again."
 msgstr ""
 
-#: includes/class-admin.php:296
+#: includes/class-admin.php:301
 msgid "An optional plugin for styling your login page to match your site and enabling passkey login. It is not required for member registration."
 msgstr ""
 
-#: includes/class-admin.php:287
+#: includes/class-admin.php:292
 msgid "Announcement Emails and Scheduling"
 msgstr ""
 
@@ -313,19 +317,19 @@ msgstr ""
 msgid "Approval or Access Restored"
 msgstr ""
 
-#: includes/class-admin.php:376
+#: includes/class-admin.php:383
 msgid "Ask a site administrator to change the allowed post types."
 msgstr ""
 
-#: includes/class-admin.php:288
+#: includes/class-admin.php:293
 msgid "Assign post approvals, announcement delivery, and CSV member invitations to individual staff members."
 msgstr ""
 
-#: includes/class-admin.php:170
+#: includes/class-admin.php:175
 msgid "Assigns member management responsibilities by category"
 msgstr ""
 
-#: includes/class-files.php:286
+#: includes/class-files.php:287
 msgid "Attach File"
 msgstr ""
 
@@ -333,23 +337,31 @@ msgstr ""
 msgid "Attach Files"
 msgstr ""
 
-#: assets/media.js:99
+#: assets/media.js:100
 msgid "Attachment Visibility"
 msgstr ""
 
-#: includes/class-admin.php:449
+#: includes/class-admin.php:457
 msgid "Authentication Features Available After Registration"
 msgstr ""
 
-#: includes/class-admin.php:366 includes/class-member-list-table.php:9
+#: includes/class-admin.php:373 includes/class-member-list-table.php:9
 msgid "Available Post Types"
 msgstr ""
 
-#: includes/class-admin.php:469
+#: includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Banned"
+msgstr ""
+
+#: includes/class-admin.php:356
+msgid "Banned accounts cannot log in. Accounts, content, and records are retained. Only a site administrator can restore access."
+msgstr ""
+
+#: includes/class-admin.php:477
 msgid "Before launching a membership site, check any page caching plugins and server caches to prevent one member's information from being shown to someone else. "
 msgstr ""
 
-#: includes/class-admin.php:527
+#: includes/class-admin.php:535
 msgid "Before saving, the plugin checks that it can create, read, and delete a test file in the specified directory."
 msgstr ""
 
@@ -357,7 +369,7 @@ msgstr ""
 msgid "Biography"
 msgstr ""
 
-#: includes/class-admin.php:516
+#: includes/class-admin.php:524
 msgid "Body"
 msgstr ""
 
@@ -383,7 +395,7 @@ msgstr ""
 msgid "By %s"
 msgstr ""
 
-#: includes/class-files.php:228
+#: includes/class-files.php:229
 msgid "Cannot access the storage location."
 msgstr ""
 
@@ -391,11 +403,11 @@ msgstr ""
 msgid "Cannot attach this file."
 msgstr ""
 
-#: includes/class-registration.php:196
+#: includes/class-registration.php:210
 msgid "Cannot change the email address."
 msgstr ""
 
-#: includes/class-registration.php:133
+#: includes/class-registration.php:148
 msgid "Cannot complete registration. Please try logging in or resetting your password."
 msgstr ""
 
@@ -427,7 +439,11 @@ msgstr ""
 msgid "Cannot save."
 msgstr ""
 
-#: includes/class-screens.php:186
+#: includes/class-screens.php:157 includes/class-screens.php:186
+msgid "Change Email Address"
+msgstr ""
+
+#: includes/class-screens.php:213
 msgid "Change Selection"
 msgstr ""
 
@@ -435,35 +451,35 @@ msgstr ""
 msgid "Change Visibility"
 msgstr ""
 
-#: includes/class-admin.php:67
+#: includes/class-admin.php:72
 msgid "Change posting permissions in Posting Settings."
 msgstr ""
 
-#: includes/class-admin.php:361
+#: includes/class-admin.php:368
 msgid "Change role:"
 msgstr ""
 
-#: includes/class-admin.php:354
+#: includes/class-admin.php:361
 msgid "Change status:"
 msgstr ""
 
-#: includes/class-admin.php:376
+#: includes/class-admin.php:383
 msgid "Change the allowed post types in Posting Settings."
 msgstr ""
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid "Changing a member's status sends them a notification email and ends any active login sessions."
 msgstr ""
 
-#: includes/class-admin.php:468
+#: includes/class-admin.php:476
 msgid "Check Cache Settings Before Launch"
 msgstr ""
 
-#: includes/class-admin.php:527
+#: includes/class-admin.php:535
 msgid "Check and Save Storage Location"
 msgstr ""
 
-#: includes/class-registration.php:187
+#: includes/class-registration.php:201
 msgid "Check the address or try again later."
 msgstr ""
 
@@ -471,11 +487,11 @@ msgstr ""
 msgid "Check the file extension and contents. This file cannot be attached in the selected format."
 msgstr ""
 
-#: includes/class-profile.php:119
+#: includes/class-profile.php:120
 msgid "Check the format and length of your entries."
 msgstr ""
 
-#: includes/class-members.php:80
+#: includes/class-members.php:93
 msgid "Check the selected members."
 msgstr ""
 
@@ -483,7 +499,7 @@ msgstr ""
 msgid "Check the shared directory connection. The storage location could not be verified."
 msgstr ""
 
-#: includes/class-admin.php:99
+#: includes/class-admin.php:104
 msgid "Check the subject, body, and required {link} placeholder."
 msgstr ""
 
@@ -495,12 +511,16 @@ msgstr ""
 msgid "Choose How to Add Media"
 msgstr ""
 
-#: includes/class-members.php:142
+#: includes/class-members.php:156
 msgid "Choose Member or Site Operator."
 msgstr ""
 
-#: includes/class-files.php:285
+#: includes/class-files.php:286
 msgid "Choose Members Only when using Add Media or a block's Upload control."
+msgstr ""
+
+#: includes/class-admin.php:20
+msgid "Choose Site Operator for membership administration. Assign duties and management scope in Staff and Permissions."
 msgstr ""
 
 #: includes/class-files.php:184 includes/class-media.php:90
@@ -527,15 +547,15 @@ msgstr ""
 msgid "Choose how to close your account."
 msgstr ""
 
-#: includes/class-members.php:78
+#: includes/class-members.php:91
 msgid "Choose the new member status."
 msgstr ""
 
-#: includes/class-members.php:135
+#: includes/class-members.php:149
 msgid "Choose the new status."
 msgstr ""
 
-#: includes/class-admin.php:223
+#: includes/class-admin.php:228
 msgid "Choose whether to accept new registrations and whether they need approval. You can also review the name, biography, and other fields members will fill in."
 msgstr ""
 
@@ -543,87 +563,87 @@ msgstr ""
 msgid "Choose which members are allowed to post."
 msgstr ""
 
-#: includes/class-admin.php:304
+#: includes/class-admin.php:309
 msgid "Choose which members can create content for each post type registered on this site. All Members means members whose status is Active. By default, only standard WordPress posts are available to all members."
 msgstr ""
 
-#: includes/class-admin.php:224
+#: includes/class-admin.php:229
 msgid "Choose which post types members can use and which members can create content."
 msgstr ""
 
-#: includes/class-admin.php:458
+#: includes/class-admin.php:466
 msgid "Click Save Registration Settings on the right to apply your changes."
 msgstr ""
 
-#: includes/class-screens.php:13 includes/class-screens.php:159
+#: includes/class-screens.php:13 includes/class-screens.php:188
 msgid "Close Account"
 msgstr ""
 
-#: includes/class-screens.php:188
+#: includes/class-screens.php:215
 msgid "Closing your account deletes your account and personal data and prevents further login. If you want to preserve contributions, you can transfer selected posts to the site operator. Review the deletion and transfer details on the next screen."
 msgstr ""
 
-#: includes/class-admin.php:544
+#: includes/class-admin.php:552
 msgid "Configure IP addresses and NAS credentials on the server. atshift Members uses the mounted directory. It does not set up VPN or cloud API connections, import existing documents, or migrate files when storage locations change."
 msgstr ""
 
-#: includes/class-admin.php:474
+#: includes/class-admin.php:482
 msgid "Configured"
 msgstr ""
 
-#: includes/class-admin.php:552
+#: includes/class-admin.php:560
 msgid "Configured in wp-config.php"
 msgstr ""
 
-#: includes/class-admin.php:486
+#: includes/class-admin.php:494
 msgid "Configured means the keys have been saved. Test an actual request form afterward to verify connectivity and domain settings."
 msgstr ""
 
-#: includes/class-admin.php:163
+#: includes/class-admin.php:168
 msgid "Configures and manages user categories"
 msgstr ""
 
-#: includes/class-admin.php:158
+#: includes/class-admin.php:163
 msgid "Configures the profile layout"
 msgstr ""
 
-#: includes/class-admin.php:158
+#: includes/class-admin.php:163
 msgid "Configures the profile layout and user classifications"
 msgstr ""
 
-#: includes/class-screens.php:185
+#: includes/class-screens.php:212
 msgid "Confirm Account Closure"
 msgstr ""
 
-#: includes/class-screens.php:205
+#: includes/class-screens.php:232
 msgid "Confirm Email Address"
 msgstr ""
 
-#: includes/class-screens.php:165
+#: includes/class-screens.php:164
 msgid "Confirm Email Address Change"
 msgstr ""
 
-#: includes/class-screens.php:205
+#: includes/class-screens.php:232
 msgid "Confirm your email address to continue registration."
 msgstr ""
 
-#: includes/class-admin.php:508
+#: includes/class-admin.php:516
 msgid "Confirms that the password has changed. The password itself is never included."
 msgstr ""
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "Copy the issued Site Key and Secret Key into the fields below, then save them."
 msgstr ""
 
-#: includes/class-registration.php:143
+#: includes/class-registration.php:157
 msgid "Could not complete registration. Please contact the administrator."
 msgstr ""
 
-#: includes/class-registration.php:137
+#: includes/class-registration.php:151
 msgid "Could not complete registration. Request a new confirmation email."
 msgstr ""
 
-#: includes/class-screens.php:127
+#: includes/class-screens.php:130
 msgid "Could not complete the action."
 msgstr ""
 
@@ -631,15 +651,15 @@ msgstr ""
 msgid "Could not complete the action. Please try again."
 msgstr ""
 
-#: includes/class-files.php:276
+#: includes/class-files.php:277
 msgid "Could not delete the file from storage."
 msgstr ""
 
-#: includes/class-members.php:160
+#: includes/class-members.php:176
 msgid "Could not remove the management scope."
 msgstr ""
 
-#: includes/class-members.php:163
+#: includes/class-members.php:179
 msgid "Could not restore the management scope."
 msgstr ""
 
@@ -663,23 +683,23 @@ msgstr ""
 msgid "Could not save the confirmation details."
 msgstr ""
 
-#: includes/class-registration.php:156
+#: includes/class-registration.php:170
 msgid "Could not save the invitation."
 msgstr ""
 
-#: includes/class-members.php:159
+#: includes/class-members.php:175
 msgid "Could not save the management scope."
 msgstr ""
 
-#: includes/class-members.php:168
+#: includes/class-members.php:184
 msgid "Could not save the member information."
 msgstr ""
 
-#: includes/class-members.php:165
+#: includes/class-members.php:181
 msgid "Could not save the member role."
 msgstr ""
 
-#: includes/class-members.php:150
+#: includes/class-members.php:166
 msgid "Could not save the member status."
 msgstr ""
 
@@ -687,11 +707,7 @@ msgstr ""
 msgid "Could not save the storage settings."
 msgstr ""
 
-#: includes/class-members.php:200
-msgid "Could not save."
-msgstr ""
-
-#: includes/class-members.php:126
+#: includes/class-members.php:140
 msgid "Could not start saving."
 msgstr ""
 
@@ -699,7 +715,7 @@ msgstr ""
 msgid "Could not verify the account closure request."
 msgstr ""
 
-#: includes/class-members.php:128
+#: includes/class-members.php:142
 msgid "Could not verify the member information."
 msgstr ""
 
@@ -711,73 +727,73 @@ msgstr ""
 msgid "Could not verify. Please wait before requesting a new confirmation email."
 msgstr ""
 
-#: includes/class-registration.php:117 includes/class-registration.php:122
+#: includes/class-registration.php:117 includes/class-registration.php:132
 msgid "Could not verify. Request a new confirmation email."
 msgstr ""
 
-#: includes/class-admin.php:407
+#: includes/class-admin.php:414
 msgid "Create Member Pages"
 msgstr ""
 
-#: includes/class-admin.php:407
+#: includes/class-admin.php:414
 msgid "Create all missing member pages. Existing pages are left unchanged."
 msgstr ""
 
-#: includes/class-admin.php:294
+#: includes/class-admin.php:299
 msgid "Create hierarchical user classifications, such as branches, departments, or membership types. This paid add-on requires the free atshift User Profile Fields plugin."
 msgstr ""
 
-#: includes/class-admin.php:435
+#: includes/class-admin.php:442
 msgid "Create profile fields in atshift User Profile Fields."
 msgstr ""
 
-#: includes/class-admin.php:390
+#: includes/class-admin.php:397
 msgid "Create the five pages used for registration and account management. Click Create Member Pages to add all five. Pages that already exist are left unchanged; only missing pages are created."
 msgstr ""
 
-#: includes/class-admin.php:535
+#: includes/class-admin.php:543
 msgid "Create the members-only directory outside the server's public directory first. Set the path here or in wp-config.php. The plugin does not create the directory automatically."
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:316
+#: includes/class-admin.php:321
 msgid "Create user categories in %s."
 msgstr ""
 
-#: includes/class-admin.php:551
+#: includes/class-admin.php:559
 msgid "Current storage: "
 msgstr ""
 
-#: includes/class-admin.php:351
+#: includes/class-admin.php:358
 msgid "Currently Active"
 msgstr ""
 
-#: includes/class-admin.php:351
+#: includes/class-admin.php:358
 msgid "Currently Suspended"
 msgstr ""
 
-#: includes/class-admin.php:226
+#: includes/class-admin.php:231
 msgid "Customize the automatic emails sent for registration, password changes, and other account events. Default text is provided. Messages are sent through the standard WordPress mail function."
 msgstr ""
 
-#: includes/class-admin.php:412
+#: includes/class-admin.php:419
 msgid "Decide whether new members can start using the site immediately. Approval is unnecessary if the site is open to everyone."
 msgstr ""
 
-#: includes/class-files.php:283
+#: includes/class-files.php:284
 msgid "Delete Attachment"
 msgstr ""
 
-#: includes/class-admin.php:483
+#: includes/class-admin.php:491
 msgid "Delete Saved Keys"
 msgstr ""
 
-#: includes/class-admin.php:483
+#: includes/class-admin.php:491
 msgid "Delete both keys"
 msgstr ""
 
-#: includes/class-screens.php:190
+#: includes/class-screens.php:217
 msgid "Delete everything and close my account"
 msgstr ""
 
@@ -789,23 +805,23 @@ msgstr ""
 msgid "Display Name"
 msgstr ""
 
-#: includes/class-admin.php:160
+#: includes/class-admin.php:165
 msgid "Displays integrated fields in registration, account, and editing forms"
 msgstr ""
 
-#: includes/class-admin.php:164
+#: includes/class-admin.php:169
 msgid "Displays members within the assigned scope and saves category selections together with member information"
 msgstr ""
 
-#: includes/class-admin.php:160
+#: includes/class-admin.php:165
 msgid "Displays passkey registration and management on the account editing page"
 msgstr ""
 
-#: includes/class-admin.php:531
+#: includes/class-admin.php:539
 msgid "Documents, reports, images, and videos intended only for members need a storage location that is not publicly accessible. This includes PDF, Word, Excel, and PowerPoint files."
 msgstr ""
 
-#: includes/class-admin.php:292 includes/class-admin.php:296
+#: includes/class-admin.php:297 includes/class-admin.php:301
 msgid "Download from WordPress.org"
 msgstr ""
 
@@ -819,43 +835,43 @@ msgstr ""
 msgid "Edit %s"
 msgstr ""
 
-#: includes/class-screens.php:13 includes/class-screens.php:157
+#: includes/class-screens.php:13 includes/class-screens.php:186
 msgid "Edit Account Information"
 msgstr ""
 
-#: includes/class-admin.php:395
+#: includes/class-admin.php:402
 msgid "Edit Page"
 msgstr ""
 
-#: includes/class-admin.php:452
+#: includes/class-admin.php:460
 msgid "Edit Profile Fields in atshift User Profile Fields"
 msgstr ""
 
-#: includes/class-member-list-table.php:9 includes/class-screens.php:154
+#: includes/class-member-list-table.php:9 includes/class-screens.php:182
 msgid "Email Address"
 msgstr ""
 
-#: includes/class-screens.php:200 includes/class-screens.php:209
+#: includes/class-screens.php:227 includes/class-screens.php:236
 msgid "Email Address "
 msgstr ""
 
-#: includes/class-mail.php:29
+#: includes/class-mail.php:32
 msgid "Email Change Notification (Old and New Addresses)"
 msgstr ""
 
-#: includes/class-admin.php:226 includes/class-admin.php:517
+#: includes/class-admin.php:231 includes/class-admin.php:525
 msgid "Email Settings"
 msgstr ""
 
-#: includes/class-admin.php:419
+#: includes/class-admin.php:426
 msgid "Email address (required; verified by confirmation email)"
 msgstr ""
 
-#: includes/class-admin.php:287
+#: includes/class-admin.php:292
 msgid "Email announcement titles and links to members who have opted in. Combine multiple announcements into one email or schedule delivery."
 msgstr ""
 
-#: includes/class-admin.php:415
+#: includes/class-admin.php:422
 msgid "Enable approval below if your organization needs to check membership eligibility."
 msgstr ""
 
@@ -863,25 +879,29 @@ msgstr ""
 msgid "Enable the fileinfo extension on the server."
 msgstr ""
 
-#: includes/class-profile.php:126
+#: includes/class-profile.php:127
 msgid "Enter a nickname."
 msgstr ""
 
-#: includes/class-profile.php:123
+#: includes/class-registration.php:122
+msgid "Enter a username of 1–60 characters using letters, numbers, periods, hyphens, or underscores."
+msgstr ""
+
+#: includes/class-profile.php:124
 msgid "Enter a website URL starting with http:// or https://, up to 100 characters long."
 msgstr ""
 
-#: includes/class-registration.php:154
+#: includes/class-registration.php:168
 msgid "Enter an email address that is not already registered."
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:458
+#: includes/class-admin.php:466
 msgid "Enter field identifiers used in code, not labels such as Biography. For example, use %1$s for the nickname and %2$s for the biography. To use just these two fields, enter %3$s."
 msgstr ""
 
-#: includes/class-admin.php:106
+#: includes/class-admin.php:111
 msgid "Enter the signature as text."
 msgstr ""
 
@@ -891,39 +911,39 @@ msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:497
+#: includes/class-admin.php:505
 msgid "Enter your organization name and contact details. For example, %1$s uses %2$s as a placeholder for the site name. The signature is appended to all emails sent by this plugin, including atshift Members Pro announcements. You do not need to repeat it in each template. Leave this field empty to omit the signature."
 msgstr ""
 
-#: includes/class-admin.php:537
+#: includes/class-admin.php:545
 msgid "Example Configuration for wp-config.php"
 msgstr ""
 
-#: includes/class-admin.php:469
+#: includes/class-admin.php:477
 msgid "Exclude member pages from caching."
 msgstr ""
 
-#: includes/class-admin.php:434
+#: includes/class-admin.php:441
 msgid "Excluded fields are omitted from member forms. Integration Not Implemented means the field does not yet have an atshift Members integration. Email addresses, passwords, and saving are handled by atshift Members account procedures."
 msgstr ""
 
-#: includes/class-admin.php:516
+#: includes/class-admin.php:524
 msgid "Explain what happened and what the recipient should do next."
 msgstr ""
 
-#: includes/class-admin.php:399 includes/class-admin.php:460
+#: includes/class-admin.php:406 includes/class-admin.php:468
 msgid "Extend Your Site Further"
 msgstr ""
 
-#: includes/class-admin.php:290
+#: includes/class-admin.php:295
 msgid "Features Available with User Categories"
 msgstr ""
 
-#: includes/class-admin.php:458
+#: includes/class-admin.php:466
 msgid "Field Identifiers to Use"
 msgstr ""
 
-#: includes/class-admin.php:551
+#: includes/class-admin.php:559
 msgid "File Server / NAS (Mounted Share)"
 msgstr ""
 
@@ -931,7 +951,7 @@ msgstr ""
 msgid "File not found."
 msgstr ""
 
-#: includes/class-admin.php:548
+#: includes/class-admin.php:556
 msgid "Files marked Public are saved to the standard WordPress media directory. Anyone who knows the file URL can open them directly, even if the post is restricted to members. Storage does not change automatically when a post's visibility changes."
 msgstr ""
 
@@ -941,7 +961,7 @@ msgstr ""
 msgid "Filter %s"
 msgstr ""
 
-#: includes/class-screens.php:176
+#: includes/class-screens.php:203
 msgid "Final Account Closure Review"
 msgstr ""
 
@@ -949,57 +969,61 @@ msgstr ""
 msgid "First Name"
 msgstr ""
 
-#: includes/class-admin.php:458
+#: includes/class-admin.php:444
+msgid "First name, then last name"
+msgstr ""
+
+#: includes/class-admin.php:466
 msgid "For custom fields added in code, use the identifiers assigned when they were created. Code to render the fields in registration and editing forms and save their values is also required."
 msgstr ""
 
-#: includes/class-screens.php:184
+#: includes/class-screens.php:211
 msgid "For files that share storage with another owner's files, only your record is removed. Data held by other services, unsupported plugins, and backups cannot be deleted by this action. Temporary rate-limit records remain until they expire."
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:141
+#: includes/class-admin.php:146
 msgid "Functionality extended by %s"
 msgstr ""
 
-#: includes/class-admin.php:544
+#: includes/class-admin.php:552
 msgid "Grant a dedicated account read, write, and delete permissions, then mount the shared directory on the server."
 msgstr ""
 
-#: includes/class-admin.php:473
+#: includes/class-admin.php:481
 msgid "Helps prevent automated registration and password reset requests. Add the two keys issued by Cloudflare to enable checks on this plugin's request forms."
 msgstr ""
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "How to Get Your Keys"
 msgstr ""
 
-#: includes/class-screens.php:195
+#: includes/class-screens.php:222
 msgid "I have reviewed the selected posts and my associated attachments, and I agree to their retention, editing, and republication under the site operator's ownership."
 msgstr ""
 
-#: includes/class-screens.php:185
+#: includes/class-screens.php:212
 msgid "I have reviewed what will be deleted and transferred. This action cannot be undone."
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:537
+#: includes/class-admin.php:545
 msgid "If the public directory is %1$s, create a members-only directory outside it, such as %2$s. Replace these examples with the actual paths on your server."
 msgstr ""
 
-#: includes/class-admin.php:312
+#: includes/class-admin.php:317
 msgid "If you select multiple categories, membership in any one of them is sufficient."
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:499
+#: includes/class-admin.php:507
 msgid "In email subjects and bodies, %1$s is replaced with the site name and %2$s with a link to the relevant account procedure. Keep %2$s in emails that provide a link."
 msgstr ""
 
-#: includes/class-admin.php:318
+#: includes/class-admin.php:323
 msgid "Include child categories"
 msgstr ""
 
@@ -1019,7 +1043,7 @@ msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:202
+#: includes/class-admin.php:207
 msgid "Install and activate %s to enable passkeys on supported environments without additional site setup. After signing up, members can register and manage passkeys on the Edit Account Information page."
 msgstr ""
 
@@ -1031,11 +1055,11 @@ msgstr ""
 msgid "Invalid post selection."
 msgstr ""
 
-#: includes/class-admin.php:309
+#: includes/class-admin.php:314
 msgid "Keep the current category settings"
 msgstr ""
 
-#: includes/class-admin.php:474
+#: includes/class-admin.php:482
 msgid "Key status: "
 msgstr ""
 
@@ -1043,27 +1067,31 @@ msgstr ""
 msgid "Last Name"
 msgstr ""
 
+#: includes/class-admin.php:444
+msgid "Last name, then first name"
+msgstr ""
+
 #: includes/class-services.php:53
 msgid "Leading or trailing spaces and control characters are not allowed."
 msgstr ""
 
-#: includes/class-admin.php:491
+#: includes/class-admin.php:499
 msgid "Leave blank to use the WordPress sender name."
 msgstr ""
 
-#: includes/class-admin.php:458
+#: includes/class-admin.php:466
 msgid "Leave empty to add no profile fields. If needed, specify identifiers for names, nickname, display name, website URL, biography, or other supported fields."
 msgstr ""
 
-#: includes/class-screens.php:149
+#: includes/class-screens.php:176
 msgid "Log In"
 msgstr ""
 
-#: includes/class-screens.php:173
+#: includes/class-screens.php:200
 msgid "Log In Again"
 msgstr ""
 
-#: includes/class-screens.php:160
+#: includes/class-screens.php:189
 msgid "Log Out"
 msgstr ""
 
@@ -1075,27 +1103,27 @@ msgstr ""
 msgid "Log in again and review the final confirmation."
 msgstr ""
 
-#: includes/class-screens.php:204
+#: includes/class-screens.php:231
 msgid "Log out before registering."
 msgstr ""
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Logged-in members can view their information here and proceed to edit it or close their account."
 msgstr ""
 
-#: includes/class-admin.php:540
+#: includes/class-admin.php:548
 msgid "Make sure no other server configuration exposes the members-only directory to the public."
 msgstr ""
 
-#: includes/class-admin.php:544
+#: includes/class-admin.php:552
 msgid "Make the shared directory accessible from the WordPress server. If connecting from outside your organization, arrange a connection such as a VPN on the server first."
 msgstr ""
 
-#: includes/class-admin.php:235
+#: includes/class-admin.php:240
 msgid "Manage Members"
 msgstr ""
 
-#: includes/class-admin.php:167
+#: includes/class-admin.php:172
 msgid "Manages user categories"
 msgstr ""
 
@@ -1103,11 +1131,11 @@ msgstr ""
 msgid "Media Library"
 msgstr ""
 
-#: includes/class-member-list-table.php:60 includes/class-registration.php:136
+#: includes/class-member-list-table.php:60
 msgid "Member"
 msgstr ""
 
-#: includes/class-admin.php:362
+#: includes/class-admin.php:369
 msgid "Member (Posting Permissions)"
 msgstr ""
 
@@ -1119,23 +1147,23 @@ msgstr ""
 msgid "Member Announcements"
 msgstr ""
 
-#: includes/class-admin.php:357 includes/class-admin.php:364
+#: includes/class-admin.php:364 includes/class-admin.php:371
 msgid "Member Information"
 msgstr ""
 
-#: includes/class-admin.php:289
+#: includes/class-admin.php:294
 msgid "Member Invitations via CSV"
 msgstr ""
 
-#: includes/class-admin.php:222
+#: includes/class-admin.php:227
 msgid "Member Management"
 msgstr ""
 
-#: includes/class-admin.php:225 includes/class-admin.php:407
+#: includes/class-admin.php:230 includes/class-admin.php:414
 msgid "Member Page Setup"
 msgstr ""
 
-#: includes/class-admin.php:389
+#: includes/class-admin.php:396
 msgid "Member Pages"
 msgstr ""
 
@@ -1151,19 +1179,19 @@ msgstr ""
 msgid "Member Registration"
 msgstr ""
 
-#: includes/class-admin.php:361
+#: includes/class-admin.php:368
 msgid "Member Role"
 msgstr ""
 
-#: includes/class-admin.php:352 includes/class-member-list-table.php:9
+#: includes/class-admin.php:359 includes/class-member-list-table.php:9
 msgid "Member Status"
 msgstr ""
 
-#: includes/class-screens.php:208
+#: includes/class-screens.php:235
 msgid "Member registration is currently closed."
 msgstr ""
 
-#: includes/class-admin.php:307
+#: includes/class-admin.php:312
 msgid "Members Allowed to Post"
 msgstr ""
 
@@ -1171,37 +1199,37 @@ msgstr ""
 msgid "Members Only"
 msgstr ""
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Members can close their account here. Their content is deleted by default, but they can choose contributions to transfer to the site operator."
 msgstr ""
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Members can edit their name, biography, and other information here. Changing an email address requires confirmation of the new address."
 msgstr ""
 
-#: includes/class-admin.php:449
+#: includes/class-admin.php:457
 msgid "Members can register and manage passkeys. After signing up, add a passkey on Edit Account Information to use it for future logins."
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:334
+#: includes/class-admin.php:339
 msgid "Members updated: %1$d / Unchanged: %2$d / Could not update: %3$d"
 msgstr ""
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Members who have forgotten their password can request a password reset email here."
 msgstr ""
 
-#: includes/class-admin.php:304
+#: includes/class-admin.php:309
 msgid "Members with permission can create, edit, publish, and delete their own content. They gain no permission to edit other people's content. These settings do not change who can read content. Published standard WordPress posts remain visible to the public."
 msgstr ""
 
-#: includes/class-files.php:286
+#: includes/class-files.php:287
 msgid "Members-Only Attachment "
 msgstr ""
 
-#: includes/class-files.php:218
+#: includes/class-files.php:219
 msgid "Members-Only Attachments"
 msgstr ""
 
@@ -1213,12 +1241,20 @@ msgstr ""
 msgid "Members-only files already exist. Changing storage locations requires migrating them first."
 msgstr ""
 
-#: includes/class-screens.php:154
+#: includes/class-admin.php:20
+msgid "Membership Site Roles"
+msgstr ""
+
+#: includes/class-screens.php:182
 msgid "Membership Status"
 msgstr ""
 
 #: includes/class-member-list-table.php:9
 msgid "Name"
+msgstr ""
+
+#: includes/class-admin.php:444
+msgid "Name Order"
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
@@ -1227,19 +1263,19 @@ msgstr ""
 msgid "New %s"
 msgstr ""
 
-#: includes/class-screens.php:166
-msgid "New Email Address "
+#: includes/class-screens.php:163 includes/class-screens.php:167
+msgid "New Email Address"
 msgstr ""
 
-#: includes/class-mail.php:27
+#: includes/class-mail.php:30
 msgid "New Email Address Verification"
 msgstr ""
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:421
 msgid "New Member Registrations"
 msgstr ""
 
-#: includes/class-admin.php:483
+#: includes/class-admin.php:491
 msgid "New registration and password reset requests will be unavailable until you save new keys."
 msgstr ""
 
@@ -1263,7 +1299,7 @@ msgstr ""
 msgid "No %s found."
 msgstr ""
 
-#: includes/class-admin.php:307
+#: includes/class-admin.php:312
 msgid "No Members"
 msgstr ""
 
@@ -1275,15 +1311,15 @@ msgstr ""
 msgid "No members match your criteria."
 msgstr ""
 
-#: includes/class-admin.php:375
+#: includes/class-admin.php:382
 msgid "No posting permissions."
 msgstr ""
 
-#: includes/class-screens.php:193
+#: includes/class-screens.php:220
 msgid "No posts are available for transfer."
 msgstr ""
 
-#: includes/class-screens.php:183
+#: includes/class-screens.php:210
 msgid "No posts will be retained by the site operator."
 msgstr ""
 
@@ -1291,7 +1327,7 @@ msgstr ""
 msgid "None Allowed"
 msgstr ""
 
-#: includes/class-admin.php:474
+#: includes/class-admin.php:482
 msgid "Not Configured"
 msgstr ""
 
@@ -1299,36 +1335,40 @@ msgstr ""
 msgid "Not found."
 msgstr ""
 
-#: includes/class-admin.php:510
+#: includes/class-admin.php:518
 msgid "Notifies both the old and new addresses when an email change is complete."
 msgstr ""
 
-#: includes/class-admin.php:515
+#: includes/class-admin.php:523
 msgid "Notifies the member only when a user category change is finally approved or rejected. No email is sent on submission, intermediate approval, or cancellation."
 msgstr ""
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:421
 msgid "Off (do not accept new registration requests)"
 msgstr ""
 
-#: includes/class-admin.php:292 includes/class-admin.php:294 includes/class-admin.php:296 includes/class-admin.php:298
+#: includes/class-admin.php:297 includes/class-admin.php:299 includes/class-admin.php:301 includes/class-admin.php:303
 msgid "Official Website"
 msgstr ""
 
-#: includes/class-admin.php:414
+#: includes/class-admin.php:421
 msgid "On (accept new registration requests)"
 msgstr ""
 
-#: includes/class-admin.php:547
+#: includes/class-admin.php:555
 msgid "Once storage is configured, media controls in posts and the Media screen offer Public and Members Only options. Members-only images, galleries, and videos appear within posts; documents use download links. Only authorized members can access them."
 msgstr ""
 
-#: includes/class-admin.php:335
+#: includes/class-admin.php:340
 msgid "Only members within your assigned scope are shown."
 msgstr ""
 
-#: includes/class-members.php:108
+#: includes/class-members.php:121
 msgid "Only site administrators and operators with site-wide access can change member roles."
+msgstr ""
+
+#: includes/class-members.php:161
+msgid "Only site administrators can ban or restore a banned account."
 msgstr ""
 
 #: includes/class-files.php:30
@@ -1339,63 +1379,63 @@ msgstr ""
 msgid "Open File"
 msgstr ""
 
-#: includes/class-screens.php:191
+#: includes/class-screens.php:218
 msgid "Open each post and check its text, images, and attachments for information you do not want to retain."
 msgstr ""
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "Open the Cloudflare dashboard (new tab)"
 msgstr ""
 
-#: includes/class-mail.php:27
+#: includes/class-mail.php:30
 msgid "Open the following link within 30 minutes to confirm your email address change. You will need to log in.\n{link}"
 msgstr ""
 
-#: includes/class-admin.php:69
+#: includes/class-admin.php:74
 msgid "Operator invitations are no longer available. Use Member Management to promote an existing member to site operator."
+msgstr ""
+
+#: includes/class-admin.php:20
+msgid "Other Plugin Roles"
 msgstr ""
 
 #: includes/class-content.php:123 includes/class-content.php:127
 msgid "Page not found."
 msgstr ""
 
-#: includes/class-screens.php:131
+#: includes/class-screens.php:140
 msgid "Password (at least 12 characters)"
 msgstr ""
 
-#: includes/class-admin.php:419
+#: includes/class-admin.php:426
 msgid "Password (required; set during registration)"
 msgstr ""
 
-#: includes/class-mail.php:26
+#: includes/class-mail.php:29
 msgid "Password Change Notification"
 msgstr ""
 
-#: includes/class-screens.php:157
-msgid "Password and Authentication Settings"
-msgstr ""
-
-#: includes/class-admin.php:336 includes/class-admin.php:351 includes/class-mail.php:17 includes/class-member-list-table.php:34 includes/class-members.php:5
+#: includes/class-admin.php:341 includes/class-admin.php:358 includes/class-mail.php:17 includes/class-member-list-table.php:34 includes/class-members.php:5
 msgid "Pending Approval"
 msgstr ""
 
-#: includes/class-files.php:283
+#: includes/class-files.php:284
 msgid "Permanently delete this attachment"
 msgstr ""
 
-#: includes/class-admin.php:304
+#: includes/class-admin.php:309
 msgid "Permissions by Post Type"
 msgstr ""
 
-#: includes/class-screens.php:149
+#: includes/class-screens.php:176
 msgid "Please log in to continue."
 msgstr ""
 
-#: includes/class-registration.php:124 includes/class-registration.php:155 includes/class-registration.php:167
+#: includes/class-registration.php:134 includes/class-registration.php:169 includes/class-registration.php:181
 msgid "Please try again later."
 msgstr ""
 
-#: includes/class-members.php:227
+#: includes/class-members.php:235
 msgid "Please use the email verification page."
 msgstr ""
 
@@ -1403,19 +1443,19 @@ msgstr ""
 msgid "Please use the member registration page."
 msgstr ""
 
-#: includes/class-registration.php:171 includes/class-registration.php:194 includes/class-withdrawal.php:101
+#: includes/class-registration.php:185 includes/class-registration.php:208 includes/class-withdrawal.php:101
 msgid "Please wait a moment and try again."
 msgstr ""
 
-#: includes/class-admin.php:286
+#: includes/class-admin.php:291
 msgid "Post Approval"
 msgstr ""
 
-#: includes/class-admin.php:290
+#: includes/class-admin.php:295
 msgid "Post approval applies to Member Posts, Public Pages, and Member Announcements only. It does not apply to standard WordPress posts or other post types."
 msgstr ""
 
-#: includes/class-admin.php:224 includes/class-admin.php:325
+#: includes/class-admin.php:229 includes/class-admin.php:330
 msgid "Posting Settings"
 msgstr ""
 
@@ -1427,11 +1467,11 @@ msgstr ""
 msgid "Posts or attachment information changed after confirmation. Review the details again."
 msgstr ""
 
-#: includes/class-screens.php:178
+#: includes/class-screens.php:205
 msgid "Posts to Transfer to the Site Operator"
 msgstr ""
 
-#: includes/class-admin.php:544
+#: includes/class-admin.php:552
 msgid "Prepare a non-public directory exclusively for member files and specify its path on the server."
 msgstr ""
 
@@ -1443,31 +1483,31 @@ msgstr ""
 msgid "Processing…"
 msgstr ""
 
-#: includes/class-admin.php:437
+#: includes/class-admin.php:445
 msgid "Profile Fields for Registration and Editing"
 msgstr ""
 
-#: includes/class-admin.php:423
+#: includes/class-admin.php:430
 msgid "Profile Fields from the Integration"
 msgstr ""
 
-#: includes/class-admin.php:417
+#: includes/class-admin.php:424
 msgid "Profile information collected during registration. Members can view it on Your Account Information and update it on Edit Account Information."
 msgstr ""
 
-#: includes/class-screens.php:117
+#: includes/class-screens.php:119
 msgid "Profile saved."
 msgstr ""
 
-#: includes/class-admin.php:392
+#: includes/class-admin.php:399
 msgid "Prospective members enter their email address here, then follow the confirmation email to continue registration."
 msgstr ""
 
-#: includes/class-admin.php:174
+#: includes/class-admin.php:179
 msgid "Provides announcements for email delivery"
 msgstr ""
 
-#: includes/class-admin.php:161
+#: includes/class-admin.php:166
 msgid "Provides passkey registration and management after signup, and passkey login"
 msgstr ""
 
@@ -1487,27 +1527,27 @@ msgstr ""
 msgid "Public Pages"
 msgstr ""
 
-#: includes/class-admin.php:294 includes/class-admin.php:298
+#: includes/class-admin.php:299 includes/class-admin.php:303
 msgid "Purchase and Official Website"
 msgstr ""
 
-#: includes/class-admin.php:479
+#: includes/class-admin.php:487
 msgid "Read Cloudflare's official instructions (new tab)"
 msgstr ""
 
-#: includes/class-screens.php:206
+#: includes/class-screens.php:233
 msgid "Register"
 msgstr ""
 
-#: includes/class-screens.php:158 includes/class-screens.php:169
+#: includes/class-screens.php:187 includes/class-screens.php:196
 msgid "Register and Manage Passkeys"
 msgstr ""
 
-#: includes/class-screens.php:169
+#: includes/class-screens.php:196
 msgid "Register and manage passkeys with atshift Freeform Login."
 msgstr ""
 
-#: includes/class-admin.php:415
+#: includes/class-admin.php:422
 msgid "Registration Approval"
 msgstr ""
 
@@ -1523,19 +1563,19 @@ msgstr ""
 msgid "Registration Needs Review"
 msgstr ""
 
-#: includes/class-admin.php:223 includes/class-admin.php:466
+#: includes/class-admin.php:228 includes/class-admin.php:474
 msgid "Registration Settings"
 msgstr ""
 
-#: includes/class-admin.php:416
+#: includes/class-admin.php:423
 msgid "Registration and Editing Forms"
 msgstr ""
 
-#: includes/class-screens.php:88
+#: includes/class-screens.php:90
 msgid "Registration is complete. Please go to the login page."
 msgstr ""
 
-#: includes/class-registration.php:123
+#: includes/class-registration.php:133
 msgid "Registration is currently unavailable."
 msgstr ""
 
@@ -1543,31 +1583,31 @@ msgstr ""
 msgid "Registration is currently unavailable. Please try again later."
 msgstr ""
 
-#: includes/class-registration.php:130
+#: includes/class-registration.php:142 includes/class-registration.php:144
 msgid "Registration is in progress. Please wait a moment and try again."
 msgstr ""
 
-#: includes/class-admin.php:32
+#: includes/class-admin.php:37
 msgid "Registration is not ready yet. Check your spam protection keys in Registration Settings. If the issue persists, contact the person who set up your site."
 msgstr ""
 
-#: includes/class-admin.php:228
+#: includes/class-admin.php:233
 msgid "Related Plugins"
 msgstr ""
 
-#: includes/class-screens.php:63
+#: includes/class-screens.php:65
 msgid "Reload the form."
 msgstr ""
 
-#: includes/class-screens.php:209
+#: includes/class-screens.php:236
 msgid "Request Confirmation Email"
 msgstr ""
 
-#: includes/class-screens.php:200
+#: includes/class-screens.php:227
 msgid "Request Password Reset Email"
 msgstr ""
 
-#: includes/class-registration.php:168 includes/class-registration.php:174
+#: includes/class-registration.php:182 includes/class-registration.php:188
 msgid "Request a new password reset link."
 msgstr ""
 
@@ -1575,19 +1615,19 @@ msgstr ""
 msgid "Request received. If we can process it, you will receive an email. If it does not arrive, please wait before trying again."
 msgstr ""
 
-#: includes/class-admin.php:415
+#: includes/class-admin.php:422
 msgid "Require operator approval after registration"
 msgstr ""
 
-#: includes/class-admin.php:419
+#: includes/class-admin.php:426
 msgid "Required Account Registration and Editing Fields"
 msgstr ""
 
-#: includes/class-mail.php:22 includes/class-screens.php:13 includes/class-screens.php:157
+#: includes/class-mail.php:25 includes/class-screens.php:13 includes/class-screens.php:186
 msgid "Reset Password"
 msgstr ""
 
-#: includes/class-screens.php:199
+#: includes/class-screens.php:226
 msgid "Reset Your Password"
 msgstr ""
 
@@ -1595,19 +1635,19 @@ msgstr ""
 msgid "Restart the process from the confirmation screen."
 msgstr ""
 
-#: includes/class-screens.php:196
+#: includes/class-screens.php:223
 msgid "Review Account Closure"
 msgstr ""
 
-#: includes/class-screens.php:194
+#: includes/class-screens.php:221
 msgid "Review and Edit Content"
 msgstr ""
 
-#: includes/class-admin.php:286
+#: includes/class-admin.php:291
 msgid "Review content before publication. Supports sequential reviews, revision requests, resubmission, and approval history."
 msgstr ""
 
-#: includes/class-screens.php:103
+#: includes/class-screens.php:105
 msgid "Review the details and confirm account closure."
 msgstr ""
 
@@ -1615,59 +1655,59 @@ msgstr ""
 msgid "Role"
 msgstr ""
 
-#: includes/class-screens.php:162
+#: includes/class-screens.php:193
 msgid "Save"
 msgstr ""
 
-#: includes/class-admin.php:357 includes/class-admin.php:364
+#: includes/class-admin.php:364 includes/class-admin.php:371
 msgid "Save Changes"
 msgstr ""
 
-#: includes/class-admin.php:517
+#: includes/class-admin.php:525
 msgid "Save Email Settings"
 msgstr ""
 
-#: includes/class-admin.php:325
+#: includes/class-admin.php:330
 msgid "Save Posting Settings"
 msgstr ""
 
-#: includes/class-admin.php:466
+#: includes/class-admin.php:474
 msgid "Save Registration Settings"
 msgstr ""
 
-#: includes/class-admin.php:268
+#: includes/class-admin.php:273
 msgid "Save Settings"
 msgstr ""
 
-#: includes/class-admin.php:484
+#: includes/class-admin.php:492
 msgid "Save Turnstile Settings"
 msgstr ""
 
-#: includes/class-admin.php:325
+#: includes/class-admin.php:330
 msgid "Save permissions for all post types. Removing permission does not delete existing content."
 msgstr ""
 
-#: includes/class-admin.php:466
+#: includes/class-admin.php:474
 msgid "Save registration availability, approval requirements, and profile field settings."
 msgstr ""
 
-#: includes/class-admin.php:364
+#: includes/class-admin.php:371
 msgid "Save the member status and role changes made on this screen."
 msgstr ""
 
-#: includes/class-admin.php:517
+#: includes/class-admin.php:525
 msgid "Save the sender name, shared signature, and all email subjects and bodies."
 msgstr ""
 
-#: includes/class-admin.php:357
+#: includes/class-admin.php:364
 msgid "Save this member's status."
 msgstr ""
 
-#: includes/class-admin.php:484
+#: includes/class-admin.php:492
 msgid "Save your Cloudflare Turnstile keys separately from the registration settings."
 msgstr ""
 
-#: includes/class-admin.php:356
+#: includes/class-admin.php:363
 msgid "Saving a status change sends the member a notification email and ends any active login sessions."
 msgstr ""
 
@@ -1685,7 +1725,7 @@ msgstr ""
 msgid "Search %s"
 msgstr ""
 
-#: includes/class-admin.php:341
+#: includes/class-admin.php:346
 msgid "Search Members"
 msgstr ""
 
@@ -1693,7 +1733,7 @@ msgstr ""
 msgid "Search by Filename"
 msgstr ""
 
-#: includes/class-admin.php:482
+#: includes/class-admin.php:490
 msgid "Secret Key"
 msgstr ""
 
@@ -1707,11 +1747,11 @@ msgstr ""
 msgid "Select Files"
 msgstr ""
 
-#: includes/class-screens.php:191
+#: includes/class-screens.php:218
 msgid "Select Posts to Retain"
 msgstr ""
 
-#: includes/class-members.php:79
+#: includes/class-members.php:92
 msgid "Select between 1 and 50 members to update."
 msgstr ""
 
@@ -1727,47 +1767,47 @@ msgstr ""
 msgid "Select the posts to transfer and confirm that you have reviewed their content and attachments."
 msgstr ""
 
-#: includes/class-admin.php:308
+#: includes/class-admin.php:313
 msgid "Selected Categories"
 msgstr ""
 
-#: includes/class-screens.php:166
-msgid "Send Confirmation Email"
+#: includes/class-screens.php:167
+msgid "Send Confirmation to the New Address"
 msgstr ""
 
-#: includes/class-admin.php:289
+#: includes/class-admin.php:294
 msgid "Send registration invitations to a list of prospective members. Each recipient confirms the invitation and completes registration."
 msgstr ""
 
-#: includes/class-admin.php:489
+#: includes/class-admin.php:497
 msgid "Sender Information"
 msgstr ""
 
-#: includes/class-admin.php:491
+#: includes/class-admin.php:499
 msgid "Sender Name "
 msgstr ""
 
-#: includes/class-admin.php:505
+#: includes/class-admin.php:513
 msgid "Sent to the former member when account closure and deletion have finished."
 msgstr ""
 
-#: includes/class-admin.php:507
+#: includes/class-admin.php:515
 msgid "Sent to the member with a reset link when a password reset is requested."
 msgstr ""
 
-#: includes/class-admin.php:501
+#: includes/class-admin.php:509
 msgid "Sent to the submitted email address with a confirmation link when a registration request is accepted."
 msgstr ""
 
-#: includes/class-admin.php:506
+#: includes/class-admin.php:514
 msgid "Sent when an operator suspends a member's account."
 msgstr ""
 
-#: includes/class-admin.php:504
+#: includes/class-admin.php:512
 msgid "Sent when approval or removal of a suspension activates the account."
 msgstr ""
 
-#: includes/class-admin.php:502
+#: includes/class-admin.php:510
 msgid "Sent when registration is complete and no approval is required."
 msgstr ""
 
@@ -1779,15 +1819,15 @@ msgstr ""
 msgid "Set to Pending Approval"
 msgstr ""
 
-#: includes/class-admin.php:173
+#: includes/class-admin.php:178
 msgid "Sets announcement recipients and delivery schedules"
 msgstr ""
 
-#: includes/class-admin.php:169
+#: includes/class-admin.php:174
 msgid "Sets approvers and the approval order"
 msgstr ""
 
-#: includes/class-admin.php:166
+#: includes/class-admin.php:171
 msgid "Sets who can create content for each post type"
 msgstr ""
 
@@ -1799,11 +1839,11 @@ msgstr ""
 msgid "Settings have changed. Reload this screen."
 msgstr ""
 
-#: includes/class-admin.php:260
+#: includes/class-admin.php:265
 msgid "Settings saved."
 msgstr ""
 
-#: includes/class-admin.php:493
+#: includes/class-admin.php:501
 msgid "Shared Signature"
 msgstr ""
 
@@ -1815,15 +1855,15 @@ msgstr ""
 msgid "Showing public files you can use."
 msgstr ""
 
-#: includes/class-members.php:5
+#: includes/class-admin.php:20 includes/class-members.php:5
 msgid "Site Administrator"
 msgstr ""
 
-#: includes/class-admin.php:481
+#: includes/class-admin.php:489
 msgid "Site Key"
 msgstr ""
 
-#: includes/class-admin.php:362 includes/class-member-list-table.php:60 includes/class-members.php:15
+#: includes/class-admin.php:20 includes/class-admin.php:369 includes/class-member-list-table.php:60 includes/class-members.php:15
 msgid "Site Operator"
 msgstr ""
 
@@ -1839,43 +1879,43 @@ msgstr ""
 msgid "Site Operator Invitation"
 msgstr ""
 
-#: includes/class-registration.php:152
+#: includes/class-registration.php:166
 msgid "Site administrator permissions are required to send invitations."
 msgstr ""
 
-#: includes/class-admin.php:68 includes/class-posting.php:65 includes/class-services.php:16
+#: includes/class-admin.php:73 includes/class-posting.php:65 includes/class-services.php:16
 msgid "Site administrator permissions are required."
 msgstr ""
 
-#: includes/class-screens.php:172
+#: includes/class-screens.php:199
 msgid "Site administrators cannot close their account from this screen."
 msgstr ""
 
-#: includes/class-admin.php:363
+#: includes/class-admin.php:370
 msgid "Site operators can approve members and change their status. They can also be changed back to members. Changing a role ends the user's active login sessions."
 msgstr ""
 
-#: includes/class-admin.php:89
+#: includes/class-admin.php:94
 msgid "Some field identifiers are unavailable. Custom fields also need an integration that renders and saves them in the forms."
 msgstr ""
 
-#: includes/class-profile.php:116 includes/class-profile.php:54
+#: includes/class-profile.php:117 includes/class-profile.php:54
 msgid "Some profile fields are not allowed."
 msgstr ""
 
-#: includes/class-registration.php:125
+#: includes/class-registration.php:135
 msgid "Some registration fields are not allowed."
 msgstr ""
 
-#: includes/class-members.php:83
+#: includes/class-members.php:96
 msgid "Some selected members cannot be updated. Select them again. No changes have been made."
 msgstr ""
 
-#: includes/class-admin.php:484
+#: includes/class-admin.php:492
 msgid "Spam Protection"
 msgstr ""
 
-#: includes/class-admin.php:473
+#: includes/class-admin.php:481
 msgid "Spam Protection (Cloudflare Turnstile)"
 msgstr ""
 
@@ -1887,11 +1927,11 @@ msgstr ""
 msgid "Specify the public directory containing WordPress and a separate readable and writable directory outside it."
 msgstr ""
 
-#: includes/class-admin.php:288
+#: includes/class-admin.php:293
 msgid "Staff Responsibilities"
 msgstr ""
 
-#: includes/class-admin.php:530
+#: includes/class-admin.php:538
 msgid "Storage for Member Documents and Images"
 msgstr ""
 
@@ -1899,15 +1939,15 @@ msgstr ""
 msgid "Storage is configured in wp-config.php."
 msgstr ""
 
-#: includes/class-admin.php:553
+#: includes/class-admin.php:561
 msgid "Storage path: "
 msgstr ""
 
-#: includes/class-admin.php:516
+#: includes/class-admin.php:524
 msgid "Subject"
 msgstr ""
 
-#: includes/class-admin.php:556
+#: includes/class-admin.php:564
 msgid "Supported attachments include JPEG, PNG, GIF, WebP, PDF, Word (doc, docx), Excel (xls, xlsx), PowerPoint (ppt, pptx), text (txt), ZIP, and video (MP4, WebM). Upload size limits follow WordPress and server settings. Attachments added through this feature require member login even when attached to a public page."
 msgstr ""
 
@@ -1915,11 +1955,11 @@ msgstr ""
 msgid "Suspend"
 msgstr ""
 
-#: includes/class-admin.php:336 includes/class-member-list-table.php:34 includes/class-members.php:5
+#: includes/class-admin.php:341 includes/class-member-list-table.php:34 includes/class-members.php:5
 msgid "Suspended"
 msgstr ""
 
-#: includes/class-admin.php:503
+#: includes/class-admin.php:511
 msgid "Tells the member that their account is awaiting approval."
 msgstr ""
 
@@ -1927,11 +1967,11 @@ msgstr ""
 msgid "Test keys cannot be used on a production site. Get keys for this site from Cloudflare."
 msgstr ""
 
-#: includes/class-admin.php:336
+#: includes/class-admin.php:341
 msgid "The Available Post Types column shows where each member can create content. Site administrators can change these permissions in Posting Settings."
 msgstr ""
 
-#: includes/class-members.php:147
+#: includes/class-members.php:163
 msgid "The classification integration could not be verified. Reopen this screen."
 msgstr ""
 
@@ -1941,7 +1981,7 @@ msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:456
+#: includes/class-admin.php:464
 msgid "The fields are specified by %s in the WordPress configuration file (wp-config.php)."
 msgstr ""
 
@@ -1951,7 +1991,7 @@ msgstr ""
 msgid "The file exceeds the server upload limit of %s."
 msgstr ""
 
-#: includes/class-admin.php:177
+#: includes/class-admin.php:182
 msgid "The following integrations are in use."
 msgstr ""
 
@@ -1963,23 +2003,23 @@ msgstr ""
 msgid "The list of post types has changed. Reload this screen."
 msgstr ""
 
-#: includes/class-members.php:143
+#: includes/class-members.php:157
 msgid "The member role has changed. Reopen this screen."
 msgstr ""
 
-#: includes/class-members.php:136
+#: includes/class-members.php:150
 msgid "The member status has changed. Reopen this screen."
 msgstr ""
 
-#: includes/class-profile.php:110
+#: includes/class-profile.php:111
 msgid "The name shown on the site. Leave blank to use your nickname."
 msgstr ""
 
-#: includes/class-admin.php:423
+#: includes/class-admin.php:430
 msgid "The profile configured in atshift User Profile Fields is used for registration and account editing."
 msgstr ""
 
-#: includes/class-admin.php:452
+#: includes/class-admin.php:460
 msgid "The profile layout, field order, and conditional rules are used automatically. You do not need to select fields again or grant additional front-end display or self-editing permissions here."
 msgstr ""
 
@@ -1999,11 +2039,11 @@ msgstr ""
 msgid "The storage location is unavailable."
 msgstr ""
 
-#: includes/class-members.php:120
+#: includes/class-members.php:133
 msgid "The user tables must use InnoDB to save member information together. Please check with your site administrator."
 msgstr ""
 
-#: includes/class-registration.php:159
+#: includes/class-registration.php:173
 msgid "The verification service is currently unavailable."
 msgstr ""
 
@@ -2023,19 +2063,19 @@ msgstr ""
 msgid "These files are visible to everyone. "
 msgstr ""
 
-#: includes/class-admin.php:476
+#: includes/class-admin.php:484
 msgid "These keys are configured on the server by the person who set up your site. Ask them to make any changes."
 msgstr ""
 
-#: includes/class-admin.php:391
+#: includes/class-admin.php:398
 msgid "These pages are published in WordPress, but that does not make members' personal information public. The plugin checks access and displays account details, editing forms, and withdrawal forms only to the account owner. Leave these pages published."
 msgstr ""
 
-#: includes/class-members.php:71
+#: includes/class-members.php:84
 msgid "This account cannot be changed."
 msgstr ""
 
-#: includes/class-registration.php:176
+#: includes/class-registration.php:190
 msgid "This account is currently unavailable."
 msgstr ""
 
@@ -2043,19 +2083,19 @@ msgstr ""
 msgid "This account is currently unavailable. Please contact the site administrator."
 msgstr ""
 
-#: includes/class-members.php:110
+#: includes/class-members.php:123
 msgid "This account's role cannot be changed."
 msgstr ""
 
-#: includes/class-files.php:275
+#: includes/class-files.php:276
 msgid "This attachment cannot be deleted."
 msgstr ""
 
-#: includes/class-admin.php:101
+#: includes/class-admin.php:106
 msgid "This email contains a placeholder that is not supported for this message type."
 msgstr ""
 
-#: includes/class-admin.php:290
+#: includes/class-admin.php:295
 msgid "This is a development version. Purchase and download links are not yet available."
 msgstr ""
 
@@ -2071,15 +2111,15 @@ msgstr ""
 msgid "This media screen is unavailable."
 msgstr ""
 
-#: includes/class-members.php:122
+#: includes/class-members.php:135 includes/class-members.php:136
 msgid "This member's information is being saved. Please wait a moment and try again."
 msgstr ""
 
-#: includes/class-members.php:96
+#: includes/class-members.php:109
 msgid "This member's posting permissions cannot be changed."
 msgstr ""
 
-#: includes/class-admin.php:244 includes/class-admin.php:247
+#: includes/class-admin.php:249 includes/class-admin.php:252
 msgid "This page is unavailable."
 msgstr ""
 
@@ -2087,9 +2127,13 @@ msgstr ""
 msgid "This password has appeared in a data breach. Choose a different password."
 msgstr ""
 
+#: includes/class-members.php:79
+msgid "This person has staff responsibilities. Choose and configure a replacement in Staff and Permissions before restricting access or removing responsibilities."
+msgstr ""
+
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-screens.php:181
+#: includes/class-screens.php:208
 msgid "This post and its associated attachments (%d) will be transferred to the site operator as drafts. Personal information in text and images is not anonymized automatically."
 msgstr ""
 
@@ -2097,7 +2141,15 @@ msgstr ""
 msgid "This site's keys are configured on the server."
 msgstr ""
 
-#: includes/class-registration.php:132 includes/class-registration.php:193
+#: includes/class-registration.php:127 includes/class-registration.php:146
+msgid "This username is already taken. Choose another one."
+msgstr ""
+
+#: includes/class-registration.php:125
+msgid "This username is not allowed. Choose another one."
+msgstr ""
+
+#: includes/class-registration.php:147 includes/class-registration.php:207 includes/class-screens.php:125 includes/class-screens.php:161
 msgid "This verification information cannot be used."
 msgstr ""
 
@@ -2105,31 +2157,31 @@ msgstr ""
 msgid "To continue registration, open the following link within 30 minutes and click the confirmation button.\n{link}\n\nIf you did not request this, please ignore this email."
 msgstr ""
 
-#: includes/class-admin.php:394
+#: includes/class-admin.php:401
 msgid "To create a page yourself, paste this shortcode into its content: "
 msgstr ""
 
-#: includes/class-files.php:283
+#: includes/class-files.php:284
 msgid "To display an image in your post, paste this into a Shortcode block: "
 msgstr ""
 
-#: includes/class-admin.php:454
+#: includes/class-admin.php:462
 msgid "To use custom fields defined in code, provide the integration that renders and saves them in registration and editing forms, then specify their identifiers. Leave this empty if no additional fields are needed."
 msgstr ""
 
-#: includes/class-screens.php:173
+#: includes/class-screens.php:200
 msgid "To verify your identity, log in again and complete this within 10 minutes."
 msgstr ""
 
-#: includes/class-admin.php:294
+#: includes/class-admin.php:299
 msgid "Together with atshift Members, it lets you choose posting permissions by user category. Add atshift Members Pro to delegate member management by category and send targeted announcements."
 msgstr ""
 
-#: includes/class-screens.php:190
+#: includes/class-screens.php:217
 msgid "Transfer selected posts to the site operator and close my account"
 msgstr ""
 
-#: includes/class-admin.php:413
+#: includes/class-admin.php:420
 msgid "Turning this off stops new registration requests. People who have already received a confirmation email can still complete registration before the link expires. Existing members can continue to log in."
 msgstr ""
 
@@ -2137,7 +2189,7 @@ msgstr ""
 msgid "Unavailable"
 msgstr ""
 
-#: includes/class-admin.php:314
+#: includes/class-admin.php:319
 msgid "Unavailable category ("
 msgstr ""
 
@@ -2145,7 +2197,7 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
-#: assets/media.js:149
+#: assets/media.js:150
 msgid "Upload cancelled."
 msgstr ""
 
@@ -2161,23 +2213,27 @@ msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:192
+#: includes/class-admin.php:197
 msgid "Use %1$s with %2$s to save category selections together with member information and delegate member management by category."
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:190
+#: includes/class-admin.php:195
 msgid "Use %s to create user categories and choose which post types members in each category can use."
 msgstr ""
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
-#: includes/class-admin.php:194
+#: includes/class-admin.php:199
 msgid "Use %s to send announcement emails to members who have opted in, or schedule them for later."
 msgstr ""
 
-#: includes/class-admin.php:543
+#: includes/class-screens.php:138
+msgid "Use 1–60 letters, numbers, periods, hyphens, or underscores. Your username cannot be changed after registration. You can also log in with your email address."
+msgstr ""
+
+#: includes/class-admin.php:551
 msgid "Use a File Server or NAS"
 msgstr ""
 
@@ -2185,43 +2241,51 @@ msgstr ""
 msgid "Use a password of at least 12 characters and no more than 256 bytes."
 msgstr ""
 
-#: includes/class-admin.php:533
+#: includes/class-admin.php:541
 msgid "Use a private directory on the web server or a file server/NAS share already mounted on that server."
 msgstr ""
 
-#: includes/class-admin.php:290
+#: includes/class-admin.php:295
 msgid "Use atshift User Profile Fields and its Pro Add-on to create hierarchical classifications such as branches, departments, or membership types. Use these categories to assign member management responsibilities and target announcements."
 msgstr ""
 
-#: includes/class-admin.php:534
+#: includes/class-admin.php:542
 msgid "Use the Web Server Running WordPress"
 msgstr ""
 
-#: includes/class-screens.php:207
+#: includes/class-screens.php:234
 msgid "Use the invitation link sent by the site administrator."
 msgstr ""
 
-#: includes/class-admin.php:490
+#: includes/class-admin.php:498
 msgid "Use your organization's or site's name so recipients can recognize the sender, for example, Example Association Office."
 msgstr ""
 
-#: includes/class-admin.php:481
+#: includes/class-admin.php:489
 msgid "Used to display the verification widget on your forms."
 msgstr ""
 
-#: includes/class-members.php:11
+#: includes/class-admin.php:20 includes/class-members.php:11
 msgid "User (Posting Permissions)"
 msgstr ""
 
-#: includes/class-admin.php:383
+#: includes/class-admin.php:390
 msgid "User Categories and Posting Permissions"
 msgstr ""
 
-#: includes/class-profile.php:132
+#: includes/class-profile.php:133
 msgid "User not found."
 msgstr ""
 
-#: includes/class-registration.php:162
+#: includes/class-screens.php:137 includes/class-screens.php:181
+msgid "Username"
+msgstr ""
+
+#: includes/class-admin.php:426
+msgid "Username (required; cannot be changed after registration)"
+msgstr ""
+
+#: includes/class-registration.php:176
 msgid "Verification failed. Please try again."
 msgstr ""
 
@@ -2229,15 +2293,15 @@ msgstr ""
 msgid "Verification failed. Reload the page and try again."
 msgstr ""
 
-#: includes/class-screens.php:206
+#: includes/class-screens.php:233
 msgid "Verified email address: "
 msgstr ""
 
-#: includes/class-admin.php:509
+#: includes/class-admin.php:517
 msgid "Verifies ownership of the new address when a member changes their email."
 msgstr ""
 
-#: includes/class-members.php:218
+#: includes/class-members.php:226
 msgid "Verify your email address change on the account editing page."
 msgstr ""
 
@@ -2257,7 +2321,7 @@ msgstr ""
 msgid "View Details"
 msgstr ""
 
-#: includes/class-admin.php:395
+#: includes/class-admin.php:402
 msgid "View Page"
 msgstr ""
 
@@ -2275,15 +2339,19 @@ msgstr ""
 msgid "When changing the site key, enter the matching secret key from the same widget settings."
 msgstr ""
 
-#: includes/class-admin.php:415
+#: includes/class-admin.php:422
 msgid "When enabled, new members must wait for review. Set their status to Active in Member Management to grant access. If unsure, you can start with this unchecked."
 msgstr ""
 
-#: includes/class-admin.php:447
-msgid "Without a profile plugin integration, registration requires only an email address and password by default. Add any additional profile fields using the settings below."
+#: includes/class-admin.php:455
+msgid "Without a profile plugin integration, the form includes a username, first and last names, email address, and password. Add any additional profile fields using the settings below."
 msgstr ""
 
-#: includes/class-admin.php:551
+#: includes/class-admin.php:20
+msgid "WordPress Standard Roles"
+msgstr ""
+
+#: includes/class-admin.php:559
 msgid "WordPress Web Server (Private Directory)"
 msgstr ""
 
@@ -2295,7 +2363,7 @@ msgstr ""
 msgid "You cannot manage this media item."
 msgstr ""
 
-#: includes/class-admin.php:51 includes/class-members.php:115 includes/class-members.php:130 includes/class-members.php:196 includes/class-members.php:69 includes/class-registration.php:185
+#: includes/class-admin.php:56 includes/class-members.php:128 includes/class-members.php:144 includes/class-members.php:82 includes/class-registration.php:199
 msgid "You cannot perform this action."
 msgstr ""
 
@@ -2303,11 +2371,11 @@ msgstr ""
 msgid "You cannot select this file."
 msgstr ""
 
-#: includes/class-content.php:132 includes/class-files.php:226 includes/class-files.php:234
+#: includes/class-content.php:132 includes/class-files.php:227 includes/class-files.php:235
 msgid "You cannot view this content."
 msgstr ""
 
-#: includes/class-admin.php:346
+#: includes/class-admin.php:351
 msgid "You cannot view this member's settings."
 msgstr ""
 
@@ -2315,31 +2383,31 @@ msgstr ""
 msgid "You have been invited to become a site operator. Open the link within 30 minutes to complete registration.\n{link}\n\nIf you were not expecting this invitation, do not proceed. Please contact the site administrator."
 msgstr ""
 
-#: includes/class-screens.php:13
+#: includes/class-screens.php:13 includes/class-screens.php:169
 msgid "Your Account Information"
 msgstr ""
 
-#: includes/class-screens.php:190
+#: includes/class-screens.php:217
 msgid "Your Posts When Closing Your Account"
 msgstr ""
 
-#: includes/class-screens.php:109
+#: includes/class-screens.php:111
 msgid "Your account closure request has been accepted. Login is disabled, and your data is being deleted."
 msgstr ""
 
-#: includes/class-mail.php:29
+#: includes/class-mail.php:32
 msgid "Your account email address has changed. If you did not make this change, please contact the site administrator."
 msgstr ""
 
-#: includes/class-screens.php:109
+#: includes/class-screens.php:111
 msgid "Your account has been closed, and the account data and content selected for deletion have been removed."
 msgstr ""
 
 #: includes/class-mail.php:20
-msgid "Your account has been closed, and your account data and content selected for deletion have been removed. Any posts and attachments you chose to transfer are retained under the site operator's ownership. Please refer to the account closure notice for information about shared files, other services, and backups."
+msgid "Your account has been closed, and your account data and content selected for deletion have been removed. Any posts and attachments you chose to transfer are retained under the site operator's ownership.\n\nFor files shared with other users, only your own records have been deleted. Data stored by other services, unsupported plugins, or in backups is not deleted as part of this account closure. Please contact the site operator for details about how that data is handled."
 msgstr ""
 
-#: includes/class-mail.php:21
+#: includes/class-mail.php:24
 msgid "Your account has been suspended. Please contact the site administrator for details."
 msgstr ""
 
@@ -2347,27 +2415,35 @@ msgstr ""
 msgid "Your account is awaiting administrator review. We will let you know when it is ready to use."
 msgstr ""
 
+#: includes/class-mail.php:23
+msgid "Your account is no longer permitted to access this site. Your account and records have been retained. Please contact the site administrator for details."
+msgstr ""
+
 #: includes/class-mail.php:18
 msgid "Your account is now ready to use.\n{link}"
 msgstr ""
 
-#: includes/class-screens.php:176
+#: includes/class-screens.php:203
 msgid "Your account, profile, authentication information, comments posted while logged in, and posts and attachments not selected for transfer will be deleted, including items in the trash. Comments on deleted posts will also be removed."
 msgstr ""
 
-#: includes/class-screens.php:124
+#: includes/class-screens.php:166
+msgid "Your current email address will remain unchanged until you complete the confirmation process."
+msgstr ""
+
+#: includes/class-screens.php:127
 msgid "Your email address has changed. Log in with your new address."
 msgstr ""
 
-#: includes/class-screens.php:97
+#: includes/class-screens.php:99
 msgid "Your password has been reset. Please log in."
 msgstr ""
 
-#: includes/class-mail.php:26
+#: includes/class-mail.php:29
 msgid "Your password has changed. If you did not make this change, contact the site administrator immediately."
 msgstr ""
 
-#: includes/class-screens.php:89
+#: includes/class-screens.php:91
 msgid "Your registration has been submitted. We will notify you after administrator review."
 msgstr ""
 
@@ -2379,7 +2455,7 @@ msgstr ""
 msgid "[{site}] Confirm your email address"
 msgstr ""
 
-#: includes/class-mail.php:27
+#: includes/class-mail.php:30
 msgid "[{site}] Confirm your new email address"
 msgstr ""
 
@@ -2387,15 +2463,19 @@ msgstr ""
 msgid "[{site}] Invitation to become a site operator"
 msgstr ""
 
-#: includes/class-mail.php:22
+#: includes/class-mail.php:25
 msgid "[{site}] Reset your password"
+msgstr ""
+
+#: includes/class-mail.php:23
+msgid "[{site}] Your account access has been revoked"
 msgstr ""
 
 #: includes/class-mail.php:20
 msgid "[{site}] Your account has been closed"
 msgstr ""
 
-#: includes/class-mail.php:21
+#: includes/class-mail.php:24
 msgid "[{site}] Your account has been suspended"
 msgstr ""
 
@@ -2407,11 +2487,11 @@ msgstr ""
 msgid "[{site}] Your account is ready to use"
 msgstr ""
 
-#: includes/class-mail.php:29
+#: includes/class-mail.php:32
 msgid "[{site}] Your email address has changed"
 msgstr ""
 
-#: includes/class-mail.php:26
+#: includes/class-mail.php:29
 msgid "[{site}] Your password has changed"
 msgstr ""
 
@@ -2419,19 +2499,19 @@ msgstr ""
 msgid "[{site}] Your registration is complete"
 msgstr ""
 
-#: includes/class-admin.php:149
+#: includes/class-admin.php:154
 msgid "atshift Freeform Login / Pro Add-on"
 msgstr ""
 
-#: includes/class-admin.php:149
+#: includes/class-admin.php:154
 msgid "atshift Members Pro Add-on"
 msgstr ""
 
-#: includes/class-admin.php:250
+#: includes/class-admin.php:255
 msgid "atshift Members Settings"
 msgstr ""
 
-#: includes/class-admin.php:228
+#: includes/class-admin.php:233
 msgid "atshift Members provides the essentials for a membership site. Add the following plugins to suit your site's needs."
 msgstr ""
 
@@ -2439,18 +2519,18 @@ msgstr ""
 msgid "atshift Members: Every minute"
 msgstr ""
 
-#: includes/class-admin.php:149
+#: includes/class-admin.php:154
 msgid "atshift User Profile Fields / Pro Add-on"
 msgstr ""
 
-#: includes/class-admin.php:497
+#: includes/class-admin.php:505
 msgid "{site} Office"
 msgstr ""
 
-#: includes/class-admin.php:493
+#: includes/class-admin.php:501
 msgid "{site} Office\nContact: info@example.com\nhttps://example.com/"
 msgstr ""
 
-#: includes/class-admin.php:264
+#: includes/class-admin.php:269
 msgid "← Back to members"
 msgstr ""

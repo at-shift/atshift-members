@@ -2,7 +2,7 @@
 /**
  * Plugin Name: atshift Members
  * Description: Build a membership site with registration, account management, and protected content. Extend it with optional integrations.
- * Version: 0.1β
+ * Version: 0.1.10
  * Requires at least: 6.6
  * Requires PHP: 8.1
  * Author: @shift

@@ -23,7 +23,7 @@ final class Member_List_Table extends \WP_List_Table {
         if($search!==''){$args['search']='*'.$search.'*';$args['search_columns']=['user_login','user_email','display_name'];}
         if(Scope::limited()&&!current_user_can('manage_options'))$args['include']=Scope::target_ids()?:[0];
         $this->query_args=$args;
-        if(in_array($state,['active','suspended','pending'],true))$args['meta_query']=[['key'=>'_asm_state','value'=>$state]];
+        if(in_array($state,['active','suspended','pending','banned'],true))$args['meta_query']=[['key'=>'_asm_state','value'=>$state]];
         $query=new \WP_User_Query($args);$this->items=$query->get_results();
         $this->_column_headers=[$this->get_columns(),[], $this->get_sortable_columns(),'name'];
         $this->set_pagination_args(['total_items'=>$query->get_total(),'per_page'=>20]);
@@ -31,7 +31,7 @@ final class Member_List_Table extends \WP_List_Table {
     protected function get_views(){
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin display/filter parameters; mutation handlers separately require nonce and object capability checks.
         $views=[];$current=is_string($_GET['state']??null)?sanitize_key($_GET['state']):'';
-        foreach([''=>__('All', 'atshift-members'),'active'=>__('Active', 'atshift-members'),'suspended'=>__('Suspended', 'atshift-members'),'pending'=>__('Pending Approval', 'atshift-members')] as $state=>$label){
+        foreach([''=>__('All', 'atshift-members'),'active'=>__('Active', 'atshift-members'),'suspended'=>__('Suspended', 'atshift-members'),'pending'=>__('Pending Approval', 'atshift-members'),'banned'=>__('Banned', 'atshift-members')] as $state=>$label){
             $args=$this->query_args;$args['number']=1;$args['paged']=1;$args['fields']='ID';
             if($state!=='')$args['meta_query']=[['key'=>'_asm_state','value'=>$state]];
             $query=new \WP_User_Query($args);
@@ -53,7 +53,7 @@ final class Member_List_Table extends \WP_List_Table {
     }
     protected function column_name($user){
         $url=add_query_arg('member_id',$user->ID,Admin::url());
-        return '<strong><a href="'.esc_url($url).'">'.esc_html($user->display_name?:$user->user_login).'</a></strong>'.$this->row_actions(['settings'=>'<a href="'.esc_url($url).('">' . esc_html__('Settings', 'atshift-members') . '</a>')]);
+        return '<strong><a href="'.esc_url($url).'">'.esc_html($user->display_name?:$user->user_login).'</a></strong><br><small>'.esc_html(trim($user->last_name.' '.$user->first_name)).'</small><br><small>'.esc_html($user->user_login).'</small>'.$this->row_actions(['settings'=>'<a href="'.esc_url($url).('">' . esc_html__('Settings', 'atshift-members') . '</a>')]);
     }
     protected function column_default($user,$column){
         if($column==='email')return esc_html($user->user_email);

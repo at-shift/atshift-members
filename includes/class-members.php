@@ -2,7 +2,7 @@
 namespace Atshift\Membership;
 defined('ABSPATH') || exit;
 final class Members {
-    public static function state_label($state) {return ['active'=>__('Active', 'atshift-members'),'pending'=>__('Pending Approval', 'atshift-members'),'suspended'=>__('Suspended', 'atshift-members'),'provisioning'=>__('Registration Needs Review', 'atshift-members'),'withdrawn'=>__('Account Removed', 'atshift-members'),'withdrawing'=>__('Account Closure in Progress', 'atshift-members'),''=>__('Site Administrator', 'atshift-members')][$state]??__('Unavailable', 'atshift-members');}
+    public static function state_label($state) {return ['active'=>__('Active', 'atshift-members'),'pending'=>__('Pending Approval', 'atshift-members'),'banned'=>__('Banned', 'atshift-members'),'suspended'=>__('Suspended', 'atshift-members'),'provisioning'=>__('Registration Needs Review', 'atshift-members'),'withdrawn'=>__('Account Removed', 'atshift-members'),'withdrawing'=>__('Account Closure in Progress', 'atshift-members'),''=>__('Site Administrator', 'atshift-members')][$state]??__('Unavailable', 'atshift-members');}
     public static function roles() {
         $base = ['read'=>true];
         foreach (['asm_posts','asm_pages'] as $plural) {
@@ -65,6 +65,19 @@ final class Members {
         if (self::blocked($id) && $cap!=='exist') return ['do_not_allow'];
         return $caps;
     }
+    /** Persisted obligations must still block removal if the Pro add-on is disabled. */
+    public static function handoff_error($id){
+        $u=get_userdata($id);if(!$u)return null;
+        $needed=false;
+        foreach(['asm_review','asm_send_notices','asm_import_members'] as $cap)if(!empty($u->caps[$cap]))$needed=true;
+        $scope=get_user_meta($id,Scope::META,true);if(is_array($scope)&&($scope['mode']??'')==='global'||!empty($scope['groups']))$needed=true;
+        if(in_array($id,array_map('intval',(array)get_option('asm_pro_reviewers',[])),true))$needed=true;
+        foreach((array)get_option('asm_category_approval',[]) as $reviewers)if(in_array($id,array_map('intval',(array)$reviewers),true))$needed=true;
+        global $wpdb;
+        $rows=$wpdb->get_results("SELECT p.post_author,p.post_type,m.meta_value FROM {$wpdb->posts} p LEFT JOIN {$wpdb->postmeta} m ON m.post_id=p.ID AND m.meta_key IN ('_asm_review','_asm_category_review') WHERE p.post_status='pending' AND p.post_type IN ('asm_review','asm_cat_review','asm_campaign')");
+        foreach($rows as $row){$d=maybe_unserialize($row->meta_value);if(is_array($d)&&in_array($id,array_map('intval',array_slice($d['reviewers']??[],(int)($d['step']??0))),true))$needed=true;if($row->post_type==='asm_campaign'&&(int)$row->post_author===$id)$needed=true;}
+        return apply_filters('atshift_members_handoff_error',$needed?new \WP_Error('handoff',__('This person has staff responsibilities. Choose and configure a replacement in Staff and Permissions before restricting access or removing responsibilities.', 'atshift-members')):null,$id);
+    }
     public static function state_error($id) {
         if (!Scope::can_manage($id,'state')) return new \WP_Error('forbidden',__('You cannot perform this action.', 'atshift-members'));
         $target = get_userdata($id);
@@ -75,7 +88,7 @@ final class Members {
         return null;
     }
     public static function bulk_state($ids,$state) {
-        if(!current_user_can('asm_manage_members') || !in_array($state,['active','suspended','pending'],true))return new \WP_Error('state',__('Choose the new member status.', 'atshift-members'));
+        if(!current_user_can('asm_manage_members') || !in_array($state,['active','suspended','pending','banned'],true))return new \WP_Error('state',__('Choose the new member status.', 'atshift-members'));
         if(!is_array($ids)||!$ids||count($ids)>50)return new \WP_Error('selection',__('Select between 1 and 50 members to update.', 'atshift-members'));
         foreach($ids as $id)if((!is_int($id)&&!is_string($id))||!preg_match('/^[1-9][0-9]*$/D',(string)$id))return new \WP_Error('selection',__('Check the selected members.', 'atshift-members'));
         $ids=array_values(array_unique(array_map('intval',$ids)));
@@ -120,6 +133,7 @@ final class Members {
         if(strtoupper((string)$engine)!=='INNODB')return new \WP_Error('storage',__('The user tables must use InnoDB to save member information together. Please check with your site administrator.', 'atshift-members'));
         $store=atshift_members()->store;$lock='member-settings:'.$id;
         if(!$store->lock($lock))return new \WP_Error('busy',__('This member\'s information is being saved. Please wait a moment and try again.', 'atshift-members'));
+        if(!$store->lock('staff-continuity')){$store->unlock($lock);return new \WP_Error('busy',__('This member\'s information is being saved. Please wait a moment and try again.', 'atshift-members'));}
         $committed=false;$changed=false;$linked=null;$role_changed=false;$old_role=null;$role=null;
         try {
             // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery -- Security-sensitive current state or atomic transaction/lock operation; WordPress object caching cannot provide these fresh predicates or synchronization semantics.
@@ -132,7 +146,7 @@ final class Members {
             if(array_key_exists('state',$input)){
                 $error=self::state_error($id);if(is_wp_error($error))return $error;
                 $state=$input['state'];
-                if(!is_string($state)||!in_array($state,['active','suspended','pending'],true))return new \WP_Error('state',__('Choose the new status.', 'atshift-members'));
+                if(!is_string($state)||!in_array($state,['active','suspended','pending','banned'],true))return new \WP_Error('state',__('Choose the new status.', 'atshift-members'));
                 if(($input['state_before']??null)!==$before)return new \WP_Error('changed',__('The member status has changed. Reopen this screen.', 'atshift-members'));
                 $changed=$state!==$before;
             }
@@ -143,6 +157,8 @@ final class Members {
                 if(($input['role_before']??null)!==$old_role)return new \WP_Error('changed',__('The member role has changed. Reopen this screen.', 'atshift-members'));
                 $role_changed=$role!==$old_role;
             }
+            if(($changed&&$state!=='active')||($role_changed&&$role==='asm_member')){$guard=self::handoff_error($id);if(is_wp_error($guard))return $guard;}
+            if(($state==='banned'||$before==='banned')&&!current_user_can('manage_options'))return new \WP_Error('forbidden',__('Only site administrators can ban or restore a banned account.', 'atshift-members'));
             if(array_key_exists('memberships',$input)){
                 $linked=apply_filters('atshift_members_save_profile_selection',new \WP_Error('integration',__('The classification integration could not be verified. Reopen this screen.', 'atshift-members')),$id,$input['memberships']);
                 if(is_wp_error($linked))return $linked;
@@ -171,7 +187,7 @@ final class Members {
             // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery -- Security-sensitive current state or atomic transaction/lock operation; WordPress object caching cannot provide these fresh predicates or synchronization semantics.
             if(!$committed)$wpdb->query('ROLLBACK');
             clean_user_cache($id);
-            $store->unlock($lock);
+            $store->unlock('staff-continuity');$store->unlock($lock);
         }
         if($role_changed){
             // Match WordPress role-change events after commit, so failed saves cannot notify other plugins.
@@ -188,20 +204,12 @@ final class Members {
         if($changed||$role_changed)\WP_Session_Tokens::get_instance($id)->destroy_all();
         if($changed){
             $store->log('member_'.$state,(string)$id);
-            Mail::send($state==='active'?'activated':($state==='suspended'?'suspended':'pending'),get_userdata($id)->user_email);
+            Mail::send($state==='active'?'activated':($state==='banned'?'banned':($state==='suspended'?'suspended':'pending')),get_userdata($id)->user_email);
         }
         return true;
     }
     public static function set_state($id,$state) {
-        if(!in_array($state,['active','suspended','pending'],true))return new \WP_Error('forbidden',__('You cannot perform this action.', 'atshift-members'));
-        $error=self::state_error($id);if(is_wp_error($error))return $error;
-        $target=get_userdata($id);$before=get_user_meta($id,'_asm_state',true);
-        if ($before===$state) return true;
-        if (false===update_user_meta($id,'_asm_state',$state)) return new \WP_Error('save',__('Could not save.', 'atshift-members'));
-        \WP_Session_Tokens::get_instance($id)->destroy_all();
-        atshift_members()->store->log('member_'.$state,(string)$id);
-        Mail::send($state==='active'?'activated':($state==='suspended'?'suspended':'pending'),$target->user_email);
-        return true;
+        return self::save_settings($id,['state'=>$state,'state_before'=>get_user_meta($id,'_asm_state',true)]);
     }
     public static function recent_login($id) {
         $token=wp_get_session_token();
