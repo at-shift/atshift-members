@@ -21,7 +21,11 @@ final class PluginListing {
         $actions=[];
         if($slug==='atshift-members') {
             if(Admin::can_access_settings())$actions['settings']='<a href="'.esc_url(Admin::url(current_user_can('manage_options')?'atshift-members-pages':'atshift-members')).('">' . esc_html__('Settings', 'atshift-members') . '</a>');
-            if(!self::pro_installed())$actions['purchase']=('<span>' . esc_html__('Buy the Pro Add-on', 'atshift-members') . '</span>');
+            if(!self::pro_installed())$actions['purchase']=sprintf(
+                '<a href="%1$s" target="_blank" rel="noopener noreferrer"><strong>%2$s</strong></a>',
+                esc_url(self::pro_url()),
+                esc_html__('Try Pro Add-on', 'atshift-members')
+            );
         }
         if(isset($links['deactivate']))$actions['deactivate']=$links['deactivate'];
         return $actions;
@@ -29,6 +33,12 @@ final class PluginListing {
     private static function pro_installed() {
         foreach(array_keys(get_plugins()) as $file)if(self::slug($file)==='atshift-members-pro')return true;
         return false;
+    }
+    private static function pro_url() {
+        $url=0===strpos(determine_locale(),'ja')
+            ? 'https://plugins.at-shift.net/members/pro/'
+            : 'https://plugins.at-shift.net/en/members/pro/';
+        return add_query_arg('site_url',home_url(),$url);
     }
     public static function meta($links,$file,$data) {
         $slug=self::slug($file);
@@ -41,7 +51,11 @@ final class PluginListing {
         $meta=[$version,$author];
         /* translators: %s: Plugin name. */
         $meta[]='<a href="'.esc_url($url).'" class="thickbox open-plugin-details-modal" aria-label="'.esc_attr(sprintf(__('View details for %s', 'atshift-members'),$data['Name'])).('">' . esc_html__('View Details', 'atshift-members') . '</a>');
-        if($slug==='atshift-members')$meta[]=('<span>' . esc_html__('Buy the Pro Add-on', 'atshift-members') . '</span>');
+        if($slug==='atshift-members'&&!self::pro_installed())$meta[]=sprintf(
+            '<a href="%1$s" target="_blank" rel="noopener noreferrer">%2$s</a>',
+            esc_url(self::pro_url()),
+            esc_html__('Try Pro Add-on', 'atshift-members')
+        );
         return $meta;
     }
     public static function information($result,$action,$args) {

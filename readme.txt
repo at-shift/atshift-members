@@ -1,59 +1,140 @@
 === atshift Members ===
 Contributors: atshift
+Tags: membership, member directory, private content, user registration, access control
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.1.10
+Stable tag: 1.0
 License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Email-verified membership, protected content, private attachments and optional profile integration. Development beta.
+Build a simple membership site with verified registration, member pages, posting controls, a directory, and private files.
+
+== Description ==
+
+atshift Members provides the essential pages and controls for a straightforward WordPress membership site. It keeps member registration, account management, posting permissions, protected content, and private attachments in one place.
+
+= Set up the member experience =
+
+* Create the registration, account, account-editing, password-reset, and account-closure pages together.
+* Add a member home page with links to the account and the post types each member can use.
+* Accept registrations immediately or hold new accounts for an administrator to approve.
+* Use email confirmation for registration, email-address changes, and password resets.
+
+= Manage members and content =
+
+* Activate, suspend, or return accounts to pending status from a dedicated member list.
+* Allow active members to create selected WordPress post types while keeping them from editing other users' content.
+* Protect selected posts or pages for active members without changing public content elsewhere on the site.
+* Hide standard author archives and username-based author links.
+
+= Publish an optional member directory =
+
+The directory is disabled by default. When enabled, it can be public, restricted to active members, restricted to site operators, or limited through an optional classification integration. Choose whether to display a member's name, affiliation, and biography, and exclude individual accounts such as site builders.
+
+= Store member-only attachments =
+
+Private attachments can be stored in a non-public directory on the WordPress server or on a file-server/NAS share already mounted by the host. Each download checks the current member and the parent content. Ordinary WordPress uploads remain public.
+
+= Extend profiles and administration when needed =
+
+The plugin works on its own with basic name and biography fields. Optional integrations add configurable profile fields, passkeys, user classifications, delegated administration, post review, scheduled announcement delivery, and CSV invitations. Paid add-ons are separate products and are not included in this plugin.
+
+The current release supports WordPress single-site installations. Test the complete registration, email, cache, content, file-storage, and account-closure flows on a staging site before opening registration.
 
 == Installation ==
-1. Install this directory. atshift User Profile Fields is optional for custom profile fields.
-2. Activate atshift Members on a single-site InnoDB WordPress installation.
-3. Save the Cloudflare Turnstile site key and secret key under Members > Registration settings. Server-managed sites can instead define ASM_TURNSTILE_SITE_KEY and ASM_TURNSTILE_SECRET in wp-config.php; these take priority and hide the key-editing controls. HTTPS is required except WP_ENVIRONMENT_TYPE=local. Production rejects Cloudflare test keys.
-4. In Members, create the five account pages. Without a profile integration, registration requires only email and password by default. Optional native profile fields can be selected. When atshift User Profile Fields is connected, its profile configuration takes priority.
-5. Verify cron, email delivery, cache exclusion and all other public registration routes before enabling registration. No automatic deployment is included.
 
-== Roles ==
-Administrator: site configuration, member and content management.
-Site operator: member suspension/reactivation and content management; no plugin/settings/administrator control.
-User (posting): owns member posts and public pages. An operator may additionally permit member announcements, without granting editing of others' content or member administration.
+1. Install and activate atshift Members on a single-site WordPress installation using InnoDB tables.
+2. Open Members > Member Page Setup and create the five member pages. Keep these pages published; the plugin restricts account details and forms to the appropriate user.
+3. Open Members > Registration Settings and choose whether to accept registrations and require administrator approval.
+4. Add Cloudflare Turnstile site and secret keys. Server-managed sites can define `ATSHME_TURNSTILE_SITE_KEY` and `ATSHME_TURNSTILE_SECRET` in `wp-config.php`; constants take priority and hide the key controls.
+5. Review Members > Posting Settings, email templates, directory settings, and private-file storage.
+6. Exclude member pages from page caches and shared CDN caches. Verify cron and outgoing email before enabling registration.
 
-== External services ==
-Cloudflare Turnstile validates anti-abuse tokens via Siteverify. Pwned Passwords receives only a five-character SHA-1 prefix and returns a padded range response. Password checking fails closed on outage (5-second timeout); explicit ASM_PWNED_PASSWORDS_ENABLED=false disables this check. WordPress mail uses the site's configured transport. These services have not been tested with live credentials in this beta.
+HTTPS is required except when `WP_ENVIRONMENT_TYPE` is `local`. Production sites reject Cloudflare test keys.
 
-== Privacy and access ==
-Requests retain email addresses for at most 30 minutes plus cron delay; completion proofs last 15 minutes. Secret proofs are stored only as hashes. Source/email/cookie counters are keyed hashes. Audit events expire after 7 days plus cron delay. Hashing is pseudonymization, not anonymization. Raw tokens must be redacted in web-server/access/analytics logs outside WordPress; confirmation pages send no-referrer/no-store headers.
-Ordinary uploaded files remain public. Private attachments use an explicitly configured nonpublic folder on the WordPress server, or a mounted file-server/NAS folder; each download checks membership and parent access. Cloud storage and bulk member email delivery are not included in this free plugin. Public content can remain visible to logged-out visitors even when a user is suspended. CDN/page caches and third-party API/profile/SEO plugins need separate integration verification.
+== Frequently Asked Questions ==
+
+= Can I use the plugin without another profile plugin? =
+
+Yes. atshift Members can collect a name, display name, and biography on its own. atshift User Profile Fields is optional when you need additional or rearranged fields.
+
+= Can members publish WordPress posts? =
+
+Yes. Posting Settings lets an administrator choose which registered post types active members may use. A grant covers a member's own content and does not grant permission to edit other users' posts. Reading permissions are configured separately.
+
+= Is the member directory public? =
+
+Only if an administrator enables it and selects Everyone. The directory is disabled by default. Login names, email addresses, and administrative permissions are not directory fields.
+
+= Are normal Media Library uploads private? =
+
+No. Standard WordPress uploads remain public. Member-only files must use the configured private storage and the member-only attachment controls.
+
+= Does the free plugin send bulk announcements? =
+
+No. The free plugin sends account-related transactional email. Announcement delivery, scheduling, post review, and staff responsibility assignment are available through the separate atshift Members Pro Add-on.
+
+= Does it support multisite? =
+
+Version 1.0 supports single-site installations.
+
+== Screenshots ==
+
+1. Create and review the five required member pages and an optional member home page.
+2. Choose registration availability, administrator approval, and the profile fields used by member forms.
+3. Set member posting permissions independently for each registered post type and hide username-based author links.
+4. Search and manage members, account status, roles, and available post types from one list.
+5. Give each active member a simple home page with account and posting links relevant to that user.
+6. Publish an optional directory with an administrator-controlled audience, fields, and per-user exclusions.
 
 == Shortcodes ==
-[asm_registration]
-[asm_account]
-[asm_account_edit]
-[asm_password_reset]
-[asm_withdraw]
 
+Core account pages:
 
-== Withdrawal ==
-Default is permanent account/data erasure, with optional explicit transfer of selected contributions to a non-login site custodian. A separate final confirmation and login within the last ten minutes are required. Selected posts become site-owned drafts; unselected owned content and the account are deleted. Shared physical files and external/backed-up data have explicit limits shown before confirmation. Large deletion jobs continue via WP-Cron. This development alpha is not a blanket erasure guarantee for arbitrary third-party plugins.
+* `[atshme_registration]`
+* `[atshme_account]`
+* `[atshme_account_edit]`
+* `[atshme_password_reset]`
+* `[atshme_withdraw]`
 
-Staff are appointed from existing members in Members > Member management. The former operator invitation tab is no longer provided. The operator-only registration page and invitation email editor are also omitted.
+Member navigation and directory:
 
-== Service terms and privacy ==
-Cloudflare Turnstile loads its browser script on challenge-enabled forms and sends the challenge token and configured secret to Cloudflare for verification when a registration or reset request is submitted. Cloudflare may process browser/network signals to prevent abuse.
+* `[atshme_dashboard]`
+* `[atshme_account_links]`
+* `[atshme_post_links]`
+* `[atshme_approval_status]` (shows Pro approval data when the add-on is active)
+* `[atshme_member_directory]`
+
+The dashboard shortcodes accept `class`, `heading_tag`, `title`, and `limit` where applicable. The directory accepts `class`, `heading_tag`, and `per_page`. Shortcode attributes cannot broaden the access configured by an administrator.
+
+== External services ==
+
+Cloudflare Turnstile is used on registration and password-reset request forms to reduce automated abuse. Its browser script loads when one of these forms is displayed. When a request is submitted, the plugin sends the Turnstile response token and the site administrator's secret key to Cloudflare's Siteverify endpoint. Cloudflare may also process browser and network signals as described in its policies. Registration and password-reset requests cannot proceed when verification fails.
+
+Service: https://www.cloudflare.com/products/turnstile/
 Terms: https://www.cloudflare.com/terms/
 Privacy: https://www.cloudflare.com/privacypolicy/
 
-Pwned Passwords is queried when a password is validated. Only the first five hexadecimal characters of its SHA-1 hash are sent; the password and full hash are never sent. This check is enabled by default and can be disabled with ASM_PWNED_PASSWORDS_ENABLED=false.
+Pwned Passwords is queried whenever this plugin validates a new or changed password. The plugin sends only the first five hexadecimal characters of the password's SHA-1 hash to the range endpoint at `api.pwnedpasswords.com`. The password and full hash are never sent. Returned suffixes are used only for the current comparison and are not stored. Password validation fails closed if the service is unavailable (five-second timeout). A site administrator can disable this check by defining `ATSHME_PWNED_PASSWORDS_ENABLED` as `false`.
+
 Service: https://haveibeenpwned.com/Passwords
 Terms: https://haveibeenpwned.com/TermsOfUse
 Privacy: https://haveibeenpwned.com/Privacy
 
+WordPress mail uses the site's configured mail transport and is not a service supplied by this plugin. Test both external services with credentials for the target site before opening registration.
+
+== Privacy and access ==
+
+Pending requests retain email addresses for at most 30 minutes plus cron delay; completion proofs last 15 minutes. Secret proofs are stored only as hashes. Source, email, and cookie counters use keyed hashes. Audit events expire after seven days plus cron delay. Hashing is pseudonymization, not anonymization. Raw tokens should be redacted from web-server, access, and analytics logs outside WordPress; confirmation pages send no-referrer and no-store headers.
+
+Private downloads recheck membership and parent-content access. Public content can remain visible to logged-out visitors when a member is suspended. CDN and page caches, reverse proxies, and third-party profile, API, and SEO plugins require separate integration testing.
+
+Account closure permanently erases the account and plugin-managed data by default. Members can explicitly transfer selected contributions to a non-login site custodian. Shared physical files, backups, and data stored by unrelated plugins have limits explained before final confirmation.
 
 == Changelog ==
-= 0.1.10 =
-* Add registration usernames, standalone name ordering and a separate email-change screen.
-* Improve member status controls, administrator-only bans and staff handoff safeguards.
-* Improve profile integration, member classification wording and Japanese translations.
-* Add media preparation and attachment access integration hooks for optional add-ons.
+
+= 1.0 =
+* Initial public release with email-verified registration, account management, protected member content, posting permissions, and private attachments.
+* Add a member home, optional directory, individual directory exclusions, basic profile presets, and optional integrations with other atshift plugins.
+* Add migration from beta identifiers and strengthen authorization, request validation, external-service documentation, and media-page integration.

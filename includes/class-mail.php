@@ -8,10 +8,6 @@ final class Mail {
 {link}
 
 If you did not request this, please ignore this email.', 'atshift-members')],
-            'invite'=>['label'=>__('Site Operator Invitation', 'atshift-members'),'subject'=>__('[{site}] Invitation to become a site operator', 'atshift-members'),'body'=>__('You have been invited to become a site operator. Open the link within 30 minutes to complete registration.
-{link}
-
-If you were not expecting this invitation, do not proceed. Please contact the site administrator.', 'atshift-members')],
             'welcome'=>['label'=>__('Registration Complete', 'atshift-members'),'subject'=>__('[{site}] Your registration is complete', 'atshift-members'),'body'=>__('Your registration is complete.
 Account information: {link}', 'atshift-members')],
             'pending'=>['label'=>__('Pending Approval', 'atshift-members'),'subject'=>__('[{site}] Your account is awaiting review', 'atshift-members'),'body'=>__('Your account is awaiting administrator review. We will let you know when it is ready to use.', 'atshift-members')],
@@ -33,7 +29,7 @@ If you did not request this, please ignore this email.', 'atshift-members')],
         ]);
     }
     public static function with_signature($body) {
-        $signature=get_option('asm_mail_signature','');
+        $signature=get_option('atshme_mail_signature','');
         $signature=is_string($signature)?trim($signature):'';
         $signature=strtr($signature,['{site}'=>wp_specialchars_decode(get_bloginfo('name'),ENT_QUOTES)]);
         return $signature===''?$body:rtrim($body)."\n\n".$signature;
@@ -41,13 +37,13 @@ If you did not request this, please ignore this email.', 'atshift-members')],
     public static function send($type,$to,$link='',$identify=true,$context=[]) {
         $defaults=self::defaults();
         if (!isset($defaults[$type])) return false;
-        $saved=get_option('asm_mail_templates',[]);
+        $saved=get_option('atshme_mail_templates',[]);
         $template=$saved[$type]??$defaults[$type];
         $replace=['{site}'=>wp_specialchars_decode(get_bloginfo('name'),ENT_QUOTES),'{link}'=>$link?:Screens::url('account')];
         foreach($context as $key=>$value)if(is_string($key)&&is_scalar($value)&&!isset($replace[$key]))$replace[$key]=(string)$value;
         $subject=strtr($template['subject'],$replace);
         $body=self::with_signature(strtr($template['body'],$replace));
-        $sender=get_option('asm_sender_name','');
+        $sender=get_option('atshme_sender_name','');
         $filter=static function($name) use($sender) { return $sender?:$name; };
         add_filter('wp_mail_from_name',$filter);
         try { $ok=wp_mail($to,$subject,$body); }

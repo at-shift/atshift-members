@@ -4,12 +4,12 @@ defined('ABSPATH') || exit;
 
 /** Explicit consent, resumable erasure, and selective site-owned contribution handoff. */
 final class Withdrawal {
-    const PLAN = '_asm_withdrawal_plan';
-    const JOB = '_asm_withdrawal_job';
-    const TYPES = ['post','page','asm_post','asm_page','asm_notice'];
+    const PLAN = '_atshme_withdrawal_plan';
+    const JOB = '_atshme_withdrawal_job';
+    const TYPES = ['post','page','atshme_post','atshme_page','atshme_notice'];
     public static function hooks() {
-        add_action('asm_finish_withdrawal',[self::class,'run']);
-        add_action('asm_cleanup',[self::class,'cleanup_plans']);
+        add_action('atshme_finish_withdrawal',[self::class,'run']);
+        add_action('atshme_cleanup',[self::class,'cleanup_plans']);
     }
     public static function cleanup_plans() {
         global $wpdb;
@@ -89,10 +89,10 @@ final class Withdrawal {
             $job=['posts'=>array_keys($plan['posts']),'media'=>array_keys($plan['media']),'owner'=>$owner,'started'=>time()];
             // Persist work before consuming consent. Never erase first and then try to remember the plan.
             if(!update_user_meta($id,self::JOB,$job))return new \WP_Error('save',__('Could not save the account closure request.', 'atshift-members'));
-            if(!update_user_meta($id,'_asm_state','withdrawing')) {delete_user_meta($id,self::JOB);return new \WP_Error('save',__('Could not save the account closure status.', 'atshift-members'));}
+            if(!update_user_meta($id,'_atshme_state','withdrawing')) {delete_user_meta($id,self::JOB);return new \WP_Error('save',__('Could not save the account closure status.', 'atshift-members'));}
             delete_user_meta($id,self::PLAN);
             \WP_Session_Tokens::get_instance($id)->destroy_all();
-            if(!wp_next_scheduled('asm_finish_withdrawal',[$id]))wp_schedule_single_event(time()+60,'asm_finish_withdrawal',[$id]);
+            if(!wp_next_scheduled('atshme_finish_withdrawal',[$id]))wp_schedule_single_event(time()+60,'atshme_finish_withdrawal',[$id]);
         } finally {$store->unlock('withdraw|'.$id);}
         return self::run($id);
     }
@@ -100,13 +100,13 @@ final class Withdrawal {
         $store=atshift_members()->store;
         if(!$store->lock('custodian'))return new \WP_Error('busy',__('Please wait a moment and try again.', 'atshift-members'));
         try {
-            $id=(int)get_option('asm_custodian_id',0);$user=get_userdata($id);
-            if($user && get_user_meta($id,'_asm_custodian',true)==='1' && $user->roles===['asm_custodian'])return $id;
+            $id=(int)get_option('atshme_custodian_id',0);$user=get_userdata($id);
+            if($user && get_user_meta($id,'_atshme_custodian',true)==='1' && $user->roles===['atshme_custodian'])return $id;
             if($id)return new \WP_Error('owner',__('An administrator needs to verify the recipient account for transferred content.', 'atshift-members'));
-            add_role('asm_custodian',__('Site Operator (Content Archive Only)', 'atshift-members'),[]);
-            $id=wp_insert_user(['user_login'=>'asm_custodian_'.bin2hex(random_bytes(12)),'user_pass'=>Store::token(),'user_email'=>'','display_name'=>__('Site Operator Archive', 'atshift-members'),'role'=>'asm_custodian','meta_input'=>['_asm_custodian'=>'1']]);
+            add_role('atshme_custodian',__('Site Operator (Content Archive Only)', 'atshift-members'),[]);
+            $id=wp_insert_user(['user_login'=>'atshme_custodian_'.bin2hex(random_bytes(12)),'user_pass'=>Store::token(),'user_email'=>'','display_name'=>__('Site Operator Archive', 'atshift-members'),'role'=>'atshme_custodian','meta_input'=>['_atshme_custodian'=>'1']]);
             if(is_wp_error($id))return $id;
-            update_option('asm_custodian_id',$id,false);return $id;
+            update_option('atshme_custodian_id',$id,false);return $id;
         } finally {$store->unlock('custodian');}
     }
     /** Return pending on interruption; state already blocks all member access. */
@@ -116,19 +116,19 @@ final class Withdrawal {
         try {
             $user=get_userdata($id);if(!$user)return ['status'=>'complete'];
             $job=get_user_meta($id,self::JOB,true);
-            if(get_user_meta($id,'_asm_state',true)!=='withdrawing' || !is_array($job))return new \WP_Error('job',__('Could not verify the account closure request.', 'atshift-members'));
+            if(get_user_meta($id,'_atshme_state',true)!=='withdrawing' || !is_array($job))return new \WP_Error('job',__('Could not verify the account closure request.', 'atshift-members'));
             // Schedule the retry before mutating so a fatal error does not strand the job.
-            if(!wp_next_scheduled('asm_finish_withdrawal',[$id]))wp_schedule_single_event(time()+60,'asm_finish_withdrawal',[$id]);
+            if(!wp_next_scheduled('atshme_finish_withdrawal',[$id]))wp_schedule_single_event(time()+60,'atshme_finish_withdrawal',[$id]);
             global $wpdb;
             foreach(array_merge($job['posts'],$job['media']) as $post_id) {
                 $post=get_post($post_id);if(!$post)continue;
-                if((int)$post->post_author===(int)$job['owner'] && get_post_meta($post_id,'_asm_transferred',true)==='1')continue;
+                if((int)$post->post_author===(int)$job['owner'] && get_post_meta($post_id,'_atshme_transferred',true)==='1')continue;
                 if((int)$post->post_author!==$id && (int)$post->post_author!==(int)$job['owner'])return ['status'=>'pending'];
                 $result=wp_update_post(['ID'=>$post_id,'post_author'=>$job['owner'],'post_status'=>$post->post_type==='attachment'?'inherit':'draft'],true);
                 if(is_wp_error($result))return ['status'=>'pending'];
                 delete_post_meta($post_id,'_edit_last');delete_post_meta($post_id,'_edit_lock');
                 foreach(wp_get_post_revisions($post_id,['check_enabled'=>false]) as $revision)if(!wp_delete_post_revision($revision->ID))return ['status'=>'pending'];
-                update_post_meta($post_id,'_asm_transferred','1');
+                update_post_meta($post_id,'_atshme_transferred','1');
             }
             // Force deletion includes trash, custom types with delete_with_user=false and detached uploads.
             // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Security-sensitive current state or atomic transaction/lock operation; WordPress object caching cannot provide these fresh predicates or synchronization semantics.
@@ -162,7 +162,7 @@ final class Withdrawal {
             foreach($subjects as $subject)if(false===$wpdb->delete($store->audit,['subject'=>$subject]))return ['status'=>'pending'];
             require_once ABSPATH.'wp-admin/includes/user.php';
             if(!wp_delete_user($id) || get_userdata($id))return ['status'=>'pending'];
-            wp_clear_scheduled_hook('asm_finish_withdrawal',[$id]);
+            wp_clear_scheduled_hook('atshme_finish_withdrawal',[$id]);
             // No departing ID/email/token stored in the completion audit event.
             $store->log('withdrawal_complete');
             Mail::send('withdrawn',$user->user_email,'',false);

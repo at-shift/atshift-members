@@ -13,10 +13,10 @@
     }
     function ScopeChoice({ onChoose, tab }) {
         const action = tab === 'library' ? __('Choose from saved images, videos, and documents.', 'atshift-members') : __('Upload images, videos, and documents.', 'atshift-members');
-        return el('div', { className: 'asm-media-choices' },
-            el('button', { type: 'button', className: 'asm-media-choice', onClick: () => onChoose('public') },
+        return el('div', { className: 'atshme-media-choices' },
+            el('button', { type: 'button', className: 'atshme-media-choice', onClick: () => onChoose('public') },
                 el('strong', null, __('Public', 'atshift-members')), el('span', null, __('These files are visible to everyone. ', 'atshift-members') + action)),
-            el('button', { type: 'button', className: 'asm-media-choice', onClick: () => onChoose('members') },
+            el('button', { type: 'button', className: 'atshme-media-choice', onClick: () => onChoose('members') },
                 el('strong', null, __('Members Only', 'atshift-members')), el('span', null, __('These files are visible only to authorized members. ', 'atshift-members') + action)));
     }
     function Picker({ onSelect, library = false, initialTab = 'library', types, multiple = false, files }) {
@@ -64,29 +64,29 @@
             setSelected(old => multiple ? old.some(x => x.id === item.id) ? old.filter(x => x.id !== item.id) : old.concat(item) : [item]);
         }
         if (!mode) return el(ScopeChoice, { onChoose: chooseMode, tab });
-        return el('div', { className: 'asm-media-browser' },
-            el('div', { className: 'asm-media-toolbar' }, el('strong', null, mode === 'members' ? __('Members-Only Media', 'atshift-members') : __('Public Media', 'atshift-members')),
+        return el('div', { className: 'atshme-media-browser' },
+            el('div', { className: 'atshme-media-toolbar' }, el('strong', null, mode === 'members' ? __('Members-Only Media', 'atshift-members') : __('Public Media', 'atshift-members')),
                 el(Button, { variant: 'tertiary', disabled: busy, onClick: () => { setMode(null);setSelected([]); } }, __('Change Visibility', 'atshift-members'))),
             el('p', { className: 'description' }, mode === 'members' ? __('Showing members-only files you can use. Files used in another post will be copied for that post.', 'atshift-members') : __('Showing public files you can use.', 'atshift-members')),
-            el('div', { className: 'asm-media-tabs', role: 'tablist', 'aria-label': __('Choose How to Add Media', 'atshift-members') },
+            el('div', { className: 'atshme-media-tabs', role: 'tablist', 'aria-label': __('Choose How to Add Media', 'atshift-members') },
                 ['upload', 'library'].map(value => el('button', { key: value, type: 'button', role: 'tab', 'aria-selected': tab === value, disabled: busy, onClick: () => { setTab(value);setSelected([]); } }, value === 'upload' ? __('Upload', 'atshift-members') : __('Media Library', 'atshift-members')))),
             error && el(Notice, { status: 'error', isDismissible: false }, error),
-            busy && el('div', { role: 'status', className: 'asm-media-progress' }, el(Spinner), __('Processing…', 'atshift-members')),
-            tab === 'upload' ? el('div', { className: 'asm-media-drop', onDragOver: e => e.preventDefault(), onDrop: e => { e.preventDefault();upload(e.dataTransfer.files); } },
+            busy && el('div', { role: 'status', className: 'atshme-media-progress' }, el(Spinner), __('Processing…', 'atshift-members')),
+            tab === 'upload' ? el('div', { className: 'atshme-media-drop', onDragOver: e => e.preventDefault(), onDrop: e => { e.preventDefault();upload(e.dataTransfer.files); } },
                 el('p', null, __('Drop Files to Upload', 'atshift-members')),
                 el('input', { ref: input, type: 'file', hidden: true, accept: types && types.includes('image') ? '.jpg,.jpeg,.png,.gif,.webp' : types && types.includes('video') ? '.mp4,.webm' : config.accept, multiple: !!multiple || library, onChange: e => { upload(e.target.files);e.target.value = ''; } }),
                 el(Button, { variant: 'secondary', disabled: busy, onClick: () => input.current.click() }, __('Select Files', 'atshift-members')),
                 el('p', null, __('Server upload limit: ', 'atshift-members') + config.maxSizeLabel)) : el('div', null,
-                el('form', { className: 'asm-media-search', onSubmit: e => { e.preventDefault();setPage(1);setQuery(search); } },
+                el('form', { className: 'atshme-media-search', onSubmit: e => { e.preventDefault();setPage(1);setQuery(search); } },
                     el('label', null, __('Search by Filename', 'atshift-members'), el('input', { type: 'search', value: search, onChange: e => setSearch(e.target.value) })), el(Button, { type: 'submit', variant: 'secondary', disabled: busy }, __('Search', 'atshift-members'))),
-                el('div', { className: 'asm-media-grid' }, items.map(item => el('button', { key: item.id, type: 'button', className: 'asm-media-item', 'aria-pressed': selected.some(x => x.id === item.id), disabled: busy, onClick: () => chooseItem(item) },
+                el('div', { className: 'atshme-media-grid' }, items.map(item => el('button', { key: item.id, type: 'button', className: 'atshme-media-item', 'aria-pressed': selected.some(x => x.id === item.id), disabled: busy, onClick: () => chooseItem(item) },
                     item.type === 'image' ? el('img', { src: item.url, alt: '', loading: 'lazy' }) : el('span', { className: 'dashicons dashicons-media-default', 'aria-hidden': true }),
                     el('span', null, item.filename)))),
                 !busy && !items.length && el('p', null, __('No files are available to select.', 'atshift-members')),
-                el('div', { className: 'asm-media-pagination' },
+                el('div', { className: 'atshme-media-pagination' },
                     page > 1 && el(Button, { variant: 'secondary', disabled: busy, onClick: () => { setPage(page - 1);setSelected([]); } }, __('Previous Page', 'atshift-members')),
                     more && el(Button, { variant: 'secondary', disabled: busy, onClick: () => { setPage(page + 1);setSelected([]); } }, __('Next Page', 'atshift-members')))),
-            selected.length > 0 && el('div', { className: 'asm-media-footer' }, library ?
+            selected.length > 0 && el('div', { className: 'atshme-media-footer' }, library ?
                 el('div', null, el('strong', null, selected[0].filename), el('p', null, el('a', { href: selected[0].link, target: '_blank', rel: 'noopener' }, __('Open File', 'atshift-members')))) :
                 el(Button, { variant: 'primary', disabled: busy, onClick: insert }, __('Insert Selected Files', 'atshift-members'))));
     }
@@ -97,7 +97,7 @@
         const focus = document.activeElement;
         activePicker = new Promise(resolve => {
             const finish = value => { root.unmount();mount.remove();activePicker = null;if (focus && focus.isConnected) focus.focus();resolve(value); };
-            root.render(el(Modal, { title: __('Attachment Visibility', 'atshift-members'), className: 'asm-media-modal', onRequestClose: () => finish(null) },
+            root.render(el(Modal, { title: __('Attachment Visibility', 'atshift-members'), className: 'atshme-media-modal', onRequestClose: () => finish(null) },
                 el(Picker, Object.assign({}, options, { onSelect: finish }))));
         });
         return activePicker;
@@ -129,7 +129,7 @@
     if (!config.library && wp.hooks && wp.element && wp.data) {
         // Preserve the native placeholder and its buttons, but choose visibility before opening a file dialog.
         wp.hooks.addFilter('editor.MediaPlaceholder', 'atshift-members/upload-choice', Original => function (props) {
-            return el('div', { className: 'asm-media-placeholder', onClickCapture: event => {
+            return el('div', { className: 'atshme-media-placeholder', onClickCapture: event => {
                 if (!event.target.closest('.block-editor-media-placeholder__upload-button, input[type="file"]')) return;
                 event.preventDefault();event.stopPropagation();
                 pick({ initialTab: 'upload', types: props.allowedTypes, multiple: props.multiple }).then(value => { if (value) props.onSelect(cache(value)); });
@@ -147,7 +147,7 @@
             const upload = options => {
                 const files = Array.from(options.filesList || []);
                 pick({ files, initialTab: 'upload', types: options.allowedTypes, multiple: options.multiple !== false }).then(value => {
-                    if (!value) { if (options.onError) options.onError({ code: 'asm_cancelled', message: __('Upload cancelled.', 'atshift-members') });return; }
+                    if (!value) { if (options.onError) options.onError({ code: 'atshme_cancelled', message: __('Upload cancelled.', 'atshift-members') });return; }
                     const selected = Array.isArray(value) ? value : [value];cache(selected);
                     if (options.onFileChange) options.onFileChange(selected);
                     if (options.onSuccess) selected.forEach(item => options.onSuccess(item));
@@ -163,7 +163,7 @@
             if (fixing || !wp.data.select('core/block-editor')) return;
             const store = wp.data.select('core/block-editor'), dispatch = wp.data.dispatch('core/block-editor');
             const scan = blocks => blocks.forEach(block => {
-                if (block.name === 'core/file' && /action=asm_file/.test(block.attributes.href || '') && block.attributes.displayPreview !== false) dispatch.updateBlockAttributes(block.clientId, { displayPreview: false });
+                if (block.name === 'core/file' && /action=atshme_file/.test(block.attributes.href || '') && block.attributes.displayPreview !== false) dispatch.updateBlockAttributes(block.clientId, { displayPreview: false });
                 if (block.innerBlocks) scan(block.innerBlocks);
             });
             fixing = true;scan(store.getBlocks() || []);fixing = false;
@@ -187,7 +187,7 @@
             window.tinymce.on('AddEditor', event => event.editor.on('init', () => attach(event.editor)));
             (window.tinymce.editors || []).forEach(editor => { if (editor.initialized) attach(editor);else editor.on('init', () => attach(editor)); });
         }
-        const container = document.getElementById('asm-media-library');
+        const container = document.getElementById('atshme-media-library');
         if (container) createRoot(container).render(el(Picker, { library: true, multiple: true, initialTab: config.startUpload ? 'upload' : 'library' }));
     });
-})(window.wp, window.asmMediaConfig);
+})(window.wp, window.atshmeMediaConfig);

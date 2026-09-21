@@ -1,6 +1,6 @@
 (() => {
-    document.querySelectorAll('[data-asm-posting-mode]').forEach(select => {
-        const groups = select.closest('.asm-posting-rule').querySelector('.asm-posting-groups');
+    document.querySelectorAll('[data-atshme-posting-mode]').forEach(select => {
+        const groups = select.closest('.atshme-posting-rule').querySelector('.atshme-posting-groups');
         if (!groups) return;
         const update = () => {
             groups.hidden = select.value !== 'groups';

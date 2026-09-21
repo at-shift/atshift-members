@@ -14,26 +14,26 @@ final class Member_List_Table extends \WP_List_Table {
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin display/filter parameters; mutation handlers separately require nonce and object capability checks.
         $search=is_string($_GET['s']??null)?sanitize_text_field(wp_unslash($_GET['s'])):'';
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin display/filter parameters; mutation handlers separately require nonce and object capability checks.
-        $state=is_string($_GET['state']??null)?sanitize_key($_GET['state']):'';
+        $state=is_string($_GET['state']??null)?sanitize_key(wp_unslash($_GET['state'])):'';
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin display/filter parameters; mutation handlers separately require nonce and object capability checks.
         $orderby=is_string($_GET['orderby']??null)?sanitize_key(wp_unslash($_GET['orderby'])):'';
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin display/filter parameters; mutation handlers separately require nonce and object capability checks.
         $order=is_string($_GET['order']??null)&&sanitize_key(wp_unslash($_GET['order']))==='asc'?'ASC':'DESC';
-        $args=['role__in'=>['asm_member','asm_operator'],'number'=>20,'paged'=>$this->get_pagenum(),'orderby'=>in_array($orderby,['display_name','user_email'],true)?$orderby:'ID','order'=>$order,'count_total'=>true];
+        $args=['role__in'=>['atshme_member','atshme_operator'],'number'=>20,'paged'=>$this->get_pagenum(),'orderby'=>in_array($orderby,['display_name','user_email'],true)?$orderby:'ID','order'=>$order,'count_total'=>true];
         if($search!==''){$args['search']='*'.$search.'*';$args['search_columns']=['user_login','user_email','display_name'];}
         if(Scope::limited()&&!current_user_can('manage_options'))$args['include']=Scope::target_ids()?:[0];
         $this->query_args=$args;
-        if(in_array($state,['active','suspended','pending','banned'],true))$args['meta_query']=[['key'=>'_asm_state','value'=>$state]];
+        if(in_array($state,['active','suspended','pending','banned'],true))$args['meta_query']=[['key'=>'_atshme_state','value'=>$state]];
         $query=new \WP_User_Query($args);$this->items=$query->get_results();
         $this->_column_headers=[$this->get_columns(),[], $this->get_sortable_columns(),'name'];
         $this->set_pagination_args(['total_items'=>$query->get_total(),'per_page'=>20]);
     }
     protected function get_views(){
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin display/filter parameters; mutation handlers separately require nonce and object capability checks.
-        $views=[];$current=is_string($_GET['state']??null)?sanitize_key($_GET['state']):'';
+        $views=[];$current=is_string($_GET['state']??null)?sanitize_key(wp_unslash($_GET['state'])):'';
         foreach([''=>__('All', 'atshift-members'),'active'=>__('Active', 'atshift-members'),'suspended'=>__('Suspended', 'atshift-members'),'pending'=>__('Pending Approval', 'atshift-members'),'banned'=>__('Banned', 'atshift-members')] as $state=>$label){
             $args=$this->query_args;$args['number']=1;$args['paged']=1;$args['fields']='ID';
-            if($state!=='')$args['meta_query']=[['key'=>'_asm_state','value'=>$state]];
+            if($state!=='')$args['meta_query']=[['key'=>'_atshme_state','value'=>$state]];
             $query=new \WP_User_Query($args);
             $url=remove_query_arg(['paged','state','member_id'],Admin::url());if($state!=='')$url=add_query_arg('state',$state,$url);
             // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin display/filter parameters; mutation handlers separately require nonce and object capability checks.
@@ -44,12 +44,12 @@ final class Member_List_Table extends \WP_List_Table {
     }
     protected function bulk_actions($which=''){
         if($which!=='top')return;
-        echo ('<div class="alignleft actions bulkactions">' . '<label class="screen-reader-text" for="asm-bulk-state">' . esc_html__('Bulk Actions', 'atshift-members') . '</label>' . '<select id="asm-bulk-state" name="bulk_state" required>' . '<option value="">' . esc_html__('Bulk Actions', 'atshift-members') . '</option>' . '<option value="active">' . esc_html__('Activate', 'atshift-members') . '</option>' . '<option value="suspended">' . esc_html__('Suspend', 'atshift-members') . '</option>' . '<option value="pending">' . esc_html__('Set to Pending Approval', 'atshift-members') . '</option>' . '</select>' . '<button type="submit" class="button action" id="asm-bulk-apply">' . esc_html__('Apply', 'atshift-members') . '</button>' . '</div>');
+        echo ('<div class="alignleft actions bulkactions">' . '<label class="screen-reader-text" for="atshme-bulk-state">' . esc_html__('Bulk Actions', 'atshift-members') . '</label>' . '<select id="atshme-bulk-state" name="bulk_state" required>' . '<option value="">' . esc_html__('Bulk Actions', 'atshift-members') . '</option>' . '<option value="active">' . esc_html__('Activate', 'atshift-members') . '</option>' . '<option value="suspended">' . esc_html__('Suspend', 'atshift-members') . '</option>' . '<option value="pending">' . esc_html__('Set to Pending Approval', 'atshift-members') . '</option>' . '</select>' . '<button type="submit" class="button action" id="atshme-bulk-apply">' . esc_html__('Apply', 'atshift-members') . '</button>' . '</div>');
     }
     protected function column_cb($user){
         if(is_wp_error(Members::state_error($user->ID)))return '';
         /* translators: %s: Member display name. */
-        return '<label class="screen-reader-text" for="asm-member-'.$user->ID.'">'.sprintf(esc_html__('Select %s', 'atshift-members'),esc_html($user->display_name)).('</label>' . '<input type="checkbox" id="asm-member-').$user->ID.'" name="users[]" value="'.(int)$user->ID.'">';
+        return '<label class="screen-reader-text" for="atshme-member-'.$user->ID.'">'.sprintf(esc_html__('Select %s', 'atshift-members'),esc_html($user->display_name)).('</label>' . '<input type="checkbox" id="atshme-member-').$user->ID.'" name="users[]" value="'.(int)$user->ID.'">';
     }
     protected function column_name($user){
         $url=add_query_arg('member_id',$user->ID,Admin::url());
@@ -57,8 +57,8 @@ final class Member_List_Table extends \WP_List_Table {
     }
     protected function column_default($user,$column){
         if($column==='email')return esc_html($user->user_email);
-        if($column==='role')return in_array('asm_operator',$user->roles,true)?__('Site Operator', 'atshift-members'):__('Member', 'atshift-members');
-        if($column==='state'){$state=get_user_meta($user->ID,'_asm_state',true);return '<span class="asm-member-state asm-state-'.esc_attr($state).'">'.esc_html(Members::state_label($state)).'</span>';}
+        if($column==='role')return in_array('atshme_operator',$user->roles,true)?__('Site Operator', 'atshift-members'):__('Member', 'atshift-members');
+        if($column==='state'){$state=get_user_meta($user->ID,'_atshme_state',true);return '<span class="atshme-member-state atshme-state-'.esc_attr($state).'">'.esc_html(Members::state_label($state)).'</span>';}
         if($column==='posting')return esc_html(implode('、',Posting::labels($user->ID))?:__('None Allowed', 'atshift-members'));
         return '';
     }

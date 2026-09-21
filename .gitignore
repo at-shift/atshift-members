@@ -13,6 +13,8 @@
 !/docs/
 /docs/*
 !/docs/I18N.md
+!/screenshots/
+!/screenshots/screenshot-*.png
 /tools/__pycache__/
 **/.DS_Store
 

@@ -4,10 +4,10 @@ defined('ABSPATH') || exit;
 
 /** Private attachments. No public upload URL or derived thumbnail is created. */
 final class Files {
-    const META='_asm_private_file';
+    const META='_atshme_private_file';
     public static function storage_config() {
-        $saved=(array)get_option('asm_file_storage',[]);
-        return ['private'=>defined('ASM_PRIVATE_DIR')?ASM_PRIVATE_DIR:($saved['private']??''),'public'=>defined('ASM_PUBLIC_ROOT')?ASM_PUBLIC_ROOT:($saved['public']??''),'kind'=>$saved['kind']??'local','marker'=>$saved['marker']??''];
+        $saved=(array)get_option('atshme_file_storage',[]);
+        return ['private'=>defined('ATSHME_PRIVATE_DIR')?ATSHME_PRIVATE_DIR:($saved['private']??''),'public'=>defined('ATSHME_PUBLIC_ROOT')?ATSHME_PUBLIC_ROOT:($saved['public']??''),'kind'=>$saved['kind']??'local','marker'=>$saved['marker']??''];
     }
     public static function validate_directory($private,$public) {
         if(!is_string($private)||!is_string($public)||$private===''||$public===''||str_contains($private,"://")||str_contains($public,"://")||str_contains($private,"\0")||str_contains($public,"\0"))return new \WP_Error('storage',__('Specify an absolute path on the server.', 'atshift-members'));
@@ -20,15 +20,15 @@ final class Files {
     public static function root() {
         $config=self::storage_config();$root=self::validate_directory($config['private'],$config['public']);
         if(is_wp_error($root))return $root;
-        if(!defined('ASM_PRIVATE_DIR')&&$config['kind']==='network'){
+        if(!defined('ATSHME_PRIVATE_DIR')&&$config['kind']==='network'){
             $marker=$config['marker'];
-            if(!is_string($marker)||!preg_match('/^[a-f0-9]{64}$/D',$marker)||!is_file($root.'/.asm-storage-'.$marker)||is_link($root.'/.asm-storage-'.$marker))return new \WP_Error('storage',__('Check the shared directory connection. The storage location could not be verified.', 'atshift-members'));
+            if(!is_string($marker)||!preg_match('/^[a-f0-9]{64}$/D',$marker)||!is_file($root.'/.atshme-storage-'.$marker)||is_link($root.'/.atshme-storage-'.$marker))return new \WP_Error('storage',__('Check the shared directory connection. The storage location could not be verified.', 'atshift-members'));
         }
         return $root;
     }
     public static function save_storage($input) {
         if(!current_user_can('manage_options'))return new \WP_Error('forbidden',__('Only site administrators can change the storage location.', 'atshift-members'));
-        if(defined('ASM_PRIVATE_DIR')||defined('ASM_PUBLIC_ROOT')||defined('ASM_FILE_STORE'))return new \WP_Error('configured',__('Storage is configured in wp-config.php.', 'atshift-members'));
+        if(defined('ATSHME_PRIVATE_DIR')||defined('ATSHME_PUBLIC_ROOT')||defined('ATSHME_FILE_STORE'))return new \WP_Error('configured',__('Storage is configured in wp-config.php.', 'atshift-members'));
         if(!is_array($input)||!in_array($input['kind']??'', ['local','network'],true))return new \WP_Error('storage',__('Choose a storage method.', 'atshift-members'));
         $root=self::validate_directory($input['private']??null,$input['public']??null);if(is_wp_error($root))return $root;
         $old=self::storage_config();
@@ -38,7 +38,7 @@ final class Files {
             if($wpdb->get_var($wpdb->prepare("SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key=%s LIMIT 1",self::META)))return new \WP_Error('migration',__('Members-only files already exist. Changing storage locations requires migrating them first.', 'atshift-members'));
         }
         // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fopen -- Validated private/local streams require exclusive create, byte ranges, exact permissions and deletion failure detection; WP_Filesystem does not provide this stream contract.
-        $token=Store::token();$probe=$root.'/.asm-check-'.$token;$handle=@fopen($probe,'x+b');
+        $token=Store::token();$probe=$root.'/.atshme-check-'.$token;$handle=@fopen($probe,'x+b');
         if(!$handle)return new \WP_Error('storage',__('Cannot create a file in the storage directory.', 'atshift-members'));
         // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fwrite,WordPress.WP.AlternativeFunctions.file_system_operations_fclose -- Validated private/local streams require exclusive create, byte ranges, exact permissions and deletion failure detection; WP_Filesystem does not provide this stream contract.
         $ok=fwrite($handle,$token)===strlen($token);rewind($handle);$ok=$ok&&stream_get_contents($handle)===$token;fclose($handle);
@@ -48,13 +48,13 @@ final class Files {
         $marker='';
         if($input['kind']==='network'){
             $marker=realpath($old['private'])===$root&&preg_match('/^[a-f0-9]{64}$/D',$old['marker'])?$old['marker']:$token;
-            $path=$root.'/.asm-storage-'.$marker;
+            $path=$root.'/.atshme-storage-'.$marker;
             // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fopen,WordPress.WP.AlternativeFunctions.file_system_operations_fclose -- Validated private/local streams require exclusive create, byte ranges, exact permissions and deletion failure detection; WP_Filesystem does not provide this stream contract.
             if(!is_file($path)){ $h=@fopen($path,'x');if(!$h)return new \WP_Error('storage',__('Cannot create the shared directory marker file.', 'atshift-members'));fclose($h); }
             if(is_link($path))return new \WP_Error('storage',__('The shared directory marker file is invalid.', 'atshift-members'));
         }
         $config=['kind'=>$input['kind'],'private'=>$root,'public'=>realpath($input['public']),'marker'=>$marker];
-        if(!update_option('asm_file_storage',$config,false)&&get_option('asm_file_storage')!==$config)return new \WP_Error('storage',__('Could not save the storage settings.', 'atshift-members'));
+        if(!update_option('atshme_file_storage',$config,false)&&get_option('atshme_file_storage')!==$config)return new \WP_Error('storage',__('Could not save the storage settings.', 'atshift-members'));
         return true;
     }
     public static function providers() {
@@ -68,7 +68,7 @@ final class Files {
         return $p;
     }
     public static function upload_available() {
-        $store=defined('ASM_FILE_STORE')?ASM_FILE_STORE:'local';
+        $store=defined('ATSHME_FILE_STORE')?ATSHME_FILE_STORE:'local';
         return self::provider($store)&&($store!=='local'||!is_wp_error(self::root()))&&class_exists('finfo');
     }
     public static function put($tmp) {
@@ -166,7 +166,7 @@ final class Files {
         }finally{fclose($stream);}
     }
     public static function url($id,$inline=false) {
-        $args=['action'=>'asm_file','file'=>(int)$id];if($inline)$args['inline']='1';
+        $args=['action'=>'atshme_file','file'=>(int)$id];if($inline)$args['inline']='1';
         return add_query_arg($args,admin_url('admin-post.php'));
     }
     public static function image($attrs) {
@@ -187,7 +187,7 @@ final class Files {
         return self::save_private($parent,$file['tmp_name'],$name,$actual);
     }
     public static function save_private($parent,$path,$name,$actual) {
-        $store=defined('ASM_FILE_STORE')?ASM_FILE_STORE:'local';$provider=self::provider($store);
+        $store=defined('ATSHME_FILE_STORE')?ATSHME_FILE_STORE:'local';$provider=self::provider($store);
         if(!$provider)return new \WP_Error('storage',__('The storage location is unavailable.', 'atshift-members'));
         $key=call_user_func($provider['put'],$path);if(is_wp_error($key))return $key;
         $dimensions=in_array($actual,self::image_types(),true)?@getimagesize($path):false;
@@ -196,39 +196,40 @@ final class Files {
         return $id;
     }
     public static function readable($id) {
-        $p=get_post($id);if(!$p || $p->post_type!=='attachment' || !get_post_meta($id,self::META,true) || !Members::reader() || (Members::blocked($p->post_author) && get_user_meta($p->post_author,'_asm_custodian',true)!=='1'))return false;
+        $p=get_post($id);if(!$p || $p->post_type!=='attachment' || !get_post_meta($id,self::META,true) || !Members::reader() || (Members::blocked($p->post_author) && get_user_meta($p->post_author,'_atshme_custodian',true)!=='1'))return false;
         $parent=get_post($p->post_parent);
         if(!$p->post_parent)return (int)$p->post_author===get_current_user_id()||current_user_can('manage_options');
         $readable=$parent && !Content::denied($parent->ID) && (($parent->post_status==='publish'&&!post_password_required($parent)) || current_user_can('edit_post',$parent->ID));
         return (bool)apply_filters('atshift_members_can_read_attachment',$readable,$id,get_current_user_id());
     }
     public static function hooks() {
-        add_action('admin_post_asm_file_delete',function(){check_admin_referer('asm_file_delete');$result=self::erase(absint($_POST['file_id']??0));if(is_wp_error($result))wp_die(esc_html($result->get_error_message()),'',['response'=>400]);wp_safe_redirect(wp_get_referer()?:home_url('/'));exit;});
-        add_action('admin_post_asm_file',[self::class,'download']);
-        add_action('admin_post_nopriv_asm_file',[self::class,'download']);
+        add_action('admin_post_atshme_file_delete',function(){check_admin_referer('atshme_file_delete');$result=self::erase(absint(wp_unslash($_POST['file_id']??0)));if(is_wp_error($result))wp_die(esc_html($result->get_error_message()),'',['response'=>400]);wp_safe_redirect(wp_get_referer()?:home_url('/'));exit;});
+        add_action('admin_post_atshme_file',[self::class,'download']);
+        add_action('admin_post_nopriv_atshme_file',[self::class,'download']);
         // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- Multipart upload is validated by save_upload; range header is parsed by byte_range; method and inline flags use exact literal comparisons, not output or SQL.
-        add_action('admin_post_asm_file_upload',function(){check_admin_referer('asm_file_upload');$id=self::upload(absint($_POST['post_id']??0),$_FILES['attachment']??[]);if(is_wp_error($id))wp_die(esc_html($id->get_error_message()),'',['response'=>400]);wp_safe_redirect(wp_get_referer()?:home_url('/'));exit;});
+        add_action('admin_post_atshme_file_upload',function(){check_admin_referer('atshme_file_upload');$id=self::upload(absint(wp_unslash($_POST['post_id']??0)),$_FILES['attachment']??[]);if(is_wp_error($id))wp_die(esc_html($id->get_error_message()),'',['response'=>400]);wp_safe_redirect(wp_get_referer()?:home_url('/'));exit;});
         add_filter('wp_get_attachment_url',function($url,$id){return get_post_meta($id,self::META,true)?self::url($id):$url;},10,2);
         add_filter('image_downsize',function($result,$id){$meta=get_post_meta($id,self::META,true);if(!$meta)return $result;return self::readable($id)&&in_array($meta['type']??'',self::image_types(),true)?[self::url($id,true),(int)($meta['width']??0),(int)($meta['height']??0),false]:false;},10,2);
         add_filter('wp_get_attachment_image_src',function($image,$id){return get_post_meta($id,self::META,true)&&!self::readable($id)?false:$image;},10,2);
         add_filter('pre_delete_attachment',function($delete,$post){if($delete!==null)return $delete;$meta=get_post_meta($post->ID,self::META,true);if(!$meta)return $delete;$p=self::provider($meta['store']);return $p && call_user_func($p['delete'],$meta['key'])?$delete:false;},PHP_INT_MAX,2);
         // WordPress passes the shortcode tag as argument 3, not our editor flag.
-        add_shortcode('asm_attachments',fn($attrs,$content=null)=>self::screen($attrs,$content));
-        add_shortcode('asm_image',[self::class,'image']);
+        add_shortcode('atshme_attachments',fn($attrs,$content=null)=>self::screen($attrs,$content));
+        add_shortcode('atshme_image',[self::class,'image']);
         // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- screen() constructs escaped HTML and integer IDs after per-object access checks.
-        add_action('add_meta_boxes',function(){foreach(array_keys(Posting::types()) as $type)add_meta_box('asm-files',__('Members-Only Attachments', 'atshift-members'),function($post){echo self::screen(['post_id'=>$post->ID],null,true);},$type,'side');});
+        add_action('add_meta_boxes',function(){foreach(array_keys(Posting::types()) as $type)add_meta_box('atshme-files',__('Members-Only Attachments', 'atshift-members'),function($post){echo self::screen(['post_id'=>$post->ID],null,true);},$type,'side');});
         add_filter('rest_pre_dispatch',function($result,$server,$request){if(preg_match('#^/wp/v2/media/(\d+)#',$request->get_route(),$m) && get_post_meta($m[1],self::META,true))return Media::private_rest((int)$m[1],$request);return $result;},PHP_INT_MAX,3);
-        add_filter('comments_clauses',function($c){global $wpdb;$c['where'].=" AND {$wpdb->comments}.comment_post_ID NOT IN (SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key='_asm_private_file')";return $c;},PHP_INT_MAX);
-        add_filter('posts_where',function($where){global $wpdb;return $where." AND {$wpdb->posts}.ID NOT IN (SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key='_asm_private_file')";},PHP_INT_MAX);
+        add_filter('comments_clauses',function($c){global $wpdb;$c['where'].=" AND {$wpdb->comments}.comment_post_ID NOT IN (SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key='_atshme_private_file')";return $c;},PHP_INT_MAX);
+        add_filter('posts_where',function($where){global $wpdb;return $where." AND {$wpdb->posts}.ID NOT IN (SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key='_atshme_private_file')";},PHP_INT_MAX);
     }
     public static function download() {
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only admin display/filter parameters; mutation handlers separately require nonce and object capability checks.
-        $id=absint($_GET['file']??0);Screens::private_headers();
+        $id=absint(wp_unslash($_GET['file']??0));Screens::private_headers();
         if(!self::readable($id))wp_die(esc_html__('You cannot view this content.', 'atshift-members'),'',['response'=>404]);
         $meta=get_post_meta($id,self::META,true);$p=self::provider($meta['store']);$stream=$p?call_user_func($p['open'],$meta['key']):null;
         if(!is_resource($stream))wp_die(esc_html__('Cannot access the storage location.', 'atshift-members'),'',['response'=>503]);
         // phpcs:ignore WordPress.Security.NonceVerification.Recommended,WordPress.Security.ValidatedSanitizedInput.MissingUnslash,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- Read-only admin display/filter parameters; mutation handlers separately require nonce and object capability checks. Multipart upload is validated by save_upload; range header is parsed by byte_range; method and inline flags use exact literal comparisons, not output or SQL.
-        if(($_GET['inline']??'')==='1'){
+        $inline=is_string($_GET['inline']??null)?sanitize_text_field(wp_unslash($_GET['inline'])):'';
+        if($inline==='1'){
             // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fread -- Validated private/local streams require exclusive create, byte ranges, exact permissions and deletion failure detection; WP_Filesystem does not provide this stream contract.
             $probe=fread($stream,65536);$type=(new \finfo(FILEINFO_MIME_TYPE))->buffer($probe);
             // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fclose -- Validated private/local streams require exclusive create, byte ranges, exact permissions and deletion failure detection; WP_Filesystem does not provide this stream contract.
@@ -236,21 +237,22 @@ final class Files {
             header('Content-Type: '.$type);header('X-Content-Type-Options: nosniff');header('Content-Disposition: inline');
             $stat=fstat($stream);$size=(int)($stat['size']??0);$seekable=stream_get_meta_data($stream)['seekable'];
             if($seekable&&$size>0){
-                // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- Multipart upload is validated by save_upload; range header is parsed by byte_range; method and inline flags use exact literal comparisons, not output or SQL.
-                header('Accept-Ranges: bytes');$range=self::byte_range($_SERVER['HTTP_RANGE']??'', $size);
+                $range_header=isset($_SERVER['HTTP_RANGE'])&&is_string($_SERVER['HTTP_RANGE'])?sanitize_text_field(wp_unslash($_SERVER['HTTP_RANGE'])):'';
+                header('Accept-Ranges: bytes');$range=self::byte_range($range_header,$size);
                 // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_fclose -- Validated private/local streams require exclusive create, byte ranges, exact permissions and deletion failure detection; WP_Filesystem does not provide this stream contract.
                 if($range===false){fclose($stream);status_header(416);header('Content-Range: bytes */'.$size);exit;}
                 [$start,$end]=$range;$length=$end-$start+1;
-                if(!empty($_SERVER['HTTP_RANGE'])){status_header(206);header('Content-Range: bytes '.$start.'-'.$end.'/'.$size);}
+                if($range_header!==''){status_header(206);header('Content-Range: bytes '.$start.'-'.$end.'/'.$size);}
                 header('Content-Length: '.$length);
                 // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- Multipart upload is validated by save_upload; range header is parsed by byte_range; method and inline flags use exact literal comparisons, not output or SQL.
-                if(($_SERVER['REQUEST_METHOD']??'GET')!=='HEAD'){
+                $method=is_string($_SERVER['REQUEST_METHOD']??null)?strtoupper(sanitize_key(wp_unslash($_SERVER['REQUEST_METHOD']))):'GET';
+                if($method!=='HEAD'){
                     fseek($stream,$start);
                     // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped,WordPress.WP.AlternativeFunctions.file_system_operations_fread -- Authorized binary image/video stream with verified MIME and nosniff; HTML escaping would corrupt bytes. Validated private/local streams require exclusive create, byte ranges, exact permissions and deletion failure detection; WP_Filesystem does not provide this stream contract.
                     while($length>0&&!feof($stream)){$chunk=fread($stream,min(65536,$length));if($chunk===false||$chunk==='')break;echo $chunk;$length-=strlen($chunk);}
                 }
             // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- Multipart upload is validated by save_upload; range header is parsed by byte_range; method and inline flags use exact literal comparisons, not output or SQL.
-            }elseif(($_SERVER['REQUEST_METHOD']??'GET')!=='HEAD'){
+            }elseif((is_string($_SERVER['REQUEST_METHOD']??null)?strtoupper(sanitize_key(wp_unslash($_SERVER['REQUEST_METHOD']))):'GET')!=='HEAD'){
                 // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Authorized binary stream probe with verified MIME and nosniff; HTML escaping would corrupt bytes.
                 if($seekable)rewind($stream);else echo $probe;
                 fpassthru($stream);
@@ -273,7 +275,7 @@ final class Files {
     }
     public static function erase($id) {
         $p=get_post($id);
-        if(!$p || !self::readable($id) || !current_user_can('edit_post',$p->post_parent) || ((int)$p->post_author!==get_current_user_id()&&!current_user_can('asm_manage_members')))return new \WP_Error('forbidden',__('This attachment cannot be deleted.', 'atshift-members'));
+        if(!$p || !self::readable($id) || !current_user_can('edit_post',$p->post_parent) || ((int)$p->post_author!==get_current_user_id()&&!current_user_can('atshme_manage_members')))return new \WP_Error('forbidden',__('This attachment cannot be deleted.', 'atshift-members'));
         return wp_delete_attachment($id,true)?true:new \WP_Error('storage',__('Could not delete the file from storage.', 'atshift-members'));
     }
     public static function screen($attrs,$content=null,$editor=false) {
@@ -281,10 +283,10 @@ final class Files {
         if(!$post || !Members::reader() || Content::denied($parent) || ($post->post_status!=='publish' && !current_user_can('edit_post',$parent)))return '';
         // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Security-sensitive current state or atomic transaction/lock operation; WordPress object caching cannot provide these fresh predicates or synchronization semantics.
         global $wpdb;$ids=$wpdb->get_col($wpdb->prepare("SELECT ID FROM {$wpdb->posts} WHERE post_parent=%d AND post_type='attachment'",$parent));
-        $html='<ul>';foreach($ids as $id)if(self::readable($id)){ $html.='<li><a href="'.esc_url(wp_get_attachment_url($id)).'">'.esc_html(get_the_title($id)).'</a>'; if(!$editor && current_user_can('edit_post',$parent) && ((int)get_post($id)->post_author===get_current_user_id()||current_user_can('asm_manage_members')))$html.='<form method="post" action="'.esc_url(admin_url('admin-post.php')).'">'.wp_nonce_field('asm_file_delete','_wpnonce',true,false).'<input type="hidden" name="action" value="asm_file_delete"><input type="hidden" name="file_id" value="'.(int)$id.('">' . '<label>' . '<input type="checkbox" required>' . esc_html__('Permanently delete this attachment', 'atshift-members') . '</label>' . '<button>' . esc_html__('Delete Attachment', 'atshift-members') . '</button>' . '</form>'); if(!$editor&&current_user_can('edit_post',$parent)&&in_array(get_post_meta($id,self::META,true)['type']??'',self::image_types(),true))$html.=('<p>' . esc_html__('To display an image in your post, paste this into a Shortcode block: ', 'atshift-members') . '<code>' . '[asm_image id="').(int)$id.'"]</code></p>'; $html.='</li>';}$html.='</ul>';
+        $html='<ul>';foreach($ids as $id)if(self::readable($id)){ $html.='<li><a href="'.esc_url(wp_get_attachment_url($id)).'">'.esc_html(get_the_title($id)).'</a>'; if(!$editor && current_user_can('edit_post',$parent) && ((int)get_post($id)->post_author===get_current_user_id()||current_user_can('atshme_manage_members')))$html.='<form method="post" action="'.esc_url(admin_url('admin-post.php')).'">'.wp_nonce_field('atshme_file_delete','_wpnonce',true,false).'<input type="hidden" name="action" value="atshme_file_delete"><input type="hidden" name="file_id" value="'.(int)$id.('">' . '<label>' . '<input type="checkbox" required>' . esc_html__('Permanently delete this attachment', 'atshift-members') . '</label>' . '<button>' . esc_html__('Delete Attachment', 'atshift-members') . '</button>' . '</form>'); if(!$editor&&current_user_can('edit_post',$parent)&&in_array(get_post_meta($id,self::META,true)['type']??'',self::image_types(),true))$html.=('<p>' . esc_html__('To display an image in your post, paste this into a Shortcode block: ', 'atshift-members') . '<code>' . '[atshme_image id="').(int)$id.'"]</code></p>'; $html.='</li>';}$html.='</ul>';
         // Forms cannot be nested in the native editor; link to a separate authenticated upload screen.
         if($editor)return $html.(self::upload_available()?('<p>' . esc_html__('Choose Members Only when using Add Media or a block\'s Upload control.', 'atshift-members') . '</p>'):'');
-        if(self::upload_available()&&current_user_can('edit_post',$parent))$html.='<form method="post" enctype="multipart/form-data" action="'.esc_url(admin_url('admin-post.php')).'">'.wp_nonce_field('asm_file_upload','_wpnonce',true,false).'<input type="hidden" name="action" value="asm_file_upload"><input type="hidden" name="post_id" value="'.$parent.('">' . '<label>' . esc_html__('Members-Only Attachment ', 'atshift-members') . '<input type="file" name="attachment" required accept="').esc_attr('.'.implode(',.',array_keys(self::available_formats()))).('">' . '</label>' . '<button>' . esc_html__('Attach File', 'atshift-members') . '</button>' . '</form>');
+        if(self::upload_available()&&current_user_can('edit_post',$parent))$html.='<form method="post" enctype="multipart/form-data" action="'.esc_url(admin_url('admin-post.php')).'">'.wp_nonce_field('atshme_file_upload','_wpnonce',true,false).'<input type="hidden" name="action" value="atshme_file_upload"><input type="hidden" name="post_id" value="'.$parent.('">' . '<label>' . esc_html__('Members-Only Attachment ', 'atshift-members') . '<input type="file" name="attachment" required accept="').esc_attr('.'.implode(',.',array_keys(self::available_formats()))).('">' . '</label>' . '<button>' . esc_html__('Attach File', 'atshift-members') . '</button>' . '</form>');
         return $html;
     }
 }

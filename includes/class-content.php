@@ -10,7 +10,7 @@ final class Content {
         add_filter('map_meta_cap',[self::class,'caps'],PHP_INT_MAX,4);
         add_action('template_redirect',[self::class,'guard'],0);
         add_filter('rest_pre_dispatch',[self::class,'rest'],PHP_INT_MAX,3);
-        add_filter('wp_sitemaps_post_types',function($types){unset($types['asm_post'],$types['asm_notice']);return $types;});
+        add_filter('wp_sitemaps_post_types',function($types){unset($types['atshme_post'],$types['atshme_notice']);return $types;});
         add_filter('wp_sitemaps_add_provider',function($provider,$name){return $name==='users'?false:$provider;},10,2);
         add_filter('wp_sitemaps_posts_query_args',[self::class,'sitemap'],10,2);
         add_filter('the_content',function($content){return self::denied(get_the_ID()) ? '' : $content;},PHP_INT_MAX);
@@ -21,7 +21,7 @@ final class Content {
     }
     public static function types() {
         global $wpdb;
-        foreach (['asm_post'=>[__('Member Posts', 'atshift-members'),'asm_posts',__('Member Post', 'atshift-members')], 'asm_page'=>[__('Public Pages', 'atshift-members'),'asm_pages',__('Public Page', 'atshift-members')], 'asm_notice'=>[__('Member Announcements', 'atshift-members'),'asm_notices',__('Member Announcement', 'atshift-members')]] as $type=>$spec) {
+        foreach (['atshme_post'=>[__('Member Posts', 'atshift-members'),'atshme_posts',__('Member Post', 'atshift-members')], 'atshme_page'=>[__('Public Pages', 'atshift-members'),'atshme_pages',__('Public Page', 'atshift-members')], 'atshme_notice'=>[__('Member Announcements', 'atshift-members'),'atshme_notices',__('Member Announcement', 'atshift-members')]] as $type=>$spec) {
             // Retain existing content, but do not create dedicated post types on new sites.
             // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Security-sensitive current state or atomic transaction/lock operation; WordPress object caching cannot provide these fresh predicates or synchronization semantics.
             if(!isset(Posting::rules()[$type])&&!$wpdb->get_var($wpdb->prepare("SELECT ID FROM {$wpdb->posts} WHERE post_type=%s LIMIT 1",$type)))continue;
@@ -78,7 +78,7 @@ final class Content {
                     'item_link_description'=>sprintf(__('A link to a %s.', 'atshift-members'),$spec[2]),
                 ], 'public'=>true, 'publicly_queryable'=>true,
                 'show_ui'=>true,'show_in_rest'=>true,'rest_base'=>$spec[1],
-                'exclude_from_search'=>$type!=='asm_page','has_archive'=>false,
+                'exclude_from_search'=>$type!=='atshme_page','has_archive'=>false,
                 'rewrite'=>['slug'=>$spec[1]],'capability_type'=>[$type,$spec[1]],'map_meta_cap'=>true,
                 'supports'=>['title','editor','revisions'],'delete_with_user'=>false,
             ]);
@@ -87,27 +87,27 @@ final class Content {
     public static function protected($id) {
         $post=get_post($id);if (!$post) return false;
         if ($post->post_type==='revision') return self::protected($post->post_parent);
-        return metadata_exists('post',$id,'_asm_publication_lock') || metadata_exists('post',$id,Files::META) || Audience::restricted($id) || in_array($post->post_type,['asm_post','asm_notice'],true) || get_post_meta($id,'_asm_members_only',true)==='1';
+        return metadata_exists('post',$id,'_atshme_publication_lock') || metadata_exists('post',$id,Files::META) || Audience::restricted($id) || in_array($post->post_type,['atshme_post','atshme_notice'],true) || get_post_meta($id,'_atshme_members_only',true)==='1';
     }
-    public static function withdrawn($post) {return $post && in_array(get_user_meta($post->post_author,'_asm_state',true),['withdrawn','withdrawing'],true);}
+    public static function withdrawn($post) {return $post && in_array(get_user_meta($post->post_author,'_atshme_state',true),['withdrawn','withdrawing'],true);}
     public static function denied($id) {
         $post=get_post($id);
         if($post && $post->post_type==='revision')return self::denied($post->post_parent);
         if($post && metadata_exists('post',$id,Files::META))return !Files::readable($id);
-        return !Audience::allows($id,get_current_user_id()) || (self::withdrawn($post) && !current_user_can('asm_manage_members')) || (self::protected($id) && !Members::reader());
+        return !Audience::allows($id,get_current_user_id()) || (self::withdrawn($post) && !current_user_can('atshme_manage_members')) || (self::protected($id) && !Members::reader());
     }
     private static function sql($column) {
         global $wpdb;
-        return "$column NOT IN (SELECT asm_hidden.ID FROM {$wpdb->posts} asm_hidden WHERE asm_hidden.post_type IN ('asm_post','asm_notice')) AND $column NOT IN (SELECT asm_meta.post_id FROM {$wpdb->postmeta} asm_meta WHERE asm_meta.meta_key='_asm_members_only' AND asm_meta.meta_value='1')";
+        return "$column NOT IN (SELECT atshme_hidden.ID FROM {$wpdb->posts} atshme_hidden WHERE atshme_hidden.post_type IN ('atshme_post','atshme_notice')) AND $column NOT IN (SELECT atshme_meta.post_id FROM {$wpdb->postmeta} atshme_meta WHERE atshme_meta.meta_key='_atshme_members_only' AND atshme_meta.meta_value='1')";
     }
     public static function where($where,$query) {
         if (!Members::reader()) {global $wpdb;$where.=' AND '.self::sql("{$wpdb->posts}.ID");}
-        if(!current_user_can('asm_manage_members')) {global $wpdb;$where.=" AND {$wpdb->posts}.post_author NOT IN (SELECT user_id FROM {$wpdb->usermeta} WHERE meta_key='_asm_state' AND meta_value IN ('withdrawn','withdrawing'))";}
+        if(!current_user_can('atshme_manage_members')) {global $wpdb;$where.=" AND {$wpdb->posts}.post_author NOT IN (SELECT user_id FROM {$wpdb->usermeta} WHERE meta_key='_atshme_state' AND meta_value IN ('withdrawn','withdrawing'))";}
         return $where;
     }
     public static function comments($clauses) {
         if (!Members::reader()) {global $wpdb;$clauses['where'].=' AND '.self::sql("{$wpdb->comments}.comment_post_ID");}
-        if(!current_user_can('asm_manage_members')) {global $wpdb;$clauses['where'].=" AND {$wpdb->comments}.comment_post_ID NOT IN (SELECT ID FROM {$wpdb->posts} WHERE post_author IN (SELECT user_id FROM {$wpdb->usermeta} WHERE meta_key='_asm_state' AND meta_value IN ('withdrawn','withdrawing')))";}
+        if(!current_user_can('atshme_manage_members')) {global $wpdb;$clauses['where'].=" AND {$wpdb->comments}.comment_post_ID NOT IN (SELECT ID FROM {$wpdb->posts} WHERE post_author IN (SELECT user_id FROM {$wpdb->usermeta} WHERE meta_key='_atshme_state' AND meta_value IN ('withdrawn','withdrawing')))";}
         return $clauses;
     }
     public static function caps($caps,$cap,$id,$args) {
@@ -143,10 +143,10 @@ final class Content {
     public static function sitemap($args,$type) {
         global $wpdb;
         // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching -- Security-sensitive current state or atomic transaction/lock operation; WordPress object caching cannot provide these fresh predicates or synchronization semantics.
-        $args['author__not_in']=array_unique(array_merge($args['author__not_in']??[],array_map('intval',$wpdb->get_col("SELECT user_id FROM {$wpdb->usermeta} WHERE meta_key='_asm_state' AND meta_value IN ('withdrawn','withdrawing')"))));
-        $args['meta_query']=['relation'=>'AND',$args['meta_query']??[],['relation'=>'OR',['key'=>'_asm_members_only','compare'=>'NOT EXISTS'],['key'=>'_asm_members_only','value'=>'1','compare'=>'!=']]];
-        $args['post__not_in']=array_unique(array_merge($args['post__not_in']??[],array_map('intval',array_values(get_option('asm_pages',[])))));
-        if (in_array($type,['asm_post','asm_notice'],true)) $args['post__in']=[0];
+        $args['author__not_in']=array_unique(array_merge($args['author__not_in']??[],array_map('intval',$wpdb->get_col("SELECT user_id FROM {$wpdb->usermeta} WHERE meta_key='_atshme_state' AND meta_value IN ('withdrawn','withdrawing')"))));
+        $args['meta_query']=['relation'=>'AND',$args['meta_query']??[],['relation'=>'OR',['key'=>'_atshme_members_only','compare'=>'NOT EXISTS'],['key'=>'_atshme_members_only','value'=>'1','compare'=>'!=']]];
+        $args['post__not_in']=array_unique(array_merge($args['post__not_in']??[],array_map('intval',array_values(get_option('atshme_pages',[])))));
+        if (in_array($type,['atshme_post','atshme_notice'],true)) $args['post__in']=[0];
         return $args;
     }
 }

@@ -4,7 +4,7 @@ defined('ABSPATH') || exit;
 
 /** Per-type grants without granting shared WordPress capabilities to member roles. */
 final class Posting {
-    const OPTION='asm_posting_rules';
+    const OPTION='atshme_posting_rules';
     private static $aliases=[];
     private static $wrapped=[];
     private const OWN=['create_posts','edit_posts','edit_published_posts','edit_private_posts','publish_posts','delete_posts','delete_published_posts','delete_private_posts'];
@@ -20,7 +20,7 @@ final class Posting {
         self::$wrapped[$name]=$type;
         foreach(array_merge(self::OWN,['edit_others_posts','delete_others_posts','read_private_posts']) as $operation){
             if(!isset($type->cap->$operation))continue;
-            $alias='asm_posting_'.$name.'_'.$operation;
+            $alias='atshme_posting_'.$name.'_'.$operation;
             self::$aliases[$alias]=['type'=>$name,'operation'=>$operation,'original'=>$type->cap->$operation];
             $type->cap->$operation=$alias;
         }
@@ -100,7 +100,7 @@ final class Posting {
         if($managed&&in_array($cap,['edit_post','delete_post'],true)&&isset($args[0])){
             $post=get_post((int)$args[0]);if($post&&$post->post_type==='revision')$post=get_post($post->post_parent);
             if($post&&isset(self::types()[$post->post_type])){
-                if(!self::allowed($post->post_type,$id)||in_array((int)$post->ID,array_map('intval',(array)get_option('asm_pages',[])),true))return ['do_not_allow'];
+                if(!self::allowed($post->post_type,$id)||in_array((int)$post->ID,array_map('intval',(array)get_option('atshme_pages',[])),true))return ['do_not_allow'];
             }
         }
         foreach($caps as &$required){

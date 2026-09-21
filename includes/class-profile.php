@@ -39,7 +39,7 @@ final class Profile {
             else call_user_func($api['render'],[$name],[$name=>$values[$key]??'']);
             $html=ob_get_clean();
             // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Trusted profile renderer HTML; only escaped input-name identifiers are substituted.
-            echo str_replace('name="asm_fields['.esc_attr($name).']"','name="asm_fields['.esc_attr($key).']"',$html);
+            echo str_replace(['name="atshme_fields['.esc_attr($name).']"','name="'.esc_attr(Legacy::name('fields')).'['.esc_attr($name).']"'],'name="atshme_fields['.esc_attr($key).']"',$html);
         }
     }
     private static function linked_parts($allowed,$input) {
@@ -99,8 +99,8 @@ final class Profile {
         foreach(self::fields($allowed) as $key=>$field) {
             if(isset($labels[$key]))$field['label']=$labels[$key];
             $value=is_string($values[$key]??null)?$values[$key]:'';
-            echo '<p><label for="asm-basic-'.esc_attr($key).'">'.esc_html($field['label']).($field['required']?esc_html__(' (Required)', 'atshift-members'):esc_html__(' (Optional)', 'atshift-members')).'</label><br>';
-            $attributes=' id="asm-basic-'.esc_attr($key).'" name="asm_fields['.esc_attr($key).']" maxlength="'.(int)$field['maxlength'].'"'.($field['required']?' required':'');
+            echo '<p><label for="atshme-basic-'.esc_attr($key).'">'.esc_html($field['label']).($field['required']?esc_html__(' (Required)', 'atshift-members'):esc_html__(' (Optional)', 'atshift-members')).'</label><br>';
+            $attributes=' id="atshme-basic-'.esc_attr($key).'" name="atshme_fields['.esc_attr($key).']" maxlength="'.(int)$field['maxlength'].'"'.($field['required']?' required':'');
             // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Attribute fragment built above solely from esc_attr values, integer maxlength and literal required.
             if($field['type']==='textarea')echo '<textarea'.$attributes.' rows="5">'.esc_textarea($value).'</textarea>';
             else {
