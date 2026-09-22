@@ -14,6 +14,12 @@ Build a simple membership site with verified registration, member pages, posting
 
 atshift Members provides the essential pages and controls for a straightforward WordPress membership site. It keeps member registration, account management, posting permissions, protected content, and private attachments in one place.
 
+Official website: [atshift Members](https://plugins.at-shift.net/en/members/) | [Japanese](https://plugins.at-shift.net/members/)
+
+Documentation: [Setup guide](https://plugins.at-shift.net/en/members/guide/) | [Feature and shortcode reference](https://plugins.at-shift.net/en/members/reference/) | [Pro Add-on](https://plugins.at-shift.net/en/members/pro/)
+
+Japanese documentation: [Guide](https://plugins.at-shift.net/members/guide/) | [Reference](https://plugins.at-shift.net/members/reference/)
+
 = Set up the member experience =
 
 * Create the registration, account, account-editing, password-reset, and account-closure pages together.
@@ -36,9 +42,16 @@ The directory is disabled by default. When enabled, it can be public, restricted
 
 Private attachments can be stored in a non-public directory on the WordPress server or on a file-server/NAS share already mounted by the host. Each download checks the current member and the parent content. Ordinary WordPress uploads remain public.
 
-= Extend profiles and administration when needed =
+= Extend atshift Members =
 
-The plugin works on its own with basic name and biography fields. Optional integrations add configurable profile fields, passkeys, user classifications, delegated administration, post review, scheduled announcement delivery, and CSV invitations. Paid add-ons are separate products and are not included in this plugin.
+atshift Members works on its own with basic name and biography fields. Install only the separate add-ons and related plugins needed for your site.
+
+* [atshift Members Pro Add-on](https://plugins.at-shift.net/en/members/pro/) - extends member operations with post review, announcement email and scheduling, delegated responsibilities and management scopes, and CSV member invitations.
+* [atshift User Profile Fields](https://wordpress.org/plugins/atshift-user-profile-fields/) - extends member profiles with fields such as telephone numbers and addresses and lets administrators arrange profile forms.
+* [atshift User Profile Fields Pro Add-on](https://plugins.at-shift.net/en/pro/) - extends member organization with hierarchical classifications such as branches, departments, and membership types.
+* [atshift Freeform Login](https://wordpress.org/plugins/atshift-freeform-login/) - extends the login experience with a customizable login screen and password and passkey login forms, registration, and management.
+
+Each add-on and related plugin is a separate product and is not included in this plugin.
 
 The current release supports WordPress single-site installations. Test the complete registration, email, cache, content, file-storage, and account-closure flows on a staging site before opening registration.
 
@@ -107,6 +120,8 @@ Member navigation and directory:
 * `[atshme_member_directory]`
 
 The dashboard shortcodes accept `class`, `heading_tag`, `title`, and `limit` where applicable. The directory accepts `class`, `heading_tag`, and `per_page`. Shortcode attributes cannot broaden the access configured by an administrator.
+
+See the [feature and shortcode reference](https://plugins.at-shift.net/en/members/reference/) for usage details and examples.
 
 == External services ==
 
