@@ -1,5 +1,5 @@
 {
-  "translation-revision-date": "2026-09-11 00:00+0000",
+  "translation-revision-date": "2026-09-27 00:00+0000",
   "generator": "atshift Members build-languages.py",
   "domain": "atshift-members",
   "source": "assets/media.js",
@@ -86,10 +86,10 @@
         "ファイルがサーバーのアップロード上限（%s）を超えています。"
       ],
       "These files are visible only to authorized members. ": [
-        "閲覧を許可された会員だけが見られるファイルです。"
+        "閲覧を許可された会員だけが見られるファイルです。 "
       ],
       "These files are visible to everyone. ": [
-        "誰でも見られるファイルです。"
+        "誰でも見られるファイルです。 "
       ],
       "Upload": [
         "アップロード"

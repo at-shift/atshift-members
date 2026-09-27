@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-27 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "ru_RU",
+        "plural-forms": "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+      },
+      "Attachment Visibility": [
+        "Видимость вложений"
+      ],
+      "Change Visibility": [
+        "Изменить видимость"
+      ],
+      "Choose How to Add Media": [
+        "Выберите способ добавления медиаконтента"
+      ],
+      "Choose a format supported by this block.": [
+        "Выберите формат, поддерживаемый этим блоком."
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "Выберите из сохраненных изображений, видео и документов."
+      ],
+      "Could not complete the action. Please try again.": [
+        "Не удалось выполнить действие. Пожалуйста, повторите попытку."
+      ],
+      "Drop Files to Upload": [
+        "Перетащите файлы для загрузки"
+      ],
+      "Insert Selected Files": [
+        "Вставить выбранные файлы"
+      ],
+      "Media Library": [
+        "Медиабиблиотека"
+      ],
+      "Members Only": [
+        "Только для участников"
+      ],
+      "Members-Only Media": [
+        "Медиа только для участников"
+      ],
+      "Next Page": [
+        "Следующая страница"
+      ],
+      "No files are available to select.": [
+        "Файлы для выбора недоступны."
+      ],
+      "Open File": [
+        "Открыть файл"
+      ],
+      "Previous Page": [
+        "Предыдущая страница"
+      ],
+      "Processing…": [
+        "Обработка…"
+      ],
+      "Public": [
+        "Общедоступно"
+      ],
+      "Public Media": [
+        "Публичный медиаконтент"
+      ],
+      "Search": [
+        "Поиск"
+      ],
+      "Search by Filename": [
+        "Поиск по имени файла"
+      ],
+      "Select Files": [
+        "Выбрать файлы"
+      ],
+      "Server upload limit: ": [
+        "Лимит загрузки сервера: "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "Показываются файлы только для участников, которые вы можете использовать. Файлы, используемые в другой записи, будут скопированы для этой записи."
+      ],
+      "Showing public files you can use.": [
+        "Показываются публичные файлы, которые вы можете использовать."
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "Файл превышает лимит загрузки сервера в %s."
+      ],
+      "These files are visible only to authorized members. ": [
+        "Эти файлы видны только авторизованным участникам. "
+      ],
+      "These files are visible to everyone. ": [
+        "Эти файлы видны всем. "
+      ],
+      "Upload": [
+        "Загрузить"
+      ],
+      "Upload cancelled.": [
+        "Загрузка отменена."
+      ],
+      "Upload images, videos, and documents.": [
+        "Загрузить изображения, видео и документы."
+      ]
+    }
+  }
+}

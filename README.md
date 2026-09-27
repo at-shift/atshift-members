@@ -97,6 +97,10 @@ Each add-on and related plugin is a separate product and is not included in this
 
 Standard WordPress Media Library uploads remain public. Files that must be limited to members should be stored in a dedicated directory outside the public web root or on a file-server/NAS share already mounted on the WordPress server. Every download rechecks the member's current status and access to the parent content.
 
+## Languages
+
+Bundled catalogs cover Japanese, US English, German, Spanish, French, Indonesian, Italian, Korean, Dutch, Polish, Brazilian Portuguese, Russian, Turkish, Simplified Chinese, and Traditional Chinese. WordPress selects the catalog from the site locale. Saved content, custom labels, imported data, and edited email templates are not rewritten when the locale changes. See [Translation catalogs](docs/I18N.md) for the source and validation workflow.
+
 ## External services
 
 - **Cloudflare Turnstile** protects registration and password-reset request forms from automated abuse. When a form is submitted, the response token and the site administrator's secret key are sent to Cloudflare Siteverify.
@@ -106,7 +110,7 @@ The data sent, retention behavior, and links to the applicable terms and privacy
 
 ## Operational notes
 
-- Version 1.0 supports WordPress single-site installations.
+- Version 1.0.1 supports WordPress single-site installations.
 - Disable shared caching for all member pages.
 - Before production use, test registration, confirmation email, login, posting, access control, private files, and account closure on a staging site.
 - Review any REST API, profile, or SEO data exposed by optional third-party plugins separately.
@@ -120,3 +124,9 @@ The current release targets WordPress 6.6 or later and PHP 8.1 or later. Validat
 ## License
 
 GPL-2.0-or-later. See [LICENSE](LICENSE).
+
+## 1.0.1
+
+- Add bundled translations for 15 locales across settings, member pages, default emails, and the media picker.
+- Translate member-home labels using the selected WordPress language while preserving the Japanese wording.
+- Improve translation terminology and validate placeholders, configuration keys, and language catalogs.

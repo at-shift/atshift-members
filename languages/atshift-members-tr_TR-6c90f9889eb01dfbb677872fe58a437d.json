@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-27 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "tr_TR",
+        "plural-forms": "nplurals=2; plural=(n > 1);"
+      },
+      "Attachment Visibility": [
+        "Ek Görünürlüğü"
+      ],
+      "Change Visibility": [
+        "Görünürlüğü Değiştir"
+      ],
+      "Choose How to Add Media": [
+        "Medya Nasıl Ekleneceğini Seçin"
+      ],
+      "Choose a format supported by this block.": [
+        "Bu blok tarafından desteklenen bir format seçin."
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "Kaydedilmiş görüntülerden, videolardan ve belgelerden seçim yapın."
+      ],
+      "Could not complete the action. Please try again.": [
+        "Eylemi tamamlayamadık. Lütfen tekrar deneyin."
+      ],
+      "Drop Files to Upload": [
+        "Yüklemek İçin Dosyaları Dökün"
+      ],
+      "Insert Selected Files": [
+        "Seçilen Dosyaları Yerleştirin"
+      ],
+      "Media Library": [
+        "Medya Kütüphanesi"
+      ],
+      "Members Only": [
+        "Sadece Üyeler İçin"
+      ],
+      "Members-Only Media": [
+        "Sadece Üyelere Özel Medya"
+      ],
+      "Next Page": [
+        "Bir sonraki sayfa"
+      ],
+      "No files are available to select.": [
+        "Seçilecek herhangi bir dosya bulunmamaktadır."
+      ],
+      "Open File": [
+        "Dosyayı Aç"
+      ],
+      "Previous Page": [
+        "Önceki Sayfa"
+      ],
+      "Processing…": [
+        "İşleme devam ediyor..."
+      ],
+      "Public": [
+        "Herkese açık"
+      ],
+      "Public Media": [
+        "Kamu Medyası"
+      ],
+      "Search": [
+        "Ara"
+      ],
+      "Search by Filename": [
+        "Dosya Adına Göre Arama"
+      ],
+      "Select Files": [
+        "Dosyaları Seçin"
+      ],
+      "Server upload limit: ": [
+        "Sunucu yükleme limiti: "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "Kullanabileceğiniz yalnızca üyelere özel dosyaları göstermektedir. Başka bir gönderide kullanılan dosyalar o gönderi için kopyalanacaktır."
+      ],
+      "Showing public files you can use.": [
+        "Kullanabileceğiniz kamu dosyalarını gösteriyoruz."
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "Dosya sunucu yükleme sınırını aşmaktadır %s."
+      ],
+      "These files are visible only to authorized members. ": [
+        "Bu dosyalar yalnızca yetkili üyeler tarafından görülebilir. "
+      ],
+      "These files are visible to everyone. ": [
+        "Bu dosyalar herkes tarafından görülebiliyor. "
+      ],
+      "Upload": [
+        "Yükle"
+      ],
+      "Upload cancelled.": [
+        "Yükleme iptal edildi."
+      ],
+      "Upload images, videos, and documents.": [
+        "Görüntüler, videolar ve belgeleri yükleyin."
+      ]
+    }
+  }
+}

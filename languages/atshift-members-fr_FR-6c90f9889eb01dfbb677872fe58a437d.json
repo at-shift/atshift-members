@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-27 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "fr_FR",
+        "plural-forms": "nplurals=2; plural=(n > 1);"
+      },
+      "Attachment Visibility": [
+        "Visibilité des pièces jointes"
+      ],
+      "Change Visibility": [
+        "Changer la visibilité"
+      ],
+      "Choose How to Add Media": [
+        "Choisissez comment ajouter des médias"
+      ],
+      "Choose a format supported by this block.": [
+        "Choisissez un format pris en charge par ce bloc."
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "Choisissez parmi les images, vidéos et documents enregistrés."
+      ],
+      "Could not complete the action. Please try again.": [
+        "Impossible de terminer l'action. Veuillez réessayer."
+      ],
+      "Drop Files to Upload": [
+        "Déposez des fichiers à télécharger"
+      ],
+      "Insert Selected Files": [
+        "Insérer les fichiers sélectionnés"
+      ],
+      "Media Library": [
+        "Bibliothèque de médias"
+      ],
+      "Members Only": [
+        "Seulement pour les membres"
+      ],
+      "Members-Only Media": [
+        "Médias réservés aux membres uniquement"
+      ],
+      "Next Page": [
+        "Page suivante"
+      ],
+      "No files are available to select.": [
+        "Aucun fichier n'est disponible pour sélectionner."
+      ],
+      "Open File": [
+        "Ouvrir le fichier"
+      ],
+      "Previous Page": [
+        "Page précédente"
+      ],
+      "Processing…": [
+        "Traitement en cours..."
+      ],
+      "Public": [
+        "Public"
+      ],
+      "Public Media": [
+        "Médias publics"
+      ],
+      "Search": [
+        "Rechercher"
+      ],
+      "Search by Filename": [
+        "Rechercher par nom de fichier"
+      ],
+      "Select Files": [
+        "Sélectionner des fichiers"
+      ],
+      "Server upload limit: ": [
+        "Limite de téléchargement du serveur : "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "Affichage de fichiers réservés aux membres que vous pouvez utiliser. Les fichiers utilisés dans une autre publication seront copiés pour cette publication."
+      ],
+      "Showing public files you can use.": [
+        "Affichage des fichiers publics que vous pouvez utiliser."
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "Le fichier dépasse la limite de téléchargement du serveur de %s."
+      ],
+      "These files are visible only to authorized members. ": [
+        "Ces fichiers ne sont visibles que pour les membres autorisés. "
+      ],
+      "These files are visible to everyone. ": [
+        "Ces fichiers sont visibles par tous. "
+      ],
+      "Upload": [
+        "télécharger"
+      ],
+      "Upload cancelled.": [
+        "Téléchargement annulé."
+      ],
+      "Upload images, videos, and documents.": [
+        "Téléchargez des images, des vidéos et des documents."
+      ]
+    }
+  }
+}

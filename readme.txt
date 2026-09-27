@@ -4,7 +4,7 @@ Tags: membership, member directory, private content, user registration, access c
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,8 @@ Build a simple membership site with verified registration, member pages, posting
 atshift Members provides a compact foundation for a straightforward WordPress membership site. It keeps member registration, account management, member posting, protected content, an optional directory, and private attachments in one place.
 
 Members can create their own permitted posts and attach images or documents stored separately from the public WordPress Media Library. Each private download checks the member's current status and access to the parent content.
+
+Bundled interface catalogs cover Japanese, US English, German, Spanish, French, Indonesian, Italian, Korean, Dutch, Polish, Brazilian Portuguese, Russian, Turkish, Simplified Chinese, and Traditional Chinese.
 
 Official website: [atshift Members](https://plugins.at-shift.net/en/members/) | [Japanese](https://plugins.at-shift.net/members/)
 
@@ -92,7 +94,7 @@ No. The free plugin sends account-related transactional email. Announcement deli
 
 = Does it support multisite? =
 
-Version 1.0 supports single-site installations.
+Version 1.0.1 supports single-site installations.
 
 == Screenshots ==
 
@@ -150,6 +152,11 @@ Private downloads recheck membership and parent-content access. Public content c
 Account closure permanently erases the account and plugin-managed data by default. Members can explicitly transfer selected contributions to a non-login site custodian. Shared physical files, backups, and data stored by unrelated plugins have limits explained before final confirmation.
 
 == Changelog ==
+
+= 1.0.1 =
+* Add bundled translations for 15 locales across settings, member pages, default emails, and the media picker.
+* Translate member-home labels using the selected WordPress language while preserving the Japanese wording.
+* Improve translation terminology and validate placeholders, configuration keys, and language catalogs.
 
 = 1.0 =
 * Initial public release with email-verified registration, account management, protected member content, posting permissions, and private attachments.

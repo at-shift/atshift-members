@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-27 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "zh_TW",
+        "plural-forms": "nplurals=1; plural=0;"
+      },
+      "Attachment Visibility": [
+        "附件可見性"
+      ],
+      "Change Visibility": [
+        "更改可見性"
+      ],
+      "Choose How to Add Media": [
+        "選擇如何新增媒體"
+      ],
+      "Choose a format supported by this block.": [
+        "選擇此塊支援的格式。"
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "從已儲存的影象、影片和文件中進行選擇。"
+      ],
+      "Could not complete the action. Please try again.": [
+        "無法完成操作。請重試。"
+      ],
+      "Drop Files to Upload": [
+        "將檔案拖放上傳"
+      ],
+      "Insert Selected Files": [
+        "插入所選檔案"
+      ],
+      "Media Library": [
+        "媒體庫"
+      ],
+      "Members Only": [
+        "僅限會員"
+      ],
+      "Members-Only Media": [
+        "僅限會員的媒體"
+      ],
+      "Next Page": [
+        "下一頁"
+      ],
+      "No files are available to select.": [
+        "沒有可用檔案可供選擇。"
+      ],
+      "Open File": [
+        "開啟檔案"
+      ],
+      "Previous Page": [
+        "上一頁"
+      ],
+      "Processing…": [
+        "處理中..."
+      ],
+      "Public": [
+        "公開"
+      ],
+      "Public Media": [
+        "公共媒體"
+      ],
+      "Search": [
+        "搜尋"
+      ],
+      "Search by Filename": [
+        "按檔名搜尋"
+      ],
+      "Select Files": [
+        "選擇檔案"
+      ],
+      "Server upload limit: ": [
+        "伺服器上傳限制： "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "顯示僅限會員使用的檔案。在另一個文章中使用的檔案將為該文章複製。"
+      ],
+      "Showing public files you can use.": [
+        "顯示您可以使用的公共檔案。"
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "該檔案超過了伺服器上傳限制%s。"
+      ],
+      "These files are visible only to authorized members. ": [
+        "這些檔案僅對授權會員可見。 "
+      ],
+      "These files are visible to everyone. ": [
+        "這些檔案對所有人都是可見的。 "
+      ],
+      "Upload": [
+        "上載"
+      ],
+      "Upload cancelled.": [
+        "上傳已取消。"
+      ],
+      "Upload images, videos, and documents.": [
+        "上傳圖片、影片和文件。"
+      ]
+    }
+  }
+}

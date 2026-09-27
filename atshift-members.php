@@ -3,13 +3,14 @@
  * Plugin Name: atshift Members
  * Plugin URI: https://plugins.at-shift.net/members/
  * Description: Build a simple, easy-to-understand membership site.
- * Version: 1.0
+ * Version: 1.0.1
  * Requires at least: 6.6
  * Requires PHP: 8.1
  * Author: @shift
  * Author URI: https://plugins.at-shift.net/
  * License: GPL-2.0-or-later
  * Text Domain: atshift-members
+ * Domain Path: /languages
  */
 defined('ABSPATH') || exit;
 foreach (['legacy','store','services','mail','members','withdrawal','audience','scope','files','content','posting','media','profile','profile-preset','registration','screens','dashboard','directory','admin','plugin-listing'] as $atshift_members_file) {

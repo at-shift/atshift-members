@@ -1,7 +1,7 @@
 # Translation catalog for atshift Members.
 # Licensed under GPL-2.0-or-later.
 msgid ""
-msgstr "Project-Id-Version: atshift Members 1.0\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-11 00:00+0000\nPO-Revision-Date: 2026-09-11 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\nX-Domain: atshift-members\n"
+msgstr "Project-Id-Version: atshift Members 1.0.1\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-27 00:00+0000\nPO-Revision-Date: 2026-09-27 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\nX-Domain: atshift-members\n"
 
 #: includes/class-profile.php:102
 msgid " (Optional)"
@@ -117,6 +117,10 @@ msgstr ""
 msgid "(Untitled)"
 msgstr ""
 
+#: includes/class-directory.php:107
+msgid ", "
+msgstr ""
+
 #: includes/class-admin.php:559
 msgid ". Create an account if you do not have one."
 msgstr ""
@@ -203,6 +207,10 @@ msgstr ""
 msgid "Accepting Member Registrations"
 msgstr ""
 
+#: includes/class-dashboard.php:55
+msgid "Account"
+msgstr ""
+
 #: includes/class-mail.php:19
 msgid "Account Banned"
 msgstr ""
@@ -225,6 +233,10 @@ msgstr ""
 
 #: includes/class-withdrawal.php:79
 msgid "Account closure is in progress. Please wait a moment."
+msgstr ""
+
+#: includes/class-dashboard.php:52
+msgid "Account information"
 msgstr ""
 
 #: includes/class-member-list-table.php:47
@@ -401,7 +413,7 @@ msgstr ""
 msgid "Branch"
 msgstr ""
 
-#: atshift-members.php:4
+#: atshift-members.php:5
 msgid "Build a simple, easy-to-understand membership site."
 msgstr ""
 
@@ -869,6 +881,10 @@ msgstr ""
 msgid "Deselect posts for transfer if you want to delete everything."
 msgstr ""
 
+#: includes/class-directory.php:111
+msgid "Directory pages"
+msgstr ""
+
 #: includes/class-profile-preset.php:45 includes/class-profile.php:91
 msgid "Display Name"
 msgstr ""
@@ -921,6 +937,10 @@ msgstr ""
 
 #: includes/class-admin.php:532
 msgid "Edit Profile Fields in atshift User Profile Fields"
+msgstr ""
+
+#: includes/class-dashboard.php:52
+msgid "Edit account information"
 msgstr ""
 
 #: includes/class-member-list-table.php:9 includes/class-screens.php:200
@@ -1115,7 +1135,7 @@ msgstr ""
 msgid "Include child categories"
 msgstr ""
 
-#: atshift-members.php:31
+#: atshift-members.php:32
 msgid "InnoDB tables are required."
 msgstr ""
 
@@ -1219,7 +1239,7 @@ msgstr ""
 msgid "Media Library"
 msgstr ""
 
-#: includes/class-member-list-table.php:60
+#: includes/class-directory.php:104 includes/class-member-list-table.php:60
 msgid "Member"
 msgstr ""
 
@@ -1365,6 +1385,12 @@ msgstr ""
 msgid "Membership Type"
 msgstr ""
 
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-dashboard.php:62
+msgid "My %s"
+msgstr ""
+
 #: includes/class-member-list-table.php:9
 msgid "Name"
 msgstr ""
@@ -1393,6 +1419,10 @@ msgstr ""
 
 #: includes/class-admin.php:563
 msgid "New registration and password reset requests will be unavailable until you save new keys."
+msgstr ""
+
+#: includes/class-directory.php:112
+msgid "Next"
 msgstr ""
 
 #: assets/media.js:88
@@ -1591,6 +1621,10 @@ msgstr ""
 msgid "Posting settings are being saved. Please wait a moment and try again."
 msgstr ""
 
+#: includes/class-dashboard.php:64
+msgid "Posts"
+msgstr ""
+
 #: includes/class-withdrawal.php:85
 msgid "Posts or attachment information changed after confirmation. Review the details again."
 msgstr ""
@@ -1605,6 +1639,10 @@ msgstr ""
 
 #: includes/class-admin.php:624
 msgid "Prepare a non-public directory exclusively for member files and specify its path on the server."
+msgstr ""
+
+#: includes/class-directory.php:112
+msgid "Previous"
 msgstr ""
 
 #: assets/media.js:87
@@ -2691,11 +2729,11 @@ msgstr ""
 msgid "atshift Members provides the essentials for a membership site. Add the following plugins to suit your site's needs."
 msgstr ""
 
-#: atshift-members.php:29
+#: atshift-members.php:30
 msgid "atshift Members supports single-site installations only."
 msgstr ""
 
-#: atshift-members.php:44
+#: atshift-members.php:45
 msgid "atshift Members: Every minute"
 msgstr ""
 

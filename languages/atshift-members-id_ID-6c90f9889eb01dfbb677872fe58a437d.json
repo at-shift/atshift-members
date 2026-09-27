@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-27 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "id_ID",
+        "plural-forms": "nplurals=1; plural=0;"
+      },
+      "Attachment Visibility": [
+        "Visibilitas Lampiran"
+      ],
+      "Change Visibility": [
+        "Ubah Visibilitas"
+      ],
+      "Choose How to Add Media": [
+        "Pilih Cara Menambahkan Media"
+      ],
+      "Choose a format supported by this block.": [
+        "Pilih format yang didukung oleh blok ini."
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "Pilih dari gambar, video, dan dokumen tersimpan."
+      ],
+      "Could not complete the action. Please try again.": [
+        "Gagal menyelesaikan tindakan. Silakan coba lagi."
+      ],
+      "Drop Files to Upload": [
+        "Seret File untuk Diunggah"
+      ],
+      "Insert Selected Files": [
+        "Sisipkan File Terpilih"
+      ],
+      "Media Library": [
+        "Perpustakaan Media"
+      ],
+      "Members Only": [
+        "Hanya Anggota"
+      ],
+      "Members-Only Media": [
+        "Media Khusus Anggota"
+      ],
+      "Next Page": [
+        "Halaman Berikutnya"
+      ],
+      "No files are available to select.": [
+        "Tidak ada file yang tersedia untuk dipilih."
+      ],
+      "Open File": [
+        "Buka File"
+      ],
+      "Previous Page": [
+        "Halaman Sebelumnya"
+      ],
+      "Processing…": [
+        "Memproses…"
+      ],
+      "Public": [
+        "Publik"
+      ],
+      "Public Media": [
+        "Media Publik"
+      ],
+      "Search": [
+        "Cari"
+      ],
+      "Search by Filename": [
+        "Cari berdasarkan Nama File"
+      ],
+      "Select Files": [
+        "Pilih File"
+      ],
+      "Server upload limit: ": [
+        "Batas unggah server: "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "Menampilkan file khusus anggota yang dapat Anda gunakan. File yang digunakan di postingan lain akan disalin untuk postingan tersebut."
+      ],
+      "Showing public files you can use.": [
+        "Menampilkan file publik yang dapat Anda gunakan."
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "File melebihi batas unggah server %s."
+      ],
+      "These files are visible only to authorized members. ": [
+        "File ini hanya terlihat oleh anggota yang berwenang. "
+      ],
+      "These files are visible to everyone. ": [
+        "File ini terlihat oleh semua orang. "
+      ],
+      "Upload": [
+        "Unggah"
+      ],
+      "Upload cancelled.": [
+        "Unggah dibatalkan."
+      ],
+      "Upload images, videos, and documents.": [
+        "Unggah gambar, video, dan dokumen."
+      ]
+    }
+  }
+}

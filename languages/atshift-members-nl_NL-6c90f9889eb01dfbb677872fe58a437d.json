@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-27 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "nl_NL",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Attachment Visibility": [
+        "Bekijkbaarheid van bijlagen"
+      ],
+      "Change Visibility": [
+        "Verander zichtbaarheid"
+      ],
+      "Choose How to Add Media": [
+        "Kies hoe media toe te voegen"
+      ],
+      "Choose a format supported by this block.": [
+        "Kies een formaat dat wordt ondersteund door deze blok."
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "Kies uit opgeslagen afbeeldingen, video's en documenten."
+      ],
+      "Could not complete the action. Please try again.": [
+        "De actie kon niet worden voltooid. Probeer het opnieuw."
+      ],
+      "Drop Files to Upload": [
+        "Bestanden laten vallen om te uploaden"
+      ],
+      "Insert Selected Files": [
+        "Geselecteerde bestanden invoegen"
+      ],
+      "Media Library": [
+        "Mediabibliotheek"
+      ],
+      "Members Only": [
+        "Alleen voor leden"
+      ],
+      "Members-Only Media": [
+        "Media alleen voor leden"
+      ],
+      "Next Page": [
+        "Volgende pagina"
+      ],
+      "No files are available to select.": [
+        "Er zijn geen bestanden beschikbaar om te selecteren."
+      ],
+      "Open File": [
+        "Bestand openen"
+      ],
+      "Previous Page": [
+        "Vorige pagina"
+      ],
+      "Processing…": [
+        "Verwerking…"
+      ],
+      "Public": [
+        "Openbaar"
+      ],
+      "Public Media": [
+        "Publieke media"
+      ],
+      "Search": [
+        "Zoeken"
+      ],
+      "Search by Filename": [
+        "Zoeken op bestandsnaam"
+      ],
+      "Select Files": [
+        "Bestanden selecteren"
+      ],
+      "Server upload limit: ": [
+        "Server upload limiet: "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "We tonen alleen bestanden voor leden die u kunt gebruiken. Bestanden die in een andere post worden gebruikt, worden gekopieerd voor die post."
+      ],
+      "Showing public files you can use.": [
+        "Publieke bestanden die u kunt gebruiken worden weergegeven."
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "Het bestand overschrijdt de uploadlimiet van de server van %s."
+      ],
+      "These files are visible only to authorized members. ": [
+        "Deze bestanden zijn alleen zichtbaar voor geautoriseerde leden. "
+      ],
+      "These files are visible to everyone. ": [
+        "Deze bestanden zijn zichtbaar voor iedereen. "
+      ],
+      "Upload": [
+        "uploaden"
+      ],
+      "Upload cancelled.": [
+        "Upload geannuleerd."
+      ],
+      "Upload images, videos, and documents.": [
+        "Upload afbeeldingen, video's en documenten."
+      ]
+    }
+  }
+}

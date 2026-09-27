@@ -1,7 +1,7 @@
 # Translation catalog for atshift Members.
 # Licensed under GPL-2.0-or-later.
 msgid ""
-msgstr "Project-Id-Version: atshift Members 1.0\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-11 00:00+0000\nPO-Revision-Date: 2026-09-11 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: en_US\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\nX-Domain: atshift-members\n"
+msgstr "Project-Id-Version: atshift Members 1.0.1\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-27 00:00+0000\nPO-Revision-Date: 2026-09-27 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: en_US\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\nX-Domain: atshift-members\n"
 
 #: includes/class-profile.php:102
 msgid " (Optional)"
@@ -117,6 +117,10 @@ msgstr "(Unnamed Attachment)"
 msgid "(Untitled)"
 msgstr "(Untitled)"
 
+#: includes/class-directory.php:107
+msgid ", "
+msgstr ", "
+
 #: includes/class-admin.php:559
 msgid ". Create an account if you do not have one."
 msgstr ". Create an account if you do not have one."
@@ -203,6 +207,10 @@ msgstr "Absolute Path to the Public Directory Containing WordPress"
 msgid "Accepting Member Registrations"
 msgstr "Accepting Member Registrations"
 
+#: includes/class-dashboard.php:55
+msgid "Account"
+msgstr "Account"
+
 #: includes/class-mail.php:19
 msgid "Account Banned"
 msgstr "Account Banned"
@@ -226,6 +234,10 @@ msgstr "Account Suspended"
 #: includes/class-withdrawal.php:79
 msgid "Account closure is in progress. Please wait a moment."
 msgstr "Account closure is in progress. Please wait a moment."
+
+#: includes/class-dashboard.php:52
+msgid "Account information"
+msgstr "Account information"
 
 #: includes/class-member-list-table.php:47
 msgid "Activate"
@@ -401,7 +413,7 @@ msgstr "Both keys are required. Check them and copy them from the Cloudflare das
 msgid "Branch"
 msgstr "Branch"
 
-#: atshift-members.php:4
+#: atshift-members.php:5
 msgid "Build a simple, easy-to-understand membership site."
 msgstr "Build a simple, easy-to-understand membership site."
 
@@ -869,6 +881,10 @@ msgstr "Department"
 msgid "Deselect posts for transfer if you want to delete everything."
 msgstr "Deselect posts for transfer if you want to delete everything."
 
+#: includes/class-directory.php:111
+msgid "Directory pages"
+msgstr "Directory pages"
+
 #: includes/class-profile-preset.php:45 includes/class-profile.php:91
 msgid "Display Name"
 msgstr "Display Name"
@@ -922,6 +938,10 @@ msgstr "Edit Page"
 #: includes/class-admin.php:532
 msgid "Edit Profile Fields in atshift User Profile Fields"
 msgstr "Edit Profile Fields in atshift User Profile Fields"
+
+#: includes/class-dashboard.php:52
+msgid "Edit account information"
+msgstr "Edit account information"
 
 #: includes/class-member-list-table.php:9 includes/class-screens.php:200
 msgid "Email Address"
@@ -1115,7 +1135,7 @@ msgstr "In email subjects and bodies, %1$s is replaced with the site name and %2
 msgid "Include child categories"
 msgstr "Include child categories"
 
-#: atshift-members.php:31
+#: atshift-members.php:32
 msgid "InnoDB tables are required."
 msgstr "InnoDB tables are required."
 
@@ -1219,7 +1239,7 @@ msgstr "Manages user categories"
 msgid "Media Library"
 msgstr "Media Library"
 
-#: includes/class-member-list-table.php:60
+#: includes/class-directory.php:104 includes/class-member-list-table.php:60
 msgid "Member"
 msgstr "Member"
 
@@ -1365,6 +1385,12 @@ msgstr "Membership Status"
 msgid "Membership Type"
 msgstr "Membership Type"
 
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-dashboard.php:62
+msgid "My %s"
+msgstr "My %s"
+
 #: includes/class-member-list-table.php:9
 msgid "Name"
 msgstr "Name"
@@ -1394,6 +1420,10 @@ msgstr "New Member Registrations"
 #: includes/class-admin.php:563
 msgid "New registration and password reset requests will be unavailable until you save new keys."
 msgstr "New registration and password reset requests will be unavailable until you save new keys."
+
+#: includes/class-directory.php:112
+msgid "Next"
+msgstr "Next"
 
 #: assets/media.js:88
 msgid "Next Page"
@@ -1591,6 +1621,10 @@ msgstr "Posting Settings"
 msgid "Posting settings are being saved. Please wait a moment and try again."
 msgstr "Posting settings are being saved. Please wait a moment and try again."
 
+#: includes/class-dashboard.php:64
+msgid "Posts"
+msgstr "Posts"
+
 #: includes/class-withdrawal.php:85
 msgid "Posts or attachment information changed after confirmation. Review the details again."
 msgstr "Posts or attachment information changed after confirmation. Review the details again."
@@ -1606,6 +1640,10 @@ msgstr "Prefecture / State"
 #: includes/class-admin.php:624
 msgid "Prepare a non-public directory exclusively for member files and specify its path on the server."
 msgstr "Prepare a non-public directory exclusively for member files and specify its path on the server."
+
+#: includes/class-directory.php:112
+msgid "Previous"
+msgstr "Previous"
 
 #: assets/media.js:87
 msgid "Previous Page"
@@ -2691,11 +2729,11 @@ msgstr "atshift Members Settings"
 msgid "atshift Members provides the essentials for a membership site. Add the following plugins to suit your site's needs."
 msgstr "atshift Members provides the essentials for a membership site. Add the following plugins to suit your site's needs."
 
-#: atshift-members.php:29
+#: atshift-members.php:30
 msgid "atshift Members supports single-site installations only."
 msgstr "atshift Members supports single-site installations only."
 
-#: atshift-members.php:44
+#: atshift-members.php:45
 msgid "atshift Members: Every minute"
 msgstr "atshift Members: Every minute"
 

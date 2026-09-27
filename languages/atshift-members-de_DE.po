@@ -1,0 +1,2754 @@
+# Translation catalog for atshift Members.
+# Licensed under GPL-2.0-or-later.
+msgid ""
+msgstr "Project-Id-Version: atshift Members 1.0.1\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-27 00:00+0000\nPO-Revision-Date: 2026-09-27 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: de_DE\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\nX-Domain: atshift-members\n"
+
+#: includes/class-profile.php:102
+msgid " (Optional)"
+msgstr " (Optional)"
+
+#: includes/class-profile.php:102
+msgid " (Required)"
+msgstr " (Erforderlich)"
+
+#: includes/class-admin.php:446
+msgid " (default)"
+msgstr " (Standard)"
+
+#: includes/class-admin.php:520
+msgid " (required)"
+msgstr " (erforderlich)"
+
+#: includes/class-admin.php:504
+msgid " (user classification) "
+msgstr " (Benutzerklassifizierung) "
+
+#: includes/class-admin.php:595
+msgid " Email Notifications"
+msgstr " E-Mail-Benachrichtigungen"
+
+#: includes/class-admin.php:204 includes/class-admin.php:251
+msgid " and "
+msgstr " und "
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:620
+msgid "%1$s specifies the public directory containing WordPress, and %2$s specifies members-only storage. WordPress must be able to read and write in the private directory."
+msgstr "%1$s gibt das öffentliche Verzeichnis an, das WordPress enthält, und %2$s gibt den Mitglieder-only-Speicher an. WordPress muss im privaten Verzeichnis Lese- und Schreibzugriff haben."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:253
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:52
+msgid "%s Archives"
+msgstr "%s Archive"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:54
+msgid "%s Attributes"
+msgstr "%s Attribute"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:76
+msgid "%s Link"
+msgstr "%s-Link"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:64
+msgid "%s List"
+msgstr "%s Liste"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:62
+msgid "%s List Navigation"
+msgstr "%s Listen-Navigation"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:260
+msgid "%s makes it easy to configure profile fields and extend registration, account display, and editing forms."
+msgstr "%s erleichtert die Konfiguration von Profilfeldern und die Erweiterung von Registrierungs-, Kontenanzeige- und Bearbeitungsformularen."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:68
+msgid "%s published privately."
+msgstr "%s privat veröffentlicht."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:66
+msgid "%s published."
+msgstr "%s veröffentlicht."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:70
+msgid "%s reverted to draft."
+msgstr "%s auf Entwurf zurückgesetzt."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:72
+msgid "%s scheduled."
+msgstr "%s geplant."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:74
+msgid "%s updated."
+msgstr "%s aktualisiert."
+
+#: includes/class-screens.php:227
+msgid "(Unnamed Attachment)"
+msgstr "(Ohne Titel Anhang)"
+
+#: includes/class-screens.php:224 includes/class-screens.php:239
+msgid "(Untitled)"
+msgstr "(Ohne Titel)"
+
+#: includes/class-directory.php:107
+msgid ", "
+msgstr ", "
+
+#: includes/class-admin.php:559
+msgid ". Create an account if you do not have one."
+msgstr "Erstellen Sie ein Konto, falls Sie noch keines haben."
+
+#: includes/class-admin.php:309
+msgid "1. Set Up Member Pages"
+msgstr "1. Mitgliederseiten einrichten"
+
+#: includes/class-admin.php:310
+msgid "2. Registration and Administration"
+msgstr "2. Registrierung und Verwaltung"
+
+#: includes/class-admin.php:311
+msgid "3. Pro Add-on Features"
+msgstr "3. Pro Add-on Funktionen"
+
+#: includes/class-admin.php:409
+msgid ": Access is temporarily suspended. The member cannot log in, but their information and content are retained. Change the status back to Active to restore access."
+msgstr ": Der Zugriff ist vorübergehend gesperrt. Das Mitglied kann sich nicht anmelden, aber dessen Informationen und Inhalte bleiben erhalten. Ändern Sie den Status zurück auf Aktiv, um den Zugriff wiederherzustellen."
+
+#: includes/class-admin.php:409
+msgid ": Can log in and use member features."
+msgstr ": Kann sich anmelden und Mitgliederfunktionen nutzen."
+
+#: includes/class-admin.php:595
+msgid ": Classification name; "
+msgstr "Kategorienname; "
+
+#: includes/class-admin.php:409
+msgid ": Registration is awaiting review. The member cannot log in yet. Change the status to Active after reviewing their information."
+msgstr ": Die Registrierung wartet auf Überprüfung. Das Mitglied kann sich noch nicht anmelden. Ändern Sie den Status nach Überprüfung der Informationen auf Aktiv."
+
+#: includes/class-admin.php:595
+msgid ": Rejection reason"
+msgstr "Ablehnungsgrund"
+
+#: includes/class-admin.php:595
+msgid ": Requested classification; "
+msgstr "Angefragte Kategorie; "
+
+#: includes/class-members.php:88
+msgid "A closed account cannot be restored by removing its suspension."
+msgstr "Ein geschlossenes Konto kann nicht durch Entfernen der Sperre wiederhergestellt werden."
+
+#: includes/class-admin.php:365
+msgid "A free plugin for adding fields such as phone numbers and arranging profile forms. It is optional: atshift Members can also provide basic name and biography fields on its own."
+msgstr "Ein kostenloses Plugin zum Hinzufügen von Feldern wie Telefonnummern und zur Gestaltung von Profilformularen. Es ist optional: atshift Members kann auch allein grundlegende Name- und Biografie-Felder bereitstellen."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:78
+msgid "A link to a %s."
+msgstr "Ein Link zu einem %s."
+
+#: includes/class-admin.php:469
+msgid "A page for member account procedures."
+msgstr "Seite für Mitglieder-Kontoprozeduren."
+
+#: includes/class-mail.php:21
+msgid "A password reset was requested for your account. Follow this link to reset it.\n{link}\n\nIf you did not request this, please ignore this email."
+msgstr "Es wurde ein Zurücksetzen des Passworts für Ihr Konto angefordert. Folgen Sie diesem Link, um es zurückzusetzen.\n{link}\n\nWenn Sie dies nicht angefordert haben, ignorieren Sie diesen email."
+
+#: includes/class-admin.php:562
+msgid "A private key used to verify responses with Cloudflare. Saved values are never displayed. Leave this blank to keep the current key. If you change the site key, enter its matching secret key as well."
+msgstr "Ein privater Schlüssel zur Verifizierung von Antworten mit Cloudflare. Gespeicherte Werte werden niemals angezeigt. Lassen Sie dieses Feld leer, um den aktuellen Schlüssel beizubehalten. Ändern Sie den Seiten-Schlüssel, geben Sie bitte auch den entsprechenden geheimen Schlüssel ein."
+
+#: includes/class-admin.php:607
+msgid "A small marker file is also placed in shared storage to verify the connection."
+msgstr "Zur Überprüfung der Verbindung wird auch eine kleine Markerdatei im gemeinsamen Speicher abgelegt."
+
+#: includes/class-admin.php:409
+msgid "About Member Status and Changes"
+msgstr "Über den Mitgliedsstatus und Änderungen"
+
+#: includes/class-admin.php:606
+msgid "Absolute Path to the Members-Only Storage Directory"
+msgstr "Absoluter Pfad zum Mitglieder-Speicherverzeichnis"
+
+#: includes/class-admin.php:605
+msgid "Absolute Path to the Public Directory Containing WordPress"
+msgstr "Absoluter Pfad zum öffentlichen Verzeichnis, das WordPress enthält"
+
+#: includes/class-admin.php:487
+msgid "Accepting Member Registrations"
+msgstr "Mitgliederregistrierungen akzeptieren"
+
+#: includes/class-dashboard.php:55
+msgid "Account"
+msgstr "Konto"
+
+#: includes/class-mail.php:19
+msgid "Account Banned"
+msgstr "Konto gesperrt"
+
+#: includes/class-mail.php:16
+msgid "Account Closed"
+msgstr "Konto geschlossen"
+
+#: includes/class-members.php:5
+msgid "Account Closure in Progress"
+msgstr "Konto-Schließung läuft"
+
+#: includes/class-members.php:5
+msgid "Account Removed"
+msgstr "Konto gelöscht"
+
+#: includes/class-mail.php:20
+msgid "Account Suspended"
+msgstr "Konto suspendiert"
+
+#: includes/class-withdrawal.php:79
+msgid "Account closure is in progress. Please wait a moment."
+msgstr "Die Kontoschließung läuft. Bitte warten Sie einen Moment."
+
+#: includes/class-dashboard.php:52
+msgid "Account information"
+msgstr "Kontoinformationen"
+
+#: includes/class-member-list-table.php:47
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: includes/class-admin.php:409 includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Active"
+msgstr "Aktiv"
+
+#: includes/class-directory.php:29
+msgid "Active members"
+msgstr "Aktive Mitglieder"
+
+#: includes/class-content.php:32
+msgid "Add New"
+msgstr "Neu hinzufügen"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:34
+msgid "Add New %s"
+msgstr "Neues %s hinzufügen"
+
+#: includes/class-admin.php:559
+msgid "Add a Turnstile widget for this site and register the domains where it will be used."
+msgstr "Fügen Sie ein Turnstile-Widget für diese Seite hinzu und registrieren Sie die Domains, auf denen es verwendet werden soll."
+
+#: includes/class-admin.php:528
+msgid "Add or Change Fields"
+msgstr "Felder hinzufügen oder ändern"
+
+#: includes/class-profile-preset.php:27
+msgid "Add the missing basic profile fields without replacing existing settings or profile values."
+msgstr "Fehlende Basisprofilfelder hinzufügen, ohne bestehende Einstellungen oder Profilwerte zu überschreiben."
+
+#: includes/class-profile-preset.php:61
+msgid "Add the profile picture field provided by UPF."
+msgstr "Das von UPF bereitgestellte Profilbildfeld hinzufügen."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:620
+msgid "Add these settings to %s before the comment that says to stop editing. If they already exist, edit them instead of adding duplicates."
+msgstr "Fügen Sie diese Einstellungen zu %s vor dem Kommentar ein, der das Bearbeiten stoppen lässt. Falls sie bereits existieren, bearbeiten Sie sie anstatt Duplikate hinzuzufügen."
+
+#: includes/class-admin.php:358
+msgid "Add tools for reviewing posts, sending announcements, and sharing responsibilities among staff."
+msgstr "Tools zum Überprüfen von Beiträgen, Versenden von Ankündigungen und Teilen von Verantwortlichkeiten unter dem Personal hinzufügen."
+
+#: includes/class-admin.php:323
+msgid "Additional Settings"
+msgstr "Zusätzliche Einstellungen"
+
+#: includes/class-admin.php:371
+msgid "Adds more design controls to the free atshift Freeform Login plugin. Use a custom logo and adjust the form's position, opacity, border, corner radius, and shadow. Button borders and shadows can also be customized."
+msgstr "Fügt dem kostenlosen atshift Freeform Login Plugin weitere Design-Steuerelemente hinzu. Verwenden Sie ein benutzerdefiniertes Logo und passen Sie die Position, die Deckkraft, die Umrandung, den Corner Radius und den Schatten des Formulars an. Auch die Rahmen und Schatten der Schaltflächen können angepasst werden."
+
+#: includes/class-members.php:86
+msgid "Administrator permissions are required to change operators."
+msgstr "Administratorberechtigungen sind erforderlich, um Betreiber zu ändern."
+
+#: includes/class-directory.php:43
+msgid "Affiliation"
+msgstr "Zugehörigkeit"
+
+#: includes/class-member-list-table.php:34
+msgid "All"
+msgstr "Alle"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:50
+msgid "All %s"
+msgstr "Alle %s"
+
+#: includes/class-admin.php:380
+msgid "All Members"
+msgstr "Alle Mitglieder"
+
+#: includes/class-admin.php:385
+msgid "Allowed User Categories"
+msgstr "Erlaubte Benutzerkategorien"
+
+#: includes/class-withdrawal.php:105
+msgid "An administrator needs to verify the recipient account for transferred content."
+msgstr "Ein Administrator muss das Zielkonto für übertragene Inhalte verifizieren."
+
+#: includes/class-media.php:107
+msgid "An operation is in progress. Please try again."
+msgstr "Ein Vorgang läuft. Bitte versuchen Sie es erneut."
+
+#: includes/class-admin.php:369
+msgid "An optional plugin for styling your login page to match your site and enabling passkey login. It is not required for member registration."
+msgstr "Ein optionales Plugin zur Gestaltung Ihrer Anmeldeseite passend zu Ihrer Website und zur Aktivierung des Passkey-Logins. Für die Mitgliedsregistrierung nicht erforderlich."
+
+#: includes/class-admin.php:360
+msgid "Announcement Emails and Scheduling"
+msgstr "Ankündigungs-E-Mails und Zeitplanung"
+
+#: includes/class-member-list-table.php:47
+msgid "Apply"
+msgstr "Anwenden"
+
+#: includes/class-mail.php:14
+msgid "Approval or Access Restored"
+msgstr "Genehmigung oder Zugriff wiederhergestellt"
+
+#: includes/class-admin.php:451
+msgid "Ask a site administrator to change the allowed post types."
+msgstr "Bitten Sie einen Website-Administrator, die erlaubten Beitragstypen zu ändern."
+
+#: includes/class-admin.php:361
+msgid "Assign post approvals, announcement delivery, and CSV member onboarding to individual staff members."
+msgstr "Weisen Sie die Genehmigung von Beiträgen, die Veröffentlichung von Ankündigungen und die Onboarding von Mitgliedern über CSV einzelnen Mitarbeitern zu."
+
+#: includes/class-admin.php:242
+msgid "Assigns member management responsibilities by category"
+msgstr "Weist Verantwortlichkeiten für das Mitglieder-Management nach Kategorie zu"
+
+#: includes/class-files.php:289
+msgid "Attach File"
+msgstr "Datei anhängen"
+
+#: includes/class-media.php:143 includes/class-media.php:155
+msgid "Attach Files"
+msgstr "Dateien anhängen"
+
+#: assets/media.js:100
+msgid "Attachment Visibility"
+msgstr "Sichtbarkeit von Anhängen"
+
+#: includes/class-admin.php:527
+msgid "Authentication Features Available After Registration"
+msgstr "Authentifizierungsfunktionen nach der Registrierung verfügbar"
+
+#: includes/class-admin.php:397
+msgid "Author Links"
+msgstr "Autoren-Links"
+
+#: includes/class-admin.php:441 includes/class-member-list-table.php:9
+msgid "Available Post Types"
+msgstr "Verfügbare Beitragstypen"
+
+#: includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Banned"
+msgstr "Gesperrt"
+
+#: includes/class-admin.php:424
+msgid "Banned accounts cannot log in. Accounts, content, and records are retained. Only a site administrator can restore access."
+msgstr "Gesperrte Konten können sich nicht anmelden. Konten, Inhalte und Aufzeichnungen werden gespeichert. Nur ein Website-Administrator kann den Zugriff wiederherstellen."
+
+#: includes/class-admin.php:549
+msgid "Before launching a membership site, check any page caching plugins and server caches to prevent one member's information from being shown to someone else. "
+msgstr "Überprüfen Sie vor dem Start einer Mitgliedsseite alle Seiten-Caching-Plugins und Server-Caches, um zu verhindern, dass Informationen eines Mitglieds versehentlich einem anderen angezeigt werden. "
+
+#: includes/class-admin.php:607
+msgid "Before saving, the plugin checks that it can create, read, and delete a test file in the specified directory."
+msgstr "Vor dem Speichern prüft das Plugin, ob es eine Testdatei im angegebenen Verzeichnis erstellen, lesen und löschen kann."
+
+#: includes/class-directory.php:43 includes/class-profile-preset.php:46 includes/class-profile.php:93
+msgid "Biography"
+msgstr "Biografische Angaben"
+
+#: includes/class-admin.php:596
+msgid "Body"
+msgstr "Inhalt"
+
+#: includes/class-services.php:25
+msgid "Both keys are required. Check them and copy them from the Cloudflare dashboard."
+msgstr "Beide Schlüssel sind erforderlich. Überprüfen und kopieren Sie sie aus dem Cloudflare-Dashboard."
+
+#: includes/class-profile-preset.php:68
+msgid "Branch"
+msgstr "Zweigstelle"
+
+#: atshift-members.php:5
+msgid "Build a simple, easy-to-understand membership site."
+msgstr "Bauen Sie eine einfache, leicht verständliche Mitgliedsseite."
+
+#: includes/class-profile-preset.php:52
+msgid "Building / Unit"
+msgstr "Gebäude / Einheit"
+
+#: includes/class-member-list-table.php:47
+msgid "Bulk Actions"
+msgstr "Stapelaktionen"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-plugin-listing.php:50
+msgid "By %s"
+msgstr "Von %s"
+
+#: includes/class-files.php:229
+msgid "Cannot access the storage location."
+msgstr "Der Speicherort kann nicht erreicht werden."
+
+#: includes/class-files.php:180
+msgid "Cannot attach this file."
+msgstr "Diese Datei kann nicht angehängt werden."
+
+#: includes/class-registration.php:206
+msgid "Cannot change the email address."
+msgstr "Die Adresse des email kann nicht geändert werden."
+
+#: includes/class-registration.php:151
+msgid "Cannot complete registration. Please try logging in or resetting your password."
+msgstr "Registrierung konnte nicht abgeschlossen werden. Bitte versuchen Sie, sich anzumelden oder Ihr Passwort zurückzusetzen."
+
+#: includes/class-services.php:57
+msgid "Cannot connect to the password checking service. Please try again later."
+msgstr "Verbindung zum Passwortprüfservice fehlgeschlagen. Bitte versuchen Sie es später erneut."
+
+#: includes/class-media.php:122
+msgid "Cannot copy the file."
+msgstr "Die Datei kann nicht kopiert werden."
+
+#: includes/class-files.php:42
+msgid "Cannot create a file in the storage directory."
+msgstr "Kann keine Datei im Speicherverzeichnis erstellen."
+
+#: includes/class-media.php:118
+msgid "Cannot create temporary storage."
+msgstr "Temporärer Speicher kann nicht erstellt werden."
+
+#: includes/class-files.php:53
+msgid "Cannot create the shared directory marker file."
+msgstr "Kann die Markerdatei für das freigegebene Verzeichnis nicht erstellen."
+
+#: includes/class-media.php:113
+msgid "Cannot read the source file."
+msgstr "Die Quelldatei kann nicht gelesen werden."
+
+#: includes/class-files.php:80
+msgid "Cannot save."
+msgstr "Speichern nicht möglich."
+
+#: includes/class-screens.php:173 includes/class-screens.php:204
+msgid "Change Email Address"
+msgstr "E-Mail-Adresse ändern"
+
+#: includes/class-screens.php:231
+msgid "Change Selection"
+msgstr "Auswahl ändern"
+
+#: assets/media.js:69
+msgid "Change Visibility"
+msgstr "Sichtbarkeit ändern"
+
+#: includes/class-admin.php:131
+msgid "Change posting permissions in Posting Settings."
+msgstr "Veröffentlichungsberechtigungen in den Veröffentlichungs-Einstellungen ändern."
+
+#: includes/class-admin.php:436
+msgid "Change role:"
+msgstr "Rolle ändern:"
+
+#: includes/class-admin.php:429
+msgid "Change status:"
+msgstr "Status ändern:"
+
+#: includes/class-admin.php:451
+msgid "Change the allowed post types in Posting Settings."
+msgstr "Ändern Sie die erlaubten Beitragstypen in den Beitragseinstellungen."
+
+#: includes/class-admin.php:409
+msgid "Changing a member's status sends them a notification email and ends any active login sessions."
+msgstr "Die Änderung des Mitgliedsstatus sendet eine Benachrichtigung an das Mitglied email und beendet alle aktiven Sitzungen."
+
+#: includes/class-admin.php:548
+msgid "Check Cache Settings Before Launch"
+msgstr "Cache-Einstellungen vor dem Start überprüfen"
+
+#: includes/class-admin.php:607
+msgid "Check and Save Storage Location"
+msgstr "Speicherort prüfen und speichern"
+
+#: includes/class-registration.php:197
+msgid "Check the address or try again later."
+msgstr "Überprüfen Sie die Adresse oder versuchen Sie es später erneut."
+
+#: includes/class-files.php:154
+msgid "Check the file extension and contents. This file cannot be attached in the selected format."
+msgstr "Überprüfen Sie die Dateiendung und den Inhalt. Diese Datei kann nicht im ausgewählten Format angehängt werden."
+
+#: includes/class-profile.php:120
+msgid "Check the format and length of your entries."
+msgstr "Überprüfen Sie das Format und die Länge Ihrer Eingaben."
+
+#: includes/class-directory.php:56 includes/class-directory.php:58
+msgid "Check the selected items."
+msgstr "Ausgewählte Elemente überprüfen."
+
+#: includes/class-members.php:94
+msgid "Check the selected members."
+msgstr "Ausgewählte Mitglieder überprüfen."
+
+#: includes/class-files.php:25
+msgid "Check the shared directory connection. The storage location could not be verified."
+msgstr "Überprüfen Sie die Verbindung zum freigegebenen Verzeichnis. Der Speicherort konnte nicht verifiziert werden."
+
+#: includes/class-admin.php:164
+msgid "Check the subject, body, and required {link} placeholder."
+msgstr "Überprüfen Sie das Betreff-, Textfeld und den erforderlichen Platzhalter {link}."
+
+#: includes/class-admin.php:74 includes/class-admin.php:76 includes/class-admin.php:78 includes/class-admin.php:81 includes/class-admin.php:83
+msgid "Check the submitted classifications."
+msgstr "Überprüfen Sie die übermittelten Klassifizierungen."
+
+#: includes/class-admin.php:68
+msgid "Check the submitted member settings."
+msgstr "Überprüfen Sie die übermittelten Mitglieder-Einstellungen."
+
+#: includes/class-screens.php:133
+msgid "Check the submitted profile fields."
+msgstr "Bitte überprüfen Sie die übermittelten Profilfelder."
+
+#: includes/class-files.php:118
+msgid "Check the supported formats and the server's upload size limit."
+msgstr "Überprüfen Sie die unterstützten Formate und das Upload-Limit des Servers."
+
+#: includes/class-directory.php:63 includes/class-directory.php:65
+msgid "Check the users excluded from the directory."
+msgstr "Benutzer überprüfen, die vom Verzeichnis ausgeschlossen sind."
+
+#: includes/class-directory.php:50
+msgid "Check who can view the directory."
+msgstr "Überprüfen, wer das Verzeichnis einsehen kann."
+
+#: assets/media.js:71
+msgid "Choose How to Add Media"
+msgstr "Wählen Sie, wie Sie Medien hinzufügen möchten"
+
+#: includes/class-members.php:157
+msgid "Choose Member or Site Operator."
+msgstr "Mitglied oder Website-Betreiber wählen."
+
+#: includes/class-files.php:288
+msgid "Choose Members Only when using Add Media or a block's Upload control."
+msgstr "Wählen Sie bei der Verwendung von „Medien hinzufügen“ oder der Upload-Steuerung eines Blocks „Nur für Mitglieder“."
+
+#: includes/class-admin.php:27
+msgid "Choose Site Operator for membership administration. Assign duties and management scope in Staff and Permissions."
+msgstr "Wählen Sie den Website-Betreiber für die Mitgliederverwaltung. Weisen Sie Aufgaben und den Verwaltungsbereich in Mitarbeiter und Berechtigungen zu."
+
+#: includes/class-files.php:184 includes/class-media.php:91
+msgid "Choose a file within the server's upload size limit."
+msgstr "Wählen Sie eine Datei innerhalb des Upload-Limits des Servers."
+
+#: assets/media.js:46
+msgid "Choose a format supported by this block."
+msgstr "Wählen Sie ein von diesem Block unterstütztes Format."
+
+#: includes/class-files.php:32
+msgid "Choose a storage method."
+msgstr "Speichermethode wählen."
+
+#: includes/class-media.php:72
+msgid "Choose a visibility setting."
+msgstr "Wählen Sie eine Sichtbarkeitseinstellung."
+
+#: assets/media.js:15
+msgid "Choose from saved images, videos, and documents."
+msgstr "Aus gespeicherten Bildern, Videos und Dokumenten wählen."
+
+#: includes/class-withdrawal.php:60
+msgid "Choose how to close your account."
+msgstr "Wählen Sie, wie Ihr Konto geschlossen werden soll."
+
+#: includes/class-members.php:92
+msgid "Choose the new member status."
+msgstr "Neuen Mitgliedsstatus wählen."
+
+#: includes/class-members.php:150
+msgid "Choose the new status."
+msgstr "Neuen Status wählen."
+
+#: includes/class-admin.php:295
+msgid "Choose whether to accept new registrations and whether they need approval. You can also review the name, biography, and other fields members will fill in."
+msgstr "Wählen Sie, ob neue Registrierungen akzeptiert werden sollen und ob diese genehmigt werden müssen. Sie können auch den Namen, die Biografie und andere Felder überprüfen, die die Mitglieder ausfüllen werden."
+
+#: includes/class-posting.php:80 includes/class-posting.php:83
+msgid "Choose which members are allowed to post."
+msgstr "Wählen Sie aus, welche Mitglieder Beiträge erstellen dürfen."
+
+#: includes/class-admin.php:377
+msgid "Choose which members can create content for each post type registered on this site. All Members means members whose status is Active. By default, only standard WordPress posts are available to all members."
+msgstr "Wählen Sie aus, welche Mitglieder Inhalte für jeden auf dieser Website registrierten Beitragstyp erstellen dürfen. Alle Mitglieder bedeutet Mitglieder mit dem Status Aktiv. Standardmäßig sind nur standardmäßige WordPress Beiträge für alle Mitglieder verfügbar."
+
+#: includes/class-admin.php:296
+msgid "Choose which post types members can use and which members can create content."
+msgstr "Wählen Sie, welche Beitragstypen die Mitglieder nutzen und welche Mitglieder Inhalte erstellen können."
+
+#: includes/class-directory.php:10
+msgid "Choose who can view the member directory and which profile details it shows."
+msgstr "Wählen Sie aus, wer das Mitgliederverzeichnis einsehen und welche Profildetails angezeigt werden sollen."
+
+#: includes/class-profile-preset.php:50
+msgid "City / Municipality"
+msgstr "Stadt / Gemeinde"
+
+#: includes/class-directory.php:31
+msgid "Classifications allowed to view the directory (when selected classifications are used)"
+msgstr "Klassifizierungen, die das Verzeichnis einsehen dürfen (bei Verwendung ausgewählter Klassifizierungen)"
+
+#: includes/class-admin.php:538
+msgid "Click Save Registration Settings on the right to apply your changes."
+msgstr "Klicken Sie rechts auf „Registrierungseinstellungen speichern“, um Ihre Änderungen anzuwenden."
+
+#: includes/class-screens.php:13 includes/class-screens.php:206
+msgid "Close Account"
+msgstr "Konto schließen"
+
+#: includes/class-screens.php:233
+msgid "Closing your account deletes your account and personal data and prevents further login. If you want to preserve contributions, you can transfer selected posts to the site operator. Review the deletion and transfer details on the next screen."
+msgstr "Die Schließung Ihres Kontos löscht Ihr Konto und Ihre persönlichen Daten und verhindert weitere Anmeldungen. Wenn Sie Beiträge erhalten möchten, können Sie ausgewählte Beiträge an den Seitenbetreiber übertragen. Überprüfen Sie die Details zur Löschung und Übertragung auf dem nächsten Bildschirm."
+
+#: includes/class-admin.php:624
+msgid "Configure IP addresses and NAS credentials on the server. atshift Members uses the mounted directory. It does not set up VPN or cloud API connections, import existing documents, or migrate files when storage locations change."
+msgstr "Konfigurieren Sie IP-Adressen und NAS-Anmeldeinformationen auf dem Server. atshift Members verwendet das gemountete Verzeichnis. Es richtet keine VPN- oder Cloud-API-Verbindungen ein, importiert keine vorhandenen Dokumente und migriert keine Dateien, wenn sich die Speicherorte ändern."
+
+#: includes/class-admin.php:554
+msgid "Configured"
+msgstr "Konfiguriert"
+
+#: includes/class-admin.php:632
+msgid "Configured in wp-config.php"
+msgstr "In wp-config.php konfiguriert"
+
+#: includes/class-admin.php:566
+msgid "Configured means the keys have been saved. Test an actual request form afterward to verify connectivity and domain settings."
+msgstr "Konfiguriert bedeutet, dass die Schlüssel gespeichert wurden. Testen Sie danach ein tatsächliches Anmeldeformular, um die Konnektivität und die Domain-Einstellungen zu überprüfen."
+
+#: includes/class-admin.php:235
+msgid "Configures and manages user categories"
+msgstr "Konfiguriert und verwaltet Benutzerkategorien"
+
+#: includes/class-admin.php:230
+msgid "Configures the profile layout"
+msgstr "Konfiguriert das Profil-Layout"
+
+#: includes/class-admin.php:230
+msgid "Configures the profile layout and user classifications"
+msgstr "Konfiguriert das Profil-Layout und die Benutzerklassifizierungen"
+
+#: includes/class-screens.php:230
+msgid "Confirm Account Closure"
+msgstr "Kontoschließung bestätigen"
+
+#: includes/class-screens.php:250
+msgid "Confirm Email Address"
+msgstr "E-Mail-Adresse bestätigen"
+
+#: includes/class-screens.php:181
+msgid "Confirm Email Address Change"
+msgstr "Änderung der E-Mail-Adresse bestätigen"
+
+#: includes/class-screens.php:250
+msgid "Confirm your email address to continue registration."
+msgstr "Bestätigen Sie Ihre email Adresse, um die Registrierung fortzusetzen."
+
+#: includes/class-admin.php:588
+msgid "Confirms that the password has changed. The password itself is never included."
+msgstr "Bestätigt, dass das Passwort geändert wurde. Das Passwort selbst wird niemals angegeben."
+
+#: includes/class-admin.php:559
+msgid "Copy the issued Site Key and Secret Key into the fields below, then save them."
+msgstr "Kopieren Sie den bereitgestellten Site Key und Secret Key in die Felder unten und speichern Sie diese."
+
+#: includes/class-registration.php:160
+msgid "Could not complete registration. Please contact the administrator."
+msgstr "Registrierung konnte nicht abgeschlossen werden. Bitte kontaktieren Sie den Administrator."
+
+#: includes/class-registration.php:154
+msgid "Could not complete registration. Request a new confirmation email."
+msgstr "Registrierung konnte nicht abgeschlossen werden. Bitte fordern Sie eine neue Bestätigung email an."
+
+#: includes/class-screens.php:145
+msgid "Could not complete the action."
+msgstr "Aktion konnte nicht abgeschlossen werden."
+
+#: assets/media.js:10
+msgid "Could not complete the action. Please try again."
+msgstr "Die Aktion konnte nicht abgeschlossen werden. Bitte versuchen Sie es erneut."
+
+#: includes/class-files.php:279
+msgid "Could not delete the file from storage."
+msgstr "Die Datei konnte nicht aus dem Speicher gelöscht werden."
+
+#: includes/class-members.php:177
+msgid "Could not remove the management scope."
+msgstr "Verwaltungsbereich konnte nicht entfernt werden."
+
+#: includes/class-members.php:180
+msgid "Could not restore the management scope."
+msgstr "Verwaltungsbereich konnte nicht wiederhergestellt werden."
+
+#: includes/class-posting.php:93
+msgid "Could not save posting settings."
+msgstr "Beitragseinstellungen konnten nicht gespeichert werden."
+
+#: includes/class-withdrawal.php:91
+msgid "Could not save the account closure request."
+msgstr "Die Anforderung zur Kontoschließung konnte nicht gespeichert werden."
+
+#: includes/class-withdrawal.php:92
+msgid "Could not save the account closure status."
+msgstr "Der Status der Kontoschließung konnte nicht gespeichert werden."
+
+#: includes/class-files.php:195
+msgid "Could not save the attachment information."
+msgstr "Die Anhangsinformationen konnten nicht gespeichert werden."
+
+#: includes/class-withdrawal.php:73
+msgid "Could not save the confirmation details."
+msgstr "Die Bestätigungsdetails konnten nicht gespeichert werden."
+
+#: includes/class-members.php:176
+msgid "Could not save the management scope."
+msgstr "Verwaltungsbereich konnte nicht gespeichert werden."
+
+#: includes/class-members.php:185
+msgid "Could not save the member information."
+msgstr "Mitgliedsinformationen konnten nicht gespeichert werden."
+
+#: includes/class-members.php:182
+msgid "Could not save the member role."
+msgstr "Mitgliedsrolle konnte nicht gespeichert werden."
+
+#: includes/class-members.php:167
+msgid "Could not save the member status."
+msgstr "Mitgliedsstatus konnte nicht gespeichert werden."
+
+#: includes/class-files.php:57
+msgid "Could not save the storage settings."
+msgstr "Speichereinstellungen konnten nicht gespeichert werden."
+
+#: includes/class-members.php:141
+msgid "Could not start saving."
+msgstr "Speichern konnte nicht gestartet werden."
+
+#: includes/class-withdrawal.php:119
+msgid "Could not verify the account closure request."
+msgstr "Die Anforderung zur Kontoschließung konnte nicht überprüft werden."
+
+#: includes/class-members.php:143
+msgid "Could not verify the member information."
+msgstr "Die Mitgliedsinformationen konnten nicht verifiziert werden."
+
+#: includes/class-files.php:47
+msgid "Could not verify writing, reading, and deleting in the storage directory."
+msgstr "Konnte das Schreiben, Lesen und Löschen im Speicherverzeichnis nicht verifizieren."
+
+#: includes/class-registration.php:117
+msgid "Could not verify. Please wait before requesting a new confirmation email."
+msgstr "Konnte nicht verifizieren. Bitte warten Sie, bevor Sie eine neue Bestätigung email anfordern."
+
+#: includes/class-registration.php:119 includes/class-registration.php:135
+msgid "Could not verify. Request a new confirmation email."
+msgstr "Konnte nicht verifizieren. Bitte fordern Sie eine neue Bestätigung email an."
+
+#: includes/class-dashboard.php:22
+msgid "Create Member Home"
+msgstr "Mitglieder-Startseite erstellen"
+
+#: includes/class-admin.php:482
+msgid "Create Member Pages"
+msgstr "Mitgliederseiten erstellen"
+
+#: includes/class-dashboard.php:17
+msgid "Create a page with account and posting links. Approval status is also shown when the Pro add-on is active. You can edit the generated page in the block editor."
+msgstr "Erstellen Sie eine Seite mit Links zu Konto und Beiträgen. Der Genehmigungsstatus wird auch angezeigt, wenn das Pro-Add-on aktiv ist. Sie können die erstellte Seite im Blockeditor bearbeiten."
+
+#: includes/class-admin.php:482
+msgid "Create all missing member pages. Existing pages are left unchanged."
+msgstr "Alle fehlenden Mitgliederseiten erstellen. Bestehende Seiten bleiben unverändert."
+
+#: includes/class-admin.php:367
+msgid "Create hierarchical user classifications, such as branches, departments, or membership types. This paid add-on requires the free atshift User Profile Fields plugin."
+msgstr "Erstellen Sie hierarchische Benutzerklassifizierungen wie Zweigstellen, Abteilungen oder Mitgliedschaftstypen. Dieses kostenpflichtige Add-on erfordert das kostenlose atshift User Profile Fields Plugin."
+
+#: includes/class-admin.php:512
+msgid "Create profile fields in atshift User Profile Fields."
+msgstr "Erstellen Sie Profilfelder in atshift User Profile Fields."
+
+#: includes/class-admin.php:465
+msgid "Create the five pages used for registration and account management. Click Create Member Pages to add all five. Pages that already exist are left unchanged; only missing pages are created."
+msgstr "Erstellt die fünf Seiten, die für die Registrierung und das Kontomanagement verwendet werden. Klicken Sie auf Mitgliederseiten erstellen, um alle fünf hinzuzufügen. Bereits existierende Seiten bleiben unverändert; nur fehlende Seiten werden erstellt."
+
+#: includes/class-admin.php:615
+msgid "Create the members-only directory outside the server's public directory first. Set the path here or in wp-config.php. The plugin does not create the directory automatically."
+msgstr "Erstellen Sie das Mitglieder-only-Verzeichnis zuerst außerhalb des öffentlichen Verzeichnisses des Servers. Setzen Sie den Pfad hier oder in wp-config.php. Das Plugin erstellt das Verzeichnis nicht automatisch."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:389
+msgid "Create user categories in %s."
+msgstr "Benutzerkategorien in %s erstellen."
+
+#: includes/class-admin.php:631
+msgid "Current storage: "
+msgstr "Aktueller Speicher: "
+
+#: includes/class-admin.php:426
+msgid "Currently Active"
+msgstr "Aktiv"
+
+#: includes/class-admin.php:426
+msgid "Currently Suspended"
+msgstr "Suspendiert"
+
+#: includes/class-admin.php:298
+msgid "Customize the automatic emails sent for registration, password changes, and other account events. Default text is provided. Messages are sent through the standard WordPress mail function."
+msgstr "Passen Sie die automatischen email für Registrierung, Passwortänderungen und andere Kontoveranstaltungen an. Es wird ein Standardtext bereitgestellt. Nachrichten werden über die Standard-WordPress E-Mail-Funktion gesendet."
+
+#: includes/class-admin.php:488
+msgid "Decide whether new members can start using the site immediately. Approval is unnecessary if the site is open to everyone."
+msgstr "Entscheiden Sie, ob neue Mitglieder die Seite sofort nutzen können. Eine Genehmigung ist nicht erforderlich, wenn die Seite für jedermann offen ist."
+
+#: includes/class-files.php:286
+msgid "Delete Attachment"
+msgstr "Anhang löschen"
+
+#: includes/class-admin.php:563
+msgid "Delete Saved Keys"
+msgstr "Gespeicherte Schlüssel löschen"
+
+#: includes/class-admin.php:563
+msgid "Delete both keys"
+msgstr "Beide Schlüssel löschen"
+
+#: includes/class-screens.php:235
+msgid "Delete everything and close my account"
+msgstr "Alles löschen und mein Konto schließen"
+
+#: includes/class-profile-preset.php:69
+msgid "Department"
+msgstr "Abteilung"
+
+#: includes/class-withdrawal.php:61
+msgid "Deselect posts for transfer if you want to delete everything."
+msgstr "Entwählen Sie Beiträge für die Übertragung, wenn Sie alles löschen möchten."
+
+#: includes/class-directory.php:111
+msgid "Directory pages"
+msgstr "Verzeichnisseiten"
+
+#: includes/class-profile-preset.php:45 includes/class-profile.php:91
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#: includes/class-directory.php:43
+msgid "Display name"
+msgstr "Anzeigename"
+
+#: includes/class-admin.php:232
+msgid "Displays integrated fields in registration, account, and editing forms"
+msgstr "Zeigt integrierte Felder in Registrierungs-, Konten- und Bearbeitungsformularen an"
+
+#: includes/class-admin.php:236
+msgid "Displays members within the assigned scope and saves category selections together with member information"
+msgstr "Zeigt Mitglieder im zugewiesenen Bereich an und speichert die ausgewählten Kategorien zusammen mit den Mitgliederinformationen"
+
+#: includes/class-admin.php:232
+msgid "Displays passkey registration and management on the account editing page"
+msgstr "Zeigt Passkey-Registrierung und -Verwaltung auf der Kontobearbeitungsseite an"
+
+#: includes/class-admin.php:611
+msgid "Documents, reports, images, and videos intended only for members need a storage location that is not publicly accessible. This includes PDF, Word, Excel, and PowerPoint files."
+msgstr "Dokumente, Berichte, Bilder und Videos, die nur für Mitglieder bestimmt sind, benötigen einen nicht öffentlich zugänglichen Speicherort. Dies umfasst PDF-, Word-, Excel- und PowerPoint-Dateien."
+
+#: includes/class-admin.php:365 includes/class-admin.php:369
+msgid "Download from WordPress.org"
+msgstr "Download von WordPress.org"
+
+#: assets/media.js:76
+msgid "Drop Files to Upload"
+msgstr "Dateien hier ablegen zum Hochladen"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:36
+msgid "Edit %s"
+msgstr "%s bearbeiten"
+
+#: includes/class-screens.php:13 includes/class-screens.php:204
+msgid "Edit Account Information"
+msgstr "Kontoinformationen bearbeiten"
+
+#: includes/class-dashboard.php:19
+msgid "Edit Member Home"
+msgstr "Mitglieder-Startseite bearbeiten"
+
+#: includes/class-admin.php:470
+msgid "Edit Page"
+msgstr "Seite bearbeiten"
+
+#: includes/class-admin.php:532
+msgid "Edit Profile Fields in atshift User Profile Fields"
+msgstr "Profilfelder in atshift User Profile Fields bearbeiten"
+
+#: includes/class-dashboard.php:52
+msgid "Edit account information"
+msgstr "Kontoinformationen bearbeiten"
+
+#: includes/class-member-list-table.php:9 includes/class-screens.php:200
+msgid "Email Address"
+msgstr "E-Mail-Adresse"
+
+#: includes/class-screens.php:245 includes/class-screens.php:253
+msgid "Email Address "
+msgstr "E-Mail-Adresse "
+
+#: includes/class-mail.php:28
+msgid "Email Change Notification (Old and New Addresses)"
+msgstr "Benachrichtigung über E-Mail-Änderung (Alte und neue Adressen)"
+
+#: includes/class-admin.php:298 includes/class-admin.php:597
+msgid "Email Settings"
+msgstr "Einstellunge für E-Mail"
+
+#: includes/class-admin.php:495
+msgid "Email address (required; verified by confirmation email)"
+msgstr "E-Mail-Adresse (erforderlich; durch Bestätigung email verifiziert)"
+
+#: includes/class-admin.php:360
+msgid "Email announcement titles and links to members who have opted in. Combine multiple announcements into one email or schedule delivery."
+msgstr "Betreffzeilen und Links für Mitglieder, die zugestimmt haben, für Ankündigungen. Kombinieren Sie mehrere Ankündigungen zu einer email oder planen Sie die Zustellung."
+
+#: includes/class-admin.php:491
+msgid "Enable approval below if your organization needs to check membership eligibility."
+msgstr "Aktivieren Sie die Prüfung unten, wenn Ihre Organisation die Berechtigung für Mitgliedschaft prüfen muss."
+
+#: includes/class-files.php:119
+msgid "Enable the fileinfo extension on the server."
+msgstr "Aktivieren Sie die fileinfo-Erweiterung auf dem Server."
+
+#: includes/class-directory.php:28
+msgid "Enable the member directory"
+msgstr "Mitgliederverzeichnis aktivieren"
+
+#: includes/class-profile.php:127
+msgid "Enter a nickname."
+msgstr "Geben Sie einen nickname ein."
+
+#: includes/class-registration.php:124
+msgid "Enter a username of 1–60 characters using letters, numbers, periods, hyphens, or underscores."
+msgstr "Geben Sie einen Benutzernamen von 1–60 Zeichen mit Buchstaben, Zahlen, Punkten, Bindestrichen oder Unterstrichen ein."
+
+#: includes/class-profile.php:124
+msgid "Enter a website URL starting with http:// or https://, up to 100 characters long."
+msgstr "Geben Sie eine Website ein URL, die mit http:// oder https://, beginnt und bis zu 100 Zeichen lang ist."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:538
+msgid "Enter field identifiers used in code, not labels such as Biography. For example, use %1$s for the nickname and %2$s for the biography. To use just these two fields, enter %3$s."
+msgstr "Geben Sie die im Code verwendeten Feldbezeichner ein, nicht Bezeichnungen wie Biografie. Verwenden Sie beispielsweise %1$s für nickname und %2$s für die Biografie. Um nur diese beiden Felder zu verwenden, geben Sie %3$s ein."
+
+#: includes/class-admin.php:171
+msgid "Enter the signature as text."
+msgstr "Geben Sie die Signatur als Text ein."
+
+#: includes/class-services.php:18 includes/class-services.php:22
+msgid "Enter the two keys issued by Cloudflare."
+msgstr "Geben Sie die zwei von Cloudflare ausgestellten Schlüssel ein."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:577
+msgid "Enter your organization name and contact details. For example, %1$s uses %2$s as a placeholder for the site name. The signature is appended to all emails sent by this plugin, including atshift Members Pro announcements. You do not need to repeat it in each template. Leave this field empty to omit the signature."
+msgstr "Geben Sie den Namen Ihrer Organisation und Ihre Kontaktdaten ein. Zum Beispiel verwendet %1$s %2$s als Platzhalter für den Seitennamen. Die Signatur wird allen von diesem Plugin gesendeten email hinzugefügt, einschließlich atshift Members Pro Ankündigungen. Sie müssen sie nicht in jeder Vorlage wiederholen. Lassen Sie dieses Feld leer, um die Signatur zu entfernen."
+
+#: includes/class-directory.php:29
+msgid "Everyone"
+msgstr "Alle"
+
+#: includes/class-admin.php:617
+msgid "Example Configuration for wp-config.php"
+msgstr "Beispielkonfiguration für wp-config.php"
+
+#: includes/class-directory.php:37
+msgid "Exclude Users from the Directory"
+msgstr "Benutzer aus dem Verzeichnis ausschließen"
+
+#: includes/class-admin.php:549
+msgid "Exclude member pages from caching."
+msgstr "Mitgliederseiten vom Caching ausschließen."
+
+#: includes/class-admin.php:510
+msgid "Excluded fields are omitted from member forms. Integration Not Implemented means the field does not yet have an atshift Members integration. Email addresses, passwords, and saving are handled by atshift Members account procedures."
+msgstr "Ausgeschlossene Felder werden aus den Mitgliederformularen entfernt. Integration nicht implementiert bedeutet, dass das Feld noch keine atshift Members Integration hat. E-Mail-Adressen, Passwörter und Speichern werden von atshift Members Kontoprozeduren gehandhabt."
+
+#: includes/class-admin.php:596
+msgid "Explain what happened and what the recipient should do next."
+msgstr "Erklären Sie, was passiert ist und was der Empfänger als Nächstes tun sollte."
+
+#: includes/class-admin.php:474 includes/class-admin.php:540
+msgid "Extend Your Site Further"
+msgstr "Ihre Seite erweitern"
+
+#: includes/class-admin.php:363
+msgid "Features Available with User Categories"
+msgstr "Funktionen mit Benutzerkategorien"
+
+#: includes/class-admin.php:538
+msgid "Field Identifiers to Use"
+msgstr "Zu verwendende Feldbezeichner"
+
+#: includes/class-admin.php:631
+msgid "File Server / NAS (Mounted Share)"
+msgstr "Dateiserver / NAS (Gemounteter Share)"
+
+#: includes/class-files.php:95
+msgid "File not found."
+msgstr "Datei nicht gefunden."
+
+#: includes/class-admin.php:628
+msgid "Files marked Public are saved to the standard WordPress media directory. Anyone who knows the file URL can open them directly, even if the post is restricted to members. Storage does not change automatically when a post's visibility changes."
+msgstr "Als öffentlich markierte Dateien werden im Standard-WordPress Medienverzeichnis gespeichert. Jeder, der die Datei URL kennt, kann sie direkt öffnen, auch wenn der Beitrag auf Mitglieder beschränkt ist. Der Speicher ändert sich nicht automatisch, wenn die Sichtbarkeit eines Beitrags geändert wird."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:60
+msgid "Filter %s"
+msgstr "%s filtern"
+
+#: includes/class-screens.php:221
+msgid "Final Account Closure Review"
+msgstr "Überprüfung der endgültigen Kontoschließung"
+
+#: includes/class-profile-preset.php:41 includes/class-profile.php:88
+msgid "First Name"
+msgstr "Vorname"
+
+#: includes/class-admin.php:514
+msgid "First name, then last name"
+msgstr "Vorname, dann Nachname"
+
+#: includes/class-admin.php:538
+msgid "For custom fields added in code, use the identifiers assigned when they were created. Code to render the fields in registration and editing forms and save their values is also required."
+msgstr "Für im Code hinzugefügte benutzerdefinierte Felder verwenden Sie die zugewiesenen Bezeichner, als sie erstellt wurden. Der Code zum Rendern der Felder in Registrierungs- und Bearbeitungsformularen und zum Speichern ihrer Werte ist ebenfalls erforderlich."
+
+#: includes/class-screens.php:229
+msgid "For files that share storage with another owner's files, only your record is removed. Data held by other services, unsupported plugins, and backups cannot be deleted by this action. Temporary rate-limit records remain until they expire."
+msgstr "Bei Dateien, die Speicherplatz mit Dateien eines anderen Besitzers teilen, wird nur Ihr Eintrag entfernt. Daten, die von anderen Diensten, nicht unterstützten Plugins und Backups gehalten werden, können mit dieser Aktion nicht gelöscht werden. Temporäre Ratenbegrenzungseinträge bleiben, bis sie ablaufen."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:206
+msgid "Functionality extended by %s"
+msgstr "Funktionalität erweitert durch %s"
+
+#: includes/class-admin.php:624
+msgid "Grant a dedicated account read, write, and delete permissions, then mount the shared directory on the server."
+msgstr "Gewähren Sie einem dedizierten Konto Lese-, Schreib- und Löschberechtigungen und mounten Sie dann das freigegebene Verzeichnis auf dem Server."
+
+#: includes/class-admin.php:553
+msgid "Helps prevent automated registration and password reset requests. Add the two keys issued by Cloudflare to enable checks on this plugin's request forms."
+msgstr "Verhindert automatisierte Registrierungs- und Passwort-Reset-Anfragen. Fügen Sie die von Cloudflare bereitgestellten beiden Schlüssel hinzu, um Überprüfungen auf den Anfrageformularen dieses Plugins zu aktivieren."
+
+#: includes/class-admin.php:397
+msgid "Hide standard author links that contain usernames"
+msgstr "Standard-Autoren-Links mit Benutzernamen ausblenden"
+
+#: includes/class-admin.php:559
+msgid "How to Get Your Keys"
+msgstr "So erhalten Sie Ihre Schlüssel"
+
+#: includes/class-screens.php:240
+msgid "I have reviewed the selected posts and my associated attachments, and I agree to their retention, editing, and republication under the site operator's ownership."
+msgstr "Ich habe die ausgewählten Beiträge und meine zugehörigen Anhänge überprüft und stimme deren Beibehaltung, Bearbeitung und Veröffentlichung unter Eigentum des Seitenbetreibers zu."
+
+#: includes/class-screens.php:230
+msgid "I have reviewed what will be deleted and transferred. This action cannot be undone."
+msgstr "Ich habe überprüft, was gelöscht und übertragen wird. Diese Aktion kann nicht rückgängig gemacht werden."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:617
+msgid "If the public directory is %1$s, create a members-only directory outside it, such as %2$s. Replace these examples with the actual paths on your server."
+msgstr "Wenn das öffentliche Verzeichnis %1$s ist, erstellen Sie außerhalb ein Mitglieder-only-Verzeichnis, wie z.B. %2$s. Ersetzen Sie diese Beispiele durch die tatsächlichen Pfade auf Ihrem Server."
+
+#: includes/class-admin.php:385
+msgid "If you select multiple categories, membership in any one of them is sufficient."
+msgstr "Wenn Sie mehrere Kategorien auswählen, ist die Mitgliedschaft in einer davon ausreichend."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:579
+msgid "In email subjects and bodies, %1$s is replaced with the site name and %2$s with a link to the relevant account procedure. Keep %2$s in emails that provide a link."
+msgstr "In email Betreffzeilen und -körpern wird %1$s durch den Seitennamen und %2$s durch einen Link zum entsprechenden Kontoprozedere ersetzt. Behalten Sie %2$s bei emails, die einen Link enthalten."
+
+#: includes/class-admin.php:391
+msgid "Include child categories"
+msgstr "Unterkategorien einschließen"
+
+#: atshift-members.php:32
+msgid "InnoDB tables are required."
+msgstr "InnoDB-Tabellen sind erforderlich."
+
+#: assets/media.js:91
+msgid "Insert Selected Files"
+msgstr "Ausgewählte Dateien einfügen"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:56
+msgid "Insert into %s"
+msgstr "In %s einfügen"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:274
+msgid "Install and activate %s to enable passkeys on supported environments without additional site setup. After signing up, members can register and manage passkeys on the Edit Account Information page."
+msgstr "Installieren und aktivieren Sie %s, um Passkeys auf unterstützten Umgebungen ohne zusätzliche Seiteneinrichtung zu ermöglichen. Nach der Registrierung können Mitglieder Passkeys auf der Seite „Kontoinformationen bearbeiten“ registrieren und verwalten."
+
+#: includes/class-files.php:89
+msgid "Invalid file identifier."
+msgstr "Ungültiger Dateitag."
+
+#: includes/class-withdrawal.php:65
+msgid "Invalid post selection."
+msgstr "Ungültige Beitragsauswahl."
+
+#: includes/class-admin.php:382
+msgid "Keep the current category settings"
+msgstr "Aktuelle Kategorieeinstellungen beibehalten"
+
+#: includes/class-admin.php:554
+msgid "Key status: "
+msgstr "Schlüsselstatus: "
+
+#: includes/class-profile-preset.php:42 includes/class-profile.php:89
+msgid "Last Name"
+msgstr "Nachname"
+
+#: includes/class-admin.php:514
+msgid "Last name, then first name"
+msgstr "Nachname, dann Vorname"
+
+#: includes/class-services.php:53
+msgid "Leading or trailing spaces and control characters are not allowed."
+msgstr "Anführende oder abschließende Leerzeichen und Steuerzeichen sind nicht erlaubt."
+
+#: includes/class-admin.php:571
+msgid "Leave blank to use the WordPress sender name."
+msgstr "Leer lassen, um den Absendernamen von WordPress zu verwenden."
+
+#: includes/class-admin.php:538
+msgid "Leave empty to add no profile fields. If needed, specify identifiers for names, nickname, display name, website URL, biography, or other supported fields."
+msgstr "Lassen Sie dies leer, um keine Profilfelder hinzuzufügen. Geben Sie bei Bedarf Bezeichner für Namen, nickname, Anzeigename, Website URL, Biografie oder andere unterstützte Felder an."
+
+#: includes/class-screens.php:194
+msgid "Log In"
+msgstr "Anmelden"
+
+#: includes/class-screens.php:218
+msgid "Log In Again"
+msgstr "Erneut anmelden"
+
+#: includes/class-screens.php:207
+msgid "Log Out"
+msgstr "Abmelden"
+
+#: includes/class-withdrawal.php:59
+msgid "Log in again and complete this within 10 minutes."
+msgstr "Melden Sie sich erneut an und schließen Sie dies innerhalb von 10 Minuten ab."
+
+#: includes/class-withdrawal.php:77
+msgid "Log in again and review the final confirmation."
+msgstr "Melden Sie sich erneut an und überprüfen Sie die endgültige Bestätigung."
+
+#: includes/class-screens.php:249
+msgid "Log out before registering."
+msgstr "Bitte abmelden, bevor Sie sich registrieren."
+
+#: includes/class-admin.php:467
+msgid "Logged-in members can view their information here and proceed to edit it or close their account."
+msgstr "Angemeldete Mitglieder können ihre Informationen hier einsehen und bearbeiten oder ihr Konto schließen."
+
+#: includes/class-admin.php:620
+msgid "Make sure no other server configuration exposes the members-only directory to the public."
+msgstr "Stellen Sie sicher, dass keine andere Serverkonfiguration das Mitglieder-only-Verzeichnis für die Öffentlichkeit zugänglich macht."
+
+#: includes/class-admin.php:624
+msgid "Make the shared directory accessible from the WordPress server. If connecting from outside your organization, arrange a connection such as a VPN on the server first."
+msgstr "Machen Sie das freigegebene Verzeichnis vom WordPress Server aus zugänglich. Wenn Sie von außerhalb Ihrer Organisation verbinden, richten Sie zuerst eine Verbindung wie ein VPN auf dem Server ein."
+
+#: includes/class-admin.php:307
+msgid "Manage Members"
+msgstr "Mitglieder verwalten"
+
+#: includes/class-admin.php:239
+msgid "Manages user categories"
+msgstr "Verwaltet Benutzerkategorien"
+
+#: assets/media.js:72
+msgid "Media Library"
+msgstr "Mediathek"
+
+#: includes/class-directory.php:104 includes/class-member-list-table.php:60
+msgid "Member"
+msgstr "Mitglied"
+
+#: includes/class-admin.php:437
+msgid "Member (Posting Permissions)"
+msgstr "Mitglied (Beitragsberechtigungen)"
+
+#: includes/class-content.php:24
+msgid "Member Announcement"
+msgstr "Mitglieder-Ankündigung"
+
+#: includes/class-content.php:24
+msgid "Member Announcements"
+msgstr "Mitgliederankündigungen"
+
+#: includes/class-directory.php:10 includes/class-directory.php:28
+msgid "Member Directory"
+msgstr "Mitgliederverzeichnis"
+
+#: includes/class-dashboard.php:17 includes/class-dashboard.php:32
+msgid "Member Home"
+msgstr "Mitglieder-Startseite"
+
+#: includes/class-admin.php:432 includes/class-admin.php:439
+msgid "Member Information"
+msgstr "Mitgliedsinformationen"
+
+#: includes/class-admin.php:362
+msgid "Member Invitations via CSV"
+msgstr "Mitglieder-Einladungen über CSV"
+
+#: includes/class-admin.php:294
+msgid "Member Management"
+msgstr "Mitgliederverwaltung"
+
+#: includes/class-admin.php:297 includes/class-admin.php:482
+msgid "Member Page Setup"
+msgstr "Einrichtung der Mitgliederseite"
+
+#: includes/class-admin.php:464
+msgid "Member Pages"
+msgstr "Mitgliederseiten"
+
+#: includes/class-content.php:24
+msgid "Member Post"
+msgstr "Mitgliederbeitrag"
+
+#: includes/class-content.php:24
+msgid "Member Posts"
+msgstr "Mitgliederbeiträge"
+
+#: includes/class-screens.php:13
+msgid "Member Registration"
+msgstr "Mitgliederregistrierung"
+
+#: includes/class-admin.php:436
+msgid "Member Role"
+msgstr "Mitgliederrolle"
+
+#: includes/class-admin.php:427 includes/class-member-list-table.php:9
+msgid "Member Status"
+msgstr "Mitgliedsstatus"
+
+#: includes/class-directory.php:31
+msgid "Member classifications to list (leave empty to list all)"
+msgstr "Mitgliederklassifizierungen zum Auflisten (leer lassen, um alle anzuzeigen)"
+
+#: includes/class-screens.php:252
+msgid "Member registration is currently closed."
+msgstr "Die Mitgliedsregistrierung ist derzeit geschlossen."
+
+#: includes/class-dashboard.php:31
+msgid "Member resources"
+msgstr "Mitgliederressourcen"
+
+#: includes/class-admin.php:380
+msgid "Members Allowed to Post"
+msgstr "Mit Beiträgen erlaubte Mitglieder"
+
+#: includes/class-profile-preset.php:26
+msgid "Members Basic Profile"
+msgstr "Mitglieder Basisprofil"
+
+#: assets/media.js:20
+msgid "Members Only"
+msgstr "Nur für Mitglieder"
+
+#: includes/class-admin.php:467
+msgid "Members can close their account here. Their content is deleted by default, but they can choose contributions to transfer to the site operator."
+msgstr "Mitglieder können ihr Konto hier schließen. Ihr Inhalt wird standardmäßig gelöscht, aber sie können Beiträge auswählen, die an den Seitenbetreiber übertragen werden sollen."
+
+#: includes/class-admin.php:467
+msgid "Members can edit their name, biography, and other information here. Changing an email address requires confirmation of the new address."
+msgstr "Mitglieder können hier ihren Namen, ihre Biografie und andere Informationen bearbeiten. Eine Änderung der email Adresse erfordert die Bestätigung der neuen Adresse."
+
+#: includes/class-admin.php:527
+msgid "Members can register and manage passkeys. After signing up, add a passkey on Edit Account Information to use it for future logins."
+msgstr "Mitglieder können sich registrieren und Passkeys verwalten. Nach der Anmeldung fügen Sie einen Passkey unter Bearbeiten Sie Ihre Kontoinformationen hinzu, um ihn für zukünftige Anmeldungen zu verwenden."
+
+#: includes/class-directory.php:29
+msgid "Members in selected classifications"
+msgstr "Mitglieder in ausgewählten Klassifizierungen"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:407
+msgid "Members updated: %1$d / Unchanged: %2$d / Could not update: %3$d"
+msgstr "Mitglieder aktualisiert: %1$d / Unverändert: %2$d / Konnte nicht aktualisieren: %3$d"
+
+#: includes/class-admin.php:467
+msgid "Members who have forgotten their password can request a password reset email here."
+msgstr "Mitglieder, die ihr Passwort vergessen haben, können hier einen Passwort-Reset anfordern email."
+
+#: includes/class-admin.php:377
+msgid "Members with permission can create, edit, publish, and delete their own content. They gain no permission to edit other people's content. These settings do not change who can read content. Published standard WordPress posts remain visible to the public."
+msgstr "Mit Berechtigung ausgestattete Mitglieder können ihre eigenen Inhalte erstellen, bearbeiten, veröffentlichen und löschen. Sie erhalten keine Berechtigung, die Inhalte anderer zu bearbeiten. Diese Einstellungen ändern nicht, wer Inhalte lesen kann. Veröffentlichte standardmäßige WordPress Beiträge bleiben für die Öffentlichkeit sichtbar."
+
+#: includes/class-files.php:289
+msgid "Members-Only Attachment "
+msgstr "Nur für Mitglieder verfügbarer Anhang "
+
+#: includes/class-files.php:219
+msgid "Members-Only Attachments"
+msgstr "Nur für Mitglieder verfügbare Anhänge"
+
+#: assets/media.js:68
+msgid "Members-Only Media"
+msgstr "Mitglieder-Medien"
+
+#: includes/class-files.php:38
+msgid "Members-only files already exist. Changing storage locations requires migrating them first."
+msgstr "Mitglieder-Dateien existieren bereits. Die Änderung der Speicherorte erfordert zuerst deren Migration."
+
+#: includes/class-admin.php:27
+msgid "Membership Site Roles"
+msgstr "Mitglieds-Website-Rollen"
+
+#: includes/class-screens.php:200
+msgid "Membership Status"
+msgstr "Mitgliedschaftsstatus"
+
+#: includes/class-profile-preset.php:70
+msgid "Membership Type"
+msgstr "Mitgliedschaftsart"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-dashboard.php:62
+msgid "My %s"
+msgstr "Mein %s"
+
+#: includes/class-member-list-table.php:9
+msgid "Name"
+msgstr "Name"
+
+#: includes/class-admin.php:514
+msgid "Name Order"
+msgstr "Reihenfolge der Namen"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:38
+msgid "New %s"
+msgstr "Neues %s"
+
+#: includes/class-screens.php:180 includes/class-screens.php:184
+msgid "New Email Address"
+msgstr "Neue E-Mail-Adresse"
+
+#: includes/class-mail.php:26
+msgid "New Email Address Verification"
+msgstr "Verifizierung der neuen E-Mail-Adresse"
+
+#: includes/class-admin.php:490
+msgid "New Member Registrations"
+msgstr "Neue Mitgliedsregistrierungen"
+
+#: includes/class-admin.php:563
+msgid "New registration and password reset requests will be unavailable until you save new keys."
+msgstr "Neue Registrierungs- und Passwort-Reset-Anfragen sind deaktiviert, bis Sie neue Schlüssel speichern."
+
+#: includes/class-directory.php:112
+msgid "Next"
+msgstr "Weiter"
+
+#: assets/media.js:88
+msgid "Next Page"
+msgstr "Nächste Seite"
+
+#: includes/class-profile.php:90
+msgid "Nickname"
+msgstr "Spitzname"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:48
+msgid "No %s found in Trash."
+msgstr "Kein %s im Papierkorb gefunden."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:46
+msgid "No %s found."
+msgstr "Kein %s gefunden."
+
+#: includes/class-admin.php:380
+msgid "No Members"
+msgstr "Keine Mitglieder"
+
+#: assets/media.js:85
+msgid "No files are available to select."
+msgstr "Keine Dateien zum Auswählen verfügbar."
+
+#: includes/class-member-list-table.php:12
+msgid "No members match your criteria."
+msgstr "Keine Mitglieder entsprechen Ihren Kriterien."
+
+#: includes/class-admin.php:450
+msgid "No posting permissions."
+msgstr "Keine Beitragsberechtigungen."
+
+#: includes/class-screens.php:238
+msgid "No posts are available for transfer."
+msgstr "Es sind keine Beiträge zur Übertragung verfügbar."
+
+#: includes/class-screens.php:228
+msgid "No posts will be retained by the site operator."
+msgstr "Der Seitenbetreiber behält keine Beiträge."
+
+#: includes/class-member-list-table.php:62
+msgid "None Allowed"
+msgstr "Keine erlaubt"
+
+#: includes/class-admin.php:554
+msgid "Not Configured"
+msgstr "Nicht konfiguriert"
+
+#: includes/class-content.php:133 includes/class-content.php:137 includes/class-content.php:139
+msgid "Not found."
+msgstr "Nicht gefunden."
+
+#: includes/class-admin.php:590
+msgid "Notifies both the old and new addresses when an email change is complete."
+msgstr "Benachrichtigt sowohl die alte als auch die neue Adresse, wenn eine email geändert wurde."
+
+#: includes/class-admin.php:595
+msgid "Notifies the member only when a user category change is finally approved or rejected. No email is sent on submission, intermediate approval, or cancellation."
+msgstr "Benachrichtigt das Mitglied nur, wenn eine Änderung der Benutzerkategorie endgültig genehmigt oder abgelehnt wird. Es wird kein email bei Übermittlung, Zwischengenehmigung oder Stornierung gesendet."
+
+#: includes/class-admin.php:490
+msgid "Off (do not accept new registration requests)"
+msgstr "Aus (keine neuen Registrierungsanfragen akzeptieren)"
+
+#: includes/class-admin.php:363 includes/class-admin.php:365 includes/class-admin.php:367 includes/class-admin.php:369 includes/class-admin.php:371
+msgid "Official Website"
+msgstr "Offizielle Website"
+
+#: includes/class-admin.php:490
+msgid "On (accept new registration requests)"
+msgstr "Ein (neue Registrierungsanfragen akzeptieren)"
+
+#: includes/class-admin.php:627
+msgid "Once storage is configured, media controls in posts and the Media screen offer Public and Members Only options. Members-only images, galleries, and videos appear within posts; documents use download links. Only authorized members can access them."
+msgstr "Sobald der Speicher konfiguriert ist, bieten Mediensteuerungen in Beiträgen und im Medien-Bereich Optionen für Öffentlich und Nur Mitglieder. Mitglieder-only-Bilder, Galerien und Videos erscheinen in Beiträgen; Dokumente verwenden Download-Links. Nur autorisierte Mitglieder können darauf zugreifen."
+
+#: includes/class-directory.php:44
+msgid "Only active members are listed. Login names, email addresses, and administrative permissions are never shown. When Everyone is selected, the chosen profile details are available without logging in."
+msgstr "Es werden nur aktive Mitglieder angezeigt. Anmeldernamen, email Adressen und administrative Berechtigungen werden niemals angezeigt. Bei Auswahl von Alle sind die ausgewählten Profildetails ohne Anmeldung verfügbar."
+
+#: includes/class-admin.php:408
+msgid "Only members within your assigned scope are shown."
+msgstr "Es werden nur Mitglieder innerhalb Ihres zugewiesenen Bereichs angezeigt."
+
+#: includes/class-members.php:122
+msgid "Only site administrators and operators with site-wide access can change member roles."
+msgstr "Nur Website-Administratoren und Betreiber mit Website-weiten Zugriffsrechten können Mitgliedsrollen ändern."
+
+#: includes/class-members.php:162
+msgid "Only site administrators can ban or restore a banned account."
+msgstr "Nur Website-Administratoren können ein gesperrtes Konto sperren oder wiederherstellen."
+
+#: includes/class-files.php:30
+msgid "Only site administrators can change the storage location."
+msgstr "Nur Website-Administratoren können den Speicherort ändern."
+
+#: assets/media.js:90
+msgid "Open File"
+msgstr "Datei öffnen"
+
+#: includes/class-screens.php:236
+msgid "Open each post and check its text, images, and attachments for information you do not want to retain."
+msgstr "Öffnen Sie jeden Beitrag und überprüfen Sie Text, Bilder und Anhänge auf Informationen, die Sie nicht behalten möchten."
+
+#: includes/class-admin.php:559
+msgid "Open the Cloudflare dashboard (new tab)"
+msgstr "Öffnen Sie das Cloudflare-Dashboard (neuer Tab)"
+
+#: includes/class-mail.php:26
+msgid "Open the following link within 30 minutes to confirm your email address change. You will need to log in.\n{link}"
+msgstr "Öffnen Sie den folgenden Link innerhalb von 30 Minuten, um die Änderung Ihrer email Adresse zu bestätigen. Sie müssen sich anmelden.\n{link}"
+
+#: includes/class-profile-preset.php:74
+msgid "Optional member classification. Requires the UPF Pro preset application API."
+msgstr "Optionale Mitgliederklassifizierung. Erfordert die UPF Pro Preset Application API."
+
+#: includes/class-admin.php:27
+msgid "Other Plugin Roles"
+msgstr "Andere Plugin-Rollen"
+
+#: includes/class-content.php:123 includes/class-content.php:127
+msgid "Page not found."
+msgstr "Seite nicht gefunden."
+
+#: includes/class-screens.php:155
+msgid "Password (at least 12 characters)"
+msgstr "Passwort (mindestens 12 Zeichen)"
+
+#: includes/class-admin.php:495
+msgid "Password (required; set during registration)"
+msgstr "Passwort (erforderlich; bei der Registrierung festlegen)"
+
+#: includes/class-mail.php:25
+msgid "Password Change Notification"
+msgstr "Benachrichtigung über Passwortänderung"
+
+#: includes/class-admin.php:409 includes/class-admin.php:426 includes/class-mail.php:13 includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Pending Approval"
+msgstr "Freigabe ausstehend"
+
+#: includes/class-files.php:286
+msgid "Permanently delete this attachment"
+msgstr "Diesen Anhang dauerhaft löschen"
+
+#: includes/class-admin.php:377
+msgid "Permissions by Post Type"
+msgstr "Berechtigungen nach Beitragstyp"
+
+#: includes/class-profile-preset.php:47
+msgid "Phone Number"
+msgstr "Telefonnummer"
+
+#: includes/class-screens.php:194
+msgid "Please log in to continue."
+msgstr "Bitte melden Sie sich an, um fortzufahren."
+
+#: includes/class-registration.php:137 includes/class-registration.php:177
+msgid "Please try again later."
+msgstr "Bitte versuchen Sie es später erneut."
+
+#: includes/class-members.php:236
+msgid "Please use the email verification page."
+msgstr "Bitte nutzen Sie die email Verifizierungsseite."
+
+#: includes/class-members.php:27
+msgid "Please use the member registration page."
+msgstr "Bitte verwenden Sie die Mitgliederregistrierungsseite."
+
+#: includes/class-registration.php:181 includes/class-registration.php:204 includes/class-withdrawal.php:101
+msgid "Please wait a moment and try again."
+msgstr "Bitte warten Sie einen Moment und versuchen Sie es erneut."
+
+#: includes/class-admin.php:359
+msgid "Post Approval"
+msgstr "Beitragsfreigabe"
+
+#: includes/class-admin.php:363
+msgid "Post approval applies to Member Posts, Public Pages, and Member Announcements only. It does not apply to standard WordPress posts or other post types."
+msgstr "Die Beitragsgenehmigung gilt nur für Mitgliederbeiträge, öffentliche Seiten und Mitglieder-Ankündigungen. Sie gilt nicht für Standard-WordPress-Beiträge oder andere Beitragstypen."
+
+#: includes/class-profile-preset.php:48
+msgid "Postal Code"
+msgstr "Postleitzahl"
+
+#: includes/class-admin.php:296 includes/class-admin.php:398
+msgid "Posting Settings"
+msgstr "Beitragseinstellungen"
+
+#: includes/class-posting.php:67
+msgid "Posting settings are being saved. Please wait a moment and try again."
+msgstr "Die Beitragseinstellungen werden gespeichert. Bitte warten Sie einen Moment und versuchen Sie es erneut."
+
+#: includes/class-dashboard.php:64
+msgid "Posts"
+msgstr "Beiträge"
+
+#: includes/class-withdrawal.php:85
+msgid "Posts or attachment information changed after confirmation. Review the details again."
+msgstr "Beiträge oder Anhangsinformationen wurden nach der Bestätigung geändert. Bitte überprüfen Sie die Details erneut."
+
+#: includes/class-screens.php:223
+msgid "Posts to Transfer to the Site Operator"
+msgstr "Beiträge zur Übertragung an den Seitenbetreiber"
+
+#: includes/class-profile-preset.php:49
+msgid "Prefecture / State"
+msgstr "Bundesland / Provinz"
+
+#: includes/class-admin.php:624
+msgid "Prepare a non-public directory exclusively for member files and specify its path on the server."
+msgstr "Bereiten Sie ein nicht öffentliches Verzeichnis ausschließlich für Mitgliederdateien vor und geben Sie seinen Pfad auf dem Server an."
+
+#: includes/class-directory.php:112
+msgid "Previous"
+msgstr "Zurück"
+
+#: assets/media.js:87
+msgid "Previous Page"
+msgstr "Vorherige Seite"
+
+#: assets/media.js:74
+msgid "Processing…"
+msgstr "Verarbeitung..."
+
+#: includes/class-directory.php:42
+msgid "Profile Details to Show"
+msgstr "Anzuzeigende Profildetails"
+
+#: includes/class-admin.php:515
+msgid "Profile Fields for Registration and Editing"
+msgstr "Profilfelder für Registrierung und Bearbeitung"
+
+#: includes/class-admin.php:499
+msgid "Profile Fields from the Integration"
+msgstr "Profilfelder aus der Integration"
+
+#: includes/class-profile-preset.php:60 includes/class-profile-preset.php:63
+msgid "Profile Picture"
+msgstr "Profilbild"
+
+#: includes/class-admin.php:493
+msgid "Profile information collected during registration. Members can view it on Your Account Information and update it on Edit Account Information."
+msgstr "Profilinformationen, die bei der Registrierung erfasst werden. Mitglieder können diese unter Ihren Kontoinformationen einsehen und unter Bearbeiten des Kontos die Informationen aktualisieren."
+
+#: includes/class-screens.php:134
+msgid "Profile saved."
+msgstr "Profil gespeichert."
+
+#: includes/class-admin.php:467
+msgid "Prospective members enter their email address here, then follow the confirmation email to continue registration."
+msgstr "Potenzielle Mitglieder geben hier ihre email Adresse ein und folgen dann dem Bestätigungs-email, um die Registrierung fortzusetzen."
+
+#: includes/class-admin.php:246
+msgid "Provides announcements for email delivery"
+msgstr "Bietet Ankündigungen für email Versand"
+
+#: includes/class-admin.php:233
+msgid "Provides passkey registration and management after signup, and passkey login"
+msgstr "Bietet Passkey-Registrierung und -Verwaltung nach der Anmeldung sowie Passkey-Login"
+
+#: assets/media.js:18
+msgid "Public"
+msgstr "Öffentlich"
+
+#: assets/media.js:68
+msgid "Public Media"
+msgstr "Öffentliche Medien"
+
+#: includes/class-content.php:24
+msgid "Public Page"
+msgstr "Öffentliche Seite"
+
+#: includes/class-content.php:24
+msgid "Public Pages"
+msgstr "Öffentliche Seiten"
+
+#: includes/class-admin.php:363 includes/class-admin.php:367 includes/class-admin.php:371
+msgid "Purchase and Official Website"
+msgstr "Kauf und offizielle Website"
+
+#: includes/class-admin.php:559
+msgid "Read Cloudflare's official instructions (new tab)"
+msgstr "Lesen Sie die offiziellen Anweisungen von Cloudflare (neuer Tab)"
+
+#: includes/class-screens.php:251
+msgid "Register"
+msgstr "Registrieren"
+
+#: includes/class-screens.php:205 includes/class-screens.php:214
+msgid "Register and Manage Passkeys"
+msgstr "Passkeys registrieren und verwalten"
+
+#: includes/class-screens.php:214
+msgid "Register and manage passkeys with atshift Freeform Login."
+msgstr "Passkeys mit atshift Freeform Login registrieren und verwalten."
+
+#: includes/class-admin.php:491
+msgid "Registration Approval"
+msgstr "Registrierungsprüfung"
+
+#: includes/class-mail.php:11
+msgid "Registration Complete"
+msgstr "Registrierung abgeschlossen"
+
+#: includes/class-mail.php:7
+msgid "Registration Email Verification"
+msgstr "Registrierungs-E-Mail-Verifizierung"
+
+#: includes/class-members.php:5
+msgid "Registration Needs Review"
+msgstr "Registrierung zur Überprüfung erforderlich"
+
+#: includes/class-admin.php:295 includes/class-admin.php:546
+msgid "Registration Settings"
+msgstr "Registrierungseinstellungen"
+
+#: includes/class-admin.php:492
+msgid "Registration and Editing Forms"
+msgstr "Registrierungs- und Bearbeitungsformulare"
+
+#: includes/class-screens.php:105
+msgid "Registration is complete. Please go to the login page."
+msgstr "Die Registrierung ist abgeschlossen. Bitte gehen Sie zur Anmeldeseite."
+
+#: includes/class-registration.php:136
+msgid "Registration is currently unavailable."
+msgstr "Die Registrierung ist momentan nicht verfügbar."
+
+#: includes/class-registration.php:79
+msgid "Registration is currently unavailable. Please try again later."
+msgstr "Die Registrierung ist momentan nicht verfügbar. Bitte versuchen Sie es später erneut."
+
+#: includes/class-registration.php:145 includes/class-registration.php:147
+msgid "Registration is in progress. Please wait a moment and try again."
+msgstr "Die Registrierung läuft. Bitte warten Sie einen Moment und versuchen Sie es erneut."
+
+#: includes/class-admin.php:44
+msgid "Registration is not ready yet. Check your spam protection keys in Registration Settings. If the issue persists, contact the person who set up your site."
+msgstr "Die Registrierung ist noch nicht bereit. Überprüfen Sie Ihre Spam-Schutzschlüssel in den Registrierungseinstellungen. Bei anhaltenden Problemen kontaktieren Sie die Person, die Ihre Website eingerichtet hat."
+
+#: includes/class-admin.php:300
+msgid "Related Plugins"
+msgstr "Verwandte Plugins"
+
+#: includes/class-screens.php:79
+msgid "Reload the form."
+msgstr "Formular neu laden."
+
+#: includes/class-screens.php:253
+msgid "Request Confirmation Email"
+msgstr "Bestätigungs-E-Mail anfordern"
+
+#: includes/class-screens.php:245
+msgid "Request Password Reset Email"
+msgstr "E-Mail mit Passwort-Reset anfordern"
+
+#: includes/class-registration.php:178 includes/class-registration.php:184
+msgid "Request a new password reset link."
+msgstr "Passwort-Reset-Link anfordern."
+
+#: includes/class-registration.php:7
+msgid "Request received. If we can process it, you will receive an email. If it does not arrive, please wait before trying again."
+msgstr "Anfrage erhalten. Wenn wir sie bearbeiten können, erhalten Sie ein email. Falls nicht, warten Sie bitte, bevor Sie es erneut versuchen."
+
+#: includes/class-admin.php:491
+msgid "Require operator approval after registration"
+msgstr "Betreibergenehmigung nach der Registrierung erforderlich"
+
+#: includes/class-admin.php:495
+msgid "Required Account Registration and Editing Fields"
+msgstr "Erforderliche Felder für Konto-Registrierung und -Bearbeitung"
+
+#: includes/class-mail.php:21 includes/class-screens.php:13 includes/class-screens.php:204
+msgid "Reset Password"
+msgstr "Passwort zurücksetzen"
+
+#: includes/class-screens.php:244
+msgid "Reset Your Password"
+msgstr "Passwort zurücksetzen"
+
+#: includes/class-withdrawal.php:82
+msgid "Restart the process from the confirmation screen."
+msgstr "Starten Sie den Vorgang von dem Bestätigungsbildschirm neu."
+
+#: includes/class-screens.php:241
+msgid "Review Account Closure"
+msgstr "Kontoschließung überprüfen"
+
+#: includes/class-screens.php:239
+msgid "Review and Edit Content"
+msgstr "Inhalt überprüfen und bearbeiten"
+
+#: includes/class-admin.php:359
+msgid "Review content before publication. Supports sequential reviews, revision requests, resubmission, and approval history."
+msgstr "Inhalte vor der Veröffentlichung überprüfen. Unterstützt sequentielle Überprüfungen, Überarbeitungsanfragen, erneutes Einreichen und Genehmigungshistorie."
+
+#: includes/class-screens.php:120
+msgid "Review the details and confirm account closure."
+msgstr "Details überprüfen und Schließung des Kontos bestätigen."
+
+#: includes/class-member-list-table.php:9
+msgid "Role"
+msgstr "Rolle"
+
+#: includes/class-screens.php:211
+msgid "Save"
+msgstr "Speichern"
+
+#: includes/class-admin.php:432 includes/class-admin.php:439
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: includes/class-admin.php:597
+msgid "Save Email Settings"
+msgstr "E-Mail-Einstellungen speichern"
+
+#: includes/class-directory.php:44
+msgid "Save Member Directory Settings"
+msgstr "Einstellungen des Mitgliederverzeichnisses speichern"
+
+#: includes/class-admin.php:398
+msgid "Save Posting Settings"
+msgstr "Beitragseinstellungen speichern"
+
+#: includes/class-admin.php:546
+msgid "Save Registration Settings"
+msgstr "Registrierungseinstellungen speichern"
+
+#: includes/class-admin.php:339
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#: includes/class-admin.php:564
+msgid "Save Turnstile Settings"
+msgstr "Turnstile-Einstellungen speichern"
+
+#: includes/class-admin.php:398
+msgid "Save permissions for all post types. Removing permission does not delete existing content."
+msgstr "Berechtigungen für alle Beitragstypen speichern. Das Entfernen einer Berechtigung löscht vorhandenen Inhalt nicht."
+
+#: includes/class-admin.php:546
+msgid "Save registration availability, approval requirements, and profile field settings."
+msgstr "Speichert die Verfügbarkeit der Registrierung, die Genehmigungsanforderungen und die Einstellungen der Profilfelder."
+
+#: includes/class-admin.php:439
+msgid "Save the member status and role changes made on this screen."
+msgstr "Die vorgenommenen Änderungen des Mitgliedsstatus und der Rolle auf diesem Bildschirm speichern."
+
+#: includes/class-admin.php:597
+msgid "Save the sender name, shared signature, and all email subjects and bodies."
+msgstr "Speichert den Absendernamen, die gemeinsame Signatur und alle email Betreffzeilen und -inhalte."
+
+#: includes/class-admin.php:432
+msgid "Save this member's status."
+msgstr "Status dieses Mitglieds speichern."
+
+#: includes/class-admin.php:564
+msgid "Save your Cloudflare Turnstile keys separately from the registration settings."
+msgstr "Speichern Sie Ihre Cloudflare Turnstile Schlüssel separat von den Registrierungseinstellungen."
+
+#: includes/class-admin.php:431
+msgid "Saving a status change sends the member a notification email and ends any active login sessions."
+msgstr "Das Speichern einer Statusänderung sendet dem Mitglied eine Benachrichtigung email und beendet alle aktiven Sitzungen."
+
+#: includes/class-files.php:84
+msgid "Saving failed."
+msgstr "Speichern fehlgeschlagen."
+
+#: assets/media.js:81
+msgid "Search"
+msgstr "Suchen"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:44
+msgid "Search %s"
+msgstr "%s suchen"
+
+#: includes/class-admin.php:414
+msgid "Search Members"
+msgstr "Mitglieder suchen"
+
+#: assets/media.js:81
+msgid "Search by Filename"
+msgstr "Nach Dateiname suchen"
+
+#: includes/class-admin.php:562
+msgid "Secret Key"
+msgstr "Geheimer Schlüssel"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-member-list-table.php:52
+msgid "Select %s"
+msgstr "Wählen Sie %s"
+
+#: assets/media.js:78
+msgid "Select Files"
+msgstr "Dateien auswählen"
+
+#: includes/class-screens.php:236
+msgid "Select Posts to Retain"
+msgstr "Beiträge zur Beibehaltung auswählen"
+
+#: includes/class-directory.php:67
+msgid "Select at least one classification that can view the directory."
+msgstr "Wählen Sie mindestens eine Klassifizierung, die das Verzeichnis einsehen kann."
+
+#: includes/class-members.php:93
+msgid "Select between 1 and 50 members to update."
+msgstr "Auswählen zwischen 1 und 50 Mitgliedern zur Aktualisierung."
+
+#: includes/class-withdrawal.php:67
+msgid "Select only your own posts that are eligible for transfer."
+msgstr "Wählen Sie nur Ihre eigenen Beiträge aus, die für die Übertragung berechtigt sind."
+
+#: includes/class-posting.php:87
+msgid "Select the allowed user categories."
+msgstr "Erlaubte Benutzerkategorien auswählen."
+
+#: includes/class-withdrawal.php:62
+msgid "Select the posts to transfer and confirm that you have reviewed their content and attachments."
+msgstr "Wählen Sie die Beiträge zur Übertragung und bestätigen Sie, dass Sie deren Inhalt und Anhänge überprüft haben."
+
+#: includes/class-admin.php:381
+msgid "Selected Categories"
+msgstr "Ausgewählte Kategorien"
+
+#: includes/class-directory.php:37
+msgid "Selected users remain hidden even when they match the listing scope. Their account access and permissions are not changed."
+msgstr "Ausgewählte Benutzer bleiben verborgen, auch wenn sie dem Auflistungsumfang entsprechen. Ihr Kontozugriff und ihre Berechtigungen werden nicht geändert."
+
+#: includes/class-screens.php:184
+msgid "Send Confirmation to the New Address"
+msgstr "Bestätigung an die neue Adresse senden"
+
+#: includes/class-admin.php:362
+msgid "Send registration invitations to a list of prospective members. Each recipient confirms the invitation and completes registration."
+msgstr "Senden Sie Registrierungs-Einladungen an eine Liste potenzieller Mitglieder. Jeder Empfänger bestätigt die Einladung und meldet sich anschließend an."
+
+#: includes/class-admin.php:569
+msgid "Sender Information"
+msgstr "Absenderinformationen"
+
+#: includes/class-admin.php:571
+msgid "Sender Name "
+msgstr "Absendernamen "
+
+#: includes/class-admin.php:585
+msgid "Sent to the former member when account closure and deletion have finished."
+msgstr "Wird dem ehemaligen Mitglied gesendet, wenn die Kontoschließung und -löschung abgeschlossen sind."
+
+#: includes/class-admin.php:587
+msgid "Sent to the member with a reset link when a password reset is requested."
+msgstr "Wird dem Mitglied mit einem Zurücksetzlink gesendet, wenn ein Zurücksetzen des Passworts angefordert wird."
+
+#: includes/class-admin.php:581
+msgid "Sent to the submitted email address with a confirmation link when a registration request is accepted."
+msgstr "Wird an die übermittelte email Adresse mit einem Bestätigungslink gesendet, wenn ein Registrierungsantrag angenommen wird."
+
+#: includes/class-admin.php:586
+msgid "Sent when an operator suspends a member's account."
+msgstr "Wird gesendet, wenn ein Administrator das Konto eines Mitglieds sperrt."
+
+#: includes/class-admin.php:584
+msgid "Sent when approval or removal of a suspension activates the account."
+msgstr "Wird gesendet, wenn die Genehmigung oder Aufhebung einer Sperre das Konto aktiviert."
+
+#: includes/class-admin.php:582
+msgid "Sent when registration is complete and no approval is required."
+msgstr "Wird gesendet, wenn die Registrierung abgeschlossen ist und keine Genehmigung erforderlich ist."
+
+#: assets/media.js:79
+msgid "Server upload limit: "
+msgstr "Server-Upload-Limit: "
+
+#: includes/class-member-list-table.php:47
+msgid "Set to Pending Approval"
+msgstr "Auf Genehmigung warten lassen"
+
+#: includes/class-admin.php:245
+msgid "Sets announcement recipients and delivery schedules"
+msgstr "Legt Empfänger und Versandpläne für Ankündigungen fest"
+
+#: includes/class-admin.php:241
+msgid "Sets approvers and the approval order"
+msgstr "Legt Genehmiger und die Genehmigungsreihenfolge fest"
+
+#: includes/class-admin.php:238
+msgid "Sets who can create content for each post type"
+msgstr "Legt fest, wer Inhalte für jeden Beitragstyp erstellen kann"
+
+#: includes/class-member-list-table.php:56 includes/class-plugin-listing.php:23
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/class-posting.php:75
+msgid "Settings have changed. Reload this screen."
+msgstr "Einstellungen geändert. Bitte diese Ansicht neu laden."
+
+#: includes/class-admin.php:332 includes/class-directory.php:25
+msgid "Settings saved."
+msgstr "Einstellungen gespeichert."
+
+#: includes/class-admin.php:573
+msgid "Shared Signature"
+msgstr "Gemeinsame Signatur"
+
+#: assets/media.js:70
+msgid "Showing members-only files you can use. Files used in another post will be copied for that post."
+msgstr "Anzeige von nur für Mitglieder sichtbaren Dateien, die Sie verwenden können. Dateien, die in einem anderen Beitrag verwendet werden, werden für diesen Beitrag kopiert."
+
+#: assets/media.js:70
+msgid "Showing public files you can use."
+msgstr "Anzeige von öffentlichen Dateien, die Sie verwenden können."
+
+#: includes/class-admin.php:27 includes/class-members.php:5
+msgid "Site Administrator"
+msgstr "Website-Administrator"
+
+#: includes/class-admin.php:561
+msgid "Site Key"
+msgstr "Website-Schlüssel"
+
+#: includes/class-admin.php:27 includes/class-admin.php:437 includes/class-member-list-table.php:60 includes/class-members.php:15
+msgid "Site Operator"
+msgstr "Website-Betreuer"
+
+#: includes/class-withdrawal.php:106
+msgid "Site Operator (Content Archive Only)"
+msgstr "Website-Betreiber (Nur Archiv-Inhalte)"
+
+#: includes/class-withdrawal.php:107
+msgid "Site Operator Archive"
+msgstr "Website-Betreiber Archiv"
+
+#: includes/class-admin.php:132 includes/class-posting.php:65 includes/class-services.php:16
+msgid "Site administrator permissions are required."
+msgstr "Administratorrechte der Website sind erforderlich."
+
+#: includes/class-screens.php:217
+msgid "Site administrators cannot close their account from this screen."
+msgstr "Website-Administratoren können ihr Konto nicht von diesem Bildschirm aus schließen."
+
+#: includes/class-directory.php:29
+msgid "Site operators"
+msgstr "Website-Betreiber"
+
+#: includes/class-admin.php:438
+msgid "Site operators can approve members and change their status. They can also be changed back to members. Changing a role ends the user's active login sessions."
+msgstr "Website-Betreiber können Mitglieder genehmigen und deren Status ändern. Sie können auch wieder zu Mitgliedern zurückgesetzt werden. Die Änderung einer Rolle beendet die aktiven Login-Sitzungen des Benutzers."
+
+#: includes/class-admin.php:155
+msgid "Some field identifiers are unavailable. Custom fields also need an integration that renders and saves them in the forms."
+msgstr "Einige Feldbezeichner sind nicht verfügbar. Benutzerdefinierte Felder benötigen ebenfalls eine Integration, die diese in den Formularen rendert und speichert."
+
+#: includes/class-profile.php:117 includes/class-profile.php:54
+msgid "Some profile fields are not allowed."
+msgstr "Einige Profilfelder sind nicht zulässig."
+
+#: includes/class-registration.php:138
+msgid "Some registration fields are not allowed."
+msgstr "Einige Registrierungsfelder sind nicht zulässig."
+
+#: includes/class-members.php:97
+msgid "Some selected members cannot be updated. Select them again. No changes have been made."
+msgstr "Einige ausgewählte Mitglieder können nicht aktualisiert werden. Bitte erneut auswählen. Es wurden keine Änderungen vorgenommen."
+
+#: includes/class-admin.php:564
+msgid "Spam Protection"
+msgstr "Spam-Schutz"
+
+#: includes/class-admin.php:553
+msgid "Spam Protection (Cloudflare Turnstile)"
+msgstr "Spam-Schutz (Cloudflare Turnstile)"
+
+#: includes/class-files.php:13 includes/class-files.php:14
+msgid "Specify an absolute path on the server."
+msgstr "Geben Sie einen absoluten Pfad auf dem Server an."
+
+#: includes/class-files.php:17
+msgid "Specify the public directory containing WordPress and a separate readable and writable directory outside it."
+msgstr "Geben Sie das öffentliche Verzeichnis an, das WordPress und ein separates lesbares und schreibbares Verzeichnis außerhalb enthält."
+
+#: includes/class-admin.php:361
+msgid "Staff Responsibilities"
+msgstr "Verantwortlichkeiten des Personals"
+
+#: includes/class-admin.php:397
+msgid "Standard author archives are also disabled. Display names and output generated by other plugins are not changed."
+msgstr "Standard-Autoren-Archive sind ebenfalls deaktiviert. Anzeigenamen und von anderen Plugins generierte Ausgaben bleiben unverändert."
+
+#: includes/class-admin.php:610
+msgid "Storage for Member Documents and Images"
+msgstr "Speicher für Mitgliederdokumente und -bilder"
+
+#: includes/class-files.php:31
+msgid "Storage is configured in wp-config.php."
+msgstr "Der Speicher ist in wp-config.php konfiguriert."
+
+#: includes/class-admin.php:633
+msgid "Storage path: "
+msgstr "Speicherpfad: "
+
+#: includes/class-profile-preset.php:51
+msgid "Street Address"
+msgstr "Straße und Hausnummer"
+
+#: includes/class-admin.php:596
+msgid "Subject"
+msgstr "Betreff"
+
+#: includes/class-admin.php:636
+msgid "Supported attachments include JPEG, PNG, GIF, WebP, PDF, Word (doc, docx), Excel (xls, xlsx), PowerPoint (ppt, pptx), text (txt), ZIP, and video (MP4, WebM). Upload size limits follow WordPress and server settings. Attachments added through this feature require member login even when attached to a public page."
+msgstr "Unterstützte Anhänge umfassen JPEG, PNG, GIF, WebP, PDF, Word (doc, docx), Excel (xls, xlsx), PowerPoint (ppt, pptx), Text (txt), ZIP und Video (MP4, WebM). Größenbeschränkungen folgen WordPress und den Servereinstellungen. Anhänge, die über diese Funktion hinzugefügt werden, erfordern sogar bei Verknüpfung mit einer öffentlichen Seite die Anmeldung des Mitglieds."
+
+#: includes/class-member-list-table.php:47
+msgid "Suspend"
+msgstr "Vorübergehend sperren"
+
+#: includes/class-admin.php:409 includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Suspended"
+msgstr "Vorübergehend gesperrt"
+
+#: includes/class-admin.php:583
+msgid "Tells the member that their account is awaiting approval."
+msgstr "Teilt dem Mitglied mit, dass sein Konto auf Genehmigung wartet."
+
+#: includes/class-services.php:28
+msgid "Test keys cannot be used on a production site. Get keys for this site from Cloudflare."
+msgstr "Testschlüssel können nicht auf einer Produktionsseite verwendet werden. Holen Sie sich die Schlüssel für diese Website von Cloudflare."
+
+#: includes/class-admin.php:409
+msgid "The Available Post Types column shows where each member can create content. Site administrators can change these permissions in Posting Settings."
+msgstr "Die Spalte 'Verfügbare Beitragstypen' zeigt, wo jedes Mitglied Inhalte erstellen kann. Website-Administratoren können diese Berechtigungen in den Beitragseinstellungen ändern."
+
+#: includes/class-members.php:164
+msgid "The classification integration could not be verified. Reopen this screen."
+msgstr "Die Klassifizierungsintegration konnte nicht verifiziert werden. Bitte diesen Bildschirm erneut öffnen."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:536
+msgid "The fields are specified by %s in the WordPress configuration file (wp-config.php)."
+msgstr "Die Felder werden durch %s in der Konfigurationsdatei WordPress (wp-config.php) angegeben."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, javascript-format
+#: assets/media.js:43
+msgid "The file exceeds the server upload limit of %s."
+msgstr "Die Datei überschreitet das Server-Upload-Limit von %s."
+
+#: includes/class-admin.php:249
+msgid "The following integrations are in use."
+msgstr "Die folgenden Integrationen sind aktiv."
+
+#: includes/class-posting.php:89
+msgid "The latest atshift User Profile Fields Pro is required to include child categories."
+msgstr "Das neueste atshift User Profile Fields Pro ist erforderlich, um Unterkategorien einzubeziehen."
+
+#: includes/class-posting.php:77
+msgid "The list of post types has changed. Reload this screen."
+msgstr "Die Liste der Beitragstypen wurde geändert. Bitte diese Ansicht neu laden."
+
+#: includes/class-dashboard.php:19
+msgid "The member home page has been created."
+msgstr "Die Mitglieder-Startseite wurde erstellt."
+
+#: includes/class-members.php:158
+msgid "The member role has changed. Reopen this screen."
+msgstr "Die Mitgliedsrolle wurde geändert. Bitte diesen Bildschirm erneut öffnen."
+
+#: includes/class-members.php:151
+msgid "The member status has changed. Reopen this screen."
+msgstr "Der Mitgliedsstatus wurde geändert. Bitte diesen Bildschirm erneut öffnen."
+
+#: includes/class-profile.php:111
+msgid "The name shown on the site. Leave blank to use your nickname."
+msgstr "Der auf der Seite angezeigte Name. Lassen Sie das Feld leer, um Ihren nickname zu verwenden."
+
+#: includes/class-dashboard.php:24
+msgid "The page is created as a draft. Existing pages, the site front page, and the login redirect are not changed. The member directory is not inserted automatically."
+msgstr "Die Seite wird als Entwurf erstellt. Bestehende Seiten, die Startseite der Website und die Anmelde-Weiterleitung werden nicht geändert. Das Mitgliederverzeichnis wird nicht automatisch eingefügt."
+
+#: includes/class-admin.php:499
+msgid "The profile configured in atshift User Profile Fields is used for registration and account editing."
+msgstr "Das in atshift User Profile Fields konfigurierte Profil wird für die Registrierung und Bearbeitung des Kontos verwendet."
+
+#: includes/class-admin.php:530
+msgid "The profile layout, field order, and conditional rules are used automatically. You do not need to select fields again or grant additional front-end display or self-editing permissions here."
+msgstr "Das Profillayout, die Feldreihenfolge und die bedingten Regeln werden automatisch verwendet. Sie müssen hier keine Felder erneut auswählen oder zusätzliche Berechtigungen für die Anzeige auf der Vorderseite oder die Selbstbearbeitung erteilen."
+
+#: includes/class-files.php:125
+msgid "The server's DOM extension is required for this file format."
+msgstr "Für dieses Dateiformat ist die DOM-Erweiterung des Servers erforderlich."
+
+#: includes/class-files.php:124
+msgid "The server's ZIP extension is required for this file format."
+msgstr "Für dieses Dateiformat ist die ZIP-Erweiterung des Servers erforderlich."
+
+#: includes/class-files.php:54
+msgid "The shared directory marker file is invalid."
+msgstr "Die Markerdatei für das freigegebene Verzeichnis ist ungültig."
+
+#: includes/class-files.php:191
+msgid "The storage location is unavailable."
+msgstr "Der Speicherort ist nicht verfügbar."
+
+#: includes/class-members.php:134
+msgid "The user tables must use InnoDB to save member information together. Please check with your site administrator."
+msgstr "Die Benutzertabellen müssen InnoDB verwenden, um Mitgliedsinformationen zusammen zu speichern. Bitte prüfen Sie dies mit Ihrem Website-Administrator."
+
+#: includes/class-registration.php:169
+msgid "The verification service is currently unavailable."
+msgstr "Der Verifizierungsdienst ist momentan nicht verfügbar."
+
+#: includes/class-services.php:59 includes/class-services.php:61
+msgid "The verification service returned an invalid response. Please try again."
+msgstr "Der Verifizierungsdienst hat eine ungültige Antwort zurückgegeben. Bitte versuchen Sie es erneut."
+
+#: includes/class-media.php:103
+msgid "The visibility settings do not match."
+msgstr "Die Sichtbarkeitseinstellungen stimmen nicht überein."
+
+#: assets/media.js:20
+msgid "These files are visible only to authorized members. "
+msgstr "Diese Dateien sind nur für autorisierte Mitglieder sichtbar. "
+
+#: assets/media.js:18
+msgid "These files are visible to everyone. "
+msgstr "Diese Dateien sind für jeden sichtbar. "
+
+#: includes/class-admin.php:556
+msgid "These keys are configured on the server by the person who set up your site. Ask them to make any changes."
+msgstr "Diese Schlüssel werden vomjenigen auf dem Server konfiguriert, der Ihre Seite eingerichtet hat. Bitten Sie diese Person um Änderungen."
+
+#: includes/class-admin.php:466
+msgid "These pages are published in WordPress, but that does not make members' personal information public. The plugin checks access and displays account details, editing forms, and withdrawal forms only to the account owner. Leave these pages published."
+msgstr "Diese Seiten sind in WordPress veröffentlicht, aber das macht die persönlichen Informationen der Mitglieder nicht öffentlich. Das Plugin prüft den Zugriff und zeigt Kontodetails, Bearbeitungsformulare und Abmeldeformulare nur dem Kontoinhaber an. Lassen Sie diese Seiten veröffentlicht."
+
+#: includes/class-members.php:85
+msgid "This account cannot be changed."
+msgstr "Dieses Konto kann nicht geändert werden."
+
+#: includes/class-registration.php:186
+msgid "This account is currently unavailable."
+msgstr "Dieses Konto ist momentan nicht verfügbar."
+
+#: includes/class-members.php:59
+msgid "This account is currently unavailable. Please contact the site administrator."
+msgstr "Dieses Konto ist derzeit nicht verfügbar. Bitte kontaktieren Sie den Website-Administrator."
+
+#: includes/class-members.php:124
+msgid "This account's role cannot be changed."
+msgstr "Die Rolle dieses Kontos kann nicht geändert werden."
+
+#: includes/class-files.php:278
+msgid "This attachment cannot be deleted."
+msgstr "Dieser Anhang kann nicht gelöscht werden."
+
+#: includes/class-admin.php:166
+msgid "This email contains a placeholder that is not supported for this message type."
+msgstr "Dieser email enthält einen Platzhalter, der für diesen Nachrichtentyp nicht unterstützt wird."
+
+#: includes/class-files.php:91
+msgid "This link is unavailable."
+msgstr "Dieser Link ist nicht verfügbar."
+
+#: includes/class-media.php:61
+msgid "This media action is unavailable."
+msgstr "Diese Medienaktion ist nicht verfügbar."
+
+#: includes/class-media.php:141 includes/class-media.php:142
+msgid "This media screen is unavailable."
+msgstr "Dieser Medienbildschirm ist nicht verfügbar."
+
+#: includes/class-members.php:136 includes/class-members.php:137
+msgid "This member's information is being saved. Please wait a moment and try again."
+msgstr "Die Informationen dieses Mitglieds werden gespeichert. Bitte warten Sie einen Moment und versuchen Sie es erneut."
+
+#: includes/class-members.php:110
+msgid "This member's posting permissions cannot be changed."
+msgstr "Die Beitragsberechtigungen dieses Mitglieds können nicht geändert werden."
+
+#: includes/class-admin.php:316 includes/class-admin.php:319
+msgid "This page is unavailable."
+msgstr "Diese Seite ist nicht verfügbar."
+
+#: includes/class-services.php:62
+msgid "This password has appeared in a data breach. Choose a different password."
+msgstr "Dieses Passwort ist in einer Datenpanne aufgetaucht. Wählen Sie ein anderes Passwort."
+
+#: includes/class-members.php:80
+msgid "This person has staff responsibilities. Choose and configure a replacement in Staff and Permissions before restricting access or removing responsibilities."
+msgstr "Diese Person hat Mitarbeiterverantwortlichkeiten. Wählen und konfigurieren Sie einen Ersatz in Mitarbeiter und Berechtigungen, bevor Sie den Zugriff einschränken oder die Verantwortlichkeiten entfernen."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-screens.php:226
+msgid "This post and its associated attachments (%d) will be transferred to the site operator as drafts. Personal information in text and images is not anonymized automatically."
+msgstr "Dieser Beitrag und seine zugehörigen Anhänge (%d) werden als Entwürfe an den Seitenbetreiber übertragen. Persönliche Informationen in Text und Bildern werden nicht automatisch anonymisiert."
+
+#: includes/class-admin.php:173
+msgid "This settings operation is unavailable."
+msgstr "Diese Einstellungsoperation ist nicht verfügbar."
+
+#: includes/class-services.php:17
+msgid "This site's keys are configured on the server."
+msgstr "Die Schlüssel dieser Website sind auf dem Server konfiguriert."
+
+#: includes/class-registration.php:130 includes/class-registration.php:149
+msgid "This username is already taken. Choose another one."
+msgstr "Dieser Benutzername ist bereits vergeben. Wählen Sie einen anderen."
+
+#: includes/class-registration.php:128
+msgid "This username is not allowed. Choose another one."
+msgstr "Dieser Benutzername ist nicht zulässig. Wählen Sie einen anderen."
+
+#: includes/class-registration.php:150 includes/class-registration.php:203 includes/class-screens.php:140 includes/class-screens.php:178
+msgid "This verification information cannot be used."
+msgstr "Diese Verifizierungsinformation kann nicht verwendet werden."
+
+#: includes/class-mail.php:7
+msgid "To continue registration, open the following link within 30 minutes and click the confirmation button.\n{link}\n\nIf you did not request this, please ignore this email."
+msgstr "Um die Registrierung fortzusetzen, öffnen Sie den folgenden Link innerhalb von 30 Minuten und klicken Sie auf die Bestätigungsschaltfläche.\n{link}\n\nWenn Sie dies nicht angefordert haben, ignorieren Sie bitte diese email."
+
+#: includes/class-admin.php:469
+msgid "To create a page yourself, paste this shortcode into its content: "
+msgstr "Um selbst eine Seite zu erstellen, fügen Sie diesen Shortcode in deren Inhalt ein: "
+
+#: includes/class-files.php:286
+msgid "To display an image in your post, paste this into a Shortcode block: "
+msgstr "Um ein Bild in Ihrem Beitrag anzuzeigen, fügen Sie dies in einen Shortcode-Block ein: "
+
+#: includes/class-admin.php:214
+msgid "To keep a field out of registration and account editing forms, open the field in atshift User Profile Fields and turn on \"Hide from member registration and account forms\" under Member Forms."
+msgstr "Um ein Feld von den Registrierungs- und Kontobearbeitungsformularen auszublenden, öffnen Sie das Feld in atshift User Profile Fields und aktivieren Sie unter Mitgliederformulare \"Aus Mitgliederregistrierung und Kontobearbeitung ausblenden\"."
+
+#: includes/class-admin.php:534
+msgid "To use custom fields defined in code, provide the integration that renders and saves them in registration and editing forms, then specify their identifiers. Leave this empty if no additional fields are needed."
+msgstr "Um benutzerdefinierte Felder zu verwenden, die im Code definiert sind, stellen Sie die Integration bereit, die diese in Registrierungs- und Bearbeitungsformularen rendert und speichert, und geben Sie dann deren Bezeichner an. Lassen Sie dies leer, wenn keine zusätzlichen Felder erforderlich sind."
+
+#: includes/class-screens.php:218
+msgid "To verify your identity, log in again and complete this within 10 minutes."
+msgstr "Um Ihre Identität zu verifizieren, melden Sie sich erneut an und schließen Sie dies innerhalb von 10 Minuten ab."
+
+#: includes/class-admin.php:367
+msgid "Together with atshift Members, it lets you choose posting permissions by user category. Add atshift Members Pro to delegate member management by category and send targeted announcements."
+msgstr "Zusammen mit atshift Members ermöglicht es Ihnen, die Berechtigungen zum Posten nach Benutzerkategorie zu wählen. Fügen Sie atshift Members Pro hinzu, um das Mitglieder-Management nach Kategorie zu delegieren und gezielte Ankündigungen zu senden."
+
+#: includes/class-screens.php:235
+msgid "Transfer selected posts to the site operator and close my account"
+msgstr "Ausgewählte Beiträge an den Seitenbetreiber übertragen und mein Konto schließen"
+
+#: includes/class-plugin-listing.php:27 includes/class-plugin-listing.php:57
+msgid "Try Pro Add-on"
+msgstr "Pro Add-on testen"
+
+#: includes/class-admin.php:489
+msgid "Turning this off stops new registration requests. People who have already received a confirmation email can still complete registration before the link expires. Existing members can continue to log in."
+msgstr "Dies zu deaktivieren, stoppt neue Registrierungsanfragen. Personen, die bereits eine Bestätigung erhalten haben email, können sich noch anmelden, bevor der Link abläuft. Bestehende Mitglieder können sich weiterhin anmelden."
+
+#: includes/class-members.php:5
+msgid "Unavailable"
+msgstr "Nicht verfügbar"
+
+#: includes/class-admin.php:387
+msgid "Unavailable category ("
+msgstr "Nicht verfügbare Kategorie ("
+
+#: includes/class-profile-preset.php:56
+msgid "Uncheck to omit this field. Existing fields and values are kept."
+msgstr "Deaktivieren, um dieses Feld zu überspringen. Bestehende Felder und Werte bleiben erhalten."
+
+#: assets/media.js:72
+msgid "Upload"
+msgstr "Hochladen"
+
+#: assets/media.js:150
+msgid "Upload cancelled."
+msgstr "Hochladen abgebrochen."
+
+#: assets/media.js:15
+msgid "Upload images, videos, and documents."
+msgstr "Bilder, Videos und Dokumente hochladen."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:58
+msgid "Uploaded to This %s"
+msgstr "Hochgeladen in dieses %s"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:264
+msgid "Use %1$s with %2$s to save category selections together with member information and delegate member management by category."
+msgstr "Verwenden Sie %1$s zusammen mit %2$s, um die ausgewählten Kategorien mit den Mitgliederinformationen zu speichern und die Mitgliederverwaltung nach Kategorie zu delegieren."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:262
+msgid "Use %s to create user categories and choose which post types members in each category can use."
+msgstr "Verwenden Sie %s, um Benutzerkategorien zu erstellen und auszuwählen, welche Beitragstypen die Mitglieder in jeder Kategorie nutzen können."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:266
+msgid "Use %s to send announcement emails to members who have opted in, or schedule them for later."
+msgstr "Verwenden Sie %s, um Ankündigungen email an Mitglieder zu senden, die zugestimmt haben, oder diese für später zu planen."
+
+#: includes/class-screens.php:153
+msgid "Use 1–60 letters, numbers, periods, hyphens, or underscores. Your username cannot be changed after registration. You can also log in with your email address."
+msgstr "Verwenden Sie 1–60 Buchstaben, Zahlen, Punkte, Bindestriche oder Unterstriche. Ihr Benutzername kann nach der Registrierung nicht geändert werden. Sie können sich auch mit Ihrer email Adresse anmelden."
+
+#: includes/class-admin.php:623
+msgid "Use a File Server or NAS"
+msgstr "Verwenden Sie einen Dateiserver oder NAS"
+
+#: includes/class-services.php:51
+msgid "Use a password of at least 12 characters and no more than 256 bytes."
+msgstr "Verwenden Sie ein Passwort von mindestens 12 Zeichen und nicht mehr als 256 Bytes."
+
+#: includes/class-admin.php:613
+msgid "Use a private directory on the web server or a file server/NAS share already mounted on that server."
+msgstr "Verwenden Sie ein privates Verzeichnis auf dem Webserver oder ein bereits auf diesem Server gemountetes Dateiserver-/NAS-Share."
+
+#: includes/class-admin.php:363
+msgid "Use atshift User Profile Fields and its Pro Add-on to create hierarchical classifications such as branches, departments, or membership types. Use these categories to assign member management responsibilities and target announcements."
+msgstr "Verwenden Sie atshift User Profile Fields und dessen Pro-Add-on, um hierarchische Klassifizierungen wie Zweigstellen, Abteilungen oder Mitgliedschaftstypen zu erstellen. Nutzen Sie diese Kategorien, um Verantwortlichkeiten für das Mitglieder-Management zuzuweisen und gezielte Ankündigungen zu senden."
+
+#: includes/class-admin.php:614
+msgid "Use the Web Server Running WordPress"
+msgstr "Verwenden Sie den Webserver, der WordPress ausführt"
+
+#: includes/class-admin.php:570
+msgid "Use your organization's or site's name so recipients can recognize the sender, for example, Example Association Office."
+msgstr "Verwenden Sie den Namen Ihrer Organisation oder Ihrer Website, damit Empfänger den Absender erkennen können, z. B. Beispiel Verband Büro."
+
+#: includes/class-admin.php:561
+msgid "Used to display the verification widget on your forms."
+msgstr "Wird verwendet, um das Verifizierungs-Widget auf Ihren Formularen anzuzeigen."
+
+#: includes/class-admin.php:27 includes/class-members.php:11
+msgid "User (Posting Permissions)"
+msgstr "Benutzer (Beitragsberechtigungen)"
+
+#: includes/class-admin.php:458
+msgid "User Categories and Posting Permissions"
+msgstr "Benutzerkategorien und Beitragsberechtigungen"
+
+#: includes/class-directory.php:33
+msgid "User Profile Fields integration is required to select member classifications."
+msgstr "Für die Auswahl von Mitgliederklassifizierungen ist die Integration von Benutzerprofilfeldern erforderlich."
+
+#: includes/class-profile.php:133
+msgid "User not found."
+msgstr "Benutzer nicht gefunden."
+
+#: includes/class-screens.php:152 includes/class-screens.php:199
+msgid "Username"
+msgstr "Benutzername"
+
+#: includes/class-admin.php:495
+msgid "Username (required; cannot be changed after registration)"
+msgstr "Benutzername (erforderlich; kann nach der Registrierung nicht geändert werden)"
+
+#: includes/class-registration.php:172
+msgid "Verification failed. Please try again."
+msgstr "Verifizierung fehlgeschlagen. Bitte versuchen Sie es erneut."
+
+#: includes/class-registration.php:82
+msgid "Verification failed. Reload the page and try again."
+msgstr "Verifizierung fehlgeschlagen. Laden Sie die Seite neu und versuchen Sie es erneut."
+
+#: includes/class-screens.php:251
+msgid "Verified email address: "
+msgstr "Verifizierte Adresse email: "
+
+#: includes/class-admin.php:589
+msgid "Verifies ownership of the new address when a member changes their email."
+msgstr "Überprüft den Besitz der neuen Adresse, wenn ein Mitglied seine email ändert."
+
+#: includes/class-members.php:227
+msgid "Verify your email address change on the account editing page."
+msgstr "Verifizieren Sie Ihre email Adressänderung auf der Kontobearbeitungsseite."
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-plugin-listing.php:48
+msgid "Version %s"
+msgstr "Version %s"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:40 includes/class-content.php:42
+msgid "View %s"
+msgstr "%s ansehen"
+
+#: includes/class-plugin-listing.php:53
+msgid "View Details"
+msgstr "Details anzeigen"
+
+#: includes/class-admin.php:470
+msgid "View Page"
+msgstr "Seite ansehen"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-plugin-listing.php:53
+msgid "View details for %s"
+msgstr "%s Details anzeigen"
+
+#: includes/class-profile.php:92
+msgid "Website URL"
+msgstr "Website-URL"
+
+#: includes/class-services.php:27
+msgid "When changing the site key, enter the matching secret key from the same widget settings."
+msgstr "Geben Sie beim Ändern des Website-Schlüssels den passenden geheimen Schlüssel aus den Widget-Einstellungen ein."
+
+#: includes/class-admin.php:491
+msgid "When enabled, new members must wait for review. Set their status to Active in Member Management to grant access. If unsure, you can start with this unchecked."
+msgstr "Wenn aktiviert, müssen neue Mitglieder auf die Prüfung warten. Setzen Sie ihren Status im Mitglieder-Management auf „Aktiv“, um Zugang zu gewähren. Bei Unsicherheit können Sie mit dieser Option deaktiviert beginnen."
+
+#: includes/class-directory.php:28
+msgid "Who can view it"
+msgstr "Wer kann es einsehen"
+
+#: includes/class-admin.php:525
+msgid "Without a profile plugin integration, the form includes a username, first and last names, email address, and password. Add any additional profile fields using the settings below."
+msgstr "Ohne Profilplugin-Integration enthält das Formular einen Benutzernamen, Vor- und Nachnamen, email Adresse und Passwort. Fügen Sie zusätzliche Profilfelder über die untenstehenden Einstellungen hinzu."
+
+#: includes/class-admin.php:27
+msgid "WordPress Standard Roles"
+msgstr "WordPress Standardrollen"
+
+#: includes/class-admin.php:631
+msgid "WordPress Web Server (Private Directory)"
+msgstr "WordPress Webserver (Privates Verzeichnis)"
+
+#: includes/class-media.php:86
+msgid "You cannot attach files to this post."
+msgstr "Sie können keine Dateien zu diesem Beitrag anhängen."
+
+#: includes/class-directory.php:47
+msgid "You cannot change these settings."
+msgstr "Diese Einstellungen können nicht geändert werden."
+
+#: includes/class-dashboard.php:27
+msgid "You cannot create pages."
+msgstr "Sie können keine Seiten erstellen."
+
+#: includes/class-media.php:180 includes/class-media.php:183 includes/class-media.php:64
+msgid "You cannot manage this media item."
+msgstr "Sie können dieses Medienelement nicht verwalten."
+
+#: includes/class-admin.php:109 includes/class-members.php:129 includes/class-members.php:145 includes/class-members.php:83 includes/class-registration.php:195
+msgid "You cannot perform this action."
+msgstr "Diese Aktion ist nicht möglich."
+
+#: includes/class-media.php:102
+msgid "You cannot select this file."
+msgstr "Sie können diese Datei nicht auswählen."
+
+#: includes/class-content.php:132 includes/class-files.php:227 includes/class-files.php:236
+msgid "You cannot view this content."
+msgstr "Dieser Inhalt kann nicht angezeigt werden."
+
+#: includes/class-admin.php:419
+msgid "You cannot view this member's settings."
+msgstr "Die Einstellungen dieses Mitglieds können nicht angezeigt werden."
+
+#: includes/class-screens.php:13 includes/class-screens.php:186
+msgid "Your Account Information"
+msgstr "Ihre Kontoinformationen"
+
+#: includes/class-screens.php:235
+msgid "Your Posts When Closing Your Account"
+msgstr "Ihre Beiträge bei Kontoschließung"
+
+#: includes/class-screens.php:126
+msgid "Your account closure request has been accepted. Login is disabled, and your data is being deleted."
+msgstr "Ihr Antrag auf Kontoschließung wurde angenommen. Die Anmeldung ist deaktiviert und Ihre Daten werden gelöscht."
+
+#: includes/class-mail.php:28
+msgid "Your account email address has changed. If you did not make this change, please contact the site administrator."
+msgstr "Ihre Konto-Adresse email wurde geändert. Wenn Sie diese Änderung nicht vorgenommen haben, kontaktieren Sie bitte den Seitenadministrator."
+
+#: includes/class-screens.php:126
+msgid "Your account has been closed, and the account data and content selected for deletion have been removed."
+msgstr "Ihr Konto wurde geschlossen und die ausgewählten Kontodaten und Inhalte wurden gelöscht."
+
+#: includes/class-mail.php:16
+msgid "Your account has been closed, and your account data and content selected for deletion have been removed. Any posts and attachments you chose to transfer are retained under the site operator's ownership.\n\nFor files shared with other users, only your own records have been deleted. Data stored by other services, unsupported plugins, or in backups is not deleted as part of this account closure. Please contact the site operator for details about how that data is handled."
+msgstr "Ihr Konto wurde geschlossen und Ihre Daten sowie ausgewählte Inhalte wurden gelöscht. Alle Beiträge und Anhänge, die Sie übertragen wollten, bleiben im Eigentum des Seitenbetreibers. Für mit anderen Benutzern geteilte Dateien wurden nur Ihre eigenen Aufzeichnungen gelöscht. Daten, die von anderen Diensten, nicht unterstützten Plugins oder in Backups gespeichert sind, werden nicht im Rahmen dieser Kontoschließung gelöscht. Bitte wenden Sie sich an den Seitenbetreiber für Details zur Handhabung dieser Daten."
+
+#: includes/class-mail.php:20
+msgid "Your account has been suspended. Please contact the site administrator for details."
+msgstr "Ihr Konto wurde suspendiert. Bitte wenden Sie sich an den Seitenadministrator für Details."
+
+#: includes/class-mail.php:13
+msgid "Your account is awaiting administrator review. We will let you know when it is ready to use."
+msgstr "Ihr Konto wartet auf die Überprüfung durch den Administrator. Wir benachrichtigen Sie, sobald es einsatzbereit ist."
+
+#: includes/class-mail.php:19
+msgid "Your account is no longer permitted to access this site. Your account and records have been retained. Please contact the site administrator for details."
+msgstr "Ihr Konto darf diese Seite nicht mehr nutzen. Ihr Konto und Ihre Aufzeichnungen wurden aufbewahrt. Bitte wenden Sie sich an den Seitenadministrator für Details."
+
+#: includes/class-mail.php:14
+msgid "Your account is now ready to use.\n{link}"
+msgstr "Ihr Konto ist nun einsatzbereit.\n{link}"
+
+#: includes/class-screens.php:221
+msgid "Your account, profile, authentication information, comments posted while logged in, and posts and attachments not selected for transfer will be deleted, including items in the trash. Comments on deleted posts will also be removed."
+msgstr "Ihr Konto, Profil, Authentifizierungsinformationen, während des Logins gepostete Kommentare sowie Beiträge und Anhänge, die nicht zur Übertragung ausgewählt wurden, werden gelöscht, einschließlich des Papierkorbs. Kommentare zu gelöschten Beiträgen werden ebenfalls entfernt."
+
+#: includes/class-screens.php:183
+msgid "Your current email address will remain unchanged until you complete the confirmation process."
+msgstr "Ihre aktuelle email Adresse bleibt unverändert, bis Sie den Bestätigungsprozess abgeschlossen haben."
+
+#: includes/class-screens.php:142
+msgid "Your email address has changed. Log in with your new address."
+msgstr "Ihre email Adresse hat sich geändert. Melden Sie sich mit Ihrer neuen Adresse an."
+
+#: includes/class-screens.php:114
+msgid "Your password has been reset. Please log in."
+msgstr "Ihr Passwort wurde zurückgesetzt. Bitte melden Sie sich an."
+
+#: includes/class-mail.php:25
+msgid "Your password has changed. If you did not make this change, contact the site administrator immediately."
+msgstr "Ihr Passwort wurde geändert. Wenn Sie diese Änderung nicht vorgenommen haben, kontaktieren Sie bitte sofort den Seitenadministrator."
+
+#: includes/class-screens.php:106
+msgid "Your registration has been submitted. We will notify you after administrator review."
+msgstr "Ihre Registrierung wurde übermittelt. Wir informieren Sie nach Überprüfung durch den Administrator."
+
+#: includes/class-mail.php:11
+msgid "Your registration is complete.\nAccount information: {link}"
+msgstr "Ihre Registrierung ist abgeschlossen.\nKontoinformationen: {link}"
+
+#: includes/class-mail.php:7
+msgid "[{site}] Confirm your email address"
+msgstr "[{site}] Bestätigen Sie Ihre email Adresse"
+
+#: includes/class-mail.php:26
+msgid "[{site}] Confirm your new email address"
+msgstr "[{site}] Bestätigen Sie Ihre neue email Adresse"
+
+#: includes/class-mail.php:21
+msgid "[{site}] Reset your password"
+msgstr "[{site}] Setzen Sie Ihr Passwort zurück"
+
+#: includes/class-mail.php:19
+msgid "[{site}] Your account access has been revoked"
+msgstr "[{site}] Ihr Kontozugriff wurde widerrufen"
+
+#: includes/class-mail.php:16
+msgid "[{site}] Your account has been closed"
+msgstr "[{site}] Ihr Konto wurde geschlossen"
+
+#: includes/class-mail.php:20
+msgid "[{site}] Your account has been suspended"
+msgstr "[{site}] Ihr Konto wurde suspendiert"
+
+#: includes/class-mail.php:13
+msgid "[{site}] Your account is awaiting review"
+msgstr "[{site}] Ihr Konto wartet auf Überprüfung"
+
+#: includes/class-mail.php:14
+msgid "[{site}] Your account is ready to use"
+msgstr "[{site}] Ihr Konto ist einsatzbereit"
+
+#: includes/class-mail.php:28
+msgid "[{site}] Your email address has changed"
+msgstr "[{site}] Ihre email Adresse wurde geändert"
+
+#: includes/class-mail.php:25
+msgid "[{site}] Your password has changed"
+msgstr "[{site}] Ihr Passwort wurde geändert"
+
+#: includes/class-mail.php:11
+msgid "[{site}] Your registration is complete"
+msgstr "[{site}] Ihre Registrierung ist abgeschlossen"
+
+#: includes/class-admin.php:221
+msgid "atshift Freeform Login / Pro Add-on"
+msgstr "atshift Freeform Login / Pro Add-on"
+
+#: includes/class-admin.php:221
+msgid "atshift Members Pro Add-on"
+msgstr "atshift Members Pro Add-on"
+
+#: includes/class-admin.php:322
+msgid "atshift Members Settings"
+msgstr "atshift Members Einstellungen"
+
+#: includes/class-admin.php:300
+msgid "atshift Members provides the essentials for a membership site. Add the following plugins to suit your site's needs."
+msgstr "atshift Members bietet das Wesentliche für eine Mitgliedsseite. Fügen Sie die folgenden Plugins hinzu, um den Bedürfnissen Ihrer Seite gerecht zu werden."
+
+#: atshift-members.php:30
+msgid "atshift Members supports single-site installations only."
+msgstr "atshift Members unterstützt nur Ein-Website-Installationen."
+
+#: atshift-members.php:45
+msgid "atshift Members: Every minute"
+msgstr "atshift Members: Alle Minute"
+
+#: includes/class-admin.php:221
+msgid "atshift User Profile Fields / Pro Add-on"
+msgstr "atshift User Profile Fields / Pro Add-on"
+
+#: includes/class-admin.php:577
+msgid "{site} Office"
+msgstr "{site} Büro"
+
+#: includes/class-admin.php:573
+msgid "{site} Office\nContact: info@example.com\nhttps://example.com/"
+msgstr "{site} Büro\nKontakt: info@example.com\nhttps://example.com/"
+
+#: includes/class-admin.php:335
+msgid "← Back to members"
+msgstr "← Zurück zu den Mitgliedern"

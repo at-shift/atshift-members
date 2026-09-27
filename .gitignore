@@ -17,6 +17,7 @@
 !/screenshots/screenshot-*.png
 !/wordpress-org-assets/
 !/wordpress-org-assets/icon-*.png
+!/wordpress-org-assets/banner-*.png
 /tools/__pycache__/
 **/.DS_Store
 

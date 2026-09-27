@@ -1,0 +1,2754 @@
+# Translation catalog for atshift Members.
+# Licensed under GPL-2.0-or-later.
+msgid ""
+msgstr "Project-Id-Version: atshift Members 1.0.1\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-27 00:00+0000\nPO-Revision-Date: 2026-09-27 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: zh_CN\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Domain: atshift-members\n"
+
+#: includes/class-profile.php:102
+msgid " (Optional)"
+msgstr " （可选）"
+
+#: includes/class-profile.php:102
+msgid " (Required)"
+msgstr " （必填）"
+
+#: includes/class-admin.php:446
+msgid " (default)"
+msgstr " （默认）"
+
+#: includes/class-admin.php:520
+msgid " (required)"
+msgstr " （必填）"
+
+#: includes/class-admin.php:504
+msgid " (user classification) "
+msgstr " （用户分类） "
+
+#: includes/class-admin.php:595
+msgid " Email Notifications"
+msgstr " 电子邮件通知"
+
+#: includes/class-admin.php:204 includes/class-admin.php:251
+msgid " and "
+msgstr " 和 "
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:620
+msgid "%1$s specifies the public directory containing WordPress, and %2$s specifies members-only storage. WordPress must be able to read and write in the private directory."
+msgstr "%1$s指定包含WordPress的公共目录，%2$s指定仅限会员的存储。WordPress必须能够在私有目录中读写。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:253
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:52
+msgid "%s Archives"
+msgstr "%s 档案"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:54
+msgid "%s Attributes"
+msgstr "%s属性"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:76
+msgid "%s Link"
+msgstr "%s链接"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:64
+msgid "%s List"
+msgstr "%s列表"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:62
+msgid "%s List Navigation"
+msgstr "%s列表导航"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:260
+msgid "%s makes it easy to configure profile fields and extend registration, account display, and editing forms."
+msgstr "%s使配置个人资料字段和扩展注册、帐户显示和编辑表格变得简单。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:68
+msgid "%s published privately."
+msgstr "%s私下发布。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:66
+msgid "%s published."
+msgstr "%s发布。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:70
+msgid "%s reverted to draft."
+msgstr "%s恢复为草案。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:72
+msgid "%s scheduled."
+msgstr "%s已安排。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:74
+msgid "%s updated."
+msgstr "%s已更新。"
+
+#: includes/class-screens.php:227
+msgid "(Unnamed Attachment)"
+msgstr "（无名附件）"
+
+#: includes/class-screens.php:224 includes/class-screens.php:239
+msgid "(Untitled)"
+msgstr "（无标题）"
+
+#: includes/class-directory.php:107
+msgid ", "
+msgstr "， "
+
+#: includes/class-admin.php:559
+msgid ". Create an account if you do not have one."
+msgstr "。 一个账户，如果你没有。"
+
+#: includes/class-admin.php:309
+msgid "1. Set Up Member Pages"
+msgstr "1. 设置会员页面"
+
+#: includes/class-admin.php:310
+msgid "2. Registration and Administration"
+msgstr "2.注册和管理"
+
+#: includes/class-admin.php:311
+msgid "3. Pro Add-on Features"
+msgstr "3.专业附加功能"
+
+#: includes/class-admin.php:409
+msgid ": Access is temporarily suspended. The member cannot log in, but their information and content are retained. Change the status back to Active to restore access."
+msgstr "：访问暂时暂停。会员无法登录，但他们的信息和内容将被保留。将状态恢复为“活动”以恢复访问。"
+
+#: includes/class-admin.php:409
+msgid ": Can log in and use member features."
+msgstr "：可以登录并使用会员功能。"
+
+#: includes/class-admin.php:595
+msgid ": Classification name; "
+msgstr "：分类名称； "
+
+#: includes/class-admin.php:409
+msgid ": Registration is awaiting review. The member cannot log in yet. Change the status to Active after reviewing their information."
+msgstr "：注册正在等待审核。会员目前无法登录。在审核完信息后，请将状态更改为“活跃”。"
+
+#: includes/class-admin.php:595
+msgid ": Rejection reason"
+msgstr "：拒绝原因"
+
+#: includes/class-admin.php:595
+msgid ": Requested classification; "
+msgstr "：请求的分类； "
+
+#: includes/class-members.php:88
+msgid "A closed account cannot be restored by removing its suspension."
+msgstr "关闭的帐户不能通过取消暂停来恢复。"
+
+#: includes/class-admin.php:365
+msgid "A free plugin for adding fields such as phone numbers and arranging profile forms. It is optional: atshift Members can also provide basic name and biography fields on its own."
+msgstr "一个用于添加电话号码等字段和排列个人资料表格的免费插件。它是可选的：atshift Members也可以单独提供基本的姓名和简历字段。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:78
+msgid "A link to a %s."
+msgstr "指向%s的链接。"
+
+#: includes/class-admin.php:469
+msgid "A page for member account procedures."
+msgstr "一个用于会员帐户程序的页面。"
+
+#: includes/class-mail.php:21
+msgid "A password reset was requested for your account. Follow this link to reset it.\n{link}\n\nIf you did not request this, please ignore this email."
+msgstr "您的帐户请求重置密码。请点击此链接重置密码。\n\n{link}\n\n如果您没有请求此操作，请忽略此email。"
+
+#: includes/class-admin.php:562
+msgid "A private key used to verify responses with Cloudflare. Saved values are never displayed. Leave this blank to keep the current key. If you change the site key, enter its matching secret key as well."
+msgstr "用于验证与Cloudflare的响应的私钥。保存的值永远不会显示。将此留空以保留当前的密钥。如果您更改网站密钥，请同时输入其匹配的秘钥。"
+
+#: includes/class-admin.php:607
+msgid "A small marker file is also placed in shared storage to verify the connection."
+msgstr "还将一个小型标记文件放置在共享存储中，以验证连接。"
+
+#: includes/class-admin.php:409
+msgid "About Member Status and Changes"
+msgstr "关于会员状态和更改"
+
+#: includes/class-admin.php:606
+msgid "Absolute Path to the Members-Only Storage Directory"
+msgstr "仅限会员的存储目录的绝对路径"
+
+#: includes/class-admin.php:605
+msgid "Absolute Path to the Public Directory Containing WordPress"
+msgstr "包含WordPress的公共目录的绝对路径"
+
+#: includes/class-admin.php:487
+msgid "Accepting Member Registrations"
+msgstr "接受会员注册"
+
+#: includes/class-dashboard.php:55
+msgid "Account"
+msgstr "账户"
+
+#: includes/class-mail.php:19
+msgid "Account Banned"
+msgstr "帐户被禁用"
+
+#: includes/class-mail.php:16
+msgid "Account Closed"
+msgstr "账户关闭"
+
+#: includes/class-members.php:5
+msgid "Account Closure in Progress"
+msgstr "账户关闭正在进行中"
+
+#: includes/class-members.php:5
+msgid "Account Removed"
+msgstr "帐户已删除"
+
+#: includes/class-mail.php:20
+msgid "Account Suspended"
+msgstr "账户暂停"
+
+#: includes/class-withdrawal.php:79
+msgid "Account closure is in progress. Please wait a moment."
+msgstr "账户关闭正在进行中。请稍等。"
+
+#: includes/class-dashboard.php:52
+msgid "Account information"
+msgstr "账户信息"
+
+#: includes/class-member-list-table.php:47
+msgid "Activate"
+msgstr "启用"
+
+#: includes/class-admin.php:409 includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Active"
+msgstr "已启用"
+
+#: includes/class-directory.php:29
+msgid "Active members"
+msgstr "活跃会员"
+
+#: includes/class-content.php:32
+msgid "Add New"
+msgstr "添加新"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:34
+msgid "Add New %s"
+msgstr "添加新%s"
+
+#: includes/class-admin.php:559
+msgid "Add a Turnstile widget for this site and register the domains where it will be used."
+msgstr "为此网站添加一个Turnstile小部件，并注册将用于它的域名。"
+
+#: includes/class-admin.php:528
+msgid "Add or Change Fields"
+msgstr "添加或更改字段"
+
+#: includes/class-profile-preset.php:27
+msgid "Add the missing basic profile fields without replacing existing settings or profile values."
+msgstr "添加缺失的基本个人资料字段，无需替换现有设置或个人资料值。"
+
+#: includes/class-profile-preset.php:61
+msgid "Add the profile picture field provided by UPF."
+msgstr "添加UPF提供的个人资料图片字段。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:620
+msgid "Add these settings to %s before the comment that says to stop editing. If they already exist, edit them instead of adding duplicates."
+msgstr "在表示停止编辑的注释之前，将这些设置添加到%s中。如果它们已经存在，请编辑它们，而不是添加重复项。"
+
+#: includes/class-admin.php:358
+msgid "Add tools for reviewing posts, sending announcements, and sharing responsibilities among staff."
+msgstr "添加用于审核文章、发送公告以及在员工之间分享职责的工具。"
+
+#: includes/class-admin.php:323
+msgid "Additional Settings"
+msgstr "附加设置"
+
+#: includes/class-admin.php:371
+msgid "Adds more design controls to the free atshift Freeform Login plugin. Use a custom logo and adjust the form's position, opacity, border, corner radius, and shadow. Button borders and shadows can also be customized."
+msgstr "为免费的atshift Freeform Login插件添加更多设计控制。使用自定义徽标，并调整表单的位置、透明度、边框、角半径和阴影。按钮边框和阴影也可以自定义。"
+
+#: includes/class-members.php:86
+msgid "Administrator permissions are required to change operators."
+msgstr "更改管理人员需要管理员权限。"
+
+#: includes/class-directory.php:43
+msgid "Affiliation"
+msgstr "所属组织"
+
+#: includes/class-member-list-table.php:34
+msgid "All"
+msgstr "全部"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:50
+msgid "All %s"
+msgstr "所有%s"
+
+#: includes/class-admin.php:380
+msgid "All Members"
+msgstr "所有会员"
+
+#: includes/class-admin.php:385
+msgid "Allowed User Categories"
+msgstr "允许的用户类别"
+
+#: includes/class-withdrawal.php:105
+msgid "An administrator needs to verify the recipient account for transferred content."
+msgstr "管理员需要验证接收者帐户是否已接收转发的内容。"
+
+#: includes/class-media.php:107
+msgid "An operation is in progress. Please try again."
+msgstr "操作正在进行中。请重试。"
+
+#: includes/class-admin.php:369
+msgid "An optional plugin for styling your login page to match your site and enabling passkey login. It is not required for member registration."
+msgstr "一个可选的插件，用于为您的登录页面进行样式化，使其与您的网站匹配，并启用密码登录。会员注册不需要它。"
+
+#: includes/class-admin.php:360
+msgid "Announcement Emails and Scheduling"
+msgstr "公告电子邮件和日程安排"
+
+#: includes/class-member-list-table.php:47
+msgid "Apply"
+msgstr "应用"
+
+#: includes/class-mail.php:14
+msgid "Approval or Access Restored"
+msgstr "批准或访问已恢复"
+
+#: includes/class-admin.php:451
+msgid "Ask a site administrator to change the allowed post types."
+msgstr "请网站管理员更改允许的文章类型。"
+
+#: includes/class-admin.php:361
+msgid "Assign post approvals, announcement delivery, and CSV member onboarding to individual staff members."
+msgstr "将职位批准、公告发布和CSV 会员入职流程分配给各员工。"
+
+#: includes/class-admin.php:242
+msgid "Assigns member management responsibilities by category"
+msgstr "按类别分配会员管理职责"
+
+#: includes/class-files.php:289
+msgid "Attach File"
+msgstr "附加文件"
+
+#: includes/class-media.php:143 includes/class-media.php:155
+msgid "Attach Files"
+msgstr "附加文件"
+
+#: assets/media.js:100
+msgid "Attachment Visibility"
+msgstr "附件可见性"
+
+#: includes/class-admin.php:527
+msgid "Authentication Features Available After Registration"
+msgstr "注册后可使用的身份验证功能"
+
+#: includes/class-admin.php:397
+msgid "Author Links"
+msgstr "作者链接"
+
+#: includes/class-admin.php:441 includes/class-member-list-table.php:9
+msgid "Available Post Types"
+msgstr "可用的文章类型"
+
+#: includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Banned"
+msgstr "已封禁"
+
+#: includes/class-admin.php:424
+msgid "Banned accounts cannot log in. Accounts, content, and records are retained. Only a site administrator can restore access."
+msgstr "被禁账户无法登录。帐户、内容和记录将被保留。只有网站管理员才能恢复访问权限。"
+
+#: includes/class-admin.php:549
+msgid "Before launching a membership site, check any page caching plugins and server caches to prevent one member's information from being shown to someone else. "
+msgstr "在启动会员网站之前，请检查任何页面缓存插件和服务器缓存，以防止某个会员的信息被显示给其他人。 "
+
+#: includes/class-admin.php:607
+msgid "Before saving, the plugin checks that it can create, read, and delete a test file in the specified directory."
+msgstr "在保存之前，插件会检查它是否可以在指定的目录中创建、读取和删除测试文件。"
+
+#: includes/class-directory.php:43 includes/class-profile-preset.php:46 includes/class-profile.php:93
+msgid "Biography"
+msgstr "个人简介"
+
+#: includes/class-admin.php:596
+msgid "Body"
+msgstr "正文"
+
+#: includes/class-services.php:25
+msgid "Both keys are required. Check them and copy them from the Cloudflare dashboard."
+msgstr "都需要两个密钥。检查它们，然后从Cloudflare仪表板中复制它们。"
+
+#: includes/class-profile-preset.php:68
+msgid "Branch"
+msgstr "分支机构"
+
+#: atshift-members.php:5
+msgid "Build a simple, easy-to-understand membership site."
+msgstr "构建一个简单、易于理解的会员网站。"
+
+#: includes/class-profile-preset.php:52
+msgid "Building / Unit"
+msgstr "建筑物/单元"
+
+#: includes/class-member-list-table.php:47
+msgid "Bulk Actions"
+msgstr "批量操作"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-plugin-listing.php:50
+msgid "By %s"
+msgstr "作者：%s"
+
+#: includes/class-files.php:229
+msgid "Cannot access the storage location."
+msgstr "无法访问存储位置。"
+
+#: includes/class-files.php:180
+msgid "Cannot attach this file."
+msgstr "无法附加此文件。"
+
+#: includes/class-registration.php:206
+msgid "Cannot change the email address."
+msgstr "无法更改email地址。"
+
+#: includes/class-registration.php:151
+msgid "Cannot complete registration. Please try logging in or resetting your password."
+msgstr "无法完成注册。请尝试登录或重置密码。"
+
+#: includes/class-services.php:57
+msgid "Cannot connect to the password checking service. Please try again later."
+msgstr "无法连接到密码检查服务。请稍后再试。"
+
+#: includes/class-media.php:122
+msgid "Cannot copy the file."
+msgstr "无法复制该文件。"
+
+#: includes/class-files.php:42
+msgid "Cannot create a file in the storage directory."
+msgstr "无法在存储目录中创建文件。"
+
+#: includes/class-media.php:118
+msgid "Cannot create temporary storage."
+msgstr "无法创建临时存储。"
+
+#: includes/class-files.php:53
+msgid "Cannot create the shared directory marker file."
+msgstr "无法创建共享目录标记文件。"
+
+#: includes/class-media.php:113
+msgid "Cannot read the source file."
+msgstr "无法读取源文件。"
+
+#: includes/class-files.php:80
+msgid "Cannot save."
+msgstr "无法保存。"
+
+#: includes/class-screens.php:173 includes/class-screens.php:204
+msgid "Change Email Address"
+msgstr "更改电子邮件地址"
+
+#: includes/class-screens.php:231
+msgid "Change Selection"
+msgstr "更改选择"
+
+#: assets/media.js:69
+msgid "Change Visibility"
+msgstr "更改可见性"
+
+#: includes/class-admin.php:131
+msgid "Change posting permissions in Posting Settings."
+msgstr "在“发布设置”中更改发布权限。"
+
+#: includes/class-admin.php:436
+msgid "Change role:"
+msgstr "更改角色："
+
+#: includes/class-admin.php:429
+msgid "Change status:"
+msgstr "更改状态："
+
+#: includes/class-admin.php:451
+msgid "Change the allowed post types in Posting Settings."
+msgstr "更改“发布设置”中的允许发布类型。"
+
+#: includes/class-admin.php:409
+msgid "Changing a member's status sends them a notification email and ends any active login sessions."
+msgstr "更改会员状态会向他们发送通知email，并终止任何正在进行的登录会话。"
+
+#: includes/class-admin.php:548
+msgid "Check Cache Settings Before Launch"
+msgstr "在启动前检查缓存设置"
+
+#: includes/class-admin.php:607
+msgid "Check and Save Storage Location"
+msgstr "检查并保存存储位置"
+
+#: includes/class-registration.php:197
+msgid "Check the address or try again later."
+msgstr "检查地址，或稍后再试。"
+
+#: includes/class-files.php:154
+msgid "Check the file extension and contents. This file cannot be attached in the selected format."
+msgstr "检查文件扩展名和内容。此文件无法以所选格式附件。"
+
+#: includes/class-profile.php:120
+msgid "Check the format and length of your entries."
+msgstr "检查您的条目的格式和长度。"
+
+#: includes/class-directory.php:56 includes/class-directory.php:58
+msgid "Check the selected items."
+msgstr "勾选所选项目。"
+
+#: includes/class-members.php:94
+msgid "Check the selected members."
+msgstr "检查所选会员。"
+
+#: includes/class-files.php:25
+msgid "Check the shared directory connection. The storage location could not be verified."
+msgstr "检查共享目录连接。无法验证存储位置。"
+
+#: includes/class-admin.php:164
+msgid "Check the subject, body, and required {link} placeholder."
+msgstr "检查主题、正文和所需的{link}占位符。"
+
+#: includes/class-admin.php:74 includes/class-admin.php:76 includes/class-admin.php:78 includes/class-admin.php:81 includes/class-admin.php:83
+msgid "Check the submitted classifications."
+msgstr "检查已提交的分类。"
+
+#: includes/class-admin.php:68
+msgid "Check the submitted member settings."
+msgstr "检查提交的会员设置。"
+
+#: includes/class-screens.php:133
+msgid "Check the submitted profile fields."
+msgstr "检查提交的个人资料字段。"
+
+#: includes/class-files.php:118
+msgid "Check the supported formats and the server's upload size limit."
+msgstr "检查支持的格式和服务器的上传大小限制。"
+
+#: includes/class-directory.php:63 includes/class-directory.php:65
+msgid "Check the users excluded from the directory."
+msgstr "检查目录中排除的用户。"
+
+#: includes/class-directory.php:50
+msgid "Check who can view the directory."
+msgstr "检查谁可以查看目录。"
+
+#: assets/media.js:71
+msgid "Choose How to Add Media"
+msgstr "选择如何添加媒体"
+
+#: includes/class-members.php:157
+msgid "Choose Member or Site Operator."
+msgstr "选择会员或网站管理人员。"
+
+#: includes/class-files.php:288
+msgid "Choose Members Only when using Add Media or a block's Upload control."
+msgstr "在使用“添加媒体”或块的“上传”控制器时，请选择“仅限会员”。"
+
+#: includes/class-admin.php:27
+msgid "Choose Site Operator for membership administration. Assign duties and management scope in Staff and Permissions."
+msgstr "选择网站管理人员进行会员管理。在员工和权限中分配职责和管理范围。"
+
+#: includes/class-files.php:184 includes/class-media.php:91
+msgid "Choose a file within the server's upload size limit."
+msgstr "选择服务器上传大小限制内的文件。"
+
+#: assets/media.js:46
+msgid "Choose a format supported by this block."
+msgstr "选择本块支持的格式。"
+
+#: includes/class-files.php:32
+msgid "Choose a storage method."
+msgstr "选择一种存储方法。"
+
+#: includes/class-media.php:72
+msgid "Choose a visibility setting."
+msgstr "选择一个可见性设置。"
+
+#: assets/media.js:15
+msgid "Choose from saved images, videos, and documents."
+msgstr "从已保存的图像、视频和文档中进行选择。"
+
+#: includes/class-withdrawal.php:60
+msgid "Choose how to close your account."
+msgstr "选择如何关闭您的帐户。"
+
+#: includes/class-members.php:92
+msgid "Choose the new member status."
+msgstr "选择新的会员状态。"
+
+#: includes/class-members.php:150
+msgid "Choose the new status."
+msgstr "选择新的状态。"
+
+#: includes/class-admin.php:295
+msgid "Choose whether to accept new registrations and whether they need approval. You can also review the name, biography, and other fields members will fill in."
+msgstr "选择是否接受新注册，以及他们是否需要批准。您还可以查看会员将填写的姓名、简历和其他字段。"
+
+#: includes/class-posting.php:80 includes/class-posting.php:83
+msgid "Choose which members are allowed to post."
+msgstr "选择哪些会员可以发布文章。"
+
+#: includes/class-admin.php:377
+msgid "Choose which members can create content for each post type registered on this site. All Members means members whose status is Active. By default, only standard WordPress posts are available to all members."
+msgstr "选择哪些会员可以为本网站注册的每个文章类型创建内容。所有会员是指状态为活动的会员。默认情况下，所有会员只能访问标准的WordPress文章。"
+
+#: includes/class-admin.php:296
+msgid "Choose which post types members can use and which members can create content."
+msgstr "选择会员可以使用的文章类型，以及哪些会员可以创建内容。"
+
+#: includes/class-directory.php:10
+msgid "Choose who can view the member directory and which profile details it shows."
+msgstr "选择谁可以查看会员目录，以及它显示哪些个人资料详细信息。"
+
+#: includes/class-profile-preset.php:50
+msgid "City / Municipality"
+msgstr "城市/市政当局"
+
+#: includes/class-directory.php:31
+msgid "Classifications allowed to view the directory (when selected classifications are used)"
+msgstr "允许查看目录的分类（当选择的分类被使用时）"
+
+#: includes/class-admin.php:538
+msgid "Click Save Registration Settings on the right to apply your changes."
+msgstr "点击右侧的“保存注册设置”以应用您的更改。"
+
+#: includes/class-screens.php:13 includes/class-screens.php:206
+msgid "Close Account"
+msgstr "关闭账户"
+
+#: includes/class-screens.php:233
+msgid "Closing your account deletes your account and personal data and prevents further login. If you want to preserve contributions, you can transfer selected posts to the site operator. Review the deletion and transfer details on the next screen."
+msgstr "关闭您的帐户将删除您的帐户和个人数据，并防止进一步登录。如果您想保留贡献，您可以将选定的文章转移到网站管理人员那里。请在下一个页面上查看删除和转移详细信息。"
+
+#: includes/class-admin.php:624
+msgid "Configure IP addresses and NAS credentials on the server. atshift Members uses the mounted directory. It does not set up VPN or cloud API connections, import existing documents, or migrate files when storage locations change."
+msgstr "在服务器上配置IP地址和NAS凭据。atshift Members使用挂载的目录。当存储位置发生变化时，它不会设置VPN或云API连接、导入现有文档或迁移文件。"
+
+#: includes/class-admin.php:554
+msgid "Configured"
+msgstr "已配置"
+
+#: includes/class-admin.php:632
+msgid "Configured in wp-config.php"
+msgstr "在wp-config.php中配置"
+
+#: includes/class-admin.php:566
+msgid "Configured means the keys have been saved. Test an actual request form afterward to verify connectivity and domain settings."
+msgstr "配置表示密钥已保存。之后请测试实际请求表格，以验证连接性和域设置。"
+
+#: includes/class-admin.php:235
+msgid "Configures and manages user categories"
+msgstr "配置和管理用户类别"
+
+#: includes/class-admin.php:230
+msgid "Configures the profile layout"
+msgstr "配置个人资料布局"
+
+#: includes/class-admin.php:230
+msgid "Configures the profile layout and user classifications"
+msgstr "配置个人资料布局和用户分类"
+
+#: includes/class-screens.php:230
+msgid "Confirm Account Closure"
+msgstr "确认账户关闭"
+
+#: includes/class-screens.php:250
+msgid "Confirm Email Address"
+msgstr "确认电子邮件地址"
+
+#: includes/class-screens.php:181
+msgid "Confirm Email Address Change"
+msgstr "确认电子邮件地址更改"
+
+#: includes/class-screens.php:250
+msgid "Confirm your email address to continue registration."
+msgstr "请确认您的email地址以继续注册。"
+
+#: includes/class-admin.php:588
+msgid "Confirms that the password has changed. The password itself is never included."
+msgstr "确认密码已更改。密码本身从不包含在内。"
+
+#: includes/class-admin.php:559
+msgid "Copy the issued Site Key and Secret Key into the fields below, then save them."
+msgstr "将已发行的网站密钥和秘钥复制到下面的字段中，然后保存它们。"
+
+#: includes/class-registration.php:160
+msgid "Could not complete registration. Please contact the administrator."
+msgstr "无法完成注册。请联系管理员。"
+
+#: includes/class-registration.php:154
+msgid "Could not complete registration. Request a new confirmation email."
+msgstr "无法完成注册。请求一个新的确认email。"
+
+#: includes/class-screens.php:145
+msgid "Could not complete the action."
+msgstr "无法完成操作。"
+
+#: assets/media.js:10
+msgid "Could not complete the action. Please try again."
+msgstr "无法完成操作。请重试。"
+
+#: includes/class-files.php:279
+msgid "Could not delete the file from storage."
+msgstr "无法从存储中删除该文件。"
+
+#: includes/class-members.php:177
+msgid "Could not remove the management scope."
+msgstr "无法移除管理范围。"
+
+#: includes/class-members.php:180
+msgid "Could not restore the management scope."
+msgstr "无法恢复管理范围。"
+
+#: includes/class-posting.php:93
+msgid "Could not save posting settings."
+msgstr "无法保存发布设置。"
+
+#: includes/class-withdrawal.php:91
+msgid "Could not save the account closure request."
+msgstr "无法保存账户关闭请求。"
+
+#: includes/class-withdrawal.php:92
+msgid "Could not save the account closure status."
+msgstr "无法保存帐户关闭状态。"
+
+#: includes/class-files.php:195
+msgid "Could not save the attachment information."
+msgstr "无法保存附件信息。"
+
+#: includes/class-withdrawal.php:73
+msgid "Could not save the confirmation details."
+msgstr "无法保存确认详细信息。"
+
+#: includes/class-members.php:176
+msgid "Could not save the management scope."
+msgstr "无法保存管理范围。"
+
+#: includes/class-members.php:185
+msgid "Could not save the member information."
+msgstr "无法保存会员信息。"
+
+#: includes/class-members.php:182
+msgid "Could not save the member role."
+msgstr "无法保存会员角色。"
+
+#: includes/class-members.php:167
+msgid "Could not save the member status."
+msgstr "无法保存会员状态。"
+
+#: includes/class-files.php:57
+msgid "Could not save the storage settings."
+msgstr "无法保存存储设置。"
+
+#: includes/class-members.php:141
+msgid "Could not start saving."
+msgstr "无法开始保存。"
+
+#: includes/class-withdrawal.php:119
+msgid "Could not verify the account closure request."
+msgstr "无法验证账户关闭请求。"
+
+#: includes/class-members.php:143
+msgid "Could not verify the member information."
+msgstr "无法验证会员信息。"
+
+#: includes/class-files.php:47
+msgid "Could not verify writing, reading, and deleting in the storage directory."
+msgstr "无法验证在存储目录中进行写入、阅读和删除。"
+
+#: includes/class-registration.php:117
+msgid "Could not verify. Please wait before requesting a new confirmation email."
+msgstr "无法验证。请稍等后再请求新的确认email。"
+
+#: includes/class-registration.php:119 includes/class-registration.php:135
+msgid "Could not verify. Request a new confirmation email."
+msgstr "无法验证。请求一个新的确认email。"
+
+#: includes/class-dashboard.php:22
+msgid "Create Member Home"
+msgstr "创建会员主页"
+
+#: includes/class-admin.php:482
+msgid "Create Member Pages"
+msgstr "创建会员页面"
+
+#: includes/class-dashboard.php:17
+msgid "Create a page with account and posting links. Approval status is also shown when the Pro add-on is active. You can edit the generated page in the block editor."
+msgstr "创建一个带有帐户和发布链接的页面。当Pro插件处于活动状态时，也会显示批准状态。您可以在块编辑器中编辑生成的页面。"
+
+#: includes/class-admin.php:482
+msgid "Create all missing member pages. Existing pages are left unchanged."
+msgstr "创建所有缺失的会员页面。现有页面保持不变。"
+
+#: includes/class-admin.php:367
+msgid "Create hierarchical user classifications, such as branches, departments, or membership types. This paid add-on requires the free atshift User Profile Fields plugin."
+msgstr "创建分层用户分类，如部门、部门或会员类型。此付费插件需要免费的atshift User Profile Fields插件。"
+
+#: includes/class-admin.php:512
+msgid "Create profile fields in atshift User Profile Fields."
+msgstr "在atshift User Profile Fields中创建个人资料字段。"
+
+#: includes/class-admin.php:465
+msgid "Create the five pages used for registration and account management. Click Create Member Pages to add all five. Pages that already exist are left unchanged; only missing pages are created."
+msgstr "创建用于注册和帐户管理的五页。单击“创建会员页面”以添加所有五页。已经存在的页面保持不变；仅创建缺失的页面。"
+
+#: includes/class-admin.php:615
+msgid "Create the members-only directory outside the server's public directory first. Set the path here or in wp-config.php. The plugin does not create the directory automatically."
+msgstr "首先在服务器公共目录之外创建仅限会员的目录。在此处或在wp-config.php中设置路径。插件不会自动创建目录。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:389
+msgid "Create user categories in %s."
+msgstr "在%s中创建用户类别。"
+
+#: includes/class-admin.php:631
+msgid "Current storage: "
+msgstr "当前存储： "
+
+#: includes/class-admin.php:426
+msgid "Currently Active"
+msgstr "目前活跃"
+
+#: includes/class-admin.php:426
+msgid "Currently Suspended"
+msgstr "目前暂停"
+
+#: includes/class-admin.php:298
+msgid "Customize the automatic emails sent for registration, password changes, and other account events. Default text is provided. Messages are sent through the standard WordPress mail function."
+msgstr "自定义用于注册、更改密码和其他帐户事件的自动emails。提供默认文本。消息通过标准WordPress邮件功能发送。"
+
+#: includes/class-admin.php:488
+msgid "Decide whether new members can start using the site immediately. Approval is unnecessary if the site is open to everyone."
+msgstr "决定新会员是否可以立即开始使用该网站。如果该网站向所有人开放，则无需批准。"
+
+#: includes/class-files.php:286
+msgid "Delete Attachment"
+msgstr "删除附件"
+
+#: includes/class-admin.php:563
+msgid "Delete Saved Keys"
+msgstr "删除已保存的密钥"
+
+#: includes/class-admin.php:563
+msgid "Delete both keys"
+msgstr "删除两个键"
+
+#: includes/class-screens.php:235
+msgid "Delete everything and close my account"
+msgstr "删除一切并关闭我的账户"
+
+#: includes/class-profile-preset.php:69
+msgid "Department"
+msgstr "部门"
+
+#: includes/class-withdrawal.php:61
+msgid "Deselect posts for transfer if you want to delete everything."
+msgstr "如果您想删除所有内容，请取消选择要转移的文章。"
+
+#: includes/class-directory.php:111
+msgid "Directory pages"
+msgstr "目录页面"
+
+#: includes/class-profile-preset.php:45 includes/class-profile.php:91
+msgid "Display Name"
+msgstr "显示名称"
+
+#: includes/class-directory.php:43
+msgid "Display name"
+msgstr "显示名称"
+
+#: includes/class-admin.php:232
+msgid "Displays integrated fields in registration, account, and editing forms"
+msgstr "在注册、帐户和编辑表单中显示集成字段"
+
+#: includes/class-admin.php:236
+msgid "Displays members within the assigned scope and saves category selections together with member information"
+msgstr "在指定的范围内显示会员，并保存类别选择和会员信息"
+
+#: includes/class-admin.php:232
+msgid "Displays passkey registration and management on the account editing page"
+msgstr "在账户编辑页面上显示密码注册和管理信息"
+
+#: includes/class-admin.php:611
+msgid "Documents, reports, images, and videos intended only for members need a storage location that is not publicly accessible. This includes PDF, Word, Excel, and PowerPoint files."
+msgstr "仅为会员准备的文件、报告、图像和视频需要一个非公开访问的存储位置。这包括PDF、Word、Excel和PowerPoint文件。"
+
+#: includes/class-admin.php:365 includes/class-admin.php:369
+msgid "Download from WordPress.org"
+msgstr "从WordPress.org下载"
+
+#: assets/media.js:76
+msgid "Drop Files to Upload"
+msgstr "将文件拖放上传"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:36
+msgid "Edit %s"
+msgstr "编辑%s"
+
+#: includes/class-screens.php:13 includes/class-screens.php:204
+msgid "Edit Account Information"
+msgstr "编辑账户信息"
+
+#: includes/class-dashboard.php:19
+msgid "Edit Member Home"
+msgstr "编辑会员主页"
+
+#: includes/class-admin.php:470
+msgid "Edit Page"
+msgstr "编辑页面"
+
+#: includes/class-admin.php:532
+msgid "Edit Profile Fields in atshift User Profile Fields"
+msgstr "编辑atshift User Profile Fields中的个人资料字段"
+
+#: includes/class-dashboard.php:52
+msgid "Edit account information"
+msgstr "编辑账户信息"
+
+#: includes/class-member-list-table.php:9 includes/class-screens.php:200
+msgid "Email Address"
+msgstr "电子邮件地址"
+
+#: includes/class-screens.php:245 includes/class-screens.php:253
+msgid "Email Address "
+msgstr "电子邮件地址 "
+
+#: includes/class-mail.php:28
+msgid "Email Change Notification (Old and New Addresses)"
+msgstr "电子邮件更改通知（旧地址和新地址）"
+
+#: includes/class-admin.php:298 includes/class-admin.php:597
+msgid "Email Settings"
+msgstr "电子邮件设置"
+
+#: includes/class-admin.php:495
+msgid "Email address (required; verified by confirmation email)"
+msgstr "电子邮件地址（必填；通过确认email验证）"
+
+#: includes/class-admin.php:360
+msgid "Email announcement titles and links to members who have opted in. Combine multiple announcements into one email or schedule delivery."
+msgstr "将电子邮件公告标题和已选择加入的会员的链接合并到一个email中，或安排发送。"
+
+#: includes/class-admin.php:491
+msgid "Enable approval below if your organization needs to check membership eligibility."
+msgstr "如果您的组织需要检查会员资格，请启用下面的批准功能。"
+
+#: includes/class-files.php:119
+msgid "Enable the fileinfo extension on the server."
+msgstr "在服务器上启用文件信息扩展名。"
+
+#: includes/class-directory.php:28
+msgid "Enable the member directory"
+msgstr "启用会员目录"
+
+#: includes/class-profile.php:127
+msgid "Enter a nickname."
+msgstr "输入一个nickname。"
+
+#: includes/class-registration.php:124
+msgid "Enter a username of 1–60 characters using letters, numbers, periods, hyphens, or underscores."
+msgstr "使用字母、数字、句号、连字符或下划线输入1-60个字符的用户名。"
+
+#: includes/class-profile.php:124
+msgid "Enter a website URL starting with http:// or https://, up to 100 characters long."
+msgstr "请输入以 http:// 或 https:// 开头的网站 URL，最多 100 个字符。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:538
+msgid "Enter field identifiers used in code, not labels such as Biography. For example, use %1$s for the nickname and %2$s for the biography. To use just these two fields, enter %3$s."
+msgstr "输入代码中使用的字段标识符，而不是标签，如传记。例如，用%1$s用于nickname，用传记用于%2$s。要仅使用这两个字段，请输入%3$s。"
+
+#: includes/class-admin.php:171
+msgid "Enter the signature as text."
+msgstr "将签名输入为文本。"
+
+#: includes/class-services.php:18 includes/class-services.php:22
+msgid "Enter the two keys issued by Cloudflare."
+msgstr "输入Cloudflare发出的两个密钥。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:577
+msgid "Enter your organization name and contact details. For example, %1$s uses %2$s as a placeholder for the site name. The signature is appended to all emails sent by this plugin, including atshift Members Pro announcements. You do not need to repeat it in each template. Leave this field empty to omit the signature."
+msgstr "输入您的组织名称和联系详细信息。例如，%1$s使用%2$s作为网站名称的占位符。签名附加到此插件发送的所有email中，包括atshift Members Pro公告。您无需在每个模板中重复它。将此字段留空以省略签名。"
+
+#: includes/class-directory.php:29
+msgid "Everyone"
+msgstr "每个人"
+
+#: includes/class-admin.php:617
+msgid "Example Configuration for wp-config.php"
+msgstr "wp-config.php的示例配置"
+
+#: includes/class-directory.php:37
+msgid "Exclude Users from the Directory"
+msgstr "将用户排除在目录之外"
+
+#: includes/class-admin.php:549
+msgid "Exclude member pages from caching."
+msgstr "将会员页面排除在缓存之外。"
+
+#: includes/class-admin.php:510
+msgid "Excluded fields are omitted from member forms. Integration Not Implemented means the field does not yet have an atshift Members integration. Email addresses, passwords, and saving are handled by atshift Members account procedures."
+msgstr "排除的字段在会员表格中省略。未实现集成意味着该字段尚未具有atshift Members集成。电子邮件地址、密码和保存由atshift Members帐户程序处理。"
+
+#: includes/class-admin.php:596
+msgid "Explain what happened and what the recipient should do next."
+msgstr "解释发生了什么，以及收件人接下来应该做什么。"
+
+#: includes/class-admin.php:474 includes/class-admin.php:540
+msgid "Extend Your Site Further"
+msgstr "进一步扩展您的网站"
+
+#: includes/class-admin.php:363
+msgid "Features Available with User Categories"
+msgstr "与用户类别相关的可用功能"
+
+#: includes/class-admin.php:538
+msgid "Field Identifiers to Use"
+msgstr "要使用的字段标识符"
+
+#: includes/class-admin.php:631
+msgid "File Server / NAS (Mounted Share)"
+msgstr "文件服务器/NAS（已安装共享）"
+
+#: includes/class-files.php:95
+msgid "File not found."
+msgstr "找不到文件。"
+
+#: includes/class-admin.php:628
+msgid "Files marked Public are saved to the standard WordPress media directory. Anyone who knows the file URL can open them directly, even if the post is restricted to members. Storage does not change automatically when a post's visibility changes."
+msgstr "标记为公共的文件将保存到标准的WordPress媒体目录中。任何知道文件URL的人都可以直接打开它们，即使文章仅限会员访问。文章的可见性发生变化时，存储不会自动更改。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:60
+msgid "Filter %s"
+msgstr "过滤器%s"
+
+#: includes/class-screens.php:221
+msgid "Final Account Closure Review"
+msgstr "最终账户关闭审查"
+
+#: includes/class-profile-preset.php:41 includes/class-profile.php:88
+msgid "First Name"
+msgstr "名"
+
+#: includes/class-admin.php:514
+msgid "First name, then last name"
+msgstr "名字，然后姓氏"
+
+#: includes/class-admin.php:538
+msgid "For custom fields added in code, use the identifiers assigned when they were created. Code to render the fields in registration and editing forms and save their values is also required."
+msgstr "对于在代码中添加的自定义字段，请使用创建时分配的标识符。还需要编写代码来在注册和编辑表单中显示字段并保存其值。"
+
+#: includes/class-screens.php:229
+msgid "For files that share storage with another owner's files, only your record is removed. Data held by other services, unsupported plugins, and backups cannot be deleted by this action. Temporary rate-limit records remain until they expire."
+msgstr "对于与另一个所有者文件共享存储的文件，仅将您的记录删除。其他服务、不受支持的插件和备份所持有的数据无法通过此操作删除。临时速率限制记录将保持直到到期。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:206
+msgid "Functionality extended by %s"
+msgstr "由%s扩展的功能"
+
+#: includes/class-admin.php:624
+msgid "Grant a dedicated account read, write, and delete permissions, then mount the shared directory on the server."
+msgstr "授予一个专用帐户的读取、写入和删除权限，然后在服务器上挂载共享目录。"
+
+#: includes/class-admin.php:553
+msgid "Helps prevent automated registration and password reset requests. Add the two keys issued by Cloudflare to enable checks on this plugin's request forms."
+msgstr "有助于防止自动注册和密码重置请求。添加Cloudflare发行的两个密钥，以启用对此插件请求表格的检查。"
+
+#: includes/class-admin.php:397
+msgid "Hide standard author links that contain usernames"
+msgstr "隐藏包含用户名的标准作者链接"
+
+#: includes/class-admin.php:559
+msgid "How to Get Your Keys"
+msgstr "如何获取密钥"
+
+#: includes/class-screens.php:240
+msgid "I have reviewed the selected posts and my associated attachments, and I agree to their retention, editing, and republication under the site operator's ownership."
+msgstr "我已审查了所选文章和我的相关附件，并同意根据网站管理人员的所有权保留、编辑和转载它们。"
+
+#: includes/class-screens.php:230
+msgid "I have reviewed what will be deleted and transferred. This action cannot be undone."
+msgstr "我已经审查了将被删除和转移的内容。此操作无法撤销。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:617
+msgid "If the public directory is %1$s, create a members-only directory outside it, such as %2$s. Replace these examples with the actual paths on your server."
+msgstr "如果公共目录是%1$s，请在其外创建一个仅限会员的目录，例如%2$s。将这些示例替换为您服务器上的实际路径。"
+
+#: includes/class-admin.php:385
+msgid "If you select multiple categories, membership in any one of them is sufficient."
+msgstr "如果您选择多个类别，其中任何一个类的会员资格都足够。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:579
+msgid "In email subjects and bodies, %1$s is replaced with the site name and %2$s with a link to the relevant account procedure. Keep %2$s in emails that provide a link."
+msgstr "在email主题和实体中，%1$s被网站名称替换，%2$s被指向相关帐户程序的链接替换。在提供链接的email中保留%2$s。"
+
+#: includes/class-admin.php:391
+msgid "Include child categories"
+msgstr "包含子分类"
+
+#: atshift-members.php:32
+msgid "InnoDB tables are required."
+msgstr "需要InnoDB表。"
+
+#: assets/media.js:91
+msgid "Insert Selected Files"
+msgstr "插入选定的文件"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:56
+msgid "Insert into %s"
+msgstr "插入到%s中"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:274
+msgid "Install and activate %s to enable passkeys on supported environments without additional site setup. After signing up, members can register and manage passkeys on the Edit Account Information page."
+msgstr "安装并激活%s，在无需额外网站设置的情况下，在受支持的环境中启用密码。注册后，会员可以在“编辑帐户信息”页面上注册和管理密码。"
+
+#: includes/class-files.php:89
+msgid "Invalid file identifier."
+msgstr "无效的文件标识符。"
+
+#: includes/class-withdrawal.php:65
+msgid "Invalid post selection."
+msgstr "选择的文章无效。"
+
+#: includes/class-admin.php:382
+msgid "Keep the current category settings"
+msgstr "保留当前的类别设置"
+
+#: includes/class-admin.php:554
+msgid "Key status: "
+msgstr "密钥状态： "
+
+#: includes/class-profile-preset.php:42 includes/class-profile.php:89
+msgid "Last Name"
+msgstr "姓"
+
+#: includes/class-admin.php:514
+msgid "Last name, then first name"
+msgstr "姓氏，然后名字"
+
+#: includes/class-services.php:53
+msgid "Leading or trailing spaces and control characters are not allowed."
+msgstr "不允许有前置或后置空格和控制字符。"
+
+#: includes/class-admin.php:571
+msgid "Leave blank to use the WordPress sender name."
+msgstr "留空以使用WordPress发件人名称。"
+
+#: includes/class-admin.php:538
+msgid "Leave empty to add no profile fields. If needed, specify identifiers for names, nickname, display name, website URL, biography, or other supported fields."
+msgstr "留空以添加无个人资料字段。如果需要，请指定姓名、nickname、显示名、网站URL、传记或其他受支持字段的标识符。"
+
+#: includes/class-screens.php:194
+msgid "Log In"
+msgstr "登录"
+
+#: includes/class-screens.php:218
+msgid "Log In Again"
+msgstr "再次登录"
+
+#: includes/class-screens.php:207
+msgid "Log Out"
+msgstr "退出登录"
+
+#: includes/class-withdrawal.php:59
+msgid "Log in again and complete this within 10 minutes."
+msgstr "再次登录，并在10分钟内完成此操作。"
+
+#: includes/class-withdrawal.php:77
+msgid "Log in again and review the final confirmation."
+msgstr "再次登录并查看最终确认。"
+
+#: includes/class-screens.php:249
+msgid "Log out before registering."
+msgstr "注册前请退出登录。"
+
+#: includes/class-admin.php:467
+msgid "Logged-in members can view their information here and proceed to edit it or close their account."
+msgstr "已登录的会员可以在这里查看他们的信息，然后继续编辑或关闭他们的帐户。"
+
+#: includes/class-admin.php:620
+msgid "Make sure no other server configuration exposes the members-only directory to the public."
+msgstr "确保没有其他服务器配置将仅限会员的目录暴露给公众。"
+
+#: includes/class-admin.php:624
+msgid "Make the shared directory accessible from the WordPress server. If connecting from outside your organization, arrange a connection such as a VPN on the server first."
+msgstr "使共享目录从WordPress服务器访问。如果从组织外部连接，请先在服务器上安排连接，例如使用VPN。"
+
+#: includes/class-admin.php:307
+msgid "Manage Members"
+msgstr "管理会员"
+
+#: includes/class-admin.php:239
+msgid "Manages user categories"
+msgstr "管理用户类别"
+
+#: assets/media.js:72
+msgid "Media Library"
+msgstr "媒体库"
+
+#: includes/class-directory.php:104 includes/class-member-list-table.php:60
+msgid "Member"
+msgstr "会员"
+
+#: includes/class-admin.php:437
+msgid "Member (Posting Permissions)"
+msgstr "会员（发布权限）"
+
+#: includes/class-content.php:24
+msgid "Member Announcement"
+msgstr "会员公告"
+
+#: includes/class-content.php:24
+msgid "Member Announcements"
+msgstr "会员公告"
+
+#: includes/class-directory.php:10 includes/class-directory.php:28
+msgid "Member Directory"
+msgstr "会员列表"
+
+#: includes/class-dashboard.php:17 includes/class-dashboard.php:32
+msgid "Member Home"
+msgstr "会员主页"
+
+#: includes/class-admin.php:432 includes/class-admin.php:439
+msgid "Member Information"
+msgstr "会员信息"
+
+#: includes/class-admin.php:362
+msgid "Member Invitations via CSV"
+msgstr "通过CSV发送会员邀请"
+
+#: includes/class-admin.php:294
+msgid "Member Management"
+msgstr "会员管理"
+
+#: includes/class-admin.php:297 includes/class-admin.php:482
+msgid "Member Page Setup"
+msgstr "会员页面设置"
+
+#: includes/class-admin.php:464
+msgid "Member Pages"
+msgstr "会员页面"
+
+#: includes/class-content.php:24
+msgid "Member Post"
+msgstr "会员文章"
+
+#: includes/class-content.php:24
+msgid "Member Posts"
+msgstr "会员文章"
+
+#: includes/class-screens.php:13
+msgid "Member Registration"
+msgstr "会员注册"
+
+#: includes/class-admin.php:436
+msgid "Member Role"
+msgstr "会员角色"
+
+#: includes/class-admin.php:427 includes/class-member-list-table.php:9
+msgid "Member Status"
+msgstr "会员状态"
+
+#: includes/class-directory.php:31
+msgid "Member classifications to list (leave empty to list all)"
+msgstr "要列出的会员分类（留空以列出所有）"
+
+#: includes/class-screens.php:252
+msgid "Member registration is currently closed."
+msgstr "会员注册目前已关闭。"
+
+#: includes/class-dashboard.php:31
+msgid "Member resources"
+msgstr "会员资源"
+
+#: includes/class-admin.php:380
+msgid "Members Allowed to Post"
+msgstr "允许会员发布"
+
+#: includes/class-profile-preset.php:26
+msgid "Members Basic Profile"
+msgstr "会员基本简介"
+
+#: assets/media.js:20
+msgid "Members Only"
+msgstr "仅限会员"
+
+#: includes/class-admin.php:467
+msgid "Members can close their account here. Their content is deleted by default, but they can choose contributions to transfer to the site operator."
+msgstr "会员可以在这里关闭他们的帐户。他们的内容默认会被删除，但他们可以选择将贡献转让给网站管理人员。"
+
+#: includes/class-admin.php:467
+msgid "Members can edit their name, biography, and other information here. Changing an email address requires confirmation of the new address."
+msgstr "会员可以在这里编辑他们的姓名、简历和其他信息。更改email地址需要确认新的地址。"
+
+#: includes/class-admin.php:527
+msgid "Members can register and manage passkeys. After signing up, add a passkey on Edit Account Information to use it for future logins."
+msgstr "会员可以注册和管理密码。注册后，在“编辑帐户信息”中添加密码，以便将来使用它进行登录。"
+
+#: includes/class-directory.php:29
+msgid "Members in selected classifications"
+msgstr "选定分类中的会员"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:407
+msgid "Members updated: %1$d / Unchanged: %2$d / Could not update: %3$d"
+msgstr "会员更新：%1$d / 不变：%2$d / 无法更新：%3$d"
+
+#: includes/class-admin.php:467
+msgid "Members who have forgotten their password can request a password reset email here."
+msgstr "忘记密码的会员可以在这里请求重置密码email。"
+
+#: includes/class-admin.php:377
+msgid "Members with permission can create, edit, publish, and delete their own content. They gain no permission to edit other people's content. These settings do not change who can read content. Published standard WordPress posts remain visible to the public."
+msgstr "获得许可的会员可以创建、编辑、发布和删除自己的内容。他们没有权限编辑他人的内容。这些设置不会改变谁可以阅读内容。已发布的标准WordPress文章仍然可以向公众查看。"
+
+#: includes/class-files.php:289
+msgid "Members-Only Attachment "
+msgstr "仅限会员的附件 "
+
+#: includes/class-files.php:219
+msgid "Members-Only Attachments"
+msgstr "仅限会员的附件"
+
+#: assets/media.js:68
+msgid "Members-Only Media"
+msgstr "仅限会员的媒体"
+
+#: includes/class-files.php:38
+msgid "Members-only files already exist. Changing storage locations requires migrating them first."
+msgstr "仅限会员的文件已经存在。要更改存储位置，首先需要将其迁移。"
+
+#: includes/class-admin.php:27
+msgid "Membership Site Roles"
+msgstr "会员网站角色"
+
+#: includes/class-screens.php:200
+msgid "Membership Status"
+msgstr "会员状态"
+
+#: includes/class-profile-preset.php:70
+msgid "Membership Type"
+msgstr "会员类型"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-dashboard.php:62
+msgid "My %s"
+msgstr "我的%s"
+
+#: includes/class-member-list-table.php:9
+msgid "Name"
+msgstr "名称"
+
+#: includes/class-admin.php:514
+msgid "Name Order"
+msgstr "姓名顺序"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:38
+msgid "New %s"
+msgstr "新的%s"
+
+#: includes/class-screens.php:180 includes/class-screens.php:184
+msgid "New Email Address"
+msgstr "新电子邮件地址"
+
+#: includes/class-mail.php:26
+msgid "New Email Address Verification"
+msgstr "新电子邮件地址验证"
+
+#: includes/class-admin.php:490
+msgid "New Member Registrations"
+msgstr "新会员注册"
+
+#: includes/class-admin.php:563
+msgid "New registration and password reset requests will be unavailable until you save new keys."
+msgstr "在您保存新密钥之前，新的注册和密码重置请求将不可用。"
+
+#: includes/class-directory.php:112
+msgid "Next"
+msgstr "下一步"
+
+#: assets/media.js:88
+msgid "Next Page"
+msgstr "下一页"
+
+#: includes/class-profile.php:90
+msgid "Nickname"
+msgstr "昵称"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:48
+msgid "No %s found in Trash."
+msgstr "在垃圾桶中没有找到%s。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:46
+msgid "No %s found."
+msgstr "未找到%s。"
+
+#: includes/class-admin.php:380
+msgid "No Members"
+msgstr "没有会员"
+
+#: assets/media.js:85
+msgid "No files are available to select."
+msgstr "没有可选择的文件。"
+
+#: includes/class-member-list-table.php:12
+msgid "No members match your criteria."
+msgstr "没有会员符合您的条件。"
+
+#: includes/class-admin.php:450
+msgid "No posting permissions."
+msgstr "没有发布权限。"
+
+#: includes/class-screens.php:238
+msgid "No posts are available for transfer."
+msgstr "没有可移交的文章。"
+
+#: includes/class-screens.php:228
+msgid "No posts will be retained by the site operator."
+msgstr "网站管理人员不会保留任何文章。"
+
+#: includes/class-member-list-table.php:62
+msgid "None Allowed"
+msgstr "不允许任何"
+
+#: includes/class-admin.php:554
+msgid "Not Configured"
+msgstr "未配置"
+
+#: includes/class-content.php:133 includes/class-content.php:137 includes/class-content.php:139
+msgid "Not found."
+msgstr "未找到。"
+
+#: includes/class-admin.php:590
+msgid "Notifies both the old and new addresses when an email change is complete."
+msgstr "当email更改完成时，会通知旧地址和新地址。"
+
+#: includes/class-admin.php:595
+msgid "Notifies the member only when a user category change is finally approved or rejected. No email is sent on submission, intermediate approval, or cancellation."
+msgstr "只有在用户类别更改最终获得批准或被拒绝时才会通知会员。提交、中间批准或取消时不会发送email。"
+
+#: includes/class-admin.php:490
+msgid "Off (do not accept new registration requests)"
+msgstr "关闭（不接受新的注册请求）"
+
+#: includes/class-admin.php:363 includes/class-admin.php:365 includes/class-admin.php:367 includes/class-admin.php:369 includes/class-admin.php:371
+msgid "Official Website"
+msgstr "官方网站"
+
+#: includes/class-admin.php:490
+msgid "On (accept new registration requests)"
+msgstr "在（接受新的注册请求）"
+
+#: includes/class-admin.php:627
+msgid "Once storage is configured, media controls in posts and the Media screen offer Public and Members Only options. Members-only images, galleries, and videos appear within posts; documents use download links. Only authorized members can access them."
+msgstr "一旦配置了存储，文章中的媒体控制器和媒体页面将提供公共和仅限会员选项。仅限会员的图像、画廊和视频显示在文章中；文档使用下载链接。只有授权的会员才能访问它们。"
+
+#: includes/class-directory.php:44
+msgid "Only active members are listed. Login names, email addresses, and administrative permissions are never shown. When Everyone is selected, the chosen profile details are available without logging in."
+msgstr "仅列出活跃会员。登录名、email地址和管理权限永远不会显示。当选择“所有人”时，无需登录即可查看所选个人资料的详细信息。"
+
+#: includes/class-admin.php:408
+msgid "Only members within your assigned scope are shown."
+msgstr "仅显示您指定的范围内的会员。"
+
+#: includes/class-members.php:122
+msgid "Only site administrators and operators with site-wide access can change member roles."
+msgstr "只有拥有全站访问权限的网站管理员和运营商才能更改会员角色。"
+
+#: includes/class-members.php:162
+msgid "Only site administrators can ban or restore a banned account."
+msgstr "只有网站管理员才能禁止或恢复被禁止的帐户。"
+
+#: includes/class-files.php:30
+msgid "Only site administrators can change the storage location."
+msgstr "只有网站管理员才能更改存储位置。"
+
+#: assets/media.js:90
+msgid "Open File"
+msgstr "打开文件"
+
+#: includes/class-screens.php:236
+msgid "Open each post and check its text, images, and attachments for information you do not want to retain."
+msgstr "打开每个文章，检查其文本、图像和附件，以查找您不想保留的信息。"
+
+#: includes/class-admin.php:559
+msgid "Open the Cloudflare dashboard (new tab)"
+msgstr "打开Cloudflare仪表板（新标签页）"
+
+#: includes/class-mail.php:26
+msgid "Open the following link within 30 minutes to confirm your email address change. You will need to log in.\n{link}"
+msgstr "在30分钟内打开以下链接以确认您的email地址更改。您需要登录。\n\n{link}"
+
+#: includes/class-profile-preset.php:74
+msgid "Optional member classification. Requires the UPF Pro preset application API."
+msgstr "可选的会员分类。需要UPF Pro预设应用程序API。"
+
+#: includes/class-admin.php:27
+msgid "Other Plugin Roles"
+msgstr "其他插件角色"
+
+#: includes/class-content.php:123 includes/class-content.php:127
+msgid "Page not found."
+msgstr "找不到页面。"
+
+#: includes/class-screens.php:155
+msgid "Password (at least 12 characters)"
+msgstr "密码（至少12个字符）"
+
+#: includes/class-admin.php:495
+msgid "Password (required; set during registration)"
+msgstr "密码（必填；在注册时设置）"
+
+#: includes/class-mail.php:25
+msgid "Password Change Notification"
+msgstr "密码更改通知"
+
+#: includes/class-admin.php:409 includes/class-admin.php:426 includes/class-mail.php:13 includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Pending Approval"
+msgstr "待审核"
+
+#: includes/class-files.php:286
+msgid "Permanently delete this attachment"
+msgstr "永久删除此附件"
+
+#: includes/class-admin.php:377
+msgid "Permissions by Post Type"
+msgstr "按文章类型分发的权限"
+
+#: includes/class-profile-preset.php:47
+msgid "Phone Number"
+msgstr "电话号码"
+
+#: includes/class-screens.php:194
+msgid "Please log in to continue."
+msgstr "请登录以继续。"
+
+#: includes/class-registration.php:137 includes/class-registration.php:177
+msgid "Please try again later."
+msgstr "请稍后再试。"
+
+#: includes/class-members.php:236
+msgid "Please use the email verification page."
+msgstr "请使用email验证页面。"
+
+#: includes/class-members.php:27
+msgid "Please use the member registration page."
+msgstr "请使用会员注册页面。"
+
+#: includes/class-registration.php:181 includes/class-registration.php:204 includes/class-withdrawal.php:101
+msgid "Please wait a moment and try again."
+msgstr "请稍等片刻，然后再试一次。"
+
+#: includes/class-admin.php:359
+msgid "Post Approval"
+msgstr "文章审核"
+
+#: includes/class-admin.php:363
+msgid "Post approval applies to Member Posts, Public Pages, and Member Announcements only. It does not apply to standard WordPress posts or other post types."
+msgstr "批准后仅适用于会员文章、公共页面和会员公告。它不适用于标准的WordPress文章或其他文章类型。"
+
+#: includes/class-profile-preset.php:48
+msgid "Postal Code"
+msgstr "邮政编码"
+
+#: includes/class-admin.php:296 includes/class-admin.php:398
+msgid "Posting Settings"
+msgstr "发布设置"
+
+#: includes/class-posting.php:67
+msgid "Posting settings are being saved. Please wait a moment and try again."
+msgstr "正在保存发布设置。请稍等片刻，然后重试。"
+
+#: includes/class-dashboard.php:64
+msgid "Posts"
+msgstr "文章"
+
+#: includes/class-withdrawal.php:85
+msgid "Posts or attachment information changed after confirmation. Review the details again."
+msgstr "确认后文章或附件信息已更改。请再次查看详细信息。"
+
+#: includes/class-screens.php:223
+msgid "Posts to Transfer to the Site Operator"
+msgstr "要转交给网站管理人员的文章"
+
+#: includes/class-profile-preset.php:49
+msgid "Prefecture / State"
+msgstr "省/州"
+
+#: includes/class-admin.php:624
+msgid "Prepare a non-public directory exclusively for member files and specify its path on the server."
+msgstr "准备一个专为会员文件准备的非公开目录，并在服务器上指定其路径。"
+
+#: includes/class-directory.php:112
+msgid "Previous"
+msgstr "上一步"
+
+#: assets/media.js:87
+msgid "Previous Page"
+msgstr "上一页"
+
+#: assets/media.js:74
+msgid "Processing…"
+msgstr "正在处理中..."
+
+#: includes/class-directory.php:42
+msgid "Profile Details to Show"
+msgstr "要显示的个人资料详细信息"
+
+#: includes/class-admin.php:515
+msgid "Profile Fields for Registration and Editing"
+msgstr "用于注册和编辑的个人资料字段"
+
+#: includes/class-admin.php:499
+msgid "Profile Fields from the Integration"
+msgstr "集成中的个人资料字段"
+
+#: includes/class-profile-preset.php:60 includes/class-profile-preset.php:63
+msgid "Profile Picture"
+msgstr "个人资料照片"
+
+#: includes/class-admin.php:493
+msgid "Profile information collected during registration. Members can view it on Your Account Information and update it on Edit Account Information."
+msgstr "注册期间收集的个人资料信息。会员可以在“您的帐户信息”上查看，并在“编辑帐户信息”上更新。"
+
+#: includes/class-screens.php:134
+msgid "Profile saved."
+msgstr "个人资料已保存。"
+
+#: includes/class-admin.php:467
+msgid "Prospective members enter their email address here, then follow the confirmation email to continue registration."
+msgstr "潜在会员在这里输入他们的email地址，然后按照确认email继续注册。"
+
+#: includes/class-admin.php:246
+msgid "Provides announcements for email delivery"
+msgstr "提供email发送的公告"
+
+#: includes/class-admin.php:233
+msgid "Provides passkey registration and management after signup, and passkey login"
+msgstr "在注册后提供密码注册和管理，以及密码登录"
+
+#: assets/media.js:18
+msgid "Public"
+msgstr "公开"
+
+#: assets/media.js:68
+msgid "Public Media"
+msgstr "公共媒体"
+
+#: includes/class-content.php:24
+msgid "Public Page"
+msgstr "公共页面"
+
+#: includes/class-content.php:24
+msgid "Public Pages"
+msgstr "公共页面"
+
+#: includes/class-admin.php:363 includes/class-admin.php:367 includes/class-admin.php:371
+msgid "Purchase and Official Website"
+msgstr "购买和官方网站"
+
+#: includes/class-admin.php:559
+msgid "Read Cloudflare's official instructions (new tab)"
+msgstr "阅读Cloudflare的官方说明（新标签页）"
+
+#: includes/class-screens.php:251
+msgid "Register"
+msgstr "注册"
+
+#: includes/class-screens.php:205 includes/class-screens.php:214
+msgid "Register and Manage Passkeys"
+msgstr "注册和管理通行密钥"
+
+#: includes/class-screens.php:214
+msgid "Register and manage passkeys with atshift Freeform Login."
+msgstr "使用atshift Freeform Login注册和管理密码。"
+
+#: includes/class-admin.php:491
+msgid "Registration Approval"
+msgstr "注册批准"
+
+#: includes/class-mail.php:11
+msgid "Registration Complete"
+msgstr "注册完成"
+
+#: includes/class-mail.php:7
+msgid "Registration Email Verification"
+msgstr "注册电子邮件验证"
+
+#: includes/class-members.php:5
+msgid "Registration Needs Review"
+msgstr "注册需要审查"
+
+#: includes/class-admin.php:295 includes/class-admin.php:546
+msgid "Registration Settings"
+msgstr "注册设置"
+
+#: includes/class-admin.php:492
+msgid "Registration and Editing Forms"
+msgstr "注册和编辑表格"
+
+#: includes/class-screens.php:105
+msgid "Registration is complete. Please go to the login page."
+msgstr "注册已完成。请前往登录页面。"
+
+#: includes/class-registration.php:136
+msgid "Registration is currently unavailable."
+msgstr "目前无法注册。"
+
+#: includes/class-registration.php:79
+msgid "Registration is currently unavailable. Please try again later."
+msgstr "目前无法注册。请稍后再试。"
+
+#: includes/class-registration.php:145 includes/class-registration.php:147
+msgid "Registration is in progress. Please wait a moment and try again."
+msgstr "注册正在进行中。请稍等，然后再试一次。"
+
+#: includes/class-admin.php:44
+msgid "Registration is not ready yet. Check your spam protection keys in Registration Settings. If the issue persists, contact the person who set up your site."
+msgstr "注册尚未准备就绪。请在“注册设置”中检查您的垃圾邮件保护密钥。如果问题仍然存在，请联系设置您网站的人。"
+
+#: includes/class-admin.php:300
+msgid "Related Plugins"
+msgstr "相关插件"
+
+#: includes/class-screens.php:79
+msgid "Reload the form."
+msgstr "重新加载表格。"
+
+#: includes/class-screens.php:253
+msgid "Request Confirmation Email"
+msgstr "请求确认电子邮件"
+
+#: includes/class-screens.php:245
+msgid "Request Password Reset Email"
+msgstr "请求密码重置电子邮件"
+
+#: includes/class-registration.php:178 includes/class-registration.php:184
+msgid "Request a new password reset link."
+msgstr "请求一个新的密码重置链接。"
+
+#: includes/class-registration.php:7
+msgid "Request received. If we can process it, you will receive an email. If it does not arrive, please wait before trying again."
+msgstr "请求已收到。如果我们可以处理它，您将收到一个email。如果它没有到达，请稍等再试。"
+
+#: includes/class-admin.php:491
+msgid "Require operator approval after registration"
+msgstr "注册后需要运营商批准"
+
+#: includes/class-admin.php:495
+msgid "Required Account Registration and Editing Fields"
+msgstr "所需的帐户注册和编辑字段"
+
+#: includes/class-mail.php:21 includes/class-screens.php:13 includes/class-screens.php:204
+msgid "Reset Password"
+msgstr "重置密码"
+
+#: includes/class-screens.php:244
+msgid "Reset Your Password"
+msgstr "重置您的密码"
+
+#: includes/class-withdrawal.php:82
+msgid "Restart the process from the confirmation screen."
+msgstr "从确认页面重新启动该流程。"
+
+#: includes/class-screens.php:241
+msgid "Review Account Closure"
+msgstr "审查账户关闭"
+
+#: includes/class-screens.php:239
+msgid "Review and Edit Content"
+msgstr "审查和编辑内容"
+
+#: includes/class-admin.php:359
+msgid "Review content before publication. Supports sequential reviews, revision requests, resubmission, and approval history."
+msgstr "在发布前审查内容。支持顺序审查、修订请求、重新提交和批准历史记录。"
+
+#: includes/class-screens.php:120
+msgid "Review the details and confirm account closure."
+msgstr "查看详细信息并确认账户关闭。"
+
+#: includes/class-member-list-table.php:9
+msgid "Role"
+msgstr "角色"
+
+#: includes/class-screens.php:211
+msgid "Save"
+msgstr "保存"
+
+#: includes/class-admin.php:432 includes/class-admin.php:439
+msgid "Save Changes"
+msgstr "保存更改"
+
+#: includes/class-admin.php:597
+msgid "Save Email Settings"
+msgstr "保存电子邮件设置"
+
+#: includes/class-directory.php:44
+msgid "Save Member Directory Settings"
+msgstr "保存会员目录设置"
+
+#: includes/class-admin.php:398
+msgid "Save Posting Settings"
+msgstr "保存发布设置"
+
+#: includes/class-admin.php:546
+msgid "Save Registration Settings"
+msgstr "保存注册设置"
+
+#: includes/class-admin.php:339
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: includes/class-admin.php:564
+msgid "Save Turnstile Settings"
+msgstr "保存 Turnstile 设置"
+
+#: includes/class-admin.php:398
+msgid "Save permissions for all post types. Removing permission does not delete existing content."
+msgstr "保存所有文章类型的权限。删除权限不会删除现有内容。"
+
+#: includes/class-admin.php:546
+msgid "Save registration availability, approval requirements, and profile field settings."
+msgstr "保存注册可用性、批准要求和个人资料字段设置。"
+
+#: includes/class-admin.php:439
+msgid "Save the member status and role changes made on this screen."
+msgstr "保存此页面上所做的会员状态和角色更改。"
+
+#: includes/class-admin.php:597
+msgid "Save the sender name, shared signature, and all email subjects and bodies."
+msgstr "保存发件人姓名、共享签名以及所有email主题和正文。"
+
+#: includes/class-admin.php:432
+msgid "Save this member's status."
+msgstr "保存此会员的状态。"
+
+#: includes/class-admin.php:564
+msgid "Save your Cloudflare Turnstile keys separately from the registration settings."
+msgstr "将您的Cloudflare Turnstile密钥与注册设置分开保存。"
+
+#: includes/class-admin.php:431
+msgid "Saving a status change sends the member a notification email and ends any active login sessions."
+msgstr "保存状态更改会向会员发送通知email，并终止任何正在进行的登录会话。"
+
+#: includes/class-files.php:84
+msgid "Saving failed."
+msgstr "保存失败。"
+
+#: assets/media.js:81
+msgid "Search"
+msgstr "搜索"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:44
+msgid "Search %s"
+msgstr "搜索%s"
+
+#: includes/class-admin.php:414
+msgid "Search Members"
+msgstr "搜索会员"
+
+#: assets/media.js:81
+msgid "Search by Filename"
+msgstr "按文件名搜索"
+
+#: includes/class-admin.php:562
+msgid "Secret Key"
+msgstr "私密密钥"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-member-list-table.php:52
+msgid "Select %s"
+msgstr "选择%s"
+
+#: assets/media.js:78
+msgid "Select Files"
+msgstr "选择文件"
+
+#: includes/class-screens.php:236
+msgid "Select Posts to Retain"
+msgstr "选择要保留的文章"
+
+#: includes/class-directory.php:67
+msgid "Select at least one classification that can view the directory."
+msgstr "至少选择一个可以查看目录的分类。"
+
+#: includes/class-members.php:93
+msgid "Select between 1 and 50 members to update."
+msgstr "在1到50名会员之间选择要更新的会员。"
+
+#: includes/class-withdrawal.php:67
+msgid "Select only your own posts that are eligible for transfer."
+msgstr "只选择您自己符合转让条件的文章。"
+
+#: includes/class-posting.php:87
+msgid "Select the allowed user categories."
+msgstr "选择允许的用户类别。"
+
+#: includes/class-withdrawal.php:62
+msgid "Select the posts to transfer and confirm that you have reviewed their content and attachments."
+msgstr "选择要转发的文章，并确认您已查看其内容和附件。"
+
+#: includes/class-admin.php:381
+msgid "Selected Categories"
+msgstr "选定的类别"
+
+#: includes/class-directory.php:37
+msgid "Selected users remain hidden even when they match the listing scope. Their account access and permissions are not changed."
+msgstr "即使被选中的用户符合列表范围，他们仍然会保持隐藏状态。他们的帐户访问权限和权限不会发生变化。"
+
+#: includes/class-screens.php:184
+msgid "Send Confirmation to the New Address"
+msgstr "将确认信息发送至新地址"
+
+#: includes/class-admin.php:362
+msgid "Send registration invitations to a list of prospective members. Each recipient confirms the invitation and completes registration."
+msgstr "向潜在会员名单发送注册邀请。每个收件人都会确认邀请并完成注册。"
+
+#: includes/class-admin.php:569
+msgid "Sender Information"
+msgstr "发件人信息"
+
+#: includes/class-admin.php:571
+msgid "Sender Name "
+msgstr "发件人姓名 "
+
+#: includes/class-admin.php:585
+msgid "Sent to the former member when account closure and deletion have finished."
+msgstr "在帐户关闭和删除完成后发送给前会员。"
+
+#: includes/class-admin.php:587
+msgid "Sent to the member with a reset link when a password reset is requested."
+msgstr "在请求重置密码时，会向会员发送带有重置链接的电子邮件。"
+
+#: includes/class-admin.php:581
+msgid "Sent to the submitted email address with a confirmation link when a registration request is accepted."
+msgstr "当接受注册请求时，会发送到提交的email地址，并附上确认链接。"
+
+#: includes/class-admin.php:586
+msgid "Sent when an operator suspends a member's account."
+msgstr "在运营商暂停会员帐户时发送。"
+
+#: includes/class-admin.php:584
+msgid "Sent when approval or removal of a suspension activates the account."
+msgstr "在批准或解除暂停激活帐户时发送。"
+
+#: includes/class-admin.php:582
+msgid "Sent when registration is complete and no approval is required."
+msgstr "在注册完成且无需批准时发送。"
+
+#: assets/media.js:79
+msgid "Server upload limit: "
+msgstr "服务器上传限制： "
+
+#: includes/class-member-list-table.php:47
+msgid "Set to Pending Approval"
+msgstr "设置为待审批"
+
+#: includes/class-admin.php:245
+msgid "Sets announcement recipients and delivery schedules"
+msgstr "设置公告接收人和发送时间表"
+
+#: includes/class-admin.php:241
+msgid "Sets approvers and the approval order"
+msgstr "设置批准人和批准订单"
+
+#: includes/class-admin.php:238
+msgid "Sets who can create content for each post type"
+msgstr "可以为每个文章类型创建内容的集合"
+
+#: includes/class-member-list-table.php:56 includes/class-plugin-listing.php:23
+msgid "Settings"
+msgstr "设置"
+
+#: includes/class-posting.php:75
+msgid "Settings have changed. Reload this screen."
+msgstr "设置已更改。重新加载此页面。"
+
+#: includes/class-admin.php:332 includes/class-directory.php:25
+msgid "Settings saved."
+msgstr "设置已保存。"
+
+#: includes/class-admin.php:573
+msgid "Shared Signature"
+msgstr "共享签名"
+
+#: assets/media.js:70
+msgid "Showing members-only files you can use. Files used in another post will be copied for that post."
+msgstr "显示仅限会员使用的文件。在另一个文章中使用的文件将复制到该文章中。"
+
+#: assets/media.js:70
+msgid "Showing public files you can use."
+msgstr "显示您可以使用的公共文件。"
+
+#: includes/class-admin.php:27 includes/class-members.php:5
+msgid "Site Administrator"
+msgstr "网站管理员"
+
+#: includes/class-admin.php:561
+msgid "Site Key"
+msgstr "站点密钥"
+
+#: includes/class-admin.php:27 includes/class-admin.php:437 includes/class-member-list-table.php:60 includes/class-members.php:15
+msgid "Site Operator"
+msgstr "网站运营人员"
+
+#: includes/class-withdrawal.php:106
+msgid "Site Operator (Content Archive Only)"
+msgstr "网站管理人员（仅限内容存档）"
+
+#: includes/class-withdrawal.php:107
+msgid "Site Operator Archive"
+msgstr "网站管理人员存档"
+
+#: includes/class-admin.php:132 includes/class-posting.php:65 includes/class-services.php:16
+msgid "Site administrator permissions are required."
+msgstr "需要网站管理员权限。"
+
+#: includes/class-screens.php:217
+msgid "Site administrators cannot close their account from this screen."
+msgstr "网站管理员无法从此页面关闭他们的帐户。"
+
+#: includes/class-directory.php:29
+msgid "Site operators"
+msgstr "现场运营商"
+
+#: includes/class-admin.php:438
+msgid "Site operators can approve members and change their status. They can also be changed back to members. Changing a role ends the user's active login sessions."
+msgstr "网站管理人员可以批准会员并更改他们的状态。他们也可以将其更改回会员。更改角色会终止用户的活跃登录会话。"
+
+#: includes/class-admin.php:155
+msgid "Some field identifiers are unavailable. Custom fields also need an integration that renders and saves them in the forms."
+msgstr "一些字段标识符不可用。自定义字段也需要集成，以便在表单中渲染和保存它们。"
+
+#: includes/class-profile.php:117 includes/class-profile.php:54
+msgid "Some profile fields are not allowed."
+msgstr "某些个人资料字段是不允许的。"
+
+#: includes/class-registration.php:138
+msgid "Some registration fields are not allowed."
+msgstr "某些注册字段是不允许的。"
+
+#: includes/class-members.php:97
+msgid "Some selected members cannot be updated. Select them again. No changes have been made."
+msgstr "一些选定的会员无法更新。请再次选择它们。没有做出任何更改。"
+
+#: includes/class-admin.php:564
+msgid "Spam Protection"
+msgstr "垃圾邮件保护"
+
+#: includes/class-admin.php:553
+msgid "Spam Protection (Cloudflare Turnstile)"
+msgstr "垃圾邮件保护（Cloudflare Turnstile）"
+
+#: includes/class-files.php:13 includes/class-files.php:14
+msgid "Specify an absolute path on the server."
+msgstr "在服务器上指定绝对路径。"
+
+#: includes/class-files.php:17
+msgid "Specify the public directory containing WordPress and a separate readable and writable directory outside it."
+msgstr "指定包含WordPress的公共目录，以及在其外侧一个单独的可读和可写目录。"
+
+#: includes/class-admin.php:361
+msgid "Staff Responsibilities"
+msgstr "员工职责"
+
+#: includes/class-admin.php:397
+msgid "Standard author archives are also disabled. Display names and output generated by other plugins are not changed."
+msgstr "标准作者存档也已禁用。由其他插件生成的显示名和输出不会发生变化。"
+
+#: includes/class-admin.php:610
+msgid "Storage for Member Documents and Images"
+msgstr "存储会员文件和图像"
+
+#: includes/class-files.php:31
+msgid "Storage is configured in wp-config.php."
+msgstr "存储是在wp-config.php中配置的。"
+
+#: includes/class-admin.php:633
+msgid "Storage path: "
+msgstr "存储路径： "
+
+#: includes/class-profile-preset.php:51
+msgid "Street Address"
+msgstr "街道地址"
+
+#: includes/class-admin.php:596
+msgid "Subject"
+msgstr "主题"
+
+#: includes/class-admin.php:636
+msgid "Supported attachments include JPEG, PNG, GIF, WebP, PDF, Word (doc, docx), Excel (xls, xlsx), PowerPoint (ppt, pptx), text (txt), ZIP, and video (MP4, WebM). Upload size limits follow WordPress and server settings. Attachments added through this feature require member login even when attached to a public page."
+msgstr "支持的附件包括JPEG、PNG、GIF、WebP、PDF、Word（doc、docx）、Excel（xls、xlsx）、PowerPoint（ppt、pptx）、文本（txt）、ZIP和视频（MP4、WebM）。上传大小限制遵循WordPress和服务器设置。通过此功能添加的附件即使附加到公共页面也需要会员登录。"
+
+#: includes/class-member-list-table.php:47
+msgid "Suspend"
+msgstr "暂停使用"
+
+#: includes/class-admin.php:409 includes/class-member-list-table.php:34 includes/class-members.php:5
+msgid "Suspended"
+msgstr "已暂停使用"
+
+#: includes/class-admin.php:583
+msgid "Tells the member that their account is awaiting approval."
+msgstr "告知会员，他们的帐户正在等待批准。"
+
+#: includes/class-services.php:28
+msgid "Test keys cannot be used on a production site. Get keys for this site from Cloudflare."
+msgstr "测试密钥不能在生产现场使用。从Cloudflare获取此网站的密钥。"
+
+#: includes/class-admin.php:409
+msgid "The Available Post Types column shows where each member can create content. Site administrators can change these permissions in Posting Settings."
+msgstr "“可用文章类型”列显示每个会员可以在哪里创建内容。网站管理员可以在“发布设置”中更改这些权限。"
+
+#: includes/class-members.php:164
+msgid "The classification integration could not be verified. Reopen this screen."
+msgstr "无法验证分类集成。重新打开此页面。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:536
+msgid "The fields are specified by %s in the WordPress configuration file (wp-config.php)."
+msgstr "这些字段由%s在WordPress配置文件（wp-config.php）中指定。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, javascript-format
+#: assets/media.js:43
+msgid "The file exceeds the server upload limit of %s."
+msgstr "该文件超过了服务器上传限制%s。"
+
+#: includes/class-admin.php:249
+msgid "The following integrations are in use."
+msgstr "以下集成正在使用中。"
+
+#: includes/class-posting.php:89
+msgid "The latest atshift User Profile Fields Pro is required to include child categories."
+msgstr "需要最新的atshift User Profile Fields Pro才能包含子类别。"
+
+#: includes/class-posting.php:77
+msgid "The list of post types has changed. Reload this screen."
+msgstr "文章类型列表已更改。重新加载此页面。"
+
+#: includes/class-dashboard.php:19
+msgid "The member home page has been created."
+msgstr "会员主页已创建。"
+
+#: includes/class-members.php:158
+msgid "The member role has changed. Reopen this screen."
+msgstr "会员角色已更改。重新打开此页面。"
+
+#: includes/class-members.php:151
+msgid "The member status has changed. Reopen this screen."
+msgstr "会员状态已更改。重新打开此页面。"
+
+#: includes/class-profile.php:111
+msgid "The name shown on the site. Leave blank to use your nickname."
+msgstr "网站上显示的名字。留空以使用您的nickname。"
+
+#: includes/class-dashboard.php:24
+msgid "The page is created as a draft. Existing pages, the site front page, and the login redirect are not changed. The member directory is not inserted automatically."
+msgstr "该页面创建为草稿。现有页面、网站主页和登录重定向不会被更改。会员目录不会自动插入。"
+
+#: includes/class-admin.php:499
+msgid "The profile configured in atshift User Profile Fields is used for registration and account editing."
+msgstr "在atshift User Profile Fields中配置的个人资料用于注册和帐户编辑。"
+
+#: includes/class-admin.php:530
+msgid "The profile layout, field order, and conditional rules are used automatically. You do not need to select fields again or grant additional front-end display or self-editing permissions here."
+msgstr "个人资料布局、字段顺序和条件规则将自动使用。您无需在此处再次选择字段或授予额外的前端显示或自编辑权限。"
+
+#: includes/class-files.php:125
+msgid "The server's DOM extension is required for this file format."
+msgstr "此文件格式需要服务器DOM扩展。"
+
+#: includes/class-files.php:124
+msgid "The server's ZIP extension is required for this file format."
+msgstr "此文件格式需要服务器中的ZIP扩展名。"
+
+#: includes/class-files.php:54
+msgid "The shared directory marker file is invalid."
+msgstr "共享目录标记文件无效。"
+
+#: includes/class-files.php:191
+msgid "The storage location is unavailable."
+msgstr "存储位置不可用。"
+
+#: includes/class-members.php:134
+msgid "The user tables must use InnoDB to save member information together. Please check with your site administrator."
+msgstr "用户表必须使用InnoDB一起保存会员信息。请咨询您的网站管理员。"
+
+#: includes/class-registration.php:169
+msgid "The verification service is currently unavailable."
+msgstr "验证服务目前不可用。"
+
+#: includes/class-services.php:59 includes/class-services.php:61
+msgid "The verification service returned an invalid response. Please try again."
+msgstr "验证服务返回无效的响应。请重试。"
+
+#: includes/class-media.php:103
+msgid "The visibility settings do not match."
+msgstr "可见度设置不匹配。"
+
+#: assets/media.js:20
+msgid "These files are visible only to authorized members. "
+msgstr "这些文件仅限授权会员可见。 "
+
+#: assets/media.js:18
+msgid "These files are visible to everyone. "
+msgstr "这些文件对每个人都是可见的。 "
+
+#: includes/class-admin.php:556
+msgid "These keys are configured on the server by the person who set up your site. Ask them to make any changes."
+msgstr "这些密钥由设置您的网站的人在服务器上配置。请他们进行任何更改。"
+
+#: includes/class-admin.php:466
+msgid "These pages are published in WordPress, but that does not make members' personal information public. The plugin checks access and displays account details, editing forms, and withdrawal forms only to the account owner. Leave these pages published."
+msgstr "这些页面在WordPress上发布，但这并不意味着会员的个人信息是公开的。该插件仅向帐户所有者检查访问权限并显示帐户详细信息、编辑表单和提款表单。请保留这些页面发布。"
+
+#: includes/class-members.php:85
+msgid "This account cannot be changed."
+msgstr "这个账户无法更改。"
+
+#: includes/class-registration.php:186
+msgid "This account is currently unavailable."
+msgstr "此账户目前不可用。"
+
+#: includes/class-members.php:59
+msgid "This account is currently unavailable. Please contact the site administrator."
+msgstr "此帐户目前不可用。请联系网站管理员。"
+
+#: includes/class-members.php:124
+msgid "This account's role cannot be changed."
+msgstr "此帐户的角色无法更改。"
+
+#: includes/class-files.php:278
+msgid "This attachment cannot be deleted."
+msgstr "此附件无法删除。"
+
+#: includes/class-admin.php:166
+msgid "This email contains a placeholder that is not supported for this message type."
+msgstr "此email包含一个不支持此消息类型的占位符。"
+
+#: includes/class-files.php:91
+msgid "This link is unavailable."
+msgstr "此链接不可用。"
+
+#: includes/class-media.php:61
+msgid "This media action is unavailable."
+msgstr "此媒体操作不可用。"
+
+#: includes/class-media.php:141 includes/class-media.php:142
+msgid "This media screen is unavailable."
+msgstr "此媒体页面不可用。"
+
+#: includes/class-members.php:136 includes/class-members.php:137
+msgid "This member's information is being saved. Please wait a moment and try again."
+msgstr "此会员的信息正在保存中。请稍等，然后重试。"
+
+#: includes/class-members.php:110
+msgid "This member's posting permissions cannot be changed."
+msgstr "此会员的发布权限无法更改。"
+
+#: includes/class-admin.php:316 includes/class-admin.php:319
+msgid "This page is unavailable."
+msgstr "此页面不可用。"
+
+#: includes/class-services.php:62
+msgid "This password has appeared in a data breach. Choose a different password."
+msgstr "此密码出现在数据泄露中。请选择一个不同的密码。"
+
+#: includes/class-members.php:80
+msgid "This person has staff responsibilities. Choose and configure a replacement in Staff and Permissions before restricting access or removing responsibilities."
+msgstr "此人员有员工职责。在限制访问或移除职责之前，请在“员工和权限”中选择和配置替换人员。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-screens.php:226
+msgid "This post and its associated attachments (%d) will be transferred to the site operator as drafts. Personal information in text and images is not anonymized automatically."
+msgstr "此文章和其相关附件（%d）将作为草稿转交给网站管理人员。文本和图像中的个人信息不会自动匿名化。"
+
+#: includes/class-admin.php:173
+msgid "This settings operation is unavailable."
+msgstr "此设置操作不可用。"
+
+#: includes/class-services.php:17
+msgid "This site's keys are configured on the server."
+msgstr "本网站的密钥是在服务器上配置的。"
+
+#: includes/class-registration.php:130 includes/class-registration.php:149
+msgid "This username is already taken. Choose another one."
+msgstr "这个用户名已经被占用了。请选择另一个用户名。"
+
+#: includes/class-registration.php:128
+msgid "This username is not allowed. Choose another one."
+msgstr "这个用户名不允许。请选择另一个。"
+
+#: includes/class-registration.php:150 includes/class-registration.php:203 includes/class-screens.php:140 includes/class-screens.php:178
+msgid "This verification information cannot be used."
+msgstr "此验证信息无法使用。"
+
+#: includes/class-mail.php:7
+msgid "To continue registration, open the following link within 30 minutes and click the confirmation button.\n{link}\n\nIf you did not request this, please ignore this email."
+msgstr "要继续注册，请在30分钟内打开以下链接并点击确认按钮。\n\n{link}\n\n如果您没有请求此操作，请忽略此email。"
+
+#: includes/class-admin.php:469
+msgid "To create a page yourself, paste this shortcode into its content: "
+msgstr "要自己创建一个页面，请将此短代码粘贴到其内容中： "
+
+#: includes/class-files.php:286
+msgid "To display an image in your post, paste this into a Shortcode block: "
+msgstr "要在您的文章中显示图像，请将此粘贴到短代码块中： "
+
+#: includes/class-admin.php:214
+msgid "To keep a field out of registration and account editing forms, open the field in atshift User Profile Fields and turn on \"Hide from member registration and account forms\" under Member Forms."
+msgstr "要将字段排除在注册和帐户编辑表单之外，请在atshift User Profile Fields中打开该字段，并在“会员表单”下打开“隐藏在会员注册和帐户表单中”。"
+
+#: includes/class-admin.php:534
+msgid "To use custom fields defined in code, provide the integration that renders and saves them in registration and editing forms, then specify their identifiers. Leave this empty if no additional fields are needed."
+msgstr "要使用代码中定义的自定义字段，请提供在注册和编辑表单中渲染和保存它们的集成，然后指定它们的标识符。如果没有需要额外的字段，请将其留空。"
+
+#: includes/class-screens.php:218
+msgid "To verify your identity, log in again and complete this within 10 minutes."
+msgstr "要验证您的身份，请再次登录，并在10分钟内完成此操作。"
+
+#: includes/class-admin.php:367
+msgid "Together with atshift Members, it lets you choose posting permissions by user category. Add atshift Members Pro to delegate member management by category and send targeted announcements."
+msgstr "与atshift Members一起，它允许您按用户类别选择发布权限。添加atshift Members Pro以按类别委托会员管理并发送有针对性的公告。"
+
+#: includes/class-screens.php:235
+msgid "Transfer selected posts to the site operator and close my account"
+msgstr "将选定的文章转交给网站管理人员，并关闭我的帐户"
+
+#: includes/class-plugin-listing.php:27 includes/class-plugin-listing.php:57
+msgid "Try Pro Add-on"
+msgstr "试用专业附加组件"
+
+#: includes/class-admin.php:489
+msgid "Turning this off stops new registration requests. People who have already received a confirmation email can still complete registration before the link expires. Existing members can continue to log in."
+msgstr "关闭此选项将停止新的注册请求。已经收到确认email的人仍然可以在链接过期前完成注册。现有会员可以继续登录。"
+
+#: includes/class-members.php:5
+msgid "Unavailable"
+msgstr "不可用"
+
+#: includes/class-admin.php:387
+msgid "Unavailable category ("
+msgstr "不可用的类别（"
+
+#: includes/class-profile-preset.php:56
+msgid "Uncheck to omit this field. Existing fields and values are kept."
+msgstr "取消勾选以省略此字段。现有字段和值将被保留。"
+
+#: assets/media.js:72
+msgid "Upload"
+msgstr "上传"
+
+#: assets/media.js:150
+msgid "Upload cancelled."
+msgstr "上传已取消。"
+
+#: assets/media.js:15
+msgid "Upload images, videos, and documents."
+msgstr "上传图片、视频和文档。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:58
+msgid "Uploaded to This %s"
+msgstr "上传到这个%s"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:264
+msgid "Use %1$s with %2$s to save category selections together with member information and delegate member management by category."
+msgstr "使用%1$s与%2$s一起保存类别选择以及会员信息，并按类别管理代理会员。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:262
+msgid "Use %s to create user categories and choose which post types members in each category can use."
+msgstr "使用%s创建用户类别，并选择每个类别中的会员可以使用哪些文章类型。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-admin.php:266
+msgid "Use %s to send announcement emails to members who have opted in, or schedule them for later."
+msgstr "使用%s向已选择加入的会员发送公告email，或将其安排在以后发送。"
+
+#: includes/class-screens.php:153
+msgid "Use 1–60 letters, numbers, periods, hyphens, or underscores. Your username cannot be changed after registration. You can also log in with your email address."
+msgstr "使用1-60个字母、数字、句号、连字符或下划线。注册后，您的用户名不能更改。您也可以使用您的email地址登录。"
+
+#: includes/class-admin.php:623
+msgid "Use a File Server or NAS"
+msgstr "使用文件服务器或NAS"
+
+#: includes/class-services.php:51
+msgid "Use a password of at least 12 characters and no more than 256 bytes."
+msgstr "使用至少12个字符且不超过256位元的密码。"
+
+#: includes/class-admin.php:613
+msgid "Use a private directory on the web server or a file server/NAS share already mounted on that server."
+msgstr "使用Web服务器上的私人目录或已安装在该服务器上的文件服务器/NAS共享。"
+
+#: includes/class-admin.php:363
+msgid "Use atshift User Profile Fields and its Pro Add-on to create hierarchical classifications such as branches, departments, or membership types. Use these categories to assign member management responsibilities and target announcements."
+msgstr "使用atshift User Profile Fields及其专业附加组件创建分层分类，如分支机构、部门或会员类型。使用这些类别分配会员管理职责和目标公告。"
+
+#: includes/class-admin.php:614
+msgid "Use the Web Server Running WordPress"
+msgstr "使用运行WordPress的Web服务器"
+
+#: includes/class-admin.php:570
+msgid "Use your organization's or site's name so recipients can recognize the sender, for example, Example Association Office."
+msgstr "使用您的组织或网站名称，以便收件人能够识别发件人，例如“Example Association Office”（示例协会办公室）。"
+
+#: includes/class-admin.php:561
+msgid "Used to display the verification widget on your forms."
+msgstr "用于在表单上显示验证小部件。"
+
+#: includes/class-admin.php:27 includes/class-members.php:11
+msgid "User (Posting Permissions)"
+msgstr "用户（发布权限）"
+
+#: includes/class-admin.php:458
+msgid "User Categories and Posting Permissions"
+msgstr "用户类别和发布权限"
+
+#: includes/class-directory.php:33
+msgid "User Profile Fields integration is required to select member classifications."
+msgstr "选择会员分类需要用户个人资料字段集成。"
+
+#: includes/class-profile.php:133
+msgid "User not found."
+msgstr "未找到用户。"
+
+#: includes/class-screens.php:152 includes/class-screens.php:199
+msgid "Username"
+msgstr "用户名"
+
+#: includes/class-admin.php:495
+msgid "Username (required; cannot be changed after registration)"
+msgstr "用户名（必填；注册后无法更改）"
+
+#: includes/class-registration.php:172
+msgid "Verification failed. Please try again."
+msgstr "验证失败。请重试。"
+
+#: includes/class-registration.php:82
+msgid "Verification failed. Reload the page and try again."
+msgstr "验证失败。请重新加载页面并重试。"
+
+#: includes/class-screens.php:251
+msgid "Verified email address: "
+msgstr "已验证的email地址： "
+
+#: includes/class-admin.php:589
+msgid "Verifies ownership of the new address when a member changes their email."
+msgstr "当会员更改他们的email时，验证新地址的所有权。"
+
+#: includes/class-members.php:227
+msgid "Verify your email address change on the account editing page."
+msgstr "在帐户编辑页面上验证您的email地址更改。"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-plugin-listing.php:48
+msgid "Version %s"
+msgstr "版本 %s"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-content.php:40 includes/class-content.php:42
+msgid "View %s"
+msgstr "查看%s"
+
+#: includes/class-plugin-listing.php:53
+msgid "View Details"
+msgstr "查看详细信息"
+
+#: includes/class-admin.php:470
+msgid "View Page"
+msgstr "查看页面"
+
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-plugin-listing.php:53
+msgid "View details for %s"
+msgstr "查看%s的详细信息"
+
+#: includes/class-profile.php:92
+msgid "Website URL"
+msgstr "网站URL"
+
+#: includes/class-services.php:27
+msgid "When changing the site key, enter the matching secret key from the same widget settings."
+msgstr "更改网站密钥时，请从相同的部件设置中输入匹配的秘密密钥。"
+
+#: includes/class-admin.php:491
+msgid "When enabled, new members must wait for review. Set their status to Active in Member Management to grant access. If unsure, you can start with this unchecked."
+msgstr "启用后，新会员必须等待审核。在“会员管理”中将他们的状态设置为“活动”，以授予访问权限。如果您不确定，您可以先不勾选此项。"
+
+#: includes/class-directory.php:28
+msgid "Who can view it"
+msgstr "谁可以查看它"
+
+#: includes/class-admin.php:525
+msgid "Without a profile plugin integration, the form includes a username, first and last names, email address, and password. Add any additional profile fields using the settings below."
+msgstr "如果没有个人资料插件集成，表格包括用户名、名字、email地址和密码。使用以下设置添加任何额外的个人资料字段。"
+
+#: includes/class-admin.php:27
+msgid "WordPress Standard Roles"
+msgstr "WordPress标准角色"
+
+#: includes/class-admin.php:631
+msgid "WordPress Web Server (Private Directory)"
+msgstr "WordPress Web服务器（私人目录）"
+
+#: includes/class-media.php:86
+msgid "You cannot attach files to this post."
+msgstr "您无法将文件附加到此文章中。"
+
+#: includes/class-directory.php:47
+msgid "You cannot change these settings."
+msgstr "您无法更改这些设置。"
+
+#: includes/class-dashboard.php:27
+msgid "You cannot create pages."
+msgstr "您无法创建页面。"
+
+#: includes/class-media.php:180 includes/class-media.php:183 includes/class-media.php:64
+msgid "You cannot manage this media item."
+msgstr "您无法管理此媒体项目。"
+
+#: includes/class-admin.php:109 includes/class-members.php:129 includes/class-members.php:145 includes/class-members.php:83 includes/class-registration.php:195
+msgid "You cannot perform this action."
+msgstr "您无法执行此操作。"
+
+#: includes/class-media.php:102
+msgid "You cannot select this file."
+msgstr "您无法选择此文件。"
+
+#: includes/class-content.php:132 includes/class-files.php:227 includes/class-files.php:236
+msgid "You cannot view this content."
+msgstr "您无法查看此内容。"
+
+#: includes/class-admin.php:419
+msgid "You cannot view this member's settings."
+msgstr "您无法查看此会员的设置。"
+
+#: includes/class-screens.php:13 includes/class-screens.php:186
+msgid "Your Account Information"
+msgstr "您的账户信息"
+
+#: includes/class-screens.php:235
+msgid "Your Posts When Closing Your Account"
+msgstr "您关闭账户时的文章"
+
+#: includes/class-screens.php:126
+msgid "Your account closure request has been accepted. Login is disabled, and your data is being deleted."
+msgstr "您的账户关闭请求已接受。登录已被禁用，您的数据正在删除中。"
+
+#: includes/class-mail.php:28
+msgid "Your account email address has changed. If you did not make this change, please contact the site administrator."
+msgstr "您的帐户email地址已更改。如果您没有进行此更改，请联系网站管理员。"
+
+#: includes/class-screens.php:126
+msgid "Your account has been closed, and the account data and content selected for deletion have been removed."
+msgstr "您的帐户已被关闭，已选择删除的帐户数据和内容已被删除。"
+
+#: includes/class-mail.php:16
+msgid "Your account has been closed, and your account data and content selected for deletion have been removed. Any posts and attachments you chose to transfer are retained under the site operator's ownership.\n\nFor files shared with other users, only your own records have been deleted. Data stored by other services, unsupported plugins, or in backups is not deleted as part of this account closure. Please contact the site operator for details about how that data is handled."
+msgstr "您的帐户已被关闭，您选择删除的帐户数据和内容已被删除。您选择传输的任何文章和附件均由网站管理人员保留所有权。\n\n对于与其他用户共享的文件，只有您自己的记录被删除。其他服务、不受支持的插件或备份中存储的数据不会作为此帐户关闭的一部分被删除。有关如何处理这些数据的详细信息，请联系网站管理人员。"
+
+#: includes/class-mail.php:20
+msgid "Your account has been suspended. Please contact the site administrator for details."
+msgstr "您的帐户已被暂停。有关详细信息，请联系网站管理员。"
+
+#: includes/class-mail.php:13
+msgid "Your account is awaiting administrator review. We will let you know when it is ready to use."
+msgstr "您的帐户正在等待管理员审核。当它准备好使用时，我们会通知您。"
+
+#: includes/class-mail.php:19
+msgid "Your account is no longer permitted to access this site. Your account and records have been retained. Please contact the site administrator for details."
+msgstr "您的帐户不再允许访问此网站。您的帐户和记录已被保留。有关详细信息，请联系网站管理员。"
+
+#: includes/class-mail.php:14
+msgid "Your account is now ready to use.\n{link}"
+msgstr "您的账户现在可以使用了。\n\n{link}"
+
+#: includes/class-screens.php:221
+msgid "Your account, profile, authentication information, comments posted while logged in, and posts and attachments not selected for transfer will be deleted, including items in the trash. Comments on deleted posts will also be removed."
+msgstr "您的帐户、个人资料、身份验证信息、登录期间发布的评论以及未选择转发的文章和附件将被删除，包括垃圾桶中的项目。删除文章的评论也将被删除。"
+
+#: includes/class-screens.php:183
+msgid "Your current email address will remain unchanged until you complete the confirmation process."
+msgstr "在您完成确认流程之前，您当前的email地址将保持不变。"
+
+#: includes/class-screens.php:142
+msgid "Your email address has changed. Log in with your new address."
+msgstr "您的email地址已更改。请使用您的新地址登录。"
+
+#: includes/class-screens.php:114
+msgid "Your password has been reset. Please log in."
+msgstr "您的密码已被重置。请登录。"
+
+#: includes/class-mail.php:25
+msgid "Your password has changed. If you did not make this change, contact the site administrator immediately."
+msgstr "您的密码已更改。如果您没有更改密码，请立即联系网站管理员。"
+
+#: includes/class-screens.php:106
+msgid "Your registration has been submitted. We will notify you after administrator review."
+msgstr "您的注册已提交。在管理员审核后，我们将通知您。"
+
+#: includes/class-mail.php:11
+msgid "Your registration is complete.\nAccount information: {link}"
+msgstr "您的注册已完成。\n\n帐户信息：{link}"
+
+#: includes/class-mail.php:7
+msgid "[{site}] Confirm your email address"
+msgstr "[{site}]确认您的email地址"
+
+#: includes/class-mail.php:26
+msgid "[{site}] Confirm your new email address"
+msgstr "[{site}]确认您的新email地址"
+
+#: includes/class-mail.php:21
+msgid "[{site}] Reset your password"
+msgstr "[{site}]重置您的密码"
+
+#: includes/class-mail.php:19
+msgid "[{site}] Your account access has been revoked"
+msgstr "[{site}]您的帐户访问权限已被撤销"
+
+#: includes/class-mail.php:16
+msgid "[{site}] Your account has been closed"
+msgstr "[{site}]您的帐户已被关闭"
+
+#: includes/class-mail.php:20
+msgid "[{site}] Your account has been suspended"
+msgstr "[{site}]您的帐户已被暂停使用"
+
+#: includes/class-mail.php:13
+msgid "[{site}] Your account is awaiting review"
+msgstr "[{site}]您的帐户正在等待审核"
+
+#: includes/class-mail.php:14
+msgid "[{site}] Your account is ready to use"
+msgstr "[{site}]您的帐户已准备好使用"
+
+#: includes/class-mail.php:28
+msgid "[{site}] Your email address has changed"
+msgstr "[{site}]您的email地址已更改"
+
+#: includes/class-mail.php:25
+msgid "[{site}] Your password has changed"
+msgstr "[{site}]您的密码已更改"
+
+#: includes/class-mail.php:11
+msgid "[{site}] Your registration is complete"
+msgstr "[{site}]您的注册已完成"
+
+#: includes/class-admin.php:221
+msgid "atshift Freeform Login / Pro Add-on"
+msgstr "atshift Freeform Login / Pro Add-on"
+
+#: includes/class-admin.php:221
+msgid "atshift Members Pro Add-on"
+msgstr "atshift Members Pro Add-on"
+
+#: includes/class-admin.php:322
+msgid "atshift Members Settings"
+msgstr "atshift Members设置"
+
+#: includes/class-admin.php:300
+msgid "atshift Members provides the essentials for a membership site. Add the following plugins to suit your site's needs."
+msgstr "atshift Members为会员网站提供了基本功能。添加以下插件以满足您网站的需求。"
+
+#: atshift-members.php:30
+msgid "atshift Members supports single-site installations only."
+msgstr "atshift Members仅支持单网站安装。"
+
+#: atshift-members.php:45
+msgid "atshift Members: Every minute"
+msgstr "atshift Members：每分钟一次"
+
+#: includes/class-admin.php:221
+msgid "atshift User Profile Fields / Pro Add-on"
+msgstr "atshift User Profile Fields / Pro Add-on"
+
+#: includes/class-admin.php:577
+msgid "{site} Office"
+msgstr "{site}办公室"
+
+#: includes/class-admin.php:573
+msgid "{site} Office\nContact: info@example.com\nhttps://example.com/"
+msgstr "{site}办公室\n\n联系方式：info@example.com\n\nhttps://example.com/"
+
+#: includes/class-admin.php:335
+msgid "← Back to members"
+msgstr "←返回会员"

@@ -35,7 +35,11 @@ final class Dashboard {
         }
         wp_safe_redirect(get_edit_post_link($id,'raw'));exit;
     }
-    public static function label($ja,$en){return strpos(determine_locale(),'ja')===0?$ja:$en;}
+    public static function label($ja,$en){
+        if(str_starts_with(determine_locale(),'ja'))return $ja;
+        // phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText -- Legacy bilingual labels use English catalog keys extracted and validated by tools/build-languages.py.
+        return translate($en,'atshift-members');
+    }
     public static function render($attrs=[],$section='all') {
         if(!is_user_logged_in()||!Members::reader())return '';
         Screens::private_headers();

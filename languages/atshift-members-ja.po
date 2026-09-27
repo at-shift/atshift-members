@@ -1,7 +1,7 @@
 # Translation catalog for atshift Members.
 # Licensed under GPL-2.0-or-later.
 msgid ""
-msgstr "Project-Id-Version: atshift Members 1.0\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-11 00:00+0000\nPO-Revision-Date: 2026-09-11 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Domain: atshift-members\n"
+msgstr "Project-Id-Version: atshift Members 1.0.1\nReport-Msgid-Bugs-To: https://plugins.at-shift.net/\nPOT-Creation-Date: 2026-09-27 00:00+0000\nPO-Revision-Date: 2026-09-27 00:00+0000\nLast-Translator: atshift\nLanguage-Team: atshift\nLanguage: ja\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\nX-Domain: atshift-members\n"
 
 #: includes/class-profile.php:102
 msgid " (Optional)"
@@ -17,11 +17,11 @@ msgstr " (デフォルト)"
 
 #: includes/class-admin.php:520
 msgid " (required)"
-msgstr "（必須）"
+msgstr " （必須）"
 
 #: includes/class-admin.php:504
 msgid " (user classification) "
-msgstr "（ユーザー分類） "
+msgstr " （ユーザー分類） "
 
 #: includes/class-admin.php:595
 msgid " Email Notifications"
@@ -29,7 +29,7 @@ msgstr " 利用時のメール通知"
 
 #: includes/class-admin.php:204 includes/class-admin.php:251
 msgid " and "
-msgstr "と"
+msgstr " と "
 
 #. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
 #, php-format
@@ -117,6 +117,10 @@ msgstr "（名称なしの添付ファイル）"
 msgid "(Untitled)"
 msgstr "（無題）"
 
+#: includes/class-directory.php:107
+msgid ", "
+msgstr "、"
+
 #: includes/class-admin.php:559
 msgid ". Create an account if you do not have one."
 msgstr "。アカウントがなければ作成してください。"
@@ -143,7 +147,7 @@ msgstr ": ログインして、会員向けの機能を利用できます。"
 
 #: includes/class-admin.php:595
 msgid ": Classification name; "
-msgstr "：分類名、"
+msgstr "：分類名、 "
 
 #: includes/class-admin.php:409
 msgid ": Registration is awaiting review. The member cannot log in yet. Change the status to Active after reviewing their information."
@@ -155,7 +159,7 @@ msgstr "：却下理由"
 
 #: includes/class-admin.php:595
 msgid ": Requested classification; "
-msgstr "：申請した分類、"
+msgstr "：申請した分類、 "
 
 #: includes/class-members.php:88
 msgid "A closed account cannot be restored by removing its suspension."
@@ -203,6 +207,10 @@ msgstr "WordPressを含む公開領域の絶対パス"
 msgid "Accepting Member Registrations"
 msgstr "会員登録の受付方法"
 
+#: includes/class-dashboard.php:55
+msgid "Account"
+msgstr "アカウント"
+
 #: includes/class-mail.php:19
 msgid "Account Banned"
 msgstr "アカウントの利用禁止"
@@ -226,6 +234,10 @@ msgstr "会員停止"
 #: includes/class-withdrawal.php:79
 msgid "Account closure is in progress. Please wait a moment."
 msgstr "退会手続き中です。少し待ってください。"
+
+#: includes/class-dashboard.php:52
+msgid "Account information"
+msgstr "アカウント情報"
 
 #: includes/class-member-list-table.php:47
 msgid "Activate"
@@ -379,7 +391,7 @@ msgstr "利用禁止（BAN）にするとログインできなくなります。
 
 #: includes/class-admin.php:549
 msgid "Before launching a membership site, check any page caching plugins and server caches to prevent one member's information from being shown to someone else. "
-msgstr "会員制サイトを運営する際は、会員ページに他の人の情報が表示されないよう、ページの内容を保存して再利用するキャッシュの設定を確認してください。キャッシュ系プラグインやサーバーなどで、"
+msgstr "会員制サイトを運営する際は、会員ページに他の人の情報が表示されないよう、ページの内容を保存して再利用するキャッシュの設定を確認してください。キャッシュ系プラグインやサーバーなどで、 "
 
 #: includes/class-admin.php:607
 msgid "Before saving, the plugin checks that it can create, read, and delete a test file in the specified directory."
@@ -401,7 +413,7 @@ msgstr "キーを確認してください。2つとも必要です。Cloudflare�
 msgid "Branch"
 msgstr "支部"
 
-#: atshift-members.php:4
+#: atshift-members.php:5
 msgid "Build a simple, easy-to-understand membership site."
 msgstr "シンプルで分かりやすい会員制サイトを構築するプラグイン。"
 
@@ -827,7 +839,7 @@ msgstr "%sで会員の分類を作成してください。"
 
 #: includes/class-admin.php:631
 msgid "Current storage: "
-msgstr "現在の保存先："
+msgstr "現在の保存先： "
 
 #: includes/class-admin.php:426
 msgid "Currently Active"
@@ -868,6 +880,10 @@ msgstr "部署"
 #: includes/class-withdrawal.php:61
 msgid "Deselect posts for transfer if you want to delete everything."
 msgstr "全削除の場合、移譲する投稿の選択を外してください。"
+
+#: includes/class-directory.php:111
+msgid "Directory pages"
+msgstr "会員一覧のページ"
 
 #: includes/class-profile-preset.php:45 includes/class-profile.php:91
 msgid "Display Name"
@@ -922,6 +938,10 @@ msgstr "固定ページを編集"
 #: includes/class-admin.php:532
 msgid "Edit Profile Fields in atshift User Profile Fields"
 msgstr "atshift User Profile Fieldsでプロフィール項目を編集"
+
+#: includes/class-dashboard.php:52
+msgid "Edit account information"
+msgstr "登録情報を変更"
 
 #: includes/class-member-list-table.php:9 includes/class-screens.php:200
 msgid "Email Address"
@@ -1115,7 +1135,7 @@ msgstr "各メールの件名・本文では、%1$s はサイト名に、%2$s �
 msgid "Include child categories"
 msgstr "配下のカテゴリーも含める"
 
-#: atshift-members.php:31
+#: atshift-members.php:32
 msgid "InnoDB tables are required."
 msgstr "InnoDB のテーブルが必要です。"
 
@@ -1219,7 +1239,7 @@ msgstr "会員の分類を管理"
 msgid "Media Library"
 msgstr "メディアライブラリ"
 
-#: includes/class-member-list-table.php:60
+#: includes/class-directory.php:104 includes/class-member-list-table.php:60
 msgid "Member"
 msgstr "会員"
 
@@ -1365,6 +1385,12 @@ msgstr "会員状態"
 msgid "Membership Type"
 msgstr "会員種別"
 
+#. translators: Placeholders represent the named item, path, field identifier, or count described in this message.
+#, php-format
+#: includes/class-dashboard.php:62
+msgid "My %s"
+msgstr "自分の%s"
+
 #: includes/class-member-list-table.php:9
 msgid "Name"
 msgstr "名前"
@@ -1394,6 +1420,10 @@ msgstr "新規会員登録の受付"
 #: includes/class-admin.php:563
 msgid "New registration and password reset requests will be unavailable until you save new keys."
 msgstr "削除すると、新しいキーを保存するまで会員登録とパスワード再設定の申請を受け付けられなくなります。"
+
+#: includes/class-directory.php:112
+msgid "Next"
+msgstr "次へ"
 
 #: assets/media.js:88
 msgid "Next Page"
@@ -1591,6 +1621,10 @@ msgstr "投稿設定"
 msgid "Posting settings are being saved. Please wait a moment and try again."
 msgstr "投稿設定を保存中です。少し待ってからやり直してください。"
 
+#: includes/class-dashboard.php:64
+msgid "Posts"
+msgstr "投稿"
+
 #: includes/class-withdrawal.php:85
 msgid "Posts or attachment information changed after confirmation. Review the details again."
 msgstr "確認後に投稿や添付情報が変更されました。内容を確認し直してください。"
@@ -1606,6 +1640,10 @@ msgstr "都道府県・州"
 #: includes/class-admin.php:624
 msgid "Prepare a non-public directory exclusively for member files and specify its path on the server."
 msgstr "公開されない会員ファイル専用のフォルダーを用意し、そのサーバー上のパスを指定します。"
+
+#: includes/class-directory.php:112
+msgid "Previous"
+msgstr "前へ"
 
 #: assets/media.js:87
 msgid "Previous Page"
@@ -2093,7 +2131,7 @@ msgstr "保存先はwp-config.phpで管理されています。"
 
 #: includes/class-admin.php:633
 msgid "Storage path: "
-msgstr "保存先のパス："
+msgstr "保存先のパス： "
 
 #: includes/class-profile-preset.php:51
 msgid "Street Address"
@@ -2217,11 +2255,11 @@ msgstr "公開範囲が一致しません。"
 
 #: assets/media.js:20
 msgid "These files are visible only to authorized members. "
-msgstr "閲覧を許可された会員だけが見られるファイルです。"
+msgstr "閲覧を許可された会員だけが見られるファイルです。 "
 
 #: assets/media.js:18
 msgid "These files are visible to everyone. "
-msgstr "誰でも見られるファイルです。"
+msgstr "誰でも見られるファイルです。 "
 
 #: includes/class-admin.php:556
 msgid "These keys are configured on the server by the person who set up your site. Ask them to make any changes."
@@ -2691,11 +2729,11 @@ msgstr "Members の設定ページ"
 msgid "atshift Members provides the essentials for a membership site. Add the following plugins to suit your site's needs."
 msgstr "atshift Members は会員制サイトを構築するためのシンプルな機能のプラグインです。会員制サイトの求める機能に応じて、以下のプラグインを併用してください。"
 
-#: atshift-members.php:29
+#: atshift-members.php:30
 msgid "atshift Members supports single-site installations only."
 msgstr "atshift Members はシングルサイト専用です。"
 
-#: atshift-members.php:44
+#: atshift-members.php:45
 msgid "atshift Members: Every minute"
 msgstr "atshift Members：1分間隔"
 

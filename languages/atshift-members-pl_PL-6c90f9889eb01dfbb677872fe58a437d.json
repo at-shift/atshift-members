@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-27 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "pl_PL",
+        "plural-forms": "nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
+      },
+      "Attachment Visibility": [
+        "Widoczność załączników"
+      ],
+      "Change Visibility": [
+        "Zmień widoczność"
+      ],
+      "Choose How to Add Media": [
+        "Wybierz sposób dodawania mediów"
+      ],
+      "Choose a format supported by this block.": [
+        "Wybierz format obsługiwany przez ten blok."
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "Wybierz z zapisanych obrazów, filmów i dokumentów."
+      ],
+      "Could not complete the action. Please try again.": [
+        "Nie można wykonać akcji. Spróbuj ponownie."
+      ],
+      "Drop Files to Upload": [
+        "Upuść pliki, aby przesłać"
+      ],
+      "Insert Selected Files": [
+        "Wstaw wybrane pliki"
+      ],
+      "Media Library": [
+        "Biblioteka mediów"
+      ],
+      "Members Only": [
+        "Tylko dla członków"
+      ],
+      "Members-Only Media": [
+        "Media tylko dla członków"
+      ],
+      "Next Page": [
+        "Następna strona"
+      ],
+      "No files are available to select.": [
+        "Nie ma dostępnych plików do wyboru."
+      ],
+      "Open File": [
+        "Otwórz plik"
+      ],
+      "Previous Page": [
+        "Poprzednia strona"
+      ],
+      "Processing…": [
+        "Przetwarzanie…"
+      ],
+      "Public": [
+        "Publiczne"
+      ],
+      "Public Media": [
+        "Media publiczne"
+      ],
+      "Search": [
+        "Szukaj"
+      ],
+      "Search by Filename": [
+        "Szukaj po nazwie pliku"
+      ],
+      "Select Files": [
+        "Wybierz pliki"
+      ],
+      "Server upload limit: ": [
+        "Limit przesyłania serwera: "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "Wyświetlane pliki tylko dla członków, których możesz użyć. Pliki użyte w innym poście zostaną skopiowane dla tego posta."
+      ],
+      "Showing public files you can use.": [
+        "Wyświetlane pliki publiczne, których możesz użyć."
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "Plik przekracza limit przesyłania serwera: %s."
+      ],
+      "These files are visible only to authorized members. ": [
+        "Te pliki są widoczne tylko dla uprawnionych członków. "
+      ],
+      "These files are visible to everyone. ": [
+        "Te pliki są widoczne dla wszystkich. "
+      ],
+      "Upload": [
+        "Prześlij"
+      ],
+      "Upload cancelled.": [
+        "Przesyłanie anulowane."
+      ],
+      "Upload images, videos, and documents.": [
+        "Prześlij obrazy, filmy i dokumenty."
+      ]
+    }
+  }
+}

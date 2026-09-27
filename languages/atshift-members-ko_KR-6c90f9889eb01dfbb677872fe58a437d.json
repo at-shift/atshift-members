@@ -1,0 +1,105 @@
+{
+  "translation-revision-date": "2026-09-27 00:00+0000",
+  "generator": "atshift Members build-languages.py",
+  "domain": "atshift-members",
+  "source": "assets/media.js",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "atshift-members",
+        "lang": "ko_KR",
+        "plural-forms": "nplurals=1; plural=0;"
+      },
+      "Attachment Visibility": [
+        "첨부 파일 가시성"
+      ],
+      "Change Visibility": [
+        "보이징 변경"
+      ],
+      "Choose How to Add Media": [
+        "미디어 추가 방법 선택하기"
+      ],
+      "Choose a format supported by this block.": [
+        "이 블록이 지원하는 형식을 선택하세요."
+      ],
+      "Choose from saved images, videos, and documents.": [
+        "저장된 이미지, 비디오 및 문서를 선택하세요."
+      ],
+      "Could not complete the action. Please try again.": [
+        "작업을 완료할 수 없습니다. 다시 시도해 주세요."
+      ],
+      "Drop Files to Upload": [
+        "업로드할 파일을 드롭하세요."
+      ],
+      "Insert Selected Files": [
+        "선택한 파일을 삽입하다"
+      ],
+      "Media Library": [
+        "미디어 라이브러리"
+      ],
+      "Members Only": [
+        "회원 전용"
+      ],
+      "Members-Only Media": [
+        "회원 전용 미디어"
+      ],
+      "Next Page": [
+        "다음 페이지"
+      ],
+      "No files are available to select.": [
+        "선택할 수 있는 파일이 없습니다."
+      ],
+      "Open File": [
+        "파일 열기"
+      ],
+      "Previous Page": [
+        "이전 페이지"
+      ],
+      "Processing…": [
+        "처리 중..."
+      ],
+      "Public": [
+        "공개"
+      ],
+      "Public Media": [
+        "공공 미디어"
+      ],
+      "Search": [
+        "검색"
+      ],
+      "Search by Filename": [
+        "파일 이름으로 검색"
+      ],
+      "Select Files": [
+        "파일 선택"
+      ],
+      "Server upload limit: ": [
+        "서버 업로드 제한: "
+      ],
+      "Showing members-only files you can use. Files used in another post will be copied for that post.": [
+        "사용할 수 있는 회원 전용 파일을 표시합니다. 다른 게시물에서 사용되는 파일은 해당 게시물용으로 복사됩니다."
+      ],
+      "Showing public files you can use.": [
+        "사용할 수 있는 공개 파일을 표시합니다."
+      ],
+      "The file exceeds the server upload limit of %s.": [
+        "파일이 서버 업로드 제한인 %s를 초과합니다."
+      ],
+      "These files are visible only to authorized members. ": [
+        "이 파일은 승인된 회원만 볼 수 있습니다. "
+      ],
+      "These files are visible to everyone. ": [
+        "이 파일은 모든 사람에게 표시됩니다. "
+      ],
+      "Upload": [
+        "업로드하다"
+      ],
+      "Upload cancelled.": [
+        "업로드 취소되었습니다."
+      ],
+      "Upload images, videos, and documents.": [
+        "이미지와 동영상, 문서를 업로드하세요."
+      ]
+    }
+  }
+}
