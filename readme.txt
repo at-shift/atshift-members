@@ -2,9 +2,9 @@
 Contributors: atshift
 Tags: membership, member directory, private content, user registration, access control
 Requires at least: 6.6
-Tested up to: 7.1
+Tested up to: 7.2
 Requires PHP: 8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -152,6 +152,9 @@ Private downloads recheck membership and parent-content access. Public content c
 Account closure permanently erases the account and plugin-managed data by default. Members can explicitly transfer selected contributions to a non-login site custodian. Shared physical files, backups, and data stored by unrelated plugins have limits explained before final confirmation.
 
 == Changelog ==
+
+= 1.0.2 =
+* Confirmed compatibility with WordPress 7.2 and PHP 8.6.
 
 = 1.0.1 =
 * Add bundled translations for 15 locales across settings, member pages, default emails, and the media picker.

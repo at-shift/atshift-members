@@ -3,7 +3,7 @@
  * Plugin Name: atshift Members
  * Plugin URI: https://plugins.at-shift.net/members/
  * Description: Build a simple, easy-to-understand membership site.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Requires at least: 6.6
  * Requires PHP: 8.1
  * Author: @shift
